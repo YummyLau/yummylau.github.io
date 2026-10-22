@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="多媒体,Android,ExoPlayer,">
+  <meta name="keywords" content="Android,多媒体,ExoPlayer," />
 
 
 
@@ -78,18 +78,20 @@
 
 
 <meta name="description" content="带宽预测常用于播放器加载媒体时判断当前用户的网络情况进而调整加载逻辑 。 实际上 ， ExoPlayer 支持通过检测带宽状态动态调节码率 。 那么其内部是如何来检测带宽的呢 ？  BandwidthMeterBandwidthMeter 是带宽检测的核心接口 ， 提供了暴露数据转移信息的 EventListener 接口 ， 同时也提供 #getBitrateEstimate 用于获取当前 比特">
-<meta name="keywords" content="多媒体,Android,ExoPlayer">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ExoPlayer系列二之带宽预测">
-<meta property="og:url" content="http://yummylau.com/2018/06/02/多媒体_2018-06-02_ExoPlayer系列二之带宽预测/index.html">
+<meta property="og:url" content="https://yummylau.cn/2018/06/02/%E5%A4%9A%E5%AA%92%E4%BD%93_2018-06-02_ExoPlayer%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E5%B8%A6%E5%AE%BD%E9%A2%84%E6%B5%8B/index.html">
 <meta property="og:site_name" content="YummyLau">
 <meta property="og:description" content="带宽预测常用于播放器加载媒体时判断当前用户的网络情况进而调整加载逻辑 。 实际上 ， ExoPlayer 支持通过检测带宽状态动态调节码率 。 那么其内部是如何来检测带宽的呢 ？  BandwidthMeterBandwidthMeter 是带宽检测的核心接口 ， 提供了暴露数据转移信息的 EventListener 接口 ， 同时也提供 #getBitrateEstimate 用于获取当前 比特">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale">
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/20180601/IMG20180601_155057.png">
-<meta property="og:updated_time" content="2019-03-10T05:35:03.477Z">
+<meta property="article:published_time" content="2018-06-02T15:16:10.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:17:50.676Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="多媒体">
+<meta property="article:tag" content="ExoPlayer">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ExoPlayer系列二之带宽预测">
-<meta name="twitter:description" content="带宽预测常用于播放器加载媒体时判断当前用户的网络情况进而调整加载逻辑 。 实际上 ， ExoPlayer 支持通过检测带宽状态动态调节码率 。 那么其内部是如何来检测带宽的呢 ？  BandwidthMeterBandwidthMeter 是带宽检测的核心接口 ， 提供了暴露数据转移信息的 EventListener 接口 ， 同时也提供 #getBitrateEstimate 用于获取当前 比特">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/20180601/IMG20180601_155057.png">
 
 
@@ -97,7 +99,7 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -120,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2018/06/02/多媒体_2018-06-02_ExoPlayer系列二之带宽预测/">
+  <link rel="canonical" href="https://yummylau.cn/2018/06/02/多媒体_2018-06-02_ExoPlayer系列二之带宽预测/"/>
 
 
 
@@ -136,7 +138,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -154,7 +156,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -184,7 +186,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -194,7 +196,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -204,7 +206,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -214,7 +216,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -224,7 +226,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -263,11 +265,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2018/06/02/多媒体_2018-06-02_ExoPlayer系列二之带宽预测/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2018/06/02/%E5%A4%9A%E5%AA%92%E4%BD%93_2018-06-02_ExoPlayer%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E5%B8%A6%E5%AE%BD%E9%A2%84%E6%B5%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -303,7 +305,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -315,7 +317,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/多媒体/" itemprop="url" rel="index">
+                  <a href="/categories/%E5%A4%9A%E5%AA%92%E4%BD%93/" itemprop="url" rel="index">
                     <span itemprop="name">多媒体</span>
                   </a>
                 </span>
@@ -333,8 +335,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/06/02/多媒体_2018-06-02_ExoPlayer系列二之带宽预测/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/02/多媒体_2018-06-02_ExoPlayer系列二之带宽预测/" itemprop="commentCount"></span>
+                <a href="/2018/06/02/%E5%A4%9A%E5%AA%92%E4%BD%93_2018-06-02_ExoPlayer%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E5%B8%A6%E5%AE%BD%E9%A2%84%E6%B5%8B/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/02/%E5%A4%9A%E5%AA%92%E4%BD%93_2018-06-02_ExoPlayer%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E5%B8%A6%E5%AE%BD%E9%A2%84%E6%B5%8B/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -364,13 +366,13 @@
       
         <p><strong>带宽预测</strong>常用于播放器加载媒体时判断当前用户的网络情况进而调整加载逻辑 。 实际上 ， <strong>ExoPlayer</strong> 支持通过检测带宽状态动态调节码率 。 那么其内部是如何来检测带宽的呢 ？ </p>
 <h3 id="BandwidthMeter"><a href="#BandwidthMeter" class="headerlink" title="BandwidthMeter"></a>BandwidthMeter</h3><p><code>BandwidthMeter</code> 是带宽检测的核心接口 ， 提供了暴露数据转移信息的 <code>EventListener</code> 接口 ， 同时也提供 <code>#getBitrateEstimate</code> 用于获取当前 <strong>比特率</strong> 。</p>
-<p><em>tip</em> : 如果你不了解 <strong>比特率</strong> ， 可查看 <a href="http://yummylau.com/2018/05/25/%E5%A4%9A%E5%AA%92%E4%BD%93_2018-05-25_%E5%A4%9A%E5%AA%92%E4%BD%93%E9%9F%B3%E8%A7%86%E9%A2%91%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/">多媒体音视频核心概念</a> 。</p>
+<p><em>tip</em> : 如果你不了解 <strong>比特率</strong> ， 可查看 <a href="https://yummylau.cn/2018/05/25/%E5%A4%9A%E5%AA%92%E4%BD%93_2018-05-25_%E5%A4%9A%E5%AA%92%E4%BD%93%E9%9F%B3%E8%A7%86%E9%A2%91%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/">多媒体音视频核心概念</a> 。</p>
 <h4 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h4><ul>
 <li><p>移动平均数</p>
 <p>  即特定时间段内 ， 对事件序列数据进行移动计算平均值 。<br>  举个直观的栗子 ： “ 存在数据序列 [ 10 , 2 , 5 , 4 , 7 , 6 , 7 , 6 , 5 , 9 , 10 , 8 ] 共 12 个序列数据 。 ”<br>  对时间序列内的所有数据求<strong>算术平均值</strong> :</p>
-  <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">( <span class="number">10</span> + <span class="number">2</span> + <span class="number">5</span> + <span class="number">4</span> + <span class="number">7</span> + <span class="number">6</span> + <span class="number">7</span> + <span class="number">6</span> + <span class="number">5</span> + <span class="number">9</span> + <span class="number">10</span> + <span class="number">8</span> ) / <span class="number">12</span> ≈ <span class="number">6.58</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="number"> 10 </span>+<span class="number"> 2 </span>+<span class="number"> 5 </span>+<span class="number"> 4 </span>+<span class="number"> 7 </span>+<span class="number"> 6 </span>+<span class="number"> 7 </span>+<span class="number"> 6 </span>+<span class="number"> 5 </span>+<span class="number"> 9 </span>+<span class="number"> 10 </span>+<span class="number"> 8 </span>) /<span class="number"> 12 </span>≈ 6.58</span><br></pre></td></tr></table></figure>
 <p>  若取 6 项移动平均 ， 则<strong>移动平均数</strong>分别为</p>
-  <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">( <span class="number">10</span> + <span class="number">2</span> + <span class="number">5</span> + <span class="number">4</span> + <span class="number">7</span> + <span class="number">6</span> ) / <span class="number">6</span> ≈ <span class="number">5.66</span></span><br><span class="line">( <span class="number">2</span> + <span class="number">5</span> + <span class="number">4</span> + <span class="number">7</span> + <span class="number">6</span> + <span class="number">7</span> ) / <span class="number">6</span> ≈ <span class="number">5.16</span></span><br><span class="line">( <span class="number">5</span> + <span class="number">4</span> + <span class="number">7</span> + <span class="number">6</span> + <span class="number">7</span> + <span class="number">6</span> ) / <span class="number">6</span> ≈ <span class="number">5.83</span></span><br><span class="line">( <span class="number">4</span> + <span class="number">7</span> + <span class="number">6</span> + <span class="number">7</span> + <span class="number">6</span> + <span class="number">5</span> ) / <span class="number">6</span> ≈ <span class="number">5.83</span></span><br><span class="line">( <span class="number">7</span> + <span class="number">6</span> + <span class="number">7</span> + <span class="number">6</span> + <span class="number">5</span> + <span class="number">9</span> ) / <span class="number">6</span> ≈ <span class="number">6.66</span></span><br><span class="line">( <span class="number">6</span> + <span class="number">7</span> + <span class="number">6</span> + <span class="number">5</span> + <span class="number">9</span> + <span class="number">10</span> ) / <span class="number">6</span> ≈ <span class="number">7.16</span></span><br><span class="line">( <span class="number">7</span> + <span class="number">6</span> + <span class="number">5</span> + <span class="number">9</span> + <span class="number">10</span> + <span class="number">8</span> ) / <span class="number">6</span> ≈ <span class="number">7.5</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(<span class="number"> 10 </span>+<span class="number"> 2 </span>+<span class="number"> 5 </span>+<span class="number"> 4 </span>+<span class="number"> 7 </span>+<span class="number"> 6 </span>) /<span class="number"> 6 </span>≈ 5.66</span><br><span class="line">(<span class="number"> 2 </span>+<span class="number"> 5 </span>+<span class="number"> 4 </span>+<span class="number"> 7 </span>+<span class="number"> 6 </span>+<span class="number"> 7 </span>) /<span class="number"> 6 </span>≈ 5.16</span><br><span class="line">(<span class="number"> 5 </span>+<span class="number"> 4 </span>+<span class="number"> 7 </span>+<span class="number"> 6 </span>+<span class="number"> 7 </span>+<span class="number"> 6 </span>) /<span class="number"> 6 </span>≈ 5.83</span><br><span class="line">(<span class="number"> 4 </span>+<span class="number"> 7 </span>+<span class="number"> 6 </span>+<span class="number"> 7 </span>+<span class="number"> 6 </span>+<span class="number"> 5 </span>) /<span class="number"> 6 </span>≈ 5.83</span><br><span class="line">(<span class="number"> 7 </span>+<span class="number"> 6 </span>+<span class="number"> 7 </span>+<span class="number"> 6 </span>+<span class="number"> 5 </span>+<span class="number"> 9 </span>) /<span class="number"> 6 </span>≈ 6.66</span><br><span class="line">(<span class="number"> 6 </span>+<span class="number"> 7 </span>+<span class="number"> 6 </span>+<span class="number"> 5 </span>+<span class="number"> 9 </span>+<span class="number"> 10 </span>) /<span class="number"> 6 </span>≈ 7.16</span><br><span class="line">(<span class="number"> 7 </span>+<span class="number"> 6 </span>+<span class="number"> 5 </span>+<span class="number"> 9 </span>+<span class="number"> 10 </span>+<span class="number"> 8 </span>) /<span class="number"> 6 </span>≈ 7.5</span><br></pre></td></tr></table></figure>
 <p>  下图是该栗子的数据对比及图表<br><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/20180601/IMG20180601_155057.png" alt="pic2"><br>  事实上 ， 算术平均法是对时间序列的全部观察数据求一个平均值 ， 该平均值只能反映现象在观察期内的平均水平 ， 不能反映出趋势的变化 。 而移动平均法是按一定的平均项数滑动着对时间序列求一系列平均值 (也叫平滑值) 。 这些平滑值可用于做下一时间序列数据的预测 。 值得注意的是 ， 移动平均算法还可以考虑加权处理 。</p>
 </li>
 <li><p>滑动窗口</p>
@@ -390,8 +392,9 @@
 </li>
 </ol>
 <h5 id="收集数据"><a href="#收集数据" class="headerlink" title="收集数据"></a>收集数据</h5><p><code>DefaultBandwidthMeter</code> 除了实现了 <code>BandwidthMeter</code> 接口外 ， 还实现了 <code>TransferListener&lt;Object&gt;</code> 接口 。 该接口定义了一下三个方法 ：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">TransferListener</span>&lt;<span class="title">S</span>&gt; </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">onTransferStart</span><span class="params">(S source, DataSpec dataSpec)</span></span>;</span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">onBytesTransferred</span><span class="params">(S source, <span class="keyword">int</span> bytesTransferred)</span></span>;</span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">onTransferEnd</span><span class="params">(S source)</span></span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<p>这三个方法分别对应 <strong>转移开始</strong> ， <strong>转移时</strong> ， <strong>转移结束</strong>  阶段 。<br>在 <a href="http://yummylau.com/2018/06/01/多媒体_2018-06-01_ExoPlayer系列一之多媒体资源加载/">ExoPlayer系列一之多媒体加载</a> 中讲过 <code>DataSouce</code> 的数据加载流程 ， 而三个接口分别会在 <code>DataSource</code> 的实现类中被调用 。</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">TransferListener</span>&lt;<span class="title">S</span>&gt; &#123;</span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">onTransferStart</span>(<span class="params">S source, DataSpec dataSpec</span>)</span>;</span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">onBytesTransferred</span>(<span class="params">S source, <span class="built_in">int</span> bytesTransferred</span>)</span>;</span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">onTransferEnd</span>(<span class="params">S source</span>)</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>这三个方法分别对应 <strong>转移开始</strong> ， <strong>转移时</strong> ， <strong>转移结束</strong>  阶段 。<br>在 <a href="https://yummylau.cn/2018/06/01/%E5%A4%9A%E5%AA%92%E4%BD%93_2018-06-01_ExoPlayer%E7%B3%BB%E5%88%97%E4%B8%80%E4%B9%8B%E5%A4%9A%E5%AA%92%E4%BD%93%E8%B5%84%E6%BA%90%E5%8A%A0%E8%BD%BD/">ExoPlayer系列一之多媒体加载</a> 中讲过 <code>DataSouce</code> 的数据加载流程 ， 而三个接口分别会在 <code>DataSource</code> 的实现类中被调用 。</p>
 <ul>
 <li>open()  -&gt;  DataSouce#onTransferStart</li>
 <li>read()  -&gt;  DataSouce#onBytesTransferred</li>
@@ -400,7 +403,8 @@
 <p>上述 <em>dataSource</em> 数据中可能加载多个数据段 <em>dataSpec</em> , 每一个 <em>dataSpec</em> 的加载过程会分别调用上述3个方法一次 。</p>
 <h5 id="样本结构"><a href="#样本结构" class="headerlink" title="样本结构"></a>样本结构</h5><p>在数据收集流程中 ， 每一个 <em>dataSpec</em> 的数据量即转移量 。</p>
 <p>根据每次得到的转移量封装成特定的数据结构 ， <code>SlidingPercentile</code> 中存在 <code>Sample</code> 就是该接口的封装 。</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title">Sample</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">int</span> index;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">int</span> weight;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">float</span> <span class="keyword">value</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">Sample</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="built_in">int</span> <span class="keyword">index</span>;</span><br><span class="line">  <span class="keyword">public</span> <span class="built_in">int</span> weight;</span><br><span class="line">  <span class="keyword">public</span> float value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>其中各个属性定义为 ：</p>
 <ul>
 <li><em>index</em> : 用于递增标识每一个数据样本进入窗口的顺序</li>
@@ -408,9 +412,11 @@
 <li><em>value</em> ： 数据样本的值 ， <strong>ExoPlayer</strong> 定义为每一个 <em>dataSpec</em> 获取时的比特率作为 <em>value</em> 值</li>
 </ul>
 <h5 id="滑动窗口"><a href="#滑动窗口" class="headerlink" title="滑动窗口"></a>滑动窗口</h5><p><code>SlidingPercentile</code> 中用 <em>list</em> 来实现滑动窗口的逻辑 。</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> ArrayList&lt;Sample&gt; samples;      <span class="comment">//用于存放样本的队列</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> Sample[] recycledSamples;       <span class="comment">//用于复用样本对象</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> <span class="built_in">ArrayList</span>&lt;Sample&gt; samples;      <span class="comment">//用于存放样本的队列</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> Sample[] recycledSamples;       <span class="comment">//用于复用样本对象</span></span><br></pre></td></tr></table></figure>
+
 <p>下面通过 <code>SlidingPercentile</code> 添加和删除样本的逻辑来了解如何用 <em>samples</em> 队列模拟滑动窗口 。</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addSample</span>(<span class="params"><span class="keyword">int</span> weight, <span class="keyword">float</span> <span class="keyword">value</span></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//1. 按照index排序</span></span><br><span class="line">   ensureSortedByIndex();</span><br><span class="line"></span><br><span class="line">   <span class="comment">//2. 构建 sample 对象</span></span><br><span class="line">   Sample newSample = recycledSampleCount &gt; <span class="number">0</span> ? recycledSamples[--recycledSampleCount]</span><br><span class="line">       : <span class="keyword">new</span> Sample();</span><br><span class="line">   newSample.index = nextSampleIndex++;</span><br><span class="line">   newSample.weight = weight;</span><br><span class="line">   newSample.<span class="keyword">value</span> = <span class="keyword">value</span>;</span><br><span class="line">   .<span class="keyword">add</span>(newSample);</span><br><span class="line">   totalWeight += weight;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//3. 已存在的样本总权重超过了临界值 ，则需要依次从链表的头部开始删除 。</span></span><br><span class="line">   <span class="comment">// 如果待删样本的权重大于溢出权重 ， 则直接从待删样本的权重中减去但不删除</span></span><br><span class="line">   <span class="comment">// 反之则直接删除待删样本</span></span><br><span class="line">   <span class="keyword">while</span> (totalWeight &gt; maxWeight) &#123;</span><br><span class="line">     <span class="keyword">int</span> excessWeight = totalWeight - maxWeight;</span><br><span class="line">     Sample oldestSample = samples.<span class="keyword">get</span>(<span class="number">0</span>);</span><br><span class="line">     <span class="keyword">if</span> (oldestSample.weight &lt;= excessWeight) &#123;</span><br><span class="line">       totalWeight -= oldestSample.weight;</span><br><span class="line">       samples.<span class="keyword">remove</span>(<span class="number">0</span>);</span><br><span class="line">       <span class="keyword">if</span> (recycledSampleCount &lt; MAX_RECYCLED_SAMPLES) &#123;</span><br><span class="line">         recycledSamples[recycledSampleCount++] = oldestSample;</span><br><span class="line">       &#125;</span><br><span class="line">     &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       oldestSample.weight -= excessWeight;</span><br><span class="line">       totalWeight -= excessWeight;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addSample</span>(<span class="params"><span class="built_in">int</span> weight, <span class="built_in">float</span> <span class="keyword">value</span></span>)</span> &#123;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//1. 按照index排序</span></span><br><span class="line">   ensureSortedByIndex();</span><br><span class="line"></span><br><span class="line">   <span class="comment">//2. 构建 sample 对象</span></span><br><span class="line">   Sample newSample = recycledSampleCount &gt; <span class="number">0</span> ? recycledSamples[--recycledSampleCount]</span><br><span class="line">       : <span class="keyword">new</span> Sample();</span><br><span class="line">   newSample.index = nextSampleIndex++;</span><br><span class="line">   newSample.weight = weight;</span><br><span class="line">   newSample.<span class="keyword">value</span> = <span class="keyword">value</span>;</span><br><span class="line">   .<span class="keyword">add</span>(newSample);</span><br><span class="line">   totalWeight += weight;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//3. 已存在的样本总权重超过了临界值 ，则需要依次从链表的头部开始删除 。</span></span><br><span class="line">   <span class="comment">// 如果待删样本的权重大于溢出权重 ， 则直接从待删样本的权重中减去但不删除</span></span><br><span class="line">   <span class="comment">// 反之则直接删除待删样本</span></span><br><span class="line">   <span class="keyword">while</span> (totalWeight &gt; maxWeight) &#123;</span><br><span class="line">     <span class="built_in">int</span> excessWeight = totalWeight - maxWeight;</span><br><span class="line">     Sample oldestSample = samples.<span class="keyword">get</span>(<span class="number">0</span>);</span><br><span class="line">     <span class="keyword">if</span> (oldestSample.weight &lt;= excessWeight) &#123;</span><br><span class="line">       totalWeight -= oldestSample.weight;</span><br><span class="line">       samples.<span class="keyword">remove</span>(<span class="number">0</span>);</span><br><span class="line">       <span class="keyword">if</span> (recycledSampleCount &lt; MAX_RECYCLED_SAMPLES) &#123;</span><br><span class="line">         recycledSamples[recycledSampleCount++] = oldestSample;</span><br><span class="line">       &#125;</span><br><span class="line">     &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       oldestSample.weight -= excessWeight;</span><br><span class="line">       totalWeight -= excessWeight;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>队列每次新增样本之后 ， 都需要重新计算队列内的样本总权重是否超过 <em>maxWeight</em> 阈值 。</p>
 <ul>
 <li>如果超过 ， 则需要计算是否删除最先进 <em>samples</em> 的样本 ， 记最先进队列的样本为 A<ul>
@@ -420,11 +426,13 @@
 </li>
 </ul>
 <h5 id="预估带宽条件"><a href="#预估带宽条件" class="headerlink" title="预估带宽条件"></a>预估带宽条件</h5><p>在 <strong>收集数据</strong> 中得知 ， 单次 <em>dataSpec</em> 结束转移发生在 <code>onTransferEnd</code> 方法中 ， 所以触发预估的时间点就在 <code>onTransferEnd</code> 。<br>先看下 <strong>转移开始</strong> ， <strong>转移时</strong> ， <strong>转移结束</strong> 在 <code>DefaultBandwidthMeter</code> 中的实现 。</p>
-<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="function"><span class="keyword">void</span> <span class="title">onTransferStart</span><span class="params">(Object source, DataSpec dataSpec)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (streamCount == <span class="number">0</span>) &#123;</span><br><span class="line">    sampleStartTimeMs = clock.elapsedRealtime();</span><br><span class="line">  &#125;</span><br><span class="line">  streamCount++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> synchronized <span class="built_in">void</span> <span class="title function_">onTransferStart</span>(<span class="params"><span class="title class_">Object</span> source, <span class="title class_">DataSpec</span> dataSpec</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (streamCount == <span class="number">0</span>) &#123;</span><br><span class="line">    sampleStartTimeMs = clock.<span class="title function_">elapsedRealtime</span>();</span><br><span class="line">  &#125;</span><br><span class="line">  streamCount++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>从 <code>open</code> 打开 <em>dataSpec</em> 时记录转移前的时刻 。 <em>streamCount</em> 用于记录 <em>dataSource</em> 中多个 <em>dataSpec</em> 的数据流请求总数 。</p>
 <figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="function"><span class="keyword">void</span> <span class="title">onBytesTransferred</span><span class="params">(Object source, <span class="keyword">int</span> bytes)</span> </span>&#123;</span><br><span class="line">  sampleBytesTransferred += bytes;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><em>sampleBytesTransferred</em> 记录了 <em>dataSource</em> 请求过程累计请求数据总量 。</p>
-<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="function"><span class="keyword">void</span> <span class="title">onTransferEnd</span><span class="params">(Object source)</span> </span>&#123;</span><br><span class="line">  Assertions.checkState(streamCount &gt; <span class="number">0</span>);</span><br><span class="line">  <span class="keyword">long</span> nowMs = clock.elapsedRealtime();</span><br><span class="line"></span><br><span class="line">  <span class="comment">//1. 记录上一次 dataSpec 数据传输结束到本次 dataSpec数据传输结束之间的时间间隔 A</span></span><br><span class="line">  <span class="keyword">int</span> sampleElapsedTimeMs = (<span class="keyword">int</span>) (nowMs - sampleStartTimeMs);</span><br><span class="line">  totalElapsedTimeMs += sampleElapsedTimeMs;</span><br><span class="line">  totalBytesTransferred += sampleBytesTransferred;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (sampleElapsedTimeMs &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="comment">//2. 计算比特率 ， 添加样本到 samples 队列</span></span><br><span class="line">    <span class="keyword">float</span> bitsPerSecond = (sampleBytesTransferred * <span class="number">8000</span>) / sampleElapsedTimeMs;</span><br><span class="line">    slidingPercentile.addSample((<span class="keyword">int</span>) Math.sqrt(sampleBytesTransferred), bitsPerSecond);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//3. 如果 datasource 传输量已达到512 KB 或者 A 大于 2000 毫秒</span></span><br><span class="line">    <span class="keyword">if</span> (totalElapsedTimeMs &gt;= ELAPSED_MILLIS_FOR_ESTIMATE</span><br><span class="line">        || totalBytesTransferred &gt;= BYTES_TRANSFERRED_FOR_ESTIMATE) &#123;</span><br><span class="line">      bitrateEstimate = (<span class="keyword">long</span>) slidingPercentile.getPercentile(<span class="number">0.5</span>f);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  notifyBandwidthSample(sampleElapsedTimeMs, sampleBytesTransferred, bitrateEstimate);</span><br><span class="line"></span><br><span class="line">  <span class="comment">//4. 更新 "上一次 dataSpec 传输数据结束" 时间点</span></span><br><span class="line">  <span class="keyword">if</span> (--streamCount &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    sampleStartTimeMs = nowMs;</span><br><span class="line">  &#125;</span><br><span class="line">  sampleBytesTransferred = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">@<span class="function">Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="type">void</span> <span class="title">onTransferEnd</span><span class="params">(Object source)</span> </span>&#123;</span><br><span class="line">  Assertions.<span class="built_in">checkState</span>(streamCount &gt; <span class="number">0</span>);</span><br><span class="line">  <span class="type">long</span> nowMs = clock.<span class="built_in">elapsedRealtime</span>();</span><br><span class="line"></span><br><span class="line">  <span class="comment">//1. 记录上一次 dataSpec 数据传输结束到本次 dataSpec数据传输结束之间的时间间隔 A</span></span><br><span class="line">  <span class="type">int</span> sampleElapsedTimeMs = (<span class="type">int</span>) (nowMs - sampleStartTimeMs);</span><br><span class="line">  totalElapsedTimeMs += sampleElapsedTimeMs;</span><br><span class="line">  totalBytesTransferred += sampleBytesTransferred;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (sampleElapsedTimeMs &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="comment">//2. 计算比特率 ， 添加样本到 samples 队列</span></span><br><span class="line">    <span class="type">float</span> bitsPerSecond = (sampleBytesTransferred * <span class="number">8000</span>) / sampleElapsedTimeMs;</span><br><span class="line">    slidingPercentile.<span class="built_in">addSample</span>((<span class="type">int</span>) Math.<span class="built_in">sqrt</span>(sampleBytesTransferred), bitsPerSecond);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//3. 如果 datasource 传输量已达到512 KB 或者 A 大于 2000 毫秒</span></span><br><span class="line">    <span class="keyword">if</span> (totalElapsedTimeMs &gt;= ELAPSED_MILLIS_FOR_ESTIMATE</span><br><span class="line">        || totalBytesTransferred &gt;= BYTES_TRANSFERRED_FOR_ESTIMATE) &#123;</span><br><span class="line">      bitrateEstimate = (<span class="type">long</span>) slidingPercentile.<span class="built_in">getPercentile</span>(<span class="number">0.5f</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">notifyBandwidthSample</span>(sampleElapsedTimeMs, sampleBytesTransferred, bitrateEstimate);</span><br><span class="line"></span><br><span class="line">  <span class="comment">//4. 更新 &quot;上一次 dataSpec 传输数据结束&quot; 时间点</span></span><br><span class="line">  <span class="keyword">if</span> (--streamCount &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    sampleStartTimeMs = nowMs;</span><br><span class="line">  &#125;</span><br><span class="line">  sampleBytesTransferred = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>从 <code>onTransferEnd</code> 可看到数据块 <em>dataSpec</em> 是异步传输 。 每一个传输方法都是上锁处理的 。 所以优先结束下载 （并不代表成功下载 ， 有可能是发生异常导致结束）的 <em>dataSpec</em> 会优先返回处理 ， 这个场景几乎和 <code>TCP协议</code> 中 <code>滑动窗口协议</code> 场景一模一样 。</p>
 <p>实际上 ， 每一次 <em>dataSpec</em> 的结束加载都会调用 <code>notifyBandwidthSample</code> 通知当前带宽情况 ， 单并不是每次都会重新预估 。 除非满足一下条件 ：</p>
 <ul>
@@ -436,14 +444,17 @@
 <p>忽略 ExoPlayer 预置比特率阈值 。假如存在一个场景 ： 用户在下载一个视频 ， 一直保持了 1 M/s , 下载了一段时间后网速下降一半 0.5 M/s ， 那么预估的值应该接近 0.5 M/s 。</p>
 </blockquote>
 <p><code>SlidingPercentile#getPercentile</code> 给出了预估值的实现 。</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1. 获取预测值</span></span><br><span class="line">bitrateEstimate = (<span class="keyword">long</span>) slidingPercentile.getPercentile(<span class="number">0.5</span>f)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">float</span> <span class="title">getPercentile</span>(<span class="params"><span class="keyword">float</span> percentile</span>) </span>&#123;</span><br><span class="line">  <span class="comment">//2. 按照样本比特率从小到达排序 。</span></span><br><span class="line">  ensureSortedByValue();</span><br><span class="line">  <span class="keyword">float</span> desiredWeight = percentile * totalWeight;</span><br><span class="line">  <span class="keyword">int</span> accumulatedWeight = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//3. 从低到高开始累积样本 ， 累积的样本权重不超过 1/2 totalWeight ， 取累积最后一个样本的比特率作为带宽预测值 。</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; samples.size(); i++) &#123;</span><br><span class="line">    Sample currentSample = samples.<span class="keyword">get</span>(i);</span><br><span class="line">    accumulatedWeight += currentSample.weight;</span><br><span class="line">    <span class="keyword">if</span> (accumulatedWeight &gt;= desiredWeight) &#123;</span><br><span class="line">      <span class="keyword">return</span> currentSample.<span class="keyword">value</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// Clamp to maximum value or NaN if no values.</span></span><br><span class="line">  <span class="keyword">return</span> samples.isEmpty() ? Float.NaN : samples.<span class="keyword">get</span>(samples.size() - <span class="number">1</span>).<span class="keyword">value</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1. 获取预测值</span></span><br><span class="line">bitrateEstimate = (<span class="built_in">long</span>) slidingPercentile.getPercentile(<span class="number">0.5f</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="built_in">float</span> <span class="title">getPercentile</span>(<span class="params"><span class="built_in">float</span> percentile</span>)</span> &#123;</span><br><span class="line">  <span class="comment">//2. 按照样本比特率从小到达排序 。</span></span><br><span class="line">  ensureSortedByValue();</span><br><span class="line">  <span class="built_in">float</span> desiredWeight = percentile * totalWeight;</span><br><span class="line">  <span class="built_in">int</span> accumulatedWeight = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//3. 从低到高开始累积样本 ， 累积的样本权重不超过 1/2 totalWeight ， 取累积最后一个样本的比特率作为带宽预测值 。</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; samples.size(); i++) &#123;</span><br><span class="line">    Sample currentSample = samples.<span class="keyword">get</span>(i);</span><br><span class="line">    accumulatedWeight += currentSample.weight;</span><br><span class="line">    <span class="keyword">if</span> (accumulatedWeight &gt;= desiredWeight) &#123;</span><br><span class="line">      <span class="keyword">return</span> currentSample.<span class="keyword">value</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// Clamp to maximum value or NaN if no values.</span></span><br><span class="line">  <span class="keyword">return</span> samples.isEmpty() ? Float.NaN : samples.<span class="keyword">get</span>(samples.size() - <span class="number">1</span>).<span class="keyword">value</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>从源码中可知 <em>totalWeight</em> 的值为 2000 ， 按照 <em>sample.weight</em> 代表样本转移量的平方根含义可知 ， 累积的样本总转移量不能超过 2000 ^ 2 B  约等于 3.8 MB 。<br>如果当前下载速度 1M/s ， 每个数据块 <em>dataSpec</em> 大约 0.5 M ， 则队列会存在下列样本 ：</p>
 <figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">sample1</span></span> , sample2 , sample3 ... sample8</span><br></pre></td></tr></table></figure>
+
 <p>如果网速下降为 0.5 M/s ，假定成功加载 4 个 <em>dataSpec</em> ，则队列会变成</p>
-<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">sample1</span></span> , sample2 , sample3 ... sample7 , sample8 , sample9 , sample10</span><br></pre></td></tr></table></figure>
+<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">sample1</span></span> , sample2 , sample3 ... sample7 , sample8 , sample9 , sample10 </span><br></pre></td></tr></table></figure>
+
 <p>按照取一半总权重来获取预估值 ， 则 <em>currentSample</em> 会等于 <em>sample2</em> ，依然是 1 M/s 。<br>如果继续成功加载 4 个 <em>dataSpec</em> ，则队列会变成</p>
-<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">sample1</span></span> , sample2 , sample3 ... sample9 , sample10 , sample11 , sample12</span><br></pre></td></tr></table></figure>
-<p>按照取一半总权重来获取预估值 ， 则 <em>currentSample</em> 会等于 <em>sample12 </em> ，宽带预测为 0.5 M/s 。 </p>
+<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">sample1</span></span> , sample2 , sample3 ... sample9 , sample10 , sample11 , sample12 </span><br></pre></td></tr></table></figure>
+<p>按照取一半总权重来获取预估值 ， 则 <em>currentSample</em> 会等于 *sample12 * ，宽带预测为 0.5 M/s 。 </p>
 
       
     </div>
@@ -464,7 +475,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2018/06/02/多媒体_2018-06-02_ExoPlayer系列二之带宽预测/" title="ExoPlayer系列二之带宽预测">http://yummylau.com/2018/06/02/多媒体_2018-06-02_ExoPlayer系列二之带宽预测/</a>
+    <a href="https://yummylau.cn/2018/06/02/%E5%A4%9A%E5%AA%92%E4%BD%93_2018-06-02_ExoPlayer%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E5%B8%A6%E5%AE%BD%E9%A2%84%E6%B5%8B/" title="ExoPlayer系列二之带宽预测">https://yummylau.cn/2018/06/02/%E5%A4%9A%E5%AA%92%E4%BD%93_2018-06-02_ExoPlayer%E7%B3%BB%E5%88%97%E4%BA%8C%E4%B9%8B%E5%B8%A6%E5%AE%BD%E9%A2%84%E6%B5%8B/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -479,9 +490,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/多媒体/" rel="tag"># 多媒体</a>
-          
             <a href="/tags/Android/" rel="tag"># Android</a>
+          
+            <a href="/tags/%E5%A4%9A%E5%AA%92%E4%BD%93/" rel="tag"># 多媒体</a>
           
             <a href="/tags/ExoPlayer/" rel="tag"># ExoPlayer</a>
           
@@ -496,7 +507,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/01/多媒体_2018-06-01_ExoPlayer系列一之多媒体资源加载/" rel="next" title="ExoPlayer系列一之多媒体加载">
+              <a href="/2018/06/01/%E5%A4%9A%E5%AA%92%E4%BD%93_2018-06-01_ExoPlayer%E7%B3%BB%E5%88%97%E4%B8%80%E4%B9%8B%E5%A4%9A%E5%AA%92%E4%BD%93%E8%B5%84%E6%BA%90%E5%8A%A0%E8%BD%BD/" rel="next" title="ExoPlayer系列一之多媒体加载">
                 <i class="fa fa-chevron-left"></i> ExoPlayer系列一之多媒体加载
               </a>
             
@@ -506,7 +517,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/03/Git_2018-07-03_Git常见指令集/" rel="prev" title="Git常见指令集">
+              <a href="/2018/07/03/Git_2018-07-03_Git%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4%E9%9B%86/" rel="prev" title="Git常见指令集">
                 Git常见指令集 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -577,10 +588,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -655,7 +668,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#BandwidthMeter"><span class="nav-number">1.</span> <span class="nav-text">BandwidthMeter</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#前置知识"><span class="nav-number">1.1.</span> <span class="nav-text">前置知识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#带宽预测实现"><span class="nav-number">1.2.</span> <span class="nav-text">带宽预测实现</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#收集数据"><span class="nav-number">1.2.1.</span> <span class="nav-text">收集数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#样本结构"><span class="nav-number">1.2.2.</span> <span class="nav-text">样本结构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#滑动窗口"><span class="nav-number">1.2.3.</span> <span class="nav-text">滑动窗口</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#预估带宽条件"><span class="nav-number">1.2.4.</span> <span class="nav-text">预估带宽条件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#得到预测值"><span class="nav-number">1.2.5.</span> <span class="nav-text">得到预测值</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#BandwidthMeter"><span class="nav-number">1.</span> <span class="nav-text">BandwidthMeter</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86"><span class="nav-number">1.1.</span> <span class="nav-text">前置知识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%A6%E5%AE%BD%E9%A2%84%E6%B5%8B%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.2.</span> <span class="nav-text">带宽预测实现</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%94%B6%E9%9B%86%E6%95%B0%E6%8D%AE"><span class="nav-number">1.2.1.</span> <span class="nav-text">收集数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%A0%B7%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="nav-number">1.2.2.</span> <span class="nav-text">样本结构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3"><span class="nav-number">1.2.3.</span> <span class="nav-text">滑动窗口</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%A2%84%E4%BC%B0%E5%B8%A6%E5%AE%BD%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.2.4.</span> <span class="nav-text">预估带宽条件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%BE%97%E5%88%B0%E9%A2%84%E6%B5%8B%E5%80%BC"><span class="nav-number">1.2.5.</span> <span class="nav-text">得到预测值</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -675,7 +688,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

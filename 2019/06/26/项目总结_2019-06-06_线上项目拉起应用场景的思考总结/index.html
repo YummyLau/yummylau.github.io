@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Android进阶,">
+  <meta name="keywords" content="Android进阶," />
 
 
 
@@ -77,25 +77,25 @@
 
 
 
-<meta name="description" content="背景最近大神项目在做聊天迁移，把原来云信的聊天模块功能替换成 ngpush支持的聊天模块功能。刚好小版本要上一个 “极速版将军令” 的大神，其功能是在启动的时候通过用户配置切换不同的页面分支。如果用户配置了开启极速版，则拉起 “将军令” 页面。否则拉起主页。 问题来源一开始新增一个 LauncherActivity 用于中转不同场景的切换，原旧版本主页面处理任何意图（intent）的逻辑将需要从">
-<meta name="keywords" content="Android进阶">
+<meta name="description" content="背景最近大神项目在做聊天迁移，把原来云信的聊天模块功能替换成 ngpush支持的聊天模块功能。刚好小版本要上一个 “极速版将军令” 的大神，其功能是在启动的时候通过用户配置切换不同的页面分支。如果用户配置了开启极速版，则拉起 “将军令” 页面。否则拉起主页。 问题来源一开始新增一个 LauncherActivity 用于中转不同场景的切换，原旧版本主页面处理任何意图（intent）的逻辑将需要">
 <meta property="og:type" content="article">
 <meta property="og:title" content="对线上项目拉起应用场景的思考总结">
-<meta property="og:url" content="http://yummylau.com/2019/06/26/项目总结_2019-06-06_线上项目拉起应用场景的思考总结/index.html">
+<meta property="og:url" content="https://yummylau.cn/2019/06/26/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2019-06-06_%E7%BA%BF%E4%B8%8A%E9%A1%B9%E7%9B%AE%E6%8B%89%E8%B5%B7%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E7%9A%84%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="YummyLau">
-<meta property="og:description" content="背景最近大神项目在做聊天迁移，把原来云信的聊天模块功能替换成 ngpush支持的聊天模块功能。刚好小版本要上一个 “极速版将军令” 的大神，其功能是在启动的时候通过用户配置切换不同的页面分支。如果用户配置了开启极速版，则拉起 “将军令” 页面。否则拉起主页。 问题来源一开始新增一个 LauncherActivity 用于中转不同场景的切换，原旧版本主页面处理任何意图（intent）的逻辑将需要从">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-18T14:56:57.922Z">
+<meta property="og:description" content="背景最近大神项目在做聊天迁移，把原来云信的聊天模块功能替换成 ngpush支持的聊天模块功能。刚好小版本要上一个 “极速版将军令” 的大神，其功能是在启动的时候通过用户配置切换不同的页面分支。如果用户配置了开启极速版，则拉起 “将军令” 页面。否则拉起主页。 问题来源一开始新增一个 LauncherActivity 用于中转不同场景的切换，原旧版本主页面处理任何意图（intent）的逻辑将需要">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-06-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.061Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="Android进阶">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="对线上项目拉起应用场景的思考总结">
-<meta name="twitter:description" content="背景最近大神项目在做聊天迁移，把原来云信的聊天模块功能替换成 ngpush支持的聊天模块功能。刚好小版本要上一个 “极速版将军令” 的大神，其功能是在启动的时候通过用户配置切换不同的页面分支。如果用户配置了开启极速版，则拉起 “将军令” 页面。否则拉起主页。 问题来源一开始新增一个 LauncherActivity 用于中转不同场景的切换，原旧版本主页面处理任何意图（intent）的逻辑将需要从">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2019/06/26/项目总结_2019-06-06_线上项目拉起应用场景的思考总结/">
+  <link rel="canonical" href="https://yummylau.cn/2019/06/26/项目总结_2019-06-06_线上项目拉起应用场景的思考总结/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2019/06/26/项目总结_2019-06-06_线上项目拉起应用场景的思考总结/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2019/06/26/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2019-06-06_%E7%BA%BF%E4%B8%8A%E9%A1%B9%E7%9B%AE%E6%8B%89%E8%B5%B7%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E7%9A%84%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/06/26/项目总结_2019-06-06_线上项目拉起应用场景的思考总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/26/项目总结_2019-06-06_线上项目拉起应用场景的思考总结/" itemprop="commentCount"></span>
+                <a href="/2019/06/26/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2019-06-06_%E7%BA%BF%E4%B8%8A%E9%A1%B9%E7%9B%AE%E6%8B%89%E8%B5%B7%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E7%9A%84%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/26/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2019-06-06_%E7%BA%BF%E4%B8%8A%E9%A1%B9%E7%9B%AE%E6%8B%89%E8%B5%B7%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E7%9A%84%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -360,36 +360,36 @@
       
 
       
-        <a id="more"></a>
+        <span id="more"></span>
+
 <h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>最近大神项目在做聊天迁移，把原来云信的聊天模块功能替换成 ngpush支持的聊天模块功能。刚好小版本要上一个 “极速版将军令” 的大神，其功能是在启动的时候通过用户配置切换不同的页面分支。如果用户配置了开启极速版，则拉起 “将军令” 页面。否则拉起主页。</p>
 <h3 id="问题来源"><a href="#问题来源" class="headerlink" title="问题来源"></a>问题来源</h3><p>一开始新增一个 LauncherActivity 用于中转不同场景的切换，原旧版本主页面处理任何意图（intent）的逻辑将需要从 LauncherActivity 进行 “继承” 并处理。这意味着 LauncherActivity 收到任何意图之后处理的逻辑需要从主页面代码中拷贝过来。一些第三方推送比如小米，华为在进程被杀死的情况下进行消息推送拉起，其意图没有携带任何业务逻辑。 另外，当app处于将军令页面时，收到一些推送需要直接跳转到原二级页面，一级主页面此时并没有初始化依赖，这会造成很多隐藏的风险！</p>
 <p>迭代了一年多的大神业务繁多，在小版本上做兼容测试和业务测试发现，在 LauncherActivity 意图处理上存在很多小细节问题。频繁的提单-修改-测试-回归的成本很大。在经过权衡之后，决定不采用 LauncherActivity 方案来解决新版本调整导致的依赖问题，同时细化 intent 类型解决第三方推送通知时，无法监听点击通知栏消息的问题。</p>
 <h3 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h3><p>大部分问题都是由于原 app 已启动主页面就进入初始化流程，不存在任何依赖问题。所以不采用 LauncherActivity，而是在原主页面 onCreate() 在开头判断是否需要拉起 “将军令”。这样的好处，先拉起的将军令可以快速显示，同时主页面流程继续走。一些token校验，登陆信息等都可以通过异步回调返回各自页面。通过这种方案可以维持主页面原来处理意图的逻辑。</p>
 <p>针对第三方推送，华为/小米/魅族等rom都开放了自己的推送sdk，不同的rom经过测试发现： “当 app 没有被启动情况下，通过点击推送构建的通知栏拉起应用的回调不一，有些甚至没有回调。” </p>
 <p>下面是经过测试并总结的一些拉起场景。<br>由于被拉起的主页面的意图一般包含</p>
-<figure class="highlight sqf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="built_in">action</span> android:<span class="built_in">name</span>=<span class="string">"android.intent.action.MAIN"</span> /&gt;</span><br><span class="line">&lt;category android:<span class="built_in">name</span>=<span class="string">"android.intent.category.LAUNCHER"</span> /&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sqf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="built_in">action</span> android:<span class="built_in">name</span>=<span class="string">&quot;android.intent.action.MAIN&quot;</span> /&gt;</span><br><span class="line">&lt;category android:<span class="built_in">name</span>=<span class="string">&quot;android.intent.category.LAUNCHER&quot;</span> /&gt;</span><br></pre></td></tr></table></figure>
 <p>所以所有拉起场景只能通过意图的其他信息来区分，经调试， flag 为目前最有效的切入口。大部分 FLAG_ACTIVITY_* 为页面启动时携带标示。把拉去场景大致区分为：</p>
 <ul>
 <li><p>安装之后点击打开拉起</p>
-  <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FLAG_ACTIVITY_NEW_TASK</span><br><span class="line">FLAG_RECEIVER_FOREGROUND</span><br></pre></td></tr></table></figure>
-</li>
+  <figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FLAG<span class="emphasis">_ACTIVITY_NEW_TASK</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_</span>FOREGROUND</span><br></pre></td></tr></table></figure></li>
 <li><p>点击桌面图标拉起</p>
-  <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">FLAG_ACTIVITY_NEW_TASK</span><br><span class="line">FLAG_RECEIVER_FOREGROUND</span><br><span class="line">FLAG_ACTIVITY_RESET_TASK_IF_NEEDED</span><br><span class="line">FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS</span><br></pre></td></tr></table></figure>
-</li>
+  <figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">FLAG<span class="emphasis">_ACTIVITY_NEW_TASK</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_FOREGROUND</span></span><br><span class="line"><span class="emphasis">FLAG_ACTIVITY_RESET_TASK_IF_NEEDED</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_VISIBLE_TO_INSTANT_</span>APPS</span><br></pre></td></tr></table></figure></li>
 <li><p>第三方推送在app被完全杀死前提下拉起</p>
-  <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">FLAG_ACTIVITY_NEW_TASK</span><br><span class="line">FLAG_RECEIVER_FOREGROUND</span><br><span class="line">FLAG_ACTIVITY_SINGLE_TOP</span><br><span class="line">FLAG_ACTIVITY_REORDER_TO_FRONT</span><br><span class="line">FLAG_RECEIVER_REPLACE_PENDING</span><br></pre></td></tr></table></figure>
-</li>
+  <figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">FLAG<span class="emphasis">_ACTIVITY_NEW_TASK</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_FOREGROUND</span></span><br><span class="line"><span class="emphasis">FLAG_ACTIVITY_SINGLE_TOP</span></span><br><span class="line"><span class="emphasis">FLAG_ACTIVITY_REORDER_TO_FRONT</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_REPLACE_</span>PENDING</span><br></pre></td></tr></table></figure></li>
 <li><p>app在后台被拉起<br>  不同推送sdk可能出现不一样的情况</p>
 <p>  onNewIntent中回调</p>
-  <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FLAG_ACTIVITY_NEW_TASK</span><br><span class="line">FLAG_RECEIVER_FOREGROUND</span><br><span class="line">FLAG_RECEIVER_REPLACE_PENDING</span><br><span class="line">FLAG_ACTIVITY_SINGLE_TOP</span><br><span class="line">FLAG_ACTIVITY_CLEAR_TOP</span><br><span class="line">FLAG_RECEIVER_REPLACE_PENDING</span><br><span class="line">FLAG_RECEIVER_REGISTERED_ONLY_BEFORE_BOOT</span><br></pre></td></tr></table></figure>
+  <figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FLAG<span class="emphasis">_ACTIVITY_NEW_TASK</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_FOREGROUND</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_REPLACE_PENDING</span></span><br><span class="line"><span class="emphasis">FLAG_ACTIVITY_SINGLE_TOP</span></span><br><span class="line"><span class="emphasis">FLAG_ACTIVITY_CLEAR_TOP</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_REPLACE_PENDING</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_REGISTERED_ONLY_BEFORE_</span>BOOT</span><br></pre></td></tr></table></figure>
 <p>  onCreate中回调</p>
-  <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FLAG_ACTIVITY_NEW_TASK</span><br><span class="line">FLAG_RECEIVER_FOREGROUND</span><br><span class="line">FLAG_RECEIVER_REPLACE_PENDING</span><br><span class="line">FLAG_ACTIVITY_SINGLE_TOP</span><br><span class="line">FLAG_RECEIVER_FROM_SHELL</span><br><span class="line">FLAG_ACTIVITY_BROUGHT_TO_FRONT</span><br><span class="line">FLAG_ACTIVITY_REORDER_TO_FRONT</span><br></pre></td></tr></table></figure>
+  <figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FLAG<span class="emphasis">_ACTIVITY_NEW_TASK</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_FOREGROUND</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_REPLACE_PENDING</span></span><br><span class="line"><span class="emphasis">FLAG_ACTIVITY_SINGLE_TOP</span></span><br><span class="line"><span class="emphasis">FLAG_RECEIVER_FROM_SHELL</span></span><br><span class="line"><span class="emphasis">FLAG_ACTIVITY_BROUGHT_TO_FRONT</span></span><br><span class="line"><span class="emphasis">FLAG_ACTIVITY_REORDER_TO_</span>FRONT</span><br></pre></td></tr></table></figure>
+<p>从上述4个场景中克制，任意一次拉起都会同时包含 <code>FLAG_ACTIVITY_NEW_TASK</code> 和 <code>FLAG_RECEIVER_FOREGROUND</code> 这两个 flag.而符合这两个条件的优先判断是否同时包含 <code>FLAG_ACTIVITY_RESET_TASK_IF_NEEDED</code> 和 <code>FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS</code>。其次再判断被动冷启动，和被动热启动。下面封装了一段代码可以直接使用(持续优化更新).</p>
 </li>
 </ul>
-<p>从上述4个场景中克制，任意一次拉起都会同时包含 <code>FLAG_ACTIVITY_NEW_TASK</code> 和 <code>FLAG_RECEIVER_FOREGROUND</code> 这两个 flag.而符合这两个条件的优先判断是否同时包含 <code>FLAG_ACTIVITY_RESET_TASK_IF_NEEDED</code> 和 <code>FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS</code>。其次再判断被动冷启动，和被动热启动。下面封装了一段代码可以直接使用(持续优化更新).</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> AppStartType &#123;</span><br><span class="line">    NONE,               <span class="comment">//不属于拉起</span></span><br><span class="line">    AFTER_INSTALL,      <span class="comment">//安装后启动</span></span><br><span class="line">    LAUNCHER,           <span class="comment">//Launcher启动</span></span><br><span class="line">    COOL_BE_OPEN,       <span class="comment">//被动冷拉</span></span><br><span class="line">    HOT_BE_OPEN         <span class="comment">//被动热拉</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@NonNull</span></span><br><span class="line"><span class="keyword">public</span> static AppStartType parseStartType(Intent intent) &#123;</span><br><span class="line">    parseIntent(intent, <span class="string">"打印intent"</span>);</span><br><span class="line">    <span class="keyword">if</span> (intent != <span class="literal">null</span>) &#123;</span><br><span class="line">        int flags = intent.getFlags();</span><br><span class="line">        <span class="keyword">if</span> ((flags &amp; FLAG_ACTIVITY_NEW_TASK) == FLAG_ACTIVITY_NEW_TASK &amp;&amp; (flags &amp; FLAG_RECEIVER_FOREGROUND) == FLAG_RECEIVER_FOREGROUND) &#123;</span><br><span class="line">            flags = flags ^ FLAG_ACTIVITY_NEW_TASK ^ FLAG_RECEIVER_FOREGROUND;</span><br><span class="line">            <span class="keyword">if</span> (flags != <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> ((flags &amp; FLAG_ACTIVITY_RESET_TASK_IF_NEEDED) == FLAG_ACTIVITY_RESET_TASK_IF_NEEDED &amp;&amp; (flags &amp; FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS) == FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS) &#123;</span><br><span class="line">                    <span class="keyword">return</span> AppStartType.LAUNCHER;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> ((flags &amp; FLAG_RECEIVER_REPLACE_PENDING) == FLAG_RECEIVER_REPLACE_PENDING) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (((flags &amp; FLAG_ACTIVITY_CLEAR_TOP) == FLAG_ACTIVITY_CLEAR_TOP &amp;&amp; (flags &amp; <span class="number">0x04000000</span>) == <span class="number">0x04000000</span>) || (flags &amp; <span class="number">0x00400000</span>) == <span class="number">0x00400000</span>) &#123;</span><br><span class="line">                        <span class="keyword">return</span> AppStartType.HOT_BE_OPEN;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">if</span> ((flags &amp; FLAG_ACTIVITY_REORDER_TO_FRONT) == FLAG_ACTIVITY_REORDER_TO_FRONT) &#123;</span><br><span class="line">                        <span class="keyword">return</span> AppStartType.COOL_BE_OPEN;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">return</span> AppStartType.NONE;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">return</span> AppStartType.NONE;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> AppStartType.AFTER_INSTALL;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> AppStartType.NONE;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> AppStartType &#123;</span><br><span class="line">    NONE,               <span class="comment">//不属于拉起</span></span><br><span class="line">    AFTER_INSTALL,      <span class="comment">//安装后启动</span></span><br><span class="line">    LAUNCHER,           <span class="comment">//Launcher启动</span></span><br><span class="line">    COOL_BE_OPEN,       <span class="comment">//被动冷拉</span></span><br><span class="line">    HOT_BE_OPEN         <span class="comment">//被动热拉</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@NonNull</span></span><br><span class="line"><span class="keyword">public</span> static AppStartType parseStartType(Intent intent) &#123;</span><br><span class="line">    parseIntent(intent, <span class="string">&quot;打印intent&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (intent != <span class="literal">null</span>) &#123;</span><br><span class="line">        int flags = intent.getFlags();</span><br><span class="line">        <span class="keyword">if</span> ((flags &amp; FLAG_ACTIVITY_NEW_TASK) == FLAG_ACTIVITY_NEW_TASK &amp;&amp; (flags &amp; FLAG_RECEIVER_FOREGROUND) == FLAG_RECEIVER_FOREGROUND) &#123;</span><br><span class="line">            flags = flags ^ FLAG_ACTIVITY_NEW_TASK ^ FLAG_RECEIVER_FOREGROUND;</span><br><span class="line">            <span class="keyword">if</span> (flags != <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> ((flags &amp; FLAG_ACTIVITY_RESET_TASK_IF_NEEDED) == FLAG_ACTIVITY_RESET_TASK_IF_NEEDED &amp;&amp; (flags &amp; FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS) == FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS) &#123;</span><br><span class="line">                    <span class="keyword">return</span> AppStartType.LAUNCHER;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> ((flags &amp; FLAG_RECEIVER_REPLACE_PENDING) == FLAG_RECEIVER_REPLACE_PENDING) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (((flags &amp; FLAG_ACTIVITY_CLEAR_TOP) == FLAG_ACTIVITY_CLEAR_TOP &amp;&amp; (flags &amp; <span class="number">0x04000000</span>) == <span class="number">0x04000000</span>) || (flags &amp; <span class="number">0x00400000</span>) == <span class="number">0x00400000</span>) &#123;</span><br><span class="line">                        <span class="keyword">return</span> AppStartType.HOT_BE_OPEN;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">if</span> ((flags &amp; FLAG_ACTIVITY_REORDER_TO_FRONT) == FLAG_ACTIVITY_REORDER_TO_FRONT) &#123;</span><br><span class="line">                        <span class="keyword">return</span> AppStartType.COOL_BE_OPEN;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">return</span> AppStartType.NONE;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">return</span> AppStartType.NONE;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> AppStartType.AFTER_INSTALL;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> AppStartType.NONE;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>值得注意的是，被动热拉在拉起主页面的时候，不同sdk的回调不一样，意图的判断可能出现在 onCreate() 或者 onNewIntent().</p>
-<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">protected</span> <span class="function"><span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">    <span class="comment">// 防止安装完直接点击打开然后Home键会到桌面再点击图标导致的多个实例</span></span><br><span class="line">    <span class="comment">// (getIntent().getFlags() &amp; Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) != 0</span></span><br><span class="line">    <span class="keyword">if</span> (!isTaskRoot()) &#123;</span><br><span class="line">        ActivityUtils.AppStartType startType = ActivityUtils.parseStartType(getIntent());</span><br><span class="line">        <span class="keyword">if</span>(startType == ActivityUtils.AppStartType.HOT_BE_OPEN)&#123;</span><br><span class="line">         		<span class="comment">//处理业务逻辑</span></span><br><span class="line">        &#125;</span><br><span class="line">        finish();</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    ......</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Override</span></span><br><span class="line"><span class="keyword">protected</span> <span class="function"><span class="keyword">void</span> <span class="title">onNewIntent</span><span class="params">(Intent intent)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.onNewIntent(intent);</span><br><span class="line">    ActivityUtils.AppStartType startType = ActivityUtils.parseStartType(getIntent());</span><br><span class="line">    <span class="keyword">if</span>(startType == ActivityUtils.AppStartType.HOT_BE_OPEN)&#123;</span><br><span class="line">      		<span class="comment">//处理业务逻辑</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onCreate</span><span class="params">(Bundle savedInstanceState)</span> &#123;</span><br><span class="line">    <span class="built_in">super</span>.onCreate(savedInstanceState);</span><br><span class="line">    <span class="comment">// 防止安装完直接点击打开然后Home键会到桌面再点击图标导致的多个实例</span></span><br><span class="line">    <span class="comment">// (getIntent().getFlags() &amp; Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) != 0</span></span><br><span class="line">    <span class="keyword">if</span> (!isTaskRoot()) &#123;</span><br><span class="line">        ActivityUtils.<span class="type">AppStartType</span> <span class="variable">startType</span> <span class="operator">=</span> ActivityUtils.parseStartType(getIntent());</span><br><span class="line">        <span class="keyword">if</span>(startType == ActivityUtils.AppStartType.HOT_BE_OPEN)&#123;</span><br><span class="line">         		<span class="comment">//处理业务逻辑</span></span><br><span class="line">        &#125;</span><br><span class="line">        finish();</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    ......</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line">     <span class="meta">@Override</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onNewIntent</span><span class="params">(Intent intent)</span> &#123;</span><br><span class="line">    <span class="built_in">super</span>.onNewIntent(intent);</span><br><span class="line">    ActivityUtils.<span class="type">AppStartType</span> <span class="variable">startType</span> <span class="operator">=</span> ActivityUtils.parseStartType(getIntent());</span><br><span class="line">    <span class="keyword">if</span>(startType == ActivityUtils.AppStartType.HOT_BE_OPEN)&#123;</span><br><span class="line">      		<span class="comment">//处理业务逻辑</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;            </span><br></pre></td></tr></table></figure>
+
 <h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>上述的问题是在协同修改极速版本缺陷的时候遇到的，这类问题以前就存在于项目中。在面临新业务加入的时候问题得到放大不得不解决，组内的其他同事也尝试过解决未果。最后单落在我这里，追踪到推送 sdk 文档定位到最终是经过广播传递意图来启动的。既然是有意图，那必定可以解析意图来寻找多个场景的差异化。解析了 Action/Bundle/Categories 无法找到差异化，这也是以前同事的做法。但是多场景拉起，经过系统的分发之后必定应该存在能区分场景差异的内容，最终在所有接收意图的场景下解析所有 Flags，并分析每个场景的 Flags差异及参考源码注释解析来尝试，最终不负一番苦心 Fix 了这个历史痛点。</p>
 <p>想想上个让我彻夜难眠的 BUG 还是去年年末。一直觉得 “系统是人设计的，代码是人写的，你想到的问题设计者应该也能想到，既然如此，问题出在代码，答案也应该在代码里面”。这个想法是我写代码以来处理任何问题的背后念头。有些问题，可能只是自己的知识面不足，又或许是解决问题的方向一开始就不对，只要有足够的时间给我思考，必定能解决遇到的难题！</p>
 
@@ -412,7 +412,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2019/06/26/项目总结_2019-06-06_线上项目拉起应用场景的思考总结/" title="对线上项目拉起应用场景的思考总结">http://yummylau.com/2019/06/26/项目总结_2019-06-06_线上项目拉起应用场景的思考总结/</a>
+    <a href="https://yummylau.cn/2019/06/26/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2019-06-06_%E7%BA%BF%E4%B8%8A%E9%A1%B9%E7%9B%AE%E6%8B%89%E8%B5%B7%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E7%9A%84%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/" title="对线上项目拉起应用场景的思考总结">https://yummylau.cn/2019/06/26/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2019-06-06_%E7%BA%BF%E4%B8%8A%E9%A1%B9%E7%9B%AE%E6%8B%89%E8%B5%B7%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E7%9A%84%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -427,7 +427,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android进阶/" rel="tag"># Android进阶</a>
+            <a href="/tags/Android%E8%BF%9B%E9%98%B6/" rel="tag"># Android进阶</a>
           
         </div>
       
@@ -440,7 +440,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/18/工具_2019-06-18_搬瓦工更换IP/" rel="next" title="拯救搬瓦工 ip 之路">
+              <a href="/2019/06/18/%E5%B7%A5%E5%85%B7_2019-06-18_%E6%90%AC%E7%93%A6%E5%B7%A5%E6%9B%B4%E6%8D%A2IP/" rel="next" title="拯救搬瓦工 ip 之路">
                 <i class="fa fa-chevron-left"></i> 拯救搬瓦工 ip 之路
               </a>
             
@@ -450,7 +450,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/10/10/开源项目_2019:10:10_组件化插件/" rel="prev" title="开源项目之 组件化插件框架">
+              <a href="/2019/10/10/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE_2019:10:10_%E7%BB%84%E4%BB%B6%E5%8C%96%E6%8F%92%E4%BB%B6/" rel="prev" title="开源项目之 组件化插件框架">
                 开源项目之 组件化插件框架 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -521,10 +521,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -599,7 +601,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题来源"><span class="nav-number">2.</span> <span class="nav-text">问题来源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决问题"><span class="nav-number">3.</span> <span class="nav-text">解决问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思考"><span class="nav-number">4.</span> <span class="nav-text">思考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%9D%A5%E6%BA%90"><span class="nav-number">2.</span> <span class="nav-text">问题来源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">解决问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%80%83"><span class="nav-number">4.</span> <span class="nav-text">思考</span></a></li></ol></div>
             
 
           </div>
@@ -619,7 +621,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

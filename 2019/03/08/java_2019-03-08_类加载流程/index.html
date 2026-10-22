@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="类加载,Java,">
+  <meta name="keywords" content="类加载,Java," />
 
 
 
@@ -78,18 +78,19 @@
 
 
 <meta name="description" content="阅读本文你能收获到  了解 JVM 什么时候会去加载一个类 了解类的生命周期  加载类时机  程序执行过程中遇到以下场景时, 目的类没有被加载时会尝试加载目的类  遇到 new， getstatic， putstatic， invokestatic 4个指令 使用 java.lang.reflect 包的方法对类进行反射调用 初始化一个类如果其父类未初始化，则触发父类初始化 虚拟机启动时用户指定一">
-<meta name="keywords" content="类加载,Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="窥探 Java 类加载">
-<meta property="og:url" content="http://yummylau.com/2019/03/08/java_2019-03-08_类加载流程/index.html">
+<meta property="og:url" content="https://yummylau.cn/2019/03/08/java_2019-03-08_%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B/index.html">
 <meta property="og:site_name" content="YummyLau">
 <meta property="og:description" content="阅读本文你能收获到  了解 JVM 什么时候会去加载一个类 了解类的生命周期  加载类时机  程序执行过程中遇到以下场景时, 目的类没有被加载时会尝试加载目的类  遇到 new， getstatic， putstatic， invokestatic 4个指令 使用 java.lang.reflect 包的方法对类进行反射调用 初始化一个类如果其父类未初始化，则触发父类初始化 虚拟机启动时用户指定一">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale">
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/java/class_loading_1.png">
-<meta property="og:updated_time" content="2019-03-10T05:35:03.476Z">
+<meta property="article:published_time" content="2019-03-07T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:17:50.685Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="类加载">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="窥探 Java 类加载">
-<meta name="twitter:description" content="阅读本文你能收获到  了解 JVM 什么时候会去加载一个类 了解类的生命周期  加载类时机  程序执行过程中遇到以下场景时, 目的类没有被加载时会尝试加载目的类  遇到 new， getstatic， putstatic， invokestatic 4个指令 使用 java.lang.reflect 包的方法对类进行反射调用 初始化一个类如果其父类未初始化，则触发父类初始化 虚拟机启动时用户指定一">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/java/class_loading_1.png">
 
 
@@ -97,7 +98,7 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -120,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2019/03/08/java_2019-03-08_类加载流程/">
+  <link rel="canonical" href="https://yummylau.cn/2019/03/08/java_2019-03-08_类加载流程/"/>
 
 
 
@@ -136,7 +137,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -154,7 +155,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -184,7 +185,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -194,7 +195,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -204,7 +205,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -214,7 +215,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -224,7 +225,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -263,11 +264,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2019/03/08/java_2019-03-08_类加载流程/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2019/03/08/java_2019-03-08_%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -303,7 +304,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -333,8 +334,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/03/08/java_2019-03-08_类加载流程/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/08/java_2019-03-08_类加载流程/" itemprop="commentCount"></span>
+                <a href="/2019/03/08/java_2019-03-08_%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/08/java_2019-03-08_%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -381,7 +382,9 @@
 <h3 id="2">类生命周期</h3>
 
 <p>类加载流程大致经历以下阶段，下图为流程图。 </p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/java/class_loading_1.png" width="1200" height="500" alt="图片名称" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/java/class_loading_1.png" width = "1200" height = "500" alt="图片名称" align=center />
+
+
 <h4 id="2_1"> Loading </h4>
 
 <blockquote>
@@ -389,7 +392,7 @@
 </blockquote>
 <p>Loading （加载）流程大致经历以下步骤</p>
 <ol>
-<li>通过一个类的全限定名来获取定义此类的二进制字节流，字节流可来源于任何地方，不局限于从Java源码编译而来;</li>
+<li> 通过一个类的全限定名来获取定义此类的二进制字节流，字节流可来源于任何地方，不局限于从Java源码编译而来;</li>
 <li>将这个字节流所代表的静态存储结构转化为方法区的运行时数据结构;</li>
 <li>在内存众生成一个代表该类的java.lang.Class对象，作为方法区这个类的各种数据访问入口。</li>
 </ol>
@@ -407,7 +410,7 @@
 <p>整个校验流程大致分为4个部分</p>
 <ol>
 <li><p>文件格式验证</p>
-<p> 主要用于校验字节流是否符合Class文件格式的规范，这部分可以参考 <a href="http://yummylau.com/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E5%86%85%E5%AE%B9%E8%A1%A8%E6%A0%BC/#1">Class文件结构表</a> 这篇文章。校验内容也包含“是否以魔术OxCAFEBABE开头”，“主,次版本号是否在当前虚拟机处理范围之内”…等等。<br> 字节码只有经过这个阶段的校验后才会进入方法区存储结构。</p>
+<p> 主要用于校验字节流是否符合Class文件格式的规范，这部分可以参考 <a href="https://yummylau.cn/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E5%86%85%E5%AE%B9%E8%A1%A8%E6%A0%BC/#1">Class文件结构表</a> 这篇文章。校验内容也包含“是否以魔术OxCAFEBABE开头”，“主,次版本号是否在当前虚拟机处理范围之内”…等等。<br> 字节码只有经过这个阶段的校验后才会进入方法区存储结构。</p>
 </li>
 <li><p>元数据验证</p>
 <p> 主要用于校验类的元数据信息语义是否正常，保证不存在不符合Java语言规范的元数据信息。比如类是否有父类（除了java.lang.Object之外都需要）,如果不是抽象类是否实现了其父类或者接口中要求自类覆盖实现的所有方法等。</p>
@@ -425,8 +428,9 @@
 <p>作用 ：为类变量分配内存并设置类变量初始值</p>
 </blockquote>
 <p>比如声明以下静态变量</p>
-<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> A = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> B = <span class="number">2</span></span><br></pre></td></tr></table></figure>
-<p>在准备阶段为 <strong>A</strong> 申请内存之后初始化值为 0，其真正赋值1要在类构造器<clinit>()中完成。而 <strong>B</strong> 就不一样了，在编译时 <em>javac</em> 就把为 <strong>B</strong> 生成 <strong>ConstantValue</strong> 属性，其值为 2（字段属性表）并在准备阶段赋值给 <strong>B</strong> .</clinit></p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">static</span> <span class="type">int</span> A = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="type">static</span> <span class="keyword">final</span> <span class="type">int</span> B = <span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<p>在准备阶段为 <strong>A</strong> 申请内存之后初始化值为 0，其真正赋值1要在类构造器<clinit>()中完成。而 <strong>B</strong> 就不一样了，在编译时 <em>javac</em> 就把为 <strong>B</strong> 生成 <strong>ConstantValue</strong> 属性，其值为 2（字段属性表）并在准备阶段赋值给 <strong>B</strong> .</p>
 <h5 id="2_2_3"> Resolution </h5>
 
 <blockquote>
@@ -443,7 +447,7 @@
 <p>作用：执行类中定义的Java代码，根据程序定义的计划区初始化类变量和其他资源。</p>
 </blockquote>
 <p>编译器自动收集类中所有类变量赋值行为和静态语句块，合并产生 &lt; clinit &gt;() 方法，其方法内语句的执行顺序和源文件中出现的顺序一致。虚拟机保证这份代码在单/多线程环境中被正确且执行一次，在子类的 &lt; clinit &gt;() 调用之前父类的 &lt; clinit &gt;() 已经被调用。</p>
-<p>值得一提的是，接口也会生成 &lt; clinit &gt;()，但和类不同，接口执行 &lt; clinit &gt;() 不需要先执行父接口的<clinit>()，只有父接口中定义的变量使用时父接口才会初始化 &lt; clinit &gt;()。&lt; clinit &gt;() 是一个线程安全的操作，能保证多线程环境下被正确地加锁，同步。如果多个线程同时初始化一个类，则只有一个线程去执行并且其他线程需要阻塞等待。</clinit></p>
+<p>值得一提的是，接口也会生成 &lt; clinit &gt;()，但和类不同，接口执行 &lt; clinit &gt;() 不需要先执行父接口的<clinit>()，只有父接口中定义的变量使用时父接口才会初始化 &lt; clinit &gt;()。&lt; clinit &gt;() 是一个线程安全的操作，能保证多线程环境下被正确地加锁，同步。如果多个线程同时初始化一个类，则只有一个线程去执行并且其他线程需要阻塞等待。</p>
 <h4 id="2_4"> Using </h4>
 
 <p>类的使用阶段即类的 Class 对象存在之后到被卸载之前的这段时间。 这个阶段程序可能产生大量的类的实例对象并执行对象行为。 哪怕内存中没有任何类的实例对象也不一定会被卸载, 卸载的时机见 <a href="#2_5">Unloading</a> 篇章。</p>
@@ -463,7 +467,7 @@
 <h3 id="3">参考文章</h3>
 
 <ul>
-<li><a href="https://my.oschina.net/xianggao/blog/367822" target="_blank" rel="noopener">Class热替换与卸载</a></li>
+<li><a href="https://my.oschina.net/xianggao/blog/367822">Class热替换与卸载</a></li>
 <li>深入理解Java虚拟机：JVM高级特定及最佳实践 一书</li>
 </ul>
 
@@ -486,7 +490,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2019/03/08/java_2019-03-08_类加载流程/" title="窥探 Java 类加载">http://yummylau.com/2019/03/08/java_2019-03-08_类加载流程/</a>
+    <a href="https://yummylau.cn/2019/03/08/java_2019-03-08_%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B/" title="窥探 Java 类加载">https://yummylau.cn/2019/03/08/java_2019-03-08_%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -501,7 +505,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/类加载/" rel="tag"># 类加载</a>
+            <a href="/tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD/" rel="tag"># 类加载</a>
           
             <a href="/tags/Java/" rel="tag"># Java</a>
           
@@ -516,7 +520,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/01/java_2019-03-01_类加载器/" rel="next" title="聊一聊 " 类加载器"">
+              <a href="/2019/03/01/java_2019-03-01_%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8/" rel="next" title="聊一聊 "类加载器"">
                 <i class="fa fa-chevron-left"></i> 聊一聊 "类加载器"
               </a>
             
@@ -526,7 +530,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/15/源码解析_alpha的研究与改进/" rel="prev" title="关于 Android 异步启动框架 alpha 的思考">
+              <a href="/2019/03/15/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_alpha%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%94%B9%E8%BF%9B/" rel="prev" title="关于 Android 异步启动框架 alpha 的思考">
                 关于 Android 异步启动框架 alpha 的思考 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -597,10 +601,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -695,7 +701,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

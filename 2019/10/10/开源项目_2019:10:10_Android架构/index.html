@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="我的开源,">
+  <meta name="keywords" content="我的开源," />
 
 
 
@@ -78,23 +78,23 @@
 
 
 <meta name="description" content="该Sample主要是总结当前自己项目上的经验及学习Google Architecture Components方案进行项目尝试。目前已有部分线上App校验过该Sample的运行逻辑，完全可行，适合App快速开发，并结合自身的库及用户需求自定扩展。由于Android项目架构多样化，技术迭代更新很快，该项目会持续集成优化主流技术，并在线上App校验可行的情况下更新项目。希望有经验的开发者能指出不足，一">
-<meta name="keywords" content="我的开源">
 <meta property="og:type" content="article">
 <meta property="og:title" content="开源项目之 Android最新组件架构">
-<meta property="og:url" content="http://yummylau.com/2019/10/10/开源项目_2019:10:10_Android架构/index.html">
+<meta property="og:url" content="https://yummylau.cn/2019/10/10/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE_2019:10:10_Android%E6%9E%B6%E6%9E%84/index.html">
 <meta property="og:site_name" content="YummyLau">
 <meta property="og:description" content="该Sample主要是总结当前自己项目上的经验及学习Google Architecture Components方案进行项目尝试。目前已有部分线上App校验过该Sample的运行逻辑，完全可行，适合App快速开发，并结合自身的库及用户需求自定扩展。由于Android项目架构多样化，技术迭代更新很快，该项目会持续集成优化主流技术，并在线上App校验可行的情况下更新项目。希望有经验的开发者能指出不足，一">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale">
 <meta property="og:image" content="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_0.png?raw=true">
 <meta property="og:image" content="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_1.jpg?raw=true">
 <meta property="og:image" content="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_2.jpg?raw=true">
 <meta property="og:image" content="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_3.jpg?raw=true">
 <meta property="og:image" content="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/sample.png?raw=true">
 <meta property="og:image" content="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/android_modular_architeture.png?raw=true">
-<meta property="og:updated_time" content="2019-10-18T14:56:57.918Z">
+<meta property="article:published_time" content="2019-10-09T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.053Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="我的开源">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开源项目之 Android最新组件架构">
-<meta name="twitter:description" content="该Sample主要是总结当前自己项目上的经验及学习Google Architecture Components方案进行项目尝试。目前已有部分线上App校验过该Sample的运行逻辑，完全可行，适合App快速开发，并结合自身的库及用户需求自定扩展。由于Android项目架构多样化，技术迭代更新很快，该项目会持续集成优化主流技术，并在线上App校验可行的情况下更新项目。希望有经验的开发者能指出不足，一">
 <meta name="twitter:image" content="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_0.png?raw=true">
 
 
@@ -102,7 +102,7 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -125,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2019/10/10/开源项目_2019:10:10_Android架构/">
+  <link rel="canonical" href="https://yummylau.cn/2019/10/10/开源项目_2019:10:10_Android架构/"/>
 
 
 
@@ -141,7 +141,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -159,7 +159,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -189,7 +189,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -199,7 +199,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -209,7 +209,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -219,7 +219,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -229,7 +229,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -268,11 +268,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2019/10/10/开源项目_2019:10:10_Android架构/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2019/10/10/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE_2019:10:10_Android%E6%9E%B6%E6%9E%84/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -308,7 +308,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -338,8 +338,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/10/10/开源项目_2019:10:10_Android架构/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/10/开源项目_2019:10:10_Android架构/" itemprop="commentCount"></span>
+                <a href="/2019/10/10/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE_2019:10:10_Android%E6%9E%B6%E6%9E%84/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/10/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE_2019:10:10_Android%E6%9E%B6%E6%9E%84/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -367,9 +367,11 @@
       
 
       
-        <p>该Sample主要是总结当前自己项目上的经验及学习<a href="https://developer.android.com/arch" target="_blank" rel="noopener">Google Architecture Components</a>方案进行项目尝试。<br>目前已有部分线上App校验过该Sample的运行逻辑，完全可行，适合App快速开发，并结合自身的库及用户需求自定扩展。<br>由于Android项目架构多样化，技术迭代更新很快，该项目会持续集成优化主流技术，并在线上App校验可行的情况下更新项目。希望有经验的开发者能指出不足，一起学习 :relaxed: :relaxed:</p>
+        <p>该Sample主要是总结当前自己项目上的经验及学习<a href="https://developer.android.com/arch">Google Architecture Components</a>方案进行项目尝试。<br>目前已有部分线上App校验过该Sample的运行逻辑，完全可行，适合App快速开发，并结合自身的库及用户需求自定扩展。<br>由于Android项目架构多样化，技术迭代更新很快，该项目会持续集成优化主流技术，并在线上App校验可行的情况下更新项目。希望有经验的开发者能指出不足，一起学习 :relaxed: :relaxed:</p>
 <h3 id="Android-组件化架构实践"><a href="#Android-组件化架构实践" class="headerlink" title="Android 组件化架构实践"></a>Android 组件化架构实践</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">架构原则：内部的业务逻辑与外部无关，独立测试时不需要加载外部依赖</span><br><span class="line">架构特性：易于维护，方便测试，高内聚，低耦合</span><br><span class="line">工程结构：模块化开发</span><br><span class="line">应用结构：组件化</span><br><span class="line">协同工具：git相关</span><br><span class="line">持续集成：<span class="keyword">jenkins </span>+ ci</span><br></pre></td></tr></table></figure>
-<h4 id="工程结构"><a href="#工程结构" class="headerlink" title="工程结构"></a>工程结构</h4><p><img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_0.png?raw=true" alt="component_all" align="center"></p>
+
+<h4 id="工程结构"><a href="#工程结构" class="headerlink" title="工程结构"></a>工程结构</h4><img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_0.png?raw=true"  alt="component_all" align=center />
+
 <p>按照业务把工程划分以下几类模块</p>
 <ul>
 <li><p><strong>library层</strong> </p>
@@ -384,36 +386,42 @@
 <li><p><strong>app层</strong><br>   应用入口，聚合多个业务模块，比如主端或者调试程序</p>
 </li>
 </ul>
-<h4 id="应用结构"><a href="#应用结构" class="headerlink" title="应用结构"></a>应用结构</h4><p>基于完全组件化开发, 协同 gradle plugin 插件进行工程约束辅助. <a href="https://github.com/YummyLau/ComponentPlugin" target="_blank" rel="noopener">组件化插件</a></p>
+<h4 id="应用结构"><a href="#应用结构" class="headerlink" title="应用结构"></a>应用结构</h4><p>基于完全组件化开发, 协同 gradle plugin 插件进行工程约束辅助. <a href="https://github.com/YummyLau/ComponentPlugin">组件化插件</a></p>
 <ul>
 <li>支持组件代码完全隔离，废除 router 硬编码跳转，采用面向接口编程</li>
 <li>支持组件循环依赖（A组件依赖B组件sdk，B组件依赖A组件sdk）</li>
 <li>便捷集成调试，支持单一模块调试多组件</li>
 <li>接入成本极低，只需要导入配置，同时申明各组件sdk资源</li>
 </ul>
-<p>把常规 module 转化成 组件<br><img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_1.jpg?raw=true" alt="component_all" align="center"></p>
-<p>打破常规 module 依赖，支持组件循环依赖<br><img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_2.jpg?raw=true" alt="component_all" align="center"></p>
-<p>开发时面向接口编程，打包时面向实现编译<br><img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_3.jpg?raw=true" alt="component_all" align="center"></p>
+<p>把常规 module 转化成 组件<br><img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_1.jpg?raw=true"  alt="component_all" align=center /></p>
+<p>打破常规 module 依赖，支持组件循环依赖<br><img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_2.jpg?raw=true"  alt="component_all" align=center /></p>
+<p>开发时面向接口编程，打包时面向实现编译<br><img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/component_build_3.jpg?raw=true"  alt="component_all" align=center /></p>
 <p>插件同时支持java/kotlin，插件 sample 如下</p>
-<p><img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/sample.png?raw=true" width="270" height="500" align="center"></p>
+<img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/sample.png?raw=true"  width = "270" height = "500" align=center />
+
 <h4 id="Demo集成（持续完成更新…）"><a href="#Demo集成（持续完成更新…）" class="headerlink" title="Demo集成（持续完成更新…）"></a>Demo集成（持续完成更新…）</h4><ul>
 <li><strong>library层</strong> </li>
 </ul>
-<figure class="highlight erlang-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">libBase：基础公有类/工具库</span><br><span class="line">libWebview：H5能力库</span><br><span class="line">libPermission：权限管理库</span><br><span class="line">libGeo：基于百度地图sdk封装的地理定位库</span><br><span class="line">libNet：基于okhttp3+retrofit2封装的网络库</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">libBase：基础公有类/工具库</span><br><span class="line">libWebview：<span class="selector-tag">H5</span>能力库</span><br><span class="line">libPermission：权限管理库</span><br><span class="line">libGeo：基于百度地图sdk封装的地理定位库</span><br><span class="line">libNet：基于okhttp3+retrofit2封装的网络库</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><strong>service层</strong> </li>
 </ul>
-<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">serviceAccount：应用账号模块</span><br><span class="line">serviceNet：应用网络模块，涉及接口解析，host配置，线程池管理等</span><br><span class="line">serviceShare：分享模块</span><br><span class="line">serviceSkin：换肤模块</span><br><span class="line">serviceMedia：多媒体模块，包括图片展示，G<span class="keyword">if</span>播放管理，视频播放管理等</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">serviceAccount：应用账号模块</span><br><span class="line">serviceNet：应用网络模块，涉及接口解析，host配置，线程池管理等</span><br><span class="line">serviceShare：分享模块</span><br><span class="line">serviceSkin：换肤模块</span><br><span class="line">serviceMedia：多媒体模块，包括图片展示，Gif播放管理，视频播放管理等</span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>component层</strong> </li>
 </ul>
-<figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">compB<span class="keyword">log</span>：wanAndroid 博文</span><br><span class="line">compProject：wanAndroid 项目</span><br><span class="line">compPaccounts：wanAndroid 公众号</span><br><span class="line">compSystem：wanAndroid 体系</span><br><span class="line">compMine：wanAndroid 我的</span><br></pre></td></tr></table></figure>
+<figure class="highlight nsis"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">compBlog：wanAndroid 博文</span><br><span class="line">compProject：wanAndroid 项目</span><br><span class="line">compPaccounts：wanAndroid 公众号</span><br><span class="line">comp<span class="params">System</span>：wanAndroid 体系</span><br><span class="line">compMine：wanAndroid 我的</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><strong>app层</strong></li>
 </ul>
 <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">app:</span> 主端 wanAndroid 客户端</span><br><span class="line">debugModule： 集成调试应用</span><br></pre></td></tr></table></figure>
+
 <p>wanAndroid sample 如下</p>
-<p><img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/android_modular_architeture.png?raw=true" width="270" height="500" align="center"></p>
+<img src="https://github.com/YummyLau/AndroidModularArchiteture/blob/master/doc/android_modular_architeture.png?raw=true"  width = "270" height = "500" align=center />
+
+
 <h3 id="Android-技术栈（实现）"><a href="#Android-技术栈（实现）" class="headerlink" title="Android 技术栈（实现）"></a>Android 技术栈（实现）</h3><h4 id="技能栈"><a href="#技能栈" class="headerlink" title="技能栈"></a>技能栈</h4><ul>
 <li><p>硬性要求（至少）</p>
 <ul>
@@ -468,7 +476,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2019/10/10/开源项目_2019:10:10_Android架构/" title="开源项目之 Android最新组件架构">http://yummylau.com/2019/10/10/开源项目_2019:10:10_Android架构/</a>
+    <a href="https://yummylau.cn/2019/10/10/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE_2019:10:10_Android%E6%9E%B6%E6%9E%84/" title="开源项目之 Android最新组件架构">https://yummylau.cn/2019/10/10/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE_2019:10:10_Android%E6%9E%B6%E6%9E%84/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -483,7 +491,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/我的开源/" rel="tag"># 我的开源</a>
+            <a href="/tags/%E6%88%91%E7%9A%84%E5%BC%80%E6%BA%90/" rel="tag"># 我的开源</a>
           
         </div>
       
@@ -496,7 +504,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/10/10/开源项目_2019:10:10_组件化插件/" rel="next" title="开源项目之 组件化插件框架">
+              <a href="/2019/10/10/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE_2019:10:10_%E7%BB%84%E4%BB%B6%E5%8C%96%E6%8F%92%E4%BB%B6/" rel="next" title="开源项目之 组件化插件框架">
                 <i class="fa fa-chevron-left"></i> 开源项目之 组件化插件框架
               </a>
             
@@ -506,8 +514,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/10/15/项目总结_2019-10-15_大神appNative-Web交互总结/" rel="prev" title="网易大神JsSdk-移动端侧的设计开发">
-                网易大神JsSdk-移动端侧的设计开发 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/10/15/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2019-10-15_%E5%A4%A7%E7%A5%9Eapp%E6%89%93%E7%82%B9%E6%A1%86%E6%9E%B6%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/" rel="prev" title="网易大神复杂打点框架的设计与实践">
+                网易大神复杂打点框架的设计与实践 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -577,10 +585,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -655,7 +665,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-组件化架构实践"><span class="nav-number">1.</span> <span class="nav-text">Android 组件化架构实践</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#工程结构"><span class="nav-number">1.1.</span> <span class="nav-text">工程结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#应用结构"><span class="nav-number">1.2.</span> <span class="nav-text">应用结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Demo集成（持续完成更新…）"><span class="nav-number">1.3.</span> <span class="nav-text">Demo集成（持续完成更新…）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-技术栈（实现）"><span class="nav-number">2.</span> <span class="nav-text">Android 技术栈（实现）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#技能栈"><span class="nav-number">2.1.</span> <span class="nav-text">技能栈</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#项目开发"><span class="nav-number">2.2.</span> <span class="nav-text">项目开发</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-%E7%BB%84%E4%BB%B6%E5%8C%96%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5"><span class="nav-number">1.</span> <span class="nav-text">Android 组件化架构实践</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B7%A5%E7%A8%8B%E7%BB%93%E6%9E%84"><span class="nav-number">1.1.</span> <span class="nav-text">工程结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E7%BB%93%E6%9E%84"><span class="nav-number">1.2.</span> <span class="nav-text">应用结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Demo%E9%9B%86%E6%88%90%EF%BC%88%E6%8C%81%E7%BB%AD%E5%AE%8C%E6%88%90%E6%9B%B4%E6%96%B0%E2%80%A6%EF%BC%89"><span class="nav-number">1.3.</span> <span class="nav-text">Demo集成（持续完成更新…）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-%E6%8A%80%E6%9C%AF%E6%A0%88%EF%BC%88%E5%AE%9E%E7%8E%B0%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">Android 技术栈（实现）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8A%80%E8%83%BD%E6%A0%88"><span class="nav-number">2.1.</span> <span class="nav-text">技能栈</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91"><span class="nav-number">2.2.</span> <span class="nav-text">项目开发</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -675,7 +685,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

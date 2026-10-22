@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Android打包,">
+  <meta name="keywords" content="Android打包," />
 
 
 
@@ -78,24 +78,24 @@
 
 
 <meta name="description" content="现在项目组的打包工作基本借助gradle化集成打包。最近想熟悉下gradle的自动化构建原理以及后续想学习下apk包体优化及热修复，过程中了解了这个打包过程。故自己动手打包体验一下，加深细节了解。  概念了解 aar，即Android Archive，是Android库项目的二进制归档文件。 aapt，即Android Asset Packaging Tool，SDK的build-tool">
-<meta name="keywords" content="Android打包">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android-手动编译打包apk">
-<meta property="og:url" content="http://yummylau.com/2016/12/25/Android_2016-12-25_Android-手动编译打包apk过程/index.html">
+<meta property="og:url" content="https://yummylau.cn/2016/12/25/Android_2016-12-25_Android-%E6%89%8B%E5%8A%A8%E7%BC%96%E8%AF%91%E6%89%93%E5%8C%85apk%E8%BF%87%E7%A8%8B/index.html">
 <meta property="og:site_name" content="YummyLau">
 <meta property="og:description" content="现在项目组的打包工作基本借助gradle化集成打包。最近想熟悉下gradle的自动化构建原理以及后续想学习下apk包体优化及热修复，过程中了解了这个打包过程。故自己动手打包体验一下，加深细节了解。  概念了解 aar，即Android Archive，是Android库项目的二进制归档文件。 aapt，即Android Asset Packaging Tool，SDK的build-tool">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-10T05:35:03.470Z">
+<meta property="og:locale">
+<meta property="article:published_time" content="2016-12-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.043Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="Android打包">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android-手动编译打包apk">
-<meta name="twitter:description" content="现在项目组的打包工作基本借助gradle化集成打包。最近想熟悉下gradle的自动化构建原理以及后续想学习下apk包体优化及热修复，过程中了解了这个打包过程。故自己动手打包体验一下，加深细节了解。  概念了解 aar，即Android Archive，是Android库项目的二进制归档文件。 aapt，即Android Asset Packaging Tool，SDK的build-tool">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2016/12/25/Android_2016-12-25_Android-手动编译打包apk过程/">
+  <link rel="canonical" href="https://yummylau.cn/2016/12/25/Android_2016-12-25_Android-手动编译打包apk过程/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2016/12/25/Android_2016-12-25_Android-手动编译打包apk过程/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2016/12/25/Android_2016-12-25_Android-%E6%89%8B%E5%8A%A8%E7%BC%96%E8%AF%91%E6%89%93%E5%8C%85apk%E8%BF%87%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/12/25/Android_2016-12-25_Android-手动编译打包apk过程/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/12/25/Android_2016-12-25_Android-手动编译打包apk过程/" itemprop="commentCount"></span>
+                <a href="/2016/12/25/Android_2016-12-25_Android-%E6%89%8B%E5%8A%A8%E7%BC%96%E8%AF%91%E6%89%93%E5%8C%85apk%E8%BF%87%E7%A8%8B/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2016/12/25/Android_2016-12-25_Android-%E6%89%8B%E5%8A%A8%E7%BC%96%E8%AF%91%E6%89%93%E5%8C%85apk%E8%BF%87%E7%A8%8B/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -360,7 +360,7 @@
       
 
       
-        <a id="more"></a>
+        <span id="more"></span>
 <blockquote>
 <p>　　现在项目组的打包工作基本借助gradle化集成打包。最近想熟悉下gradle的自动化构建原理以及后续想学习下apk包体优化及热修复，过程中了解了这个打包过程。故自己动手打包体验一下，加深细节了解。</p>
 </blockquote>
@@ -384,14 +384,23 @@
 <li>zipalign工具目录：<strong>E:\AndroidArea\AndroidSdk\build-tools\23.0.3\zipalign</strong></li>
 <li>安装过jdk1.8版本</li>
 </ul>
-<h2 id="生成R-java文件"><a href="#生成R-java文件" class="headerlink" title="生成R.java文件"></a>生成R.java文件</h2><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidSdk<span class="symbol">\b</span>uild-tools<span class="symbol">\2</span>3.0.3<span class="symbol">\a</span>apt.exe package -f </span><br><span class="line">-m -J .<span class="symbol">\t</span>opack<span class="symbol">\g</span>en </span><br><span class="line">-S app<span class="symbol">\s</span>rc<span class="symbol">\m</span>ain<span class="symbol">\r</span>es </span><br><span class="line">-M app<span class="symbol">\s</span>rc<span class="symbol">\m</span>ain<span class="symbol">\A</span>ndroidManifest.xml </span><br><span class="line">-I E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidSdk<span class="symbol">\p</span>latforms<span class="symbol">\a</span>ndroid-23<span class="symbol">\a</span>ndroid.jar</span><br><span class="line">参数说明：</span><br><span class="line">-f 如编译生成的文件已存在则覆盖。</span><br><span class="line">-m -J E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidWorkspace<span class="symbol">\t</span>opack<span class="symbol">\g</span>en 在gen目录下生成带包路径的R.java</span><br><span class="line">-S app<span class="symbol">\s</span>rc<span class="symbol">\m</span>ain<span class="symbol">\r</span>es  指定项目res文件夹的路径</span><br><span class="line">-M app<span class="symbol">\s</span>rc<span class="symbol">\m</span>ain<span class="symbol">\A</span>ndroidManifest.xml  指定项目AndroidManifest.xml路径</span><br><span class="line">-I 指定某个版本平台的android.jar文件的路径</span><br><span class="line">如果项目中还存在assert文件夹，则还需要-A 指定assert文件夹的路径（这里没有用到）</span><br><span class="line">执行结果：</span><br><span class="line">在.<span class="symbol">\t</span>opack<span class="symbol">\g</span>en 生成R.java文件，该文件实际上是为Android项目资源定义了很多ID引用。</span><br></pre></td></tr></table></figure>
-<h2 id="生成-class文件"><a href="#生成-class文件" class="headerlink" title="生成.class文件"></a>生成.class文件</h2><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">javac -source 1.6 -target 1.6 </span><br><span class="line">-bootclasspath E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidSdk<span class="symbol">\p</span>latforms<span class="symbol">\a</span>ndroid-23<span class="symbol">\a</span>ndroid.jar </span><br><span class="line">-d .<span class="symbol">\t</span>opack<span class="symbol">\b</span>in .<span class="symbol">\a</span>pp<span class="symbol">\s</span>rc<span class="symbol">\m</span>ain<span class="symbol">\j</span>ava<span class="symbol">\c</span>om<span class="symbol">\e</span>xample<span class="symbol">\y</span>ummylau<span class="symbol">\p</span>ackagetest<span class="symbol">\*</span>.java topack<span class="symbol">\g</span>en<span class="symbol">\c</span>om<span class="symbol">\e</span>xample<span class="symbol">\y</span>ummylau<span class="symbol">\p</span>ackagetest<span class="symbol">\R</span>.java </span><br><span class="line">参数说明：</span><br><span class="line">javac -source 1.6 -target 1.6 制定生成的.class文件能在vm1.6版本中运行</span><br><span class="line">-bootclasspath E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidSdk<span class="symbol">\p</span>latforms<span class="symbol">\a</span>ndroid-23<span class="symbol">\a</span>ndroid.jar  制定使用到的android源码文件</span><br><span class="line">-d &lt;.class文件存放目录&gt; &lt;项目源码目录&gt; &lt;上步骤生成的R.java文件&gt;</span><br><span class="line">执行结果：</span><br><span class="line">在.<span class="symbol">\t</span>opack<span class="symbol">\b</span>in 生成许多.class文件，实际上步骤需要编译的源码包括：android jar、项目源码、第三方依赖包源码。</span><br></pre></td></tr></table></figure>
-<h2 id="生成dex文件"><a href="#生成dex文件" class="headerlink" title="生成dex文件"></a>生成dex文件</h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">E:<span class="tag">\<span class="name">AndroidArea</span></span><span class="tag">\<span class="name">AndroidSdk</span></span><span class="tag">\<span class="name">build</span></span>-tools<span class="tag">\</span>23.0.3<span class="tag">\<span class="name">dx</span></span> --dex --output=.<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span><span class="tag">\<span class="name">classes</span></span>.dex .<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span></span><br><span class="line">参数说明：</span><br><span class="line">--dex --output=.<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span><span class="tag">\<span class="name">classes</span></span>.dex .<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span> 利用.<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span>目录下的.class文件在.<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span>目录生成classes.dex。</span><br><span class="line">注意点：</span><br><span class="line">1. Caused by: com.android.dx.cf.iface.ParseException: bad class file magic (cafebabe) or version (0034.0000)错误</span><br><span class="line">原因是我jdk版本使用的是1.8版本太高，后面在生成.class文件步骤中指定生成1.6版本可解决</span><br><span class="line">2. class name (com/example/yummylau/packagetest/R<span class="formula">$style) does not match path (R$</span>style.class)错误</span><br><span class="line">原因是生成class文件自带目录记录，我的项目包名为:**com.example.yummylau.packagetest**,在指定class文件目录应该是</span><br><span class="line">.<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span> 而不是.<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span><span class="tag">\<span class="name">com</span></span><span class="tag">\<span class="name">example</span></span><span class="tag">\<span class="name">yummylau</span></span><span class="tag">\<span class="name">packagetest</span></span></span><br><span class="line">执行结果：</span><br><span class="line">在.<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span>下生成classes.dex文件，项目的核心代码都在此，分dex场景这里暂时不讨论，先走完流程先。</span><br></pre></td></tr></table></figure>
-<h2 id="打包项目资源"><a href="#打包项目资源" class="headerlink" title="打包项目资源"></a>打包项目资源</h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">E:<span class="tag">\<span class="name">AndroidArea</span></span><span class="tag">\<span class="name">AndroidSdk</span></span><span class="tag">\<span class="name">build</span></span>-tools<span class="tag">\</span>23.0.3<span class="tag">\<span class="name">aapt</span></span>.exe package -f </span><br><span class="line">-S app<span class="tag">\<span class="name">src</span></span><span class="tag">\<span class="name">main</span></span><span class="tag">\<span class="name">res</span></span> </span><br><span class="line">-M app<span class="tag">\<span class="name">src</span></span><span class="tag">\<span class="name">main</span></span><span class="tag">\<span class="name">AndroidManifest</span></span>.xml </span><br><span class="line">-I E:<span class="tag">\<span class="name">AndroidArea</span></span><span class="tag">\<span class="name">AndroidSdk</span></span><span class="tag">\<span class="name">platforms</span></span><span class="tag">\<span class="name">android</span></span>-23<span class="tag">\<span class="name">android</span></span>.jar </span><br><span class="line">-F .<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span><span class="tag">\<span class="name">resources</span></span>.ap_  </span><br><span class="line">参数说明：</span><br><span class="line">-F .<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span><span class="tag">\<span class="name">resources</span></span>.ap_ </span><br><span class="line">注意点：</span><br><span class="line">1. Caused by: com.android.dx.cf.iface.ParseException: bad class file magic (cafebabe) or version (0034.0000)错误</span><br><span class="line">原因是我jdk版本使用的是1.8版本太高，后面在生成.class文件步骤中指定生成1.6版本可解决</span><br><span class="line">2. class name (com/example/yummylau/packagetest/R<span class="formula">$style) does not match path (R$</span>style.class)错误</span><br><span class="line">原因是生成class文件自带目录记录，我的项目包名为:**com.example.yummylau.packagetest**,在指定class文件目录应该是</span><br><span class="line">.<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span> 而不是.<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span><span class="tag">\<span class="name">com</span></span><span class="tag">\<span class="name">example</span></span><span class="tag">\<span class="name">yummylau</span></span><span class="tag">\<span class="name">packagetest</span></span></span><br><span class="line">执行结果：</span><br><span class="line">在.<span class="tag">\<span class="name">topack</span></span><span class="tag">\<span class="name">bin</span></span>下生成resources.ap_ ，该文件包括了res资源、编译后的AndroidManifest.xml,resources.arsc(资源映射表)。</span><br></pre></td></tr></table></figure>
-<h2 id="生成未签名apk"><a href="#生成未签名apk" class="headerlink" title="生成未签名apk"></a>生成未签名apk</h2><p>目前sdk tools目录下apkbuilder已经被移除，可以把tools目录下android.bat进行修改<br>“复制android.bat一份并重新命名为apkbuilder.bat,把apkbuilder.bat中<strong>change com.android.sdkmanager.Main</strong>替换为<strong>com.android.sdklib.build.ApkBuilderMain</strong>”<br><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidSdk<span class="symbol">\t</span>ools<span class="symbol">\a</span>pkbuilder E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidWorkspace<span class="symbol">\P</span>ackageTest<span class="symbol">\t</span>opack<span class="symbol">\b</span>in<span class="symbol">\u</span>nsign_app.apk -v -u </span><br><span class="line">-z E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidWorkspace<span class="symbol">\P</span>ackageTest<span class="symbol">\t</span>opack<span class="symbol">\b</span>in<span class="symbol">\r</span>esources.ap_ </span><br><span class="line">-f E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidWorkspace<span class="symbol">\P</span>ackageTest<span class="symbol">\t</span>opack<span class="symbol">\b</span>in<span class="symbol">\c</span>lasses.dex </span><br><span class="line">-rf E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidWorkspace<span class="symbol">\P</span>ackageTest<span class="symbol">\a</span>pp<span class="symbol">\s</span>rc<span class="symbol">\m</span>ain<span class="symbol">\j</span>ava</span><br><span class="line">参数说明：</span><br><span class="line">-v 构建过程显示log信息</span><br><span class="line">-u 创建一个无签名的包</span><br><span class="line">-z 指定resources.ap_资源路径</span><br><span class="line">-f 指定dex文件路径</span><br><span class="line">-rf 指定源码路径</span><br><span class="line">执行结果：</span><br><span class="line">在.<span class="symbol">\t</span>opack<span class="symbol">\b</span>in生成unsign_app.apk，该apk还不能安装，提示解析失败，需要签名。</span><br></pre></td></tr></table></figure></p>
-<h2 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h2><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">keytool -genkey -alias release -keyalg RSA -validity 20000 -keystore release.keystore </span><br><span class="line">参数说明：</span><br><span class="line">-<span class="ruby">genkey 生成公钥、私钥和证书</span></span><br><span class="line"><span class="ruby">-<span class="keyword">alias</span> release 指定别名为release</span></span><br><span class="line"><span class="ruby">-keyalg RSA 指定加密算法</span></span><br><span class="line"><span class="ruby">-validity <span class="number">20000</span> 指定创建证书的有效天数<span class="number">20000</span></span></span><br><span class="line"><span class="ruby">-keystore release.keystore 指定密钥库的名称</span></span><br><span class="line"><span class="ruby">执行结果：</span></span><br><span class="line"><span class="ruby">在项目根目录生成release.keystore。</span></span><br></pre></td></tr></table></figure>
-<h2 id="对apk签名"><a href="#对apk签名" class="headerlink" title="对apk签名"></a>对apk签名</h2><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">7. 进行签名</span><br><span class="line">jarsigner -verbose </span><br><span class="line">-<span class="ruby">keystore release.keystore </span></span><br><span class="line"><span class="ruby">-storepass ******</span></span><br><span class="line"><span class="ruby">-keypass ******</span></span><br><span class="line"><span class="ruby">-signedjar .\topack\bin\signed_app.apk .\topack\bin\unsign_app.apk release </span></span><br><span class="line"><span class="ruby">参数说明：</span></span><br><span class="line"><span class="ruby">-verbose  签名过程显示log信息</span></span><br><span class="line"><span class="ruby">-keystore release.keystore  指定密钥库的路径</span></span><br><span class="line"><span class="ruby">-storepass &lt;密钥库密钥&gt;</span></span><br><span class="line"><span class="ruby">-keypass &lt;密钥密码&gt;</span></span><br><span class="line"><span class="ruby">-signedjar &lt;生成已签名apk路径&gt; &lt;未签名apk路径&gt; 密钥别名</span></span><br><span class="line"><span class="ruby">执行结果：</span></span><br><span class="line"><span class="ruby">在.\topack\bin生成已签名的app signed_app.apk</span></span><br></pre></td></tr></table></figure>
-<h2 id="4字节对齐优化"><a href="#4字节对齐优化" class="headerlink" title="4字节对齐优化"></a>4字节对齐优化</h2><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidSdk<span class="symbol">\b</span>uild-tools<span class="symbol">\2</span>3.0.3<span class="symbol">\z</span>ipalign </span><br><span class="line">-v 4 .<span class="symbol">\t</span>opack<span class="symbol">\b</span>in<span class="symbol">\s</span>igned_app.apk .<span class="symbol">\t</span>opack<span class="symbol">\b</span>in<span class="symbol">\s</span>igned_zip_app.apk</span><br><span class="line">参数说明：</span><br><span class="line">-v &lt;align&gt; 未对齐apk路径 对齐apk路径 align为字节数</span><br><span class="line">验证是否对齐成功：</span><br><span class="line">E:<span class="symbol">\A</span>ndroidArea<span class="symbol">\A</span>ndroidSdk<span class="symbol">\b</span>uild-tools<span class="symbol">\2</span>3.0.3<span class="symbol">\z</span>ipalign -c -v 4 .<span class="symbol">\t</span>opack<span class="symbol">\b</span>in<span class="symbol">\s</span>igned_zip_app.apk</span><br><span class="line">执行结果：</span><br><span class="line">在.<span class="symbol">\t</span>opack<span class="symbol">\b</span>in生成已对齐的app signed_app.apk</span><br></pre></td></tr></table></figure>
+<h2 id="生成R-java文件"><a href="#生成R-java文件" class="headerlink" title="生成R.java文件"></a>生成R.java文件</h2><figure class="highlight moonscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line"><span class="name">E</span>:\AndroidArea\AndroidSdk\build-tools\<span class="number">23.0</span><span class="number">.3</span>\aapt.exe <span class="built_in">package</span> -f </span><br><span class="line">-m -J .\topack\gen </span><br><span class="line">-S app\src\main\res </span><br><span class="line">-M app\src\main\AndroidManifest.xml </span><br><span class="line">-I <span class="name">E</span>:\AndroidArea\AndroidSdk\platforms\android<span class="number">-23</span>\android.jar</span><br><span class="line">参数说明：</span><br><span class="line">-f 如编译生成的文件已存在则覆盖。</span><br><span class="line">-m -J <span class="name">E</span>:\AndroidArea\AndroidWorkspace\topack\gen 在gen目录下生成带包路径的R.java</span><br><span class="line">-S app\src\main\res  指定项目res文件夹的路径</span><br><span class="line">-M app\src\main\AndroidManifest.xml  指定项目AndroidManifest.xml路径</span><br><span class="line">-I 指定某个版本平台的android.jar文件的路径</span><br><span class="line">如果项目中还存在<span class="built_in">assert</span>文件夹，则还需要-A 指定<span class="built_in">assert</span>文件夹的路径（这里没有用到）</span><br><span class="line">执行结果：</span><br><span class="line">在.\topack\gen 生成R.java文件，该文件实际上是为Android项目资源定义了很多ID引用。</span><br></pre></td></tr></table></figure>
+
+<h2 id="生成-class文件"><a href="#生成-class文件" class="headerlink" title="生成.class文件"></a>生成.class文件</h2><figure class="highlight moonscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">javac -source <span class="number">1.6</span> -target <span class="number">1.6</span> </span><br><span class="line">-bootclasspath <span class="name">E</span>:\AndroidArea\AndroidSdk\platforms\android<span class="number">-23</span>\android.jar </span><br><span class="line">-d .\topack\bin .\app\src\main\java\com\example\yummylau\packagetest\*.java topack\gen\com\example\yummylau\packagetest\R.java </span><br><span class="line">参数说明：</span><br><span class="line">javac -source <span class="number">1.6</span> -target <span class="number">1.6</span> 制定生成的.<span class="keyword">class</span>文件能在vm1<span class="number">.6</span>版本中运行</span><br><span class="line">-bootclasspath <span class="name">E</span>:\AndroidArea\AndroidSdk\platforms\android<span class="number">-23</span>\android.jar  制定使用到的android源码文件</span><br><span class="line">-d &lt;.<span class="keyword">class</span>文件存放目录&gt; &lt;项目源码目录&gt; &lt;上步骤生成的R.java文件&gt;</span><br><span class="line">执行结果：</span><br><span class="line">在.\topack\bin 生成许多.<span class="keyword">class</span>文件，实际上步骤需要编译的源码包括：android jar、项目源码、第三方依赖包源码。</span><br></pre></td></tr></table></figure>
+
+<h2 id="生成dex文件"><a href="#生成dex文件" class="headerlink" title="生成dex文件"></a>生成dex文件</h2><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">E:<span class="string">\AndroidArea\AndroidSdk\build-tools\23.0.3\dx</span> --dex --output=.<span class="string">\topack\bin\classes.dex</span> .<span class="string">\topack\bin</span></span><br><span class="line">参数说明：</span><br><span class="line">--dex --output=.<span class="string">\topack\bin\classes.dex</span> .<span class="string">\topack\bin</span> 利用.<span class="string">\topack\bin目录下的.class文件在.\topack\bin目录生成classes.dex。</span></span><br><span class="line">注意点：</span><br><span class="line"><span class="number">1.</span> Caused by: com.android.dx.cf.iface.ParseException: bad <span class="keyword">class</span> <span class="title class_">file</span> magic (cafebabe) <span class="keyword">or</span> version (<span class="number">0034.0000</span>)错误</span><br><span class="line">原因是我jdk版本使用的是<span class="number">1.8</span>版本太高，后面在生成.<span class="keyword">class</span>文件步骤中指定生成<span class="number">1.6</span>版本可解决</span><br><span class="line"><span class="number">2.</span> <span class="keyword">class</span> <span class="title class_">name</span> (com/example/yummylau/packagetest/R$style) does <span class="keyword">not</span> match path (R$style.<span class="keyword">class</span>)错误</span><br><span class="line">原因是生成<span class="keyword">class</span>文件自带目录记录，我的项目包名为:**com.example.yummylau.packagetest**,在指定<span class="keyword">class</span>文件目录应该是</span><br><span class="line">.<span class="string">\topack\bin</span> 而不是.<span class="string">\topack\bin\com\example\yummylau\packagetest</span></span><br><span class="line">执行结果：</span><br><span class="line">在.<span class="string">\topack\bin下生成classes.dex文件，项目的核心代码都在此，分dex场景这里暂时不讨论，先走完流程先。</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="打包项目资源"><a href="#打包项目资源" class="headerlink" title="打包项目资源"></a>打包项目资源</h2><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">E:<span class="string">\AndroidArea\AndroidSdk\build-tools\23.0.3\aapt.exe</span> package -f </span><br><span class="line">-S app<span class="string">\src\main\res</span> </span><br><span class="line">-M app<span class="string">\src\main\AndroidManifest.xml</span> </span><br><span class="line">-I E:<span class="string">\AndroidArea\AndroidSdk\platforms\android-23\android.jar</span> </span><br><span class="line">-F .<span class="string">\topack\bin\resources.ap_</span>  </span><br><span class="line">参数说明：</span><br><span class="line">-F .<span class="string">\topack\bin\resources.ap_</span> </span><br><span class="line">注意点：</span><br><span class="line"><span class="number">1.</span> Caused by: com.android.dx.cf.iface.ParseException: bad <span class="keyword">class</span> <span class="title class_">file</span> magic (cafebabe) <span class="keyword">or</span> version (<span class="number">0034.0000</span>)错误</span><br><span class="line">原因是我jdk版本使用的是<span class="number">1.8</span>版本太高，后面在生成.<span class="keyword">class</span>文件步骤中指定生成<span class="number">1.6</span>版本可解决</span><br><span class="line"><span class="number">2.</span> <span class="keyword">class</span> <span class="title class_">name</span> (com/example/yummylau/packagetest/R$style) does <span class="keyword">not</span> match path (R$style.<span class="keyword">class</span>)错误</span><br><span class="line">原因是生成<span class="keyword">class</span>文件自带目录记录，我的项目包名为:**com.example.yummylau.packagetest**,在指定<span class="keyword">class</span>文件目录应该是</span><br><span class="line">.<span class="string">\topack\bin</span> 而不是.<span class="string">\topack\bin\com\example\yummylau\packagetest</span></span><br><span class="line">执行结果：</span><br><span class="line">在.<span class="string">\topack\bin下生成resources.ap_</span> ，该文件包括了res资源、编译后的AndroidManifest.xml,resources.arsc(资源映射表)。</span><br></pre></td></tr></table></figure>
+
+<h2 id="生成未签名apk"><a href="#生成未签名apk" class="headerlink" title="生成未签名apk"></a>生成未签名apk</h2><p>目前sdk tools目录下apkbuilder已经被移除，可以把tools目录下android.bat进行修改<br>“复制android.bat一份并重新命名为apkbuilder.bat,把apkbuilder.bat中<strong>change com.android.sdkmanager.Main</strong>替换为<strong>com.android.sdklib.build.ApkBuilderMain</strong>”</p>
+<figure class="highlight moonscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line"><span class="name">E</span>:\AndroidArea\AndroidSdk\tools\apkbuilder <span class="name">E</span>:\AndroidArea\AndroidWorkspace\PackageTest\topack\bin\unsign_app.apk -v -u </span><br><span class="line">-z <span class="name">E</span>:\AndroidArea\AndroidWorkspace\PackageTest\topack\bin\resources.ap_ </span><br><span class="line">-f <span class="name">E</span>:\AndroidArea\AndroidWorkspace\PackageTest\topack\bin\classes.dex </span><br><span class="line">-rf <span class="name">E</span>:\AndroidArea\AndroidWorkspace\PackageTest\app\src\main\java</span><br><span class="line">参数说明：</span><br><span class="line">-v 构建过程显示log信息</span><br><span class="line">-u 创建一个无签名的包</span><br><span class="line">-z 指定resources.ap_资源路径</span><br><span class="line">-f 指定dex文件路径</span><br><span class="line">-rf 指定源码路径</span><br><span class="line">执行结果：</span><br><span class="line">在.\topack\bin生成unsign_app.apk，该apk还不能安装，提示解析失败，需要签名。</span><br></pre></td></tr></table></figure>
+
+<h2 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h2><figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">keytool -genkey -<span class="keyword">alias</span> <span class="keyword">release</span> -keyalg RSA -validity <span class="number">20000</span> -keystore <span class="keyword">release</span>.keystore </span><br><span class="line">参数说明：</span><br><span class="line">-genkey 生成公钥、私钥和证书</span><br><span class="line">-<span class="keyword">alias</span> <span class="keyword">release</span> 指定别名为<span class="keyword">release</span></span><br><span class="line">-keyalg RSA 指定加密算法</span><br><span class="line">-validity <span class="number">20000</span> 指定创建证书的有效天数<span class="number">20000</span></span><br><span class="line">-keystore <span class="keyword">release</span>.keystore 指定密钥库的名称</span><br><span class="line">执行结果：</span><br><span class="line">在项目根目录生成<span class="keyword">release</span>.keystore。</span><br></pre></td></tr></table></figure>
+
+<h2 id="对apk签名"><a href="#对apk签名" class="headerlink" title="对apk签名"></a>对apk签名</h2><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">7. 进行签名</span><br><span class="line">jarsigner -verbose </span><br><span class="line"><span class="deletion">-keystore release.keystore </span></span><br><span class="line"><span class="deletion">-storepass ******</span></span><br><span class="line"><span class="deletion">-keypass ******</span></span><br><span class="line"><span class="deletion">-signedjar .\topack\bin\signed_app.apk .\topack\bin\unsign_app.apk release </span></span><br><span class="line">参数说明：</span><br><span class="line"><span class="deletion">-verbose  签名过程显示log信息</span></span><br><span class="line"><span class="deletion">-keystore release.keystore  指定密钥库的路径</span></span><br><span class="line"><span class="deletion">-storepass &lt;密钥库密钥&gt;</span></span><br><span class="line"><span class="deletion">-keypass &lt;密钥密码&gt;</span></span><br><span class="line"><span class="deletion">-signedjar &lt;生成已签名apk路径&gt; &lt;未签名apk路径&gt; 密钥别名</span></span><br><span class="line">执行结果：</span><br><span class="line">在.\topack\bin生成已签名的app signed_app.apk </span><br></pre></td></tr></table></figure>
+
+<h2 id="4字节对齐优化"><a href="#4字节对齐优化" class="headerlink" title="4字节对齐优化"></a>4字节对齐优化</h2><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">执行命令：</span><br><span class="line">E:<span class="string">\AndroidArea\AndroidSdk\build-tools\23.0.3\zipalign</span> </span><br><span class="line">-v <span class="number">4</span> .<span class="string">\topack\bin\signed_app.apk</span> .<span class="string">\topack\bin\signed_zip_app.apk</span></span><br><span class="line">参数说明：</span><br><span class="line">-v &lt;align&gt; 未对齐apk路径 对齐apk路径 align为字节数</span><br><span class="line">验证是否对齐成功：</span><br><span class="line">E:<span class="string">\AndroidArea\AndroidSdk\build-tools\23.0.3\zipalign</span> -c -v <span class="number">4</span> .<span class="string">\topack\bin\signed_zip_app.apk</span></span><br><span class="line">执行结果：</span><br><span class="line">在.<span class="string">\topack\bin生成已对齐的app</span> signed_app.apk </span><br></pre></td></tr></table></figure>
+
 <p>自此，整个apk的打包过程基本完成。</p>
 
       
@@ -413,7 +422,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2016/12/25/Android_2016-12-25_Android-手动编译打包apk过程/" title="Android-手动编译打包apk">http://yummylau.com/2016/12/25/Android_2016-12-25_Android-手动编译打包apk过程/</a>
+    <a href="https://yummylau.cn/2016/12/25/Android_2016-12-25_Android-%E6%89%8B%E5%8A%A8%E7%BC%96%E8%AF%91%E6%89%93%E5%8C%85apk%E8%BF%87%E7%A8%8B/" title="Android-手动编译打包apk">https://yummylau.cn/2016/12/25/Android_2016-12-25_Android-%E6%89%8B%E5%8A%A8%E7%BC%96%E8%AF%91%E6%89%93%E5%8C%85apk%E8%BF%87%E7%A8%8B/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -428,7 +437,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android打包/" rel="tag"># Android打包</a>
+            <a href="/tags/Android%E6%89%93%E5%8C%85/" rel="tag"># Android打包</a>
           
         </div>
       
@@ -441,7 +450,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/23/Android_2016-12-23_Gradle构建/" rel="next" title="gradle构建记录">
+              <a href="/2016/12/23/Android_2016-12-23_Gradle%E6%9E%84%E5%BB%BA/" rel="next" title="gradle构建记录">
                 <i class="fa fa-chevron-left"></i> gradle构建记录
               </a>
             
@@ -451,7 +460,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/11/Android_2017-01-11_Android-SystemUI的那点事/" rel="prev" title="Android-SystemUI的那点事">
+              <a href="/2017/01/11/Android_2017-01-11_Android-SystemUI%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/" rel="prev" title="Android-SystemUI的那点事">
                 Android-SystemUI的那点事 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -522,10 +531,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -600,7 +611,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概念了解"><span class="nav-number">1.</span> <span class="nav-text">概念了解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#apk结构"><span class="nav-number">2.</span> <span class="nav-text">apk结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#构建打包过程"><span class="nav-number">3.</span> <span class="nav-text">构建打包过程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#生成R-java文件"><span class="nav-number">3.1.</span> <span class="nav-text">生成R.java文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成-class文件"><span class="nav-number">3.2.</span> <span class="nav-text">生成.class文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成dex文件"><span class="nav-number">3.3.</span> <span class="nav-text">生成dex文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打包项目资源"><span class="nav-number">3.4.</span> <span class="nav-text">打包项目资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成未签名apk"><span class="nav-number">3.5.</span> <span class="nav-text">生成未签名apk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成密钥"><span class="nav-number">3.6.</span> <span class="nav-text">生成密钥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对apk签名"><span class="nav-number">3.7.</span> <span class="nav-text">对apk签名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4字节对齐优化"><span class="nav-number">3.8.</span> <span class="nav-text">4字节对齐优化</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5%E4%BA%86%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">概念了解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#apk%E7%BB%93%E6%9E%84"><span class="nav-number">2.</span> <span class="nav-text">apk结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9E%84%E5%BB%BA%E6%89%93%E5%8C%85%E8%BF%87%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text">构建打包过程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90R-java%E6%96%87%E4%BB%B6"><span class="nav-number">3.1.</span> <span class="nav-text">生成R.java文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90-class%E6%96%87%E4%BB%B6"><span class="nav-number">3.2.</span> <span class="nav-text">生成.class文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90dex%E6%96%87%E4%BB%B6"><span class="nav-number">3.3.</span> <span class="nav-text">生成dex文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%93%E5%8C%85%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%BA%90"><span class="nav-number">3.4.</span> <span class="nav-text">打包项目资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E6%9C%AA%E7%AD%BE%E5%90%8Dapk"><span class="nav-number">3.5.</span> <span class="nav-text">生成未签名apk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5"><span class="nav-number">3.6.</span> <span class="nav-text">生成密钥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9apk%E7%AD%BE%E5%90%8D"><span class="nav-number">3.7.</span> <span class="nav-text">对apk签名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E5%AD%97%E8%8A%82%E5%AF%B9%E9%BD%90%E4%BC%98%E5%8C%96"><span class="nav-number">3.8.</span> <span class="nav-text">4字节对齐优化</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -620,7 +631,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

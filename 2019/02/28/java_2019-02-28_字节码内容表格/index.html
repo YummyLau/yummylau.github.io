@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="字节码,">
+  <meta name="keywords" content="字节码," />
 
 
 
@@ -77,25 +77,25 @@
 
 
 
-<meta name="description" content="表格参考来自于 “深入理解Java虚拟机：JVM高级特定及最佳实践”  Class文件结构表      类型 名称 描述 数量     u4（4个字节） magic 确定该文件是否为一个能被虚拟机接受的Class文件，类似于ID 1   u2（2个字节） minot_version 次版本号 1   u2（2个字节） mahor_version 主版本号 1   u2（2个字节） constan">
-<meta name="keywords" content="字节码">
+<meta name="description" content="表格参考来自于 “深入理解Java虚拟机：JVM高级特定及最佳实践”  Class文件结构表      类型 名称 描述 数量    u4（4个字节） magic 确定该文件是否为一个能被虚拟机接受的Class文件，类似于ID 1   u2（2个字节） minot_version 次版本号 1   u2（2个字节） mahor_version 主版本号 1   u2（2个字节） constant">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java字节码内容的那些表">
-<meta property="og:url" content="http://yummylau.com/2019/02/28/java_2019-02-28_字节码内容表格/index.html">
+<meta property="og:url" content="https://yummylau.cn/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E5%86%85%E5%AE%B9%E8%A1%A8%E6%A0%BC/index.html">
 <meta property="og:site_name" content="YummyLau">
-<meta property="og:description" content="表格参考来自于 “深入理解Java虚拟机：JVM高级特定及最佳实践”  Class文件结构表      类型 名称 描述 数量     u4（4个字节） magic 确定该文件是否为一个能被虚拟机接受的Class文件，类似于ID 1   u2（2个字节） minot_version 次版本号 1   u2（2个字节） mahor_version 主版本号 1   u2（2个字节） constan">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-10T05:35:03.474Z">
+<meta property="og:description" content="表格参考来自于 “深入理解Java虚拟机：JVM高级特定及最佳实践”  Class文件结构表      类型 名称 描述 数量    u4（4个字节） magic 确定该文件是否为一个能被虚拟机接受的Class文件，类似于ID 1   u2（2个字节） minot_version 次版本号 1   u2（2个字节） mahor_version 主版本号 1   u2（2个字节） constant">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-02-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.048Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="字节码">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java字节码内容的那些表">
-<meta name="twitter:description" content="表格参考来自于 “深入理解Java虚拟机：JVM高级特定及最佳实践”  Class文件结构表      类型 名称 描述 数量     u4（4个字节） magic 确定该文件是否为一个能被虚拟机接受的Class文件，类似于ID 1   u2（2个字节） minot_version 次版本号 1   u2（2个字节） mahor_version 主版本号 1   u2（2个字节） constan">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2019/02/28/java_2019-02-28_字节码内容表格/">
+  <link rel="canonical" href="https://yummylau.cn/2019/02/28/java_2019-02-28_字节码内容表格/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2019/02/28/java_2019-02-28_字节码内容表格/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E5%86%85%E5%AE%B9%E8%A1%A8%E6%A0%BC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/02/28/java_2019-02-28_字节码内容表格/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/28/java_2019-02-28_字节码内容表格/" itemprop="commentCount"></span>
+                <a href="/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E5%86%85%E5%AE%B9%E8%A1%A8%E6%A0%BC/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E5%86%85%E5%AE%B9%E8%A1%A8%E6%A0%BC/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -369,111 +369,109 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">描述</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">描述</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u4（4个字节）</td>
-<td style="text-align:center">magic</td>
-<td style="text-align:center">确定该文件是否为一个能被虚拟机接受的Class文件，类似于ID</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u4（4个字节）</td>
+<td align="center">magic</td>
+<td align="center">确定该文件是否为一个能被虚拟机接受的Class文件，类似于ID</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2（2个字节）</td>
-<td style="text-align:center">minot_version</td>
-<td style="text-align:center">次版本号</td>
-<td style="text-align:center">1</td>
+<td align="center">u2（2个字节）</td>
+<td align="center">minot_version</td>
+<td align="center">次版本号</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2（2个字节）</td>
-<td style="text-align:center">mahor_version</td>
-<td style="text-align:center">主版本号</td>
-<td style="text-align:center">1</td>
+<td align="center">u2（2个字节）</td>
+<td align="center">mahor_version</td>
+<td align="center">主版本号</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2（2个字节）</td>
-<td style="text-align:center">constant_pool_count</td>
-<td style="text-align:center">常量池容量计数值，从1开始计算，0则表示不引用任何一个常量池项目</td>
-<td style="text-align:center">1</td>
+<td align="center">u2（2个字节）</td>
+<td align="center">constant_pool_count</td>
+<td align="center">常量池容量计数值，从1开始计算，0则表示不引用任何一个常量池项目</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">cp_info</td>
-<td style="text-align:center">constant_pool</td>
-<td style="text-align:center">常量池</td>
-<td style="text-align:center">constant_pool_count-1</td>
+<td align="center">cp_info</td>
+<td align="center">constant_pool</td>
+<td align="center">常量池</td>
+<td align="center">constant_pool_count-1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2（2个字节）</td>
-<td style="text-align:center">access_flags</td>
-<td style="text-align:center">访问标志</td>
-<td style="text-align:center">1</td>
+<td align="center">u2（2个字节）</td>
+<td align="center">access_flags</td>
+<td align="center">访问标志</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2（2个字节）</td>
-<td style="text-align:center">this_class</td>
-<td style="text-align:center">类索引</td>
-<td style="text-align:center">1</td>
+<td align="center">u2（2个字节）</td>
+<td align="center">this_class</td>
+<td align="center">类索引</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2（2个字节）</td>
-<td style="text-align:center">super_class</td>
-<td style="text-align:center">父类索引</td>
-<td style="text-align:center">1</td>
+<td align="center">u2（2个字节）</td>
+<td align="center">super_class</td>
+<td align="center">父类索引</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2（2个字节）</td>
-<td style="text-align:center">interfaces_count</td>
-<td style="text-align:center">实现接口的数目</td>
-<td style="text-align:center">1</td>
+<td align="center">u2（2个字节）</td>
+<td align="center">interfaces_count</td>
+<td align="center">实现接口的数目</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2（4个字节）</td>
-<td style="text-align:center">interfaces</td>
-<td style="text-align:center">接口索引</td>
-<td style="text-align:center">interfaces_count</td>
+<td align="center">u2（4个字节）</td>
+<td align="center">interfaces</td>
+<td align="center">接口索引</td>
+<td align="center">interfaces_count</td>
 </tr>
 <tr>
-<td style="text-align:center">u2（4个字节）</td>
-<td style="text-align:center">fields_count</td>
-<td style="text-align:center">字段的数目</td>
-<td style="text-align:center">1</td>
+<td align="center">u2（4个字节）</td>
+<td align="center">fields_count</td>
+<td align="center">字段的数目</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">field_info</td>
-<td style="text-align:center">fields</td>
-<td style="text-align:center">字段内容</td>
-<td style="text-align:center">fields_count</td>
+<td align="center">field_info</td>
+<td align="center">fields</td>
+<td align="center">字段内容</td>
+<td align="center">fields_count</td>
 </tr>
 <tr>
-<td style="text-align:center">u2（2个字节）</td>
-<td style="text-align:center">methods_count</td>
-<td style="text-align:center">方法的数目</td>
-<td style="text-align:center">1</td>
+<td align="center">u2（2个字节）</td>
+<td align="center">methods_count</td>
+<td align="center">方法的数目</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">method_info</td>
-<td style="text-align:center">methods</td>
-<td style="text-align:center">方法内容</td>
-<td style="text-align:center">methods_count</td>
+<td align="center">method_info</td>
+<td align="center">methods</td>
+<td align="center">方法内容</td>
+<td align="center">methods_count</td>
 </tr>
 <tr>
-<td style="text-align:center">u2（2个字节）</td>
-<td style="text-align:center">attributes_count</td>
-<td style="text-align:center">属性的数目</td>
-<td style="text-align:center">1</td>
+<td align="center">u2（2个字节）</td>
+<td align="center">attributes_count</td>
+<td align="center">属性的数目</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">attribute_info</td>
-<td style="text-align:center">attributes</td>
-<td style="text-align:center">属性内容</td>
-<td style="text-align:center">attributes_count</td>
+<td align="center">attribute_info</td>
+<td align="center">attributes</td>
+<td align="center">属性内容</td>
+<td align="center">attributes_count</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="2">常量表</h3>
 
 <p>常量池主要存放两种类型</p>
@@ -487,225 +485,223 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">子结构</th>
-<th style="text-align:center">标志</th>
-<th style="text-align:center">描述</th>
+<th align="center">类型</th>
+<th align="center">子结构</th>
+<th align="center">标志</th>
+<th align="center">描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">CONSTANT_Utf8_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1 = 1</td>
-<td style="text-align:center">UTF-8编码的字符串</td>
+<tbody><tr>
+<td align="center">CONSTANT_Utf8_info</td>
+<td align="center">tag</td>
+<td align="center">u1 = 1</td>
+<td align="center">UTF-8编码的字符串</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">lenght</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">UTF-8编码的字符串占用的字节数</td>
+<td align="center">-</td>
+<td align="center">lenght</td>
+<td align="center">u2</td>
+<td align="center">UTF-8编码的字符串占用的字节数</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">bytes</td>
-<td style="text-align:center">u1</td>
-<td style="text-align:center">长度为lenght的UTF-8编码的字符串</td>
+<td align="center">-</td>
+<td align="center">bytes</td>
+<td align="center">u1</td>
+<td align="center">长度为lenght的UTF-8编码的字符串</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_Integer_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=3</td>
-<td style="text-align:center">整型字面量</td>
+<td align="center">CONSTANT_Integer_info</td>
+<td align="center">tag</td>
+<td align="center">u1=3</td>
+<td align="center">整型字面量</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">bytes</td>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">按照高位在前存储的int值</td>
+<td align="center">-</td>
+<td align="center">bytes</td>
+<td align="center">u4</td>
+<td align="center">按照高位在前存储的int值</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_Float_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=4</td>
-<td style="text-align:center">浮点型字面量</td>
+<td align="center">CONSTANT_Float_info</td>
+<td align="center">tag</td>
+<td align="center">u1=4</td>
+<td align="center">浮点型字面量</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">bytes</td>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">按照高位在前存储的float值</td>
+<td align="center">-</td>
+<td align="center">bytes</td>
+<td align="center">u4</td>
+<td align="center">按照高位在前存储的float值</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_Long_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=5</td>
-<td style="text-align:center">长整型字面量</td>
+<td align="center">CONSTANT_Long_info</td>
+<td align="center">tag</td>
+<td align="center">u1=5</td>
+<td align="center">长整型字面量</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">bytes</td>
-<td style="text-align:center">u8</td>
-<td style="text-align:center">按照高位在前存储的long值</td>
+<td align="center">-</td>
+<td align="center">bytes</td>
+<td align="center">u8</td>
+<td align="center">按照高位在前存储的long值</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_Double_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=6</td>
-<td style="text-align:center">双精度浮点型字面量</td>
+<td align="center">CONSTANT_Double_info</td>
+<td align="center">tag</td>
+<td align="center">u1=6</td>
+<td align="center">双精度浮点型字面量</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">bytes</td>
-<td style="text-align:center">u8</td>
-<td style="text-align:center">按照高位在前存储的double值</td>
+<td align="center">-</td>
+<td align="center">bytes</td>
+<td align="center">u8</td>
+<td align="center">按照高位在前存储的double值</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_Class_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=7</td>
-<td style="text-align:center">类或接口的符号引用</td>
+<td align="center">CONSTANT_Class_info</td>
+<td align="center">tag</td>
+<td align="center">u1=7</td>
+<td align="center">类或接口的符号引用</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">bytes</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">指向全限定名常量项的索引</td>
+<td align="center">-</td>
+<td align="center">bytes</td>
+<td align="center">u2</td>
+<td align="center">指向全限定名常量项的索引</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_String_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=8</td>
-<td style="text-align:center">字符串类型字面量</td>
+<td align="center">CONSTANT_String_info</td>
+<td align="center">tag</td>
+<td align="center">u1=8</td>
+<td align="center">字符串类型字面量</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">bytes</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">指向字符串字面量的索引</td>
+<td align="center">-</td>
+<td align="center">bytes</td>
+<td align="center">u2</td>
+<td align="center">指向字符串字面量的索引</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_Fieldref_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=9</td>
-<td style="text-align:center">字段的符号引用</td>
+<td align="center">CONSTANT_Fieldref_info</td>
+<td align="center">tag</td>
+<td align="center">u1=9</td>
+<td align="center">字段的符号引用</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">指向声明字段的类或者接口描述符 CONSTANT_Class_info 的索引项</td>
+<td align="center">-</td>
+<td align="center">index</td>
+<td align="center">u2</td>
+<td align="center">指向声明字段的类或者接口描述符 CONSTANT_Class_info 的索引项</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">指向声明字段的类或者接口描述符CONSTANT_NameAndType_info 的索引项</td>
+<td align="center">-</td>
+<td align="center">index</td>
+<td align="center">u2</td>
+<td align="center">指向声明字段的类或者接口描述符CONSTANT_NameAndType_info 的索引项</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_Methodred_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=10</td>
-<td style="text-align:center">类中方法的符号引用</td>
+<td align="center">CONSTANT_Methodred_info</td>
+<td align="center">tag</td>
+<td align="center">u1=10</td>
+<td align="center">类中方法的符号引用</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">指向声明字段的类或者接口描述符 CONSTANT_Class_info 的索引项</td>
+<td align="center">-</td>
+<td align="center">index</td>
+<td align="center">u2</td>
+<td align="center">指向声明字段的类或者接口描述符 CONSTANT_Class_info 的索引项</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">指向声明字段的类或者接口描述符CONSTANT_NameAndType_info 的索引项</td>
+<td align="center">-</td>
+<td align="center">index</td>
+<td align="center">u2</td>
+<td align="center">指向声明字段的类或者接口描述符CONSTANT_NameAndType_info 的索引项</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_InterfaceMethodref_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=11</td>
-<td style="text-align:center">接口中方法的符号引用</td>
+<td align="center">CONSTANT_InterfaceMethodref_info</td>
+<td align="center">tag</td>
+<td align="center">u1=11</td>
+<td align="center">接口中方法的符号引用</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">指向声明字段的类或者接口描述符 CONSTANT_Class_info 的索引项</td>
+<td align="center">-</td>
+<td align="center">index</td>
+<td align="center">u2</td>
+<td align="center">指向声明字段的类或者接口描述符 CONSTANT_Class_info 的索引项</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">指向声明字段的类或者接口描述符CONSTANT_NameAndType_info 的索引项</td>
+<td align="center">-</td>
+<td align="center">index</td>
+<td align="center">u2</td>
+<td align="center">指向声明字段的类或者接口描述符CONSTANT_NameAndType_info 的索引项</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_NameAndType_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=12</td>
-<td style="text-align:center">字段或方法的部分符号引用</td>
+<td align="center">CONSTANT_NameAndType_info</td>
+<td align="center">tag</td>
+<td align="center">u1=12</td>
+<td align="center">字段或方法的部分符号引用</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">指向该字段或方法名称常量项的索引</td>
+<td align="center">-</td>
+<td align="center">index</td>
+<td align="center">u2</td>
+<td align="center">指向该字段或方法名称常量项的索引</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">指向该字段或方法名称常量项的索引</td>
+<td align="center">-</td>
+<td align="center">index</td>
+<td align="center">u2</td>
+<td align="center">指向该字段或方法名称常量项的索引</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_MethodHandle_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=15</td>
-<td style="text-align:center">表示方法句柄</td>
+<td align="center">CONSTANT_MethodHandle_info</td>
+<td align="center">tag</td>
+<td align="center">u1=15</td>
+<td align="center">表示方法句柄</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">reference_kind</td>
-<td style="text-align:center">u1</td>
-<td style="text-align:center">值必须在[1，9]中，它决定了方法句柄的类型。方法句柄类型的值表示方法句柄的字节码行为</td>
+<td align="center">-</td>
+<td align="center">reference_kind</td>
+<td align="center">u1</td>
+<td align="center">值必须在[1，9]中，它决定了方法句柄的类型。方法句柄类型的值表示方法句柄的字节码行为</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">reference_index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">值必须是对常量池的有效索引</td>
+<td align="center">-</td>
+<td align="center">reference_index</td>
+<td align="center">u2</td>
+<td align="center">值必须是对常量池的有效索引</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_MethodType_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=16</td>
-<td style="text-align:center">识别方法类型</td>
+<td align="center">CONSTANT_MethodType_info</td>
+<td align="center">tag</td>
+<td align="center">u1=16</td>
+<td align="center">识别方法类型</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">descriptor_index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">值必须是对常量池的有效索引，常量池在该索引处的项必须是CONSTANT_Utf8_info结构，表示方法的描述符</td>
+<td align="center">-</td>
+<td align="center">descriptor_index</td>
+<td align="center">u2</td>
+<td align="center">值必须是对常量池的有效索引，常量池在该索引处的项必须是CONSTANT_Utf8_info结构，表示方法的描述符</td>
 </tr>
 <tr>
-<td style="text-align:center">CONSTANT_InvokeDynamic_info</td>
-<td style="text-align:center">tag</td>
-<td style="text-align:center">u1=18</td>
-<td style="text-align:center">表示一个动态方法调用点</td>
+<td align="center">CONSTANT_InvokeDynamic_info</td>
+<td align="center">tag</td>
+<td align="center">u1=18</td>
+<td align="center">表示一个动态方法调用点</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">bootstrap_method_attar_index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">值必须是对当前Class文件中引导方法表的 bootstrap_methods[]数组的有效索引</td>
+<td align="center">-</td>
+<td align="center">bootstrap_method_attar_index</td>
+<td align="center">u2</td>
+<td align="center">值必须是对当前Class文件中引导方法表的 bootstrap_methods[]数组的有效索引</td>
 </tr>
 <tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">name_and_type_index</td>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">值必须是对当前常量池的有效索引，常量池在该索引处的值必须是CONSTANT_NameAndType_info结构，表示方法名和方法描述符</td>
+<td align="center">-</td>
+<td align="center">name_and_type_index</td>
+<td align="center">u2</td>
+<td align="center">值必须是对当前常量池的有效索引，常量池在该索引处的值必须是CONSTANT_NameAndType_info结构，表示方法名和方法描述符</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="3">访问标志表</h3>
 
 <p>针对类，字段表，方法表中的访问标志进行划分。</p>
@@ -715,714 +711,698 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">标志名称</th>
-<th style="text-align:center">标志值</th>
-<th style="text-align:center">描述</th>
+<th align="center">标志名称</th>
+<th align="center">标志值</th>
+<th align="center">描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">ACC_PUBLIC</td>
-<td style="text-align:center">0x0001</td>
-<td style="text-align:center">是否为public类型</td>
+<tbody><tr>
+<td align="center">ACC_PUBLIC</td>
+<td align="center">0x0001</td>
+<td align="center">是否为public类型</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_FINAL</td>
-<td style="text-align:center">0x0010</td>
-<td style="text-align:center">是否被声明为final，只有类可设置</td>
+<td align="center">ACC_FINAL</td>
+<td align="center">0x0010</td>
+<td align="center">是否被声明为final，只有类可设置</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_SUPER</td>
-<td style="text-align:center">0x0020</td>
-<td style="text-align:center">是否允许使用invokespecial字节码指令的新语意，invokespecial指令的语意在JDK1.0.2发生过变化，为了区别这条指令使用哪种语意，JDK1.0.2之后编译出来的类的这个标识必须都为真</td>
+<td align="center">ACC_SUPER</td>
+<td align="center">0x0020</td>
+<td align="center">是否允许使用invokespecial字节码指令的新语意，invokespecial指令的语意在JDK1.0.2发生过变化，为了区别这条指令使用哪种语意，JDK1.0.2之后编译出来的类的这个标识必须都为真</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_INTERFACE</td>
-<td style="text-align:center">0x0200</td>
-<td style="text-align:center">标识这个是一个接口</td>
+<td align="center">ACC_INTERFACE</td>
+<td align="center">0x0200</td>
+<td align="center">标识这个是一个接口</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_ABSTRACT</td>
-<td style="text-align:center">0x0400</td>
-<td style="text-align:center">是否为abstract类型，对于接口或者抽象类来说，此标志的值都为真，其他类型为假</td>
+<td align="center">ACC_ABSTRACT</td>
+<td align="center">0x0400</td>
+<td align="center">是否为abstract类型，对于接口或者抽象类来说，此标志的值都为真，其他类型为假</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_SYNTHETIC</td>
-<td style="text-align:center">0x1000</td>
-<td style="text-align:center">标识这个类并非由用户代码产生的</td>
+<td align="center">ACC_SYNTHETIC</td>
+<td align="center">0x1000</td>
+<td align="center">标识这个类并非由用户代码产生的</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_ANNOTATION</td>
-<td style="text-align:center">0x2000</td>
-<td style="text-align:center">标识这是一个注解</td>
+<td align="center">ACC_ANNOTATION</td>
+<td align="center">0x2000</td>
+<td align="center">标识这是一个注解</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_ENUM</td>
-<td style="text-align:center">0x4000</td>
-<td style="text-align:center">标识这是一个枚举</td>
+<td align="center">ACC_ENUM</td>
+<td align="center">0x4000</td>
+<td align="center">标识这是一个枚举</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="3_2">内部类访问标志</h4>
 
 <table>
 <thead>
 <tr>
-<th style="text-align:center">标志名称</th>
-<th style="text-align:center">标志值</th>
-<th style="text-align:center">描述</th>
+<th align="center">标志名称</th>
+<th align="center">标志值</th>
+<th align="center">描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">ACC_PUBLIC</td>
-<td style="text-align:center">0x0001</td>
-<td style="text-align:center">内部类是否为public</td>
+<tbody><tr>
+<td align="center">ACC_PUBLIC</td>
+<td align="center">0x0001</td>
+<td align="center">内部类是否为public</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_PRIVATE</td>
-<td style="text-align:center">0x0002</td>
-<td style="text-align:center">内部类是否为private</td>
+<td align="center">ACC_PRIVATE</td>
+<td align="center">0x0002</td>
+<td align="center">内部类是否为private</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_PROTECTED</td>
-<td style="text-align:center">0x0004</td>
-<td style="text-align:center">内部类是否为protected</td>
+<td align="center">ACC_PROTECTED</td>
+<td align="center">0x0004</td>
+<td align="center">内部类是否为protected</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_STATIC</td>
-<td style="text-align:center">0x0008</td>
-<td style="text-align:center">内部类是否为protected</td>
+<td align="center">ACC_STATIC</td>
+<td align="center">0x0008</td>
+<td align="center">内部类是否为protected</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_FINAL</td>
-<td style="text-align:center">0x0010</td>
-<td style="text-align:center">内部类是否为protected</td>
+<td align="center">ACC_FINAL</td>
+<td align="center">0x0010</td>
+<td align="center">内部类是否为protected</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_INTERFACE</td>
-<td style="text-align:center">0x0020</td>
-<td style="text-align:center">内部类是否为接口</td>
+<td align="center">ACC_INTERFACE</td>
+<td align="center">0x0020</td>
+<td align="center">内部类是否为接口</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_ABSTRACT</td>
-<td style="text-align:center">0x0400</td>
-<td style="text-align:center">内部类是否为abstract</td>
+<td align="center">ACC_ABSTRACT</td>
+<td align="center">0x0400</td>
+<td align="center">内部类是否为abstract</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_SYNTHETIC</td>
-<td style="text-align:center">0x1000</td>
-<td style="text-align:center">内部类是否并非由用户代码产生</td>
+<td align="center">ACC_SYNTHETIC</td>
+<td align="center">0x1000</td>
+<td align="center">内部类是否并非由用户代码产生</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_ANNOTATION</td>
-<td style="text-align:center">0x2000</td>
-<td style="text-align:center">内部类是否是一个注解</td>
+<td align="center">ACC_ANNOTATION</td>
+<td align="center">0x2000</td>
+<td align="center">内部类是否是一个注解</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_ENUM</td>
-<td style="text-align:center">0x4000</td>
-<td style="text-align:center">内部类是否是一个枚举</td>
+<td align="center">ACC_ENUM</td>
+<td align="center">0x4000</td>
+<td align="center">内部类是否是一个枚举</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="3_3">字段访问标志</h4>
 
 <table>
 <thead>
 <tr>
-<th style="text-align:center">标志名称</th>
-<th style="text-align:center">标志值</th>
-<th style="text-align:center">描述</th>
+<th align="center">标志名称</th>
+<th align="center">标志值</th>
+<th align="center">描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">ACC_PUBLIC</td>
-<td style="text-align:center">0x0001</td>
-<td style="text-align:center">字段是否为public</td>
+<tbody><tr>
+<td align="center">ACC_PUBLIC</td>
+<td align="center">0x0001</td>
+<td align="center">字段是否为public</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_PRIVATE</td>
-<td style="text-align:center">0x0002</td>
-<td style="text-align:center">字段是否为private</td>
+<td align="center">ACC_PRIVATE</td>
+<td align="center">0x0002</td>
+<td align="center">字段是否为private</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_PROTECTED</td>
-<td style="text-align:center">0x0004</td>
-<td style="text-align:center">字段是否为protected</td>
+<td align="center">ACC_PROTECTED</td>
+<td align="center">0x0004</td>
+<td align="center">字段是否为protected</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_STATIC</td>
-<td style="text-align:center">0x0008</td>
-<td style="text-align:center">字段是否为static</td>
+<td align="center">ACC_STATIC</td>
+<td align="center">0x0008</td>
+<td align="center">字段是否为static</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_FINAL</td>
-<td style="text-align:center">0x0010</td>
-<td style="text-align:center">字段是否为final</td>
+<td align="center">ACC_FINAL</td>
+<td align="center">0x0010</td>
+<td align="center">字段是否为final</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_VOLATILE</td>
-<td style="text-align:center">0x0040</td>
-<td style="text-align:center">字段是否为volatile</td>
+<td align="center">ACC_VOLATILE</td>
+<td align="center">0x0040</td>
+<td align="center">字段是否为volatile</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_TRANSIENT</td>
-<td style="text-align:center">0x0080</td>
-<td style="text-align:center">字段是否为transient</td>
+<td align="center">ACC_TRANSIENT</td>
+<td align="center">0x0080</td>
+<td align="center">字段是否为transient</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_SYNTHETIC</td>
-<td style="text-align:center">0x1000</td>
-<td style="text-align:center">字段是否由编译器自动产生的</td>
+<td align="center">ACC_SYNTHETIC</td>
+<td align="center">0x1000</td>
+<td align="center">字段是否由编译器自动产生的</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_ENUM</td>
-<td style="text-align:center">0x4000</td>
-<td style="text-align:center">字段是否为enum</td>
+<td align="center">ACC_ENUM</td>
+<td align="center">0x4000</td>
+<td align="center">字段是否为enum</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="3_4">方法访问标志</h4>
 
 <table>
 <thead>
 <tr>
-<th style="text-align:center">标志名称</th>
-<th style="text-align:center">标志值</th>
-<th style="text-align:center">描述</th>
+<th align="center">标志名称</th>
+<th align="center">标志值</th>
+<th align="center">描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">ACC_PUBLIC</td>
-<td style="text-align:center">0x0001</td>
-<td style="text-align:center">方法是否为public</td>
+<tbody><tr>
+<td align="center">ACC_PUBLIC</td>
+<td align="center">0x0001</td>
+<td align="center">方法是否为public</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_PRIVATE</td>
-<td style="text-align:center">0x0002</td>
-<td style="text-align:center">方法是否为private</td>
+<td align="center">ACC_PRIVATE</td>
+<td align="center">0x0002</td>
+<td align="center">方法是否为private</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_PROTECTED</td>
-<td style="text-align:center">0x0004</td>
-<td style="text-align:center">方法是否为protected</td>
+<td align="center">ACC_PROTECTED</td>
+<td align="center">0x0004</td>
+<td align="center">方法是否为protected</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_STATIC</td>
-<td style="text-align:center">0x0008</td>
-<td style="text-align:center">方法是否为static</td>
+<td align="center">ACC_STATIC</td>
+<td align="center">0x0008</td>
+<td align="center">方法是否为static</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_FINAL</td>
-<td style="text-align:center">0x0010</td>
-<td style="text-align:center">方法是否为final</td>
+<td align="center">ACC_FINAL</td>
+<td align="center">0x0010</td>
+<td align="center">方法是否为final</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_SYNCHRONIZED</td>
-<td style="text-align:center">0x0020</td>
-<td style="text-align:center">方法是否为synchronized</td>
+<td align="center">ACC_SYNCHRONIZED</td>
+<td align="center">0x0020</td>
+<td align="center">方法是否为synchronized</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_BRIDGE</td>
-<td style="text-align:center">0x0040</td>
-<td style="text-align:center">方法是否由编译器产生的桥接方法</td>
+<td align="center">ACC_BRIDGE</td>
+<td align="center">0x0040</td>
+<td align="center">方法是否由编译器产生的桥接方法</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_VARARGS</td>
-<td style="text-align:center">0x0080</td>
-<td style="text-align:center">方法是否接受不定参数</td>
+<td align="center">ACC_VARARGS</td>
+<td align="center">0x0080</td>
+<td align="center">方法是否接受不定参数</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_NATIVE</td>
-<td style="text-align:center">0x0100</td>
-<td style="text-align:center">方法是否为native</td>
+<td align="center">ACC_NATIVE</td>
+<td align="center">0x0100</td>
+<td align="center">方法是否为native</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_ABSTRACT</td>
-<td style="text-align:center">0x0400</td>
-<td style="text-align:center">方法是否为abstract</td>
+<td align="center">ACC_ABSTRACT</td>
+<td align="center">0x0400</td>
+<td align="center">方法是否为abstract</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_STRICTFP</td>
-<td style="text-align:center">0x0800</td>
-<td style="text-align:center">方法是否为strictfp</td>
+<td align="center">ACC_STRICTFP</td>
+<td align="center">0x0800</td>
+<td align="center">方法是否为strictfp</td>
 </tr>
 <tr>
-<td style="text-align:center">ACC_SYNTHETIC</td>
-<td style="text-align:center">0x1000</td>
-<td style="text-align:center">方法是否由编译器自动产生的</td>
+<td align="center">ACC_SYNTHETIC</td>
+<td align="center">0x1000</td>
+<td align="center">方法是否由编译器自动产生的</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="4">字段表</h3>
 
 <p>用于描述接口和类中声明的变量，包括类级别变量以及实例级别变量</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">access_flags</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">access_flags</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">name_index</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">descriptor_index</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">descriptor_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attributes_count</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">attributes_count</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attributes</td>
-<td style="text-align:center">attributes_count</td>
+<td align="center">u2</td>
+<td align="center">attributes</td>
+<td align="center">attributes_count</td>
 </tr>
-</tbody>
-</table>
-<p>其中 access_flags 见上面访问标志表中的字段访问标志</p>
+<tr>
+<td align="center">其中 access_flags 见上面访问标志表中的字段访问标志</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
 <h3 id="5">方法表</h3>
 
 <p>方法表包含访问标志，名称索引和描述符索引，属性表结合等几项</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">access_flags</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">access_flags</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">name_index</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">descriptor_index</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">descriptor_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attributes_count</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">attributes_count</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">attribute_info</td>
-<td style="text-align:center">attributes</td>
-<td style="text-align:center">attributes_count</td>
+<td align="center">attribute_info</td>
+<td align="center">attributes</td>
+<td align="center">attributes_count</td>
 </tr>
-</tbody>
-</table>
-<p>其中方法的access_flags见上述的方法访问标志</p>
+<tr>
+<td align="center">其中方法的access_flags见上述的方法访问标志</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
 <h3 id="6">属性表</h3>
 
 <p>属性表用于解释Class文件，字段表，方法表中携带的属性表集合，用于描述某些场景专有的信息。</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">属性名称</th>
-<th style="text-align:center">使用位置</th>
-<th style="text-align:center">含义</th>
+<th align="center">属性名称</th>
+<th align="center">使用位置</th>
+<th align="center">含义</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">Code</td>
-<td style="text-align:center">方法表</td>
-<td style="text-align:center">Java代码编译成的字节码指令</td>
+<tbody><tr>
+<td align="center">Code</td>
+<td align="center">方法表</td>
+<td align="center">Java代码编译成的字节码指令</td>
 </tr>
 <tr>
-<td style="text-align:center">ConstantValue</td>
-<td style="text-align:center">字段表</td>
-<td style="text-align:center">final关键字定义的常量值</td>
+<td align="center">ConstantValue</td>
+<td align="center">字段表</td>
+<td align="center">final关键字定义的常量值</td>
 </tr>
 <tr>
-<td style="text-align:center">Deprecated</td>
-<td style="text-align:center">类，方法表，字段表</td>
-<td style="text-align:center">final关键字定义的常量值</td>
+<td align="center">Deprecated</td>
+<td align="center">类，方法表，字段表</td>
+<td align="center">final关键字定义的常量值</td>
 </tr>
 <tr>
-<td style="text-align:center">Exceptions</td>
-<td style="text-align:center">方法表</td>
-<td style="text-align:center">final方法抛出的异常</td>
+<td align="center">Exceptions</td>
+<td align="center">方法表</td>
+<td align="center">final方法抛出的异常</td>
 </tr>
 <tr>
-<td style="text-align:center">EnclosingMethod</td>
-<td style="text-align:center">类文件</td>
-<td style="text-align:center">仅当一个类为局部类或者匿名类时才能拥有这个属性，这个属性用于标识这个类所在的外围方法</td>
+<td align="center">EnclosingMethod</td>
+<td align="center">类文件</td>
+<td align="center">仅当一个类为局部类或者匿名类时才能拥有这个属性，这个属性用于标识这个类所在的外围方法</td>
 </tr>
 <tr>
-<td style="text-align:center">InnerClasses</td>
-<td style="text-align:center">类文件</td>
-<td style="text-align:center">内部类列表</td>
+<td align="center">InnerClasses</td>
+<td align="center">类文件</td>
+<td align="center">内部类列表</td>
 </tr>
 <tr>
-<td style="text-align:center">LineNumberTable</td>
-<td style="text-align:center">Code属性</td>
-<td style="text-align:center">Java源码的行号与字节码指令的对应关系</td>
+<td align="center">LineNumberTable</td>
+<td align="center">Code属性</td>
+<td align="center">Java源码的行号与字节码指令的对应关系</td>
 </tr>
 <tr>
-<td style="text-align:center">LocalVariableTable</td>
-<td style="text-align:center">Code属性</td>
-<td style="text-align:center">方法的局部变量描述</td>
+<td align="center">LocalVariableTable</td>
+<td align="center">Code属性</td>
+<td align="center">方法的局部变量描述</td>
 </tr>
 <tr>
-<td style="text-align:center">StackMapTable</td>
-<td style="text-align:center">Code属性</td>
-<td style="text-align:center">JDK1.6中新增的属性，供新的类型检查校验器（Type Checker）检查和处理目标方法的局部变量和操作数栈锁需要的类型是否匹配</td>
+<td align="center">StackMapTable</td>
+<td align="center">Code属性</td>
+<td align="center">JDK1.6中新增的属性，供新的类型检查校验器（Type Checker）检查和处理目标方法的局部变量和操作数栈锁需要的类型是否匹配</td>
 </tr>
 <tr>
-<td style="text-align:center">Signature</td>
-<td style="text-align:center">类，方法表，字段表</td>
-<td style="text-align:center">JDK1.5中新增的属性，这个属性用于支持泛型情况下的方法签名，在java语言中，任何类，接口，初始化方法或成员的泛型签名如果包含了类型变量（Type Variables）或者参数化类型（Parameterized Types），则Signature属性会为它记录泛型签名信息。由于java的泛型采用擦除法实现，在为了类型信息被擦除后导致签名混乱，需要这个属性记录泛型中的相关信息</td>
+<td align="center">Signature</td>
+<td align="center">类，方法表，字段表</td>
+<td align="center">JDK1.5中新增的属性，这个属性用于支持泛型情况下的方法签名，在java语言中，任何类，接口，初始化方法或成员的泛型签名如果包含了类型变量（Type Variables）或者参数化类型（Parameterized Types），则Signature属性会为它记录泛型签名信息。由于java的泛型采用擦除法实现，在为了类型信息被擦除后导致签名混乱，需要这个属性记录泛型中的相关信息</td>
 </tr>
 <tr>
-<td style="text-align:center">SourceFile</td>
-<td style="text-align:center">类文件</td>
-<td style="text-align:center">记录源文件名称</td>
+<td align="center">SourceFile</td>
+<td align="center">类文件</td>
+<td align="center">记录源文件名称</td>
 </tr>
 <tr>
-<td style="text-align:center">SourceDebugExtension</td>
-<td style="text-align:center">类文件</td>
-<td style="text-align:center">JDK1.6中新增的属性，SourceDebugExtension属性用于存储额外的调试信息。譬如在进行JSP文件调试时，无法通过Java堆栈来定位到JSP文件的行号，JSR-45规范为这些非Java语言编写，却需要编译成字节码并运行在Java虚拟机中的程序提供了一个进行调试的标准机制，使用SourceDebugExtension属性就可以用于存储这个标准所新加入的调试信息</td>
+<td align="center">SourceDebugExtension</td>
+<td align="center">类文件</td>
+<td align="center">JDK1.6中新增的属性，SourceDebugExtension属性用于存储额外的调试信息。譬如在进行JSP文件调试时，无法通过Java堆栈来定位到JSP文件的行号，JSR-45规范为这些非Java语言编写，却需要编译成字节码并运行在Java虚拟机中的程序提供了一个进行调试的标准机制，使用SourceDebugExtension属性就可以用于存储这个标准所新加入的调试信息</td>
 </tr>
 <tr>
-<td style="text-align:center">Synthetic</td>
-<td style="text-align:center">类，方法表，字段表</td>
-<td style="text-align:center">标识方法或者字段是否为编译器自动生成的</td>
+<td align="center">Synthetic</td>
+<td align="center">类，方法表，字段表</td>
+<td align="center">标识方法或者字段是否为编译器自动生成的</td>
 </tr>
 <tr>
-<td style="text-align:center">LocalVariableTypeTable</td>
-<td style="text-align:center">类</td>
-<td style="text-align:center">JDK1.5中新增的属性，它使用特征签名代替描述符，是为了引入泛型语法之后能描述泛型参数化类型而添加的</td>
+<td align="center">LocalVariableTypeTable</td>
+<td align="center">类</td>
+<td align="center">JDK1.5中新增的属性，它使用特征签名代替描述符，是为了引入泛型语法之后能描述泛型参数化类型而添加的</td>
 </tr>
 <tr>
-<td style="text-align:center">RuntimevisibleAnnotations</td>
-<td style="text-align:center">类，方法表，字段表</td>
-<td style="text-align:center">JDK1.5中新增的属性，为动态注解提供支持。RuntimevisibleAnnotations 属性用于指明哪些注解是运行时（实际上运行时就是进行反射调用）可见的</td>
+<td align="center">RuntimevisibleAnnotations</td>
+<td align="center">类，方法表，字段表</td>
+<td align="center">JDK1.5中新增的属性，为动态注解提供支持。RuntimevisibleAnnotations 属性用于指明哪些注解是运行时（实际上运行时就是进行反射调用）可见的</td>
 </tr>
 <tr>
-<td style="text-align:center">RuntimeInvisibleAnnotations</td>
-<td style="text-align:center">类，方法表，字段表</td>
-<td style="text-align:center">JDK1.5中新增的属性，与 RuntimevisibleAnnotations 属性作用刚好相反， 用于指明哪些注解是运行时不可见的</td>
+<td align="center">RuntimeInvisibleAnnotations</td>
+<td align="center">类，方法表，字段表</td>
+<td align="center">JDK1.5中新增的属性，与 RuntimevisibleAnnotations 属性作用刚好相反， 用于指明哪些注解是运行时不可见的</td>
 </tr>
 <tr>
-<td style="text-align:center">RuntimeVisibleParameterAnnotations</td>
-<td style="text-align:center">方法表</td>
-<td style="text-align:center">JDK1.5中新增的属性，作用与 RuntimevisibleAnnotations 属性类似，只不过作用对象为方法参数</td>
+<td align="center">RuntimeVisibleParameterAnnotations</td>
+<td align="center">方法表</td>
+<td align="center">JDK1.5中新增的属性，作用与 RuntimevisibleAnnotations 属性类似，只不过作用对象为方法参数</td>
 </tr>
 <tr>
-<td style="text-align:center">RuntimeInvisibleParameterAnnotations</td>
-<td style="text-align:center">方法表</td>
-<td style="text-align:center">JDK1.5中新增的属性，作用与 RuntimeInvisibleAnnotations 属性类似，只不过作用对象为方法参数</td>
+<td align="center">RuntimeInvisibleParameterAnnotations</td>
+<td align="center">方法表</td>
+<td align="center">JDK1.5中新增的属性，作用与 RuntimeInvisibleAnnotations 属性类似，只不过作用对象为方法参数</td>
 </tr>
 <tr>
-<td style="text-align:center">AnnotationDetault</td>
-<td style="text-align:center">方法表</td>
-<td style="text-align:center">JDK1.5中新增的属性，用于记录注解类元素的默认值</td>
+<td align="center">AnnotationDetault</td>
+<td align="center">方法表</td>
+<td align="center">JDK1.5中新增的属性，用于记录注解类元素的默认值</td>
 </tr>
 <tr>
-<td style="text-align:center">BootstrapMethods</td>
-<td style="text-align:center">类文件</td>
-<td style="text-align:center">JDK1.5中新增的属性，用于保存 invokedynamic 指令引用的引导方法限定符</td>
+<td align="center">BootstrapMethods</td>
+<td align="center">类文件</td>
+<td align="center">JDK1.5中新增的属性，用于保存 invokedynamic 指令引用的引导方法限定符</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>上述的每一个属性，都需要从常量池中引用一个 CONSTANT_Utf8_info类型常量来标示。还包含attribute_length（u4）用于标示属性值所占用的位数，后面再跟着属性内容。</p>
 <h4 id="6_1">Code属性结构</h4>
 
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attribute_name_index</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">attribute_name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">attribute_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">attribute_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">max_stack</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">max_stack</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">max_locals</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">max_locals</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">code_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">code_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u1</td>
-<td style="text-align:center">code</td>
-<td style="text-align:center">code_lenght</td>
+<td align="center">u1</td>
+<td align="center">code</td>
+<td align="center">code_lenght</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">exception_table_lenght</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">exception_table_lenght</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">exception_info</td>
-<td style="text-align:center">exception_table</td>
-<td style="text-align:center">exception_table_length</td>
+<td align="center">exception_info</td>
+<td align="center">exception_table</td>
+<td align="center">exception_table_length</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attributes_count</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">attributes_count</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">attribute_info</td>
-<td style="text-align:center">attributes</td>
-<td style="text-align:center">attributes_count</td>
+<td align="center">attribute_info</td>
+<td align="center">attributes</td>
+<td align="center">attributes_count</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="6_2">异常属性结构</h4>
 
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">start_pc</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">start_pc</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">end_pc</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">end_pc</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">handler_pc</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">handler_pc</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">catch_type</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">catch_type</td>
+<td align="center">1</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="6_3">Exceptions属性结构</h4>
 
 <p>区别与异常表，该表主要是列举中方法中可能抛出的受检查异常，也就是方法描述时throws关键字列举的异常</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attribute_name_index</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">attribute_name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">attribute_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">attribute_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">number_of_exceptions</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">number_of_exceptions</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">exception_index_table</td>
-<td style="text-align:center">number_of_exceptions</td>
+<td align="center">u2</td>
+<td align="center">exception_index_table</td>
+<td align="center">number_of_exceptions</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="6_4">LineNumberTable属性结构</h4>
 
 <p>用于描述Java源码行号与字节码行号之间的对应关系，默认声称到Class文件中。</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attribute_name_index</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">attribute_name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">attribute_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">attribute_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">line_number_table_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">line_number_table_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">line_number_info</td>
-<td style="text-align:center">line_number_table</td>
-<td style="text-align:center">line_number_table_length</td>
+<td align="center">line_number_info</td>
+<td align="center">line_number_table</td>
+<td align="center">line_number_table_length</td>
 </tr>
-</tbody>
-</table>
-<p>其中line_number_info包含start_pc和line_number两个u2类型的数据项。</p>
+<tr>
+<td align="center">其中line_number_info包含start_pc和line_number两个u2类型的数据项。</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
 <h4 id="6_5">LocalVariableTable属性结构</h4>
 
 <p>用于描述栈帧中局部变量表中的变量与Java源码中定义的变量之间的关系，默认生成到Class文件中</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attribute_name_index</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">attribute_name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">attribute_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">attribute_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">local_variable_table_lenght</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">local_variable_table_lenght</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">local_variable_info</td>
-<td style="text-align:center">local_variable_table</td>
-<td style="text-align:center">local_variable_table_lenght</td>
+<td align="center">local_variable_info</td>
+<td align="center">local_variable_table</td>
+<td align="center">local_variable_table_lenght</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>其中 local_variable_info是代表栈帧与源码中局部变量的关联，见下表</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">含义</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">含义</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">start_pc</td>
-<td style="text-align:center">局部变量的生命周期开始的字节码偏移量</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">start_pc</td>
+<td align="center">局部变量的生命周期开始的字节码偏移量</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">length</td>
-<td style="text-align:center">局部变量的生命周期开始的作用范围覆盖长度</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">length</td>
+<td align="center">局部变量的生命周期开始的作用范围覆盖长度</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">name_index</td>
-<td style="text-align:center">指向常量池 CONSTANT_Utf8_info 索引</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">name_index</td>
+<td align="center">指向常量池 CONSTANT_Utf8_info 索引</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">descriptor_index</td>
-<td style="text-align:center">指向常量池 CONSTANT_Utf8_info 索引</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">descriptor_index</td>
+<td align="center">指向常量池 CONSTANT_Utf8_info 索引</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">index</td>
-<td style="text-align:center">局部变量在栈帧局部变量表中Slot的位置</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">index</td>
+<td align="center">局部变量在栈帧局部变量表中Slot的位置</td>
+<td align="center">1</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="6_6">SourceFile属性结构</h4>
 
 <p>用于记录生成这个Class文件的源码文件名称</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attribute_name_index</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">attribute_name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">attribute_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">attribute_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">sourcefile_index</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">sourcefile_index</td>
+<td align="center">1</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>其中 sourcefile_index为指向常量池 CONSTANT_Utf8_info 索引</p>
 <h4 id="6_7">ConstantValue属性结构</h4>
 
@@ -1430,188 +1410,176 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attribute_name_index</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">attribute_name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">attribute_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">attribute_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">constant_index</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">constant_index</td>
+<td align="center">1</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="6_8">InnerClasses属性结构</h4>
 
 <p>用于记录内部类与宿主类之间的关联，如果一个类中定义了内部类，编译器则会为它生成内部类INnerClasses属性</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attribute_name_index</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">attribute_name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">attribute_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">attribute_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">number_of_classes</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">number_of_classes</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">inner_classes_info</td>
-<td style="text-align:center">inner_classes</td>
-<td style="text-align:center">number_of_classes</td>
+<td align="center">inner_classes_info</td>
+<td align="center">inner_classes</td>
+<td align="center">number_of_classes</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>每一个inner_classes_info代表一个内部类信息，结构如下</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">含义</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">含义</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">inner_class_info_index</td>
-<td style="text-align:center">指向常量池 CONSTANT_Class_info 索引</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">inner_class_info_index</td>
+<td align="center">指向常量池 CONSTANT_Class_info 索引</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">outer_class_info_index</td>
-<td style="text-align:center">指向常量池 CONSTANT_Class_info 索引</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">outer_class_info_index</td>
+<td align="center">指向常量池 CONSTANT_Class_info 索引</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">inner_name_index</td>
-<td style="text-align:center">指向常量池 CONSTANT_Utf8_info 索引，代表这个内部类的名称，如果匿名则为0</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">inner_name_index</td>
+<td align="center">指向常量池 CONSTANT_Utf8_info 索引，代表这个内部类的名称，如果匿名则为0</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">inner_class_access_flags</td>
-<td style="text-align:center">内部类的访问标志，见上述访问标志篇章</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">inner_class_access_flags</td>
+<td align="center">内部类的访问标志，见上述访问标志篇章</td>
+<td align="center">1</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="6_9">Deprecated/Synthetic属性结构</h4>
 
 <p>前者是用于标示某个类，字段或者方法是否不再推荐使用</p>
-<p>后者是用于标示字段或者方法不是由Java源码直接产生，所有由非用户代码生成的方法都需要设置Synthetic属性或者ACC_SYNTHETIC标志，但是<init>和<clinit>除外。他们的结构如下</clinit></init></p>
+<p>后者是用于标示字段或者方法不是由Java源码直接产生，所有由非用户代码生成的方法都需要设置Synthetic属性或者ACC_SYNTHETIC标志，但是<init>和<clinit>除外。他们的结构如下</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attribute_name_index</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">attribute_name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">attribute_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">attribute_length</td>
+<td align="center">1</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="6_10">StackMapTable属性结构</h4>
 
 <p>于JDK1.6之后添加在Class规范中，位于Code属性表中，该属性会在虚拟机类加载的字节码校验阶段被新类型检查检验器（Type Checker）使用。</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attribute_name_index</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">attribute_name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">attribute_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">attribute_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">number_of_entries</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">number_of_entries</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">stack_map_frame</td>
-<td style="text-align:center">stack_map_frame_entries</td>
-<td style="text-align:center">number_of_entries</td>
+<td align="center">stack_map_frame</td>
+<td align="center">stack_map_frame_entries</td>
+<td align="center">number_of_entries</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="6_11">Signature属性结构</h4>
 
 <p>于JDK1.5发布之后添加到Class规范中，它是一个可选的定长属性，可以出现在类，属性表，方法表结构的属性表中。该属性会记录泛型签名信息，在Java语言中泛型采用的是擦除法实现的伪泛型，在字节码（Code属性）中，泛型信息编译之后都统统被擦除掉。由于无法像C#等运行时支持获取真泛型类型，添加该属性用于弥补该缺陷，现在Java反射已经能获取到泛型类型。</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attribute_name_index</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">attribute_name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">attribute_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">attribute_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">signature_index</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">signature_index</td>
+<td align="center">1</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>其中 signature_index 值必须是一个对常量池的有效索引且为 CONSTANT_Utf8_info，表示类签名，方法类型签名或字段类型签名。如果当前Signature属性是类文件的属性，则这个结构表示类签名，如果当前Signature属性是方法表的属性，则表示方法类型签名，如果当前Signature属性是字段表的属性，则表示字段类型签名。</p>
 <h4 id="6_12">BootstrapMethods属性结构</h4>
 
@@ -1619,61 +1587,57 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">attribute_name_index</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">attribute_name_index</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u4</td>
-<td style="text-align:center">attribute_length</td>
-<td style="text-align:center">1</td>
+<td align="center">u4</td>
+<td align="center">attribute_length</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">num_bootstrap_methods</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">num_bootstrap_methods</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">bootstrap_method</td>
-<td style="text-align:center">bootstrap_methods</td>
-<td style="text-align:center">num_bootstrap_methods</td>
+<td align="center">bootstrap_method</td>
+<td align="center">bootstrap_methods</td>
+<td align="center">num_bootstrap_methods</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>其中bootstrap_method结构如下</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">数量</th>
+<th align="center">类型</th>
+<th align="center">名称</th>
+<th align="center">数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">bootstrap_method_ref</td>
-<td style="text-align:center">1</td>
+<tbody><tr>
+<td align="center">u2</td>
+<td align="center">bootstrap_method_ref</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">num_bootstrap_arguments</td>
-<td style="text-align:center">1</td>
+<td align="center">u2</td>
+<td align="center">num_bootstrap_arguments</td>
+<td align="center">1</td>
 </tr>
 <tr>
-<td style="text-align:center">u2</td>
-<td style="text-align:center">bootstrap_arguments</td>
-<td style="text-align:center">num_bootstrap_arguments</td>
+<td align="center">u2</td>
+<td align="center">bootstrap_arguments</td>
+<td align="center">num_bootstrap_arguments</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="7">特殊字符串</h3>
 
 <ul>
@@ -1687,76 +1651,72 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">标识字符</th>
-<th style="text-align:center">含义</th>
+<th align="center">标识字符</th>
+<th align="center">含义</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">B</td>
-<td style="text-align:center">基本类型 byte</td>
+<tbody><tr>
+<td align="center">B</td>
+<td align="center">基本类型 byte</td>
 </tr>
 <tr>
-<td style="text-align:center">C</td>
-<td style="text-align:center">基本类型 char</td>
+<td align="center">C</td>
+<td align="center">基本类型 char</td>
 </tr>
 <tr>
-<td style="text-align:center">D</td>
-<td style="text-align:center">基本类型 double</td>
+<td align="center">D</td>
+<td align="center">基本类型 double</td>
 </tr>
 <tr>
-<td style="text-align:center">F</td>
-<td style="text-align:center">基本类型 float</td>
+<td align="center">F</td>
+<td align="center">基本类型 float</td>
 </tr>
 <tr>
-<td style="text-align:center">I</td>
-<td style="text-align:center">基本类型 int</td>
+<td align="center">I</td>
+<td align="center">基本类型 int</td>
 </tr>
 <tr>
-<td style="text-align:center">J</td>
-<td style="text-align:center">基本类型 long</td>
+<td align="center">J</td>
+<td align="center">基本类型 long</td>
 </tr>
 <tr>
-<td style="text-align:center">S</td>
-<td style="text-align:center">基本类型 short</td>
+<td align="center">S</td>
+<td align="center">基本类型 short</td>
 </tr>
 <tr>
-<td style="text-align:center">Z</td>
-<td style="text-align:center">基本类型 boolean</td>
+<td align="center">Z</td>
+<td align="center">基本类型 boolean</td>
 </tr>
 <tr>
-<td style="text-align:center">V</td>
-<td style="text-align:center">基本类型 void</td>
+<td align="center">V</td>
+<td align="center">基本类型 void</td>
 </tr>
 <tr>
-<td style="text-align:center">L</td>
-<td style="text-align:center">对象类型，比如 Ljava/lang/Object</td>
+<td align="center">L</td>
+<td align="center">对象类型，比如 Ljava/lang/Object</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>针对数组，每一个维度使用一个前置的”[“字符来描述，比如定义一个 “java.lang.String[][]”数组，被记录为“[[java.lang.String;”一个整型数组 “int[]” 被记录为[I<br>针对方法</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">方法场景</th>
-<th style="text-align:center">描述符</th>
+<th align="center">方法场景</th>
+<th align="center">描述符</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">void inc（）</td>
-<td style="text-align:center">（）V</td>
+<tbody><tr>
+<td align="center">void inc（）</td>
+<td align="center">（）V</td>
 </tr>
 <tr>
-<td style="text-align:center">java.lang.String toString（）</td>
-<td style="text-align:center">（）Ljava/lang/String;</td>
+<td align="center">java.lang.String toString（）</td>
+<td align="center">（）Ljava/lang/String;</td>
 </tr>
 <tr>
-<td style="text-align:center">int indexOf（char[]source，int sourceOffest，int sourceCount，char[] target，int targetOffset，int targetCOunt，int formIndex）</td>
-<td style="text-align:center">（[CII[CIII）I</td>
+<td align="center">int indexOf（char[]source，int sourceOffest，int sourceCount，char[] target，int targetOffset，int targetCOunt，int formIndex）</td>
+<td align="center">（[CII[CIII）I</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 
       
     </div>
@@ -1777,7 +1737,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2019/02/28/java_2019-02-28_字节码内容表格/" title="Java字节码内容的那些表">http://yummylau.com/2019/02/28/java_2019-02-28_字节码内容表格/</a>
+    <a href="https://yummylau.cn/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E5%86%85%E5%AE%B9%E8%A1%A8%E6%A0%BC/" title="Java字节码内容的那些表">https://yummylau.cn/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E5%86%85%E5%AE%B9%E8%A1%A8%E6%A0%BC/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -1792,7 +1752,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/字节码/" rel="tag"># 字节码</a>
+            <a href="/tags/%E5%AD%97%E8%8A%82%E7%A0%81/" rel="tag"># 字节码</a>
           
         </div>
       
@@ -1805,8 +1765,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/01/net_网络模型详解/" rel="next" title="网络模型详解">
-                <i class="fa fa-chevron-left"></i> 网络模型详解
+              <a href="/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4/" rel="next" title="Java字节码的那些指令">
+                <i class="fa fa-chevron-left"></i> Java字节码的那些指令
               </a>
             
           </div>
@@ -1815,8 +1775,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/02/28/java_2019-02-28_字节码指令/" rel="prev" title="Java字节码的那些指令">
-                Java字节码的那些指令 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/02/28/java_2019-03-01_class%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90/" rel="prev" title="如何读懂一个 class 文件">
+                如何读懂一个 class 文件 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -1886,10 +1846,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -1964,7 +1926,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">Class文件结构表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">2.</span> <span class="nav-text">常量表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3"><span class="nav-number">3.</span> <span class="nav-text">访问标志表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3_1"><span class="nav-number">3.1.</span> <span class="nav-text">类访问标志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3_2"><span class="nav-number">3.2.</span> <span class="nav-text">内部类访问标志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3_3"><span class="nav-number">3.3.</span> <span class="nav-text">字段访问标志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3_4"><span class="nav-number">3.4.</span> <span class="nav-text">方法访问标志</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4"><span class="nav-number">4.</span> <span class="nav-text">字段表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5"><span class="nav-number">5.</span> <span class="nav-text">方法表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6"><span class="nav-number">6.</span> <span class="nav-text">属性表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6_1"><span class="nav-number">6.1.</span> <span class="nav-text">Code属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_2"><span class="nav-number">6.2.</span> <span class="nav-text">异常属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_3"><span class="nav-number">6.3.</span> <span class="nav-text">Exceptions属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_4"><span class="nav-number">6.4.</span> <span class="nav-text">LineNumberTable属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_5"><span class="nav-number">6.5.</span> <span class="nav-text">LocalVariableTable属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_6"><span class="nav-number">6.6.</span> <span class="nav-text">SourceFile属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_7"><span class="nav-number">6.7.</span> <span class="nav-text">ConstantValue属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_8"><span class="nav-number">6.8.</span> <span class="nav-text">InnerClasses属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_9"><span class="nav-number">6.9.</span> <span class="nav-text">Deprecated/Synthetic属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_10"><span class="nav-number">6.10.</span> <span class="nav-text">StackMapTable属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_11"><span class="nav-number">6.11.</span> <span class="nav-text">Signature属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_12"><span class="nav-number">6.12.</span> <span class="nav-text">BootstrapMethods属性结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7"><span class="nav-number">7.</span> <span class="nav-text">特殊字符串</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">Class文件结构表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">2.</span> <span class="nav-text">常量表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3"><span class="nav-number">3.</span> <span class="nav-text">访问标志表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3_1"><span class="nav-number">3.1.</span> <span class="nav-text">类访问标志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3_2"><span class="nav-number">3.2.</span> <span class="nav-text">内部类访问标志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3_3"><span class="nav-number">3.3.</span> <span class="nav-text">字段访问标志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3_4"><span class="nav-number">3.4.</span> <span class="nav-text">方法访问标志</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4"><span class="nav-number">4.</span> <span class="nav-text">字段表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5"><span class="nav-number">5.</span> <span class="nav-text">方法表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6"><span class="nav-number">6.</span> <span class="nav-text">属性表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6_1"><span class="nav-number">6.1.</span> <span class="nav-text">Code属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_2"><span class="nav-number">6.2.</span> <span class="nav-text">异常属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_3"><span class="nav-number">6.3.</span> <span class="nav-text">Exceptions属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_4"><span class="nav-number">6.4.</span> <span class="nav-text">LineNumberTable属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_5"><span class="nav-number">6.5.</span> <span class="nav-text">LocalVariableTable属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_6"><span class="nav-number">6.6.</span> <span class="nav-text">SourceFile属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_7"><span class="nav-number">6.7.</span> <span class="nav-text">ConstantValue属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_8"><span class="nav-number">6.8.</span> <span class="nav-text">InnerClasses属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_9"><span class="nav-number">6.9.</span> <span class="nav-text">Deprecated&#x2F;Synthetic属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_10"><span class="nav-number">6.10.</span> <span class="nav-text">StackMapTable属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_11"><span class="nav-number">6.11.</span> <span class="nav-text">Signature属性结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6_12"><span class="nav-number">6.12.</span> <span class="nav-text">BootstrapMethods属性结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7"><span class="nav-number">7.</span> <span class="nav-text">特殊字符串</span></a></li></ol></div>
             
 
           </div>
@@ -1984,7 +1946,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

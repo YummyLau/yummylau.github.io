@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Android View体系,">
+  <meta name="keywords" content="Android View体系," />
 
 
 
@@ -77,25 +77,25 @@
 
 
 
-<meta name="description" content="可视界面结构通过 Android Device Monitor - Hierarchy View 查看任意界面，都可看到以下布局层次。也可以通过 Tool - Android - LayoutInspector 查看。 123456789101112- DecorView	- LinearLayout		- ViewStub [id = action_mode_bar_stub]		- Frame">
-<meta name="keywords" content="Android View体系">
+<meta name="description" content="可视界面结构通过 Android Device Monitor - Hierarchy View 查看任意界面，都可看到以下布局层次。也可以通过 Tool - Android - LayoutInspector 查看。 123456789101112- DecorView	- LinearLayout		- ViewStub [id &#x3D; action_mode_bar_stub]		- Frame">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android View体系之基础常识及技巧">
-<meta property="og:url" content="http://yummylau.com/2018/03/05/Android_2018-03-05_View体系之基础常识及技巧/index.html">
+<meta property="og:url" content="https://yummylau.cn/2018/03/05/Android_2018-03-05_View%E4%BD%93%E7%B3%BB%E4%B9%8B%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%AF%86%E5%8F%8A%E6%8A%80%E5%B7%A7/index.html">
 <meta property="og:site_name" content="YummyLau">
-<meta property="og:description" content="可视界面结构通过 Android Device Monitor - Hierarchy View 查看任意界面，都可看到以下布局层次。也可以通过 Tool - Android - LayoutInspector 查看。 123456789101112- DecorView	- LinearLayout		- ViewStub [id = action_mode_bar_stub]		- Frame">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-10T05:35:03.472Z">
+<meta property="og:description" content="可视界面结构通过 Android Device Monitor - Hierarchy View 查看任意界面，都可看到以下布局层次。也可以通过 Tool - Android - LayoutInspector 查看。 123456789101112- DecorView	- LinearLayout		- ViewStub [id &#x3D; action_mode_bar_stub]		- Frame">
+<meta property="og:locale">
+<meta property="article:published_time" content="2018-03-04T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.045Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="Android View体系">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android View体系之基础常识及技巧">
-<meta name="twitter:description" content="可视界面结构通过 Android Device Monitor - Hierarchy View 查看任意界面，都可看到以下布局层次。也可以通过 Tool - Android - LayoutInspector 查看。 123456789101112- DecorView	- LinearLayout		- ViewStub [id = action_mode_bar_stub]		- Frame">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2018/03/05/Android_2018-03-05_View体系之基础常识及技巧/">
+  <link rel="canonical" href="https://yummylau.cn/2018/03/05/Android_2018-03-05_View体系之基础常识及技巧/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2018/03/05/Android_2018-03-05_View体系之基础常识及技巧/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2018/03/05/Android_2018-03-05_View%E4%BD%93%E7%B3%BB%E4%B9%8B%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%AF%86%E5%8F%8A%E6%8A%80%E5%B7%A7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/03/05/Android_2018-03-05_View体系之基础常识及技巧/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/05/Android_2018-03-05_View体系之基础常识及技巧/" itemprop="commentCount"></span>
+                <a href="/2018/03/05/Android_2018-03-05_View%E4%BD%93%E7%B3%BB%E4%B9%8B%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%AF%86%E5%8F%8A%E6%8A%80%E5%B7%A7/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/05/Android_2018-03-05_View%E4%BD%93%E7%B3%BB%E4%B9%8B%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%AF%86%E5%8F%8A%E6%8A%80%E5%B7%A7/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -361,7 +361,13 @@
 
       
         <h3 id="可视界面结构"><a href="#可视界面结构" class="headerlink" title="可视界面结构"></a>可视界面结构</h3><p>通过 <code>Android Device Monitor</code> - <code>Hierarchy View</code> 查看任意界面，都可看到以下布局层次。<br>也可以通过 <code>Tool</code> - <code>Android</code> - <code>LayoutInspector</code> 查看。</p>
-<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">-<span class="ruby"> DecorView</span></span><br><span class="line"><span class="ruby">	- LinearLayout</span></span><br><span class="line"><span class="ruby">		- ViewStub [id = action_mode_bar_stub]</span></span><br><span class="line"><span class="ruby">		- FrameLayout</span></span><br><span class="line"><span class="ruby">			- ActionBarOverlayLayout [id = decor_content_parent]</span></span><br><span class="line"><span class="ruby">				- ContentFrameLayout [id = content]</span></span><br><span class="line"><span class="ruby">					- &lt;setContentView加载的布局&gt;</span></span><br><span class="line"><span class="ruby">				- ActionBarContainer [id = action_bar_containe]</span></span><br><span class="line"><span class="ruby">					- Toolbar[id = action_bar]</span></span><br><span class="line"><span class="ruby">						- AppCompatTextView</span></span><br><span class="line"><span class="ruby">						- ActionMenuView</span></span><br><span class="line"><span class="ruby">	- View [id = statusBarBackground]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight nestedtext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">DecorView</span></span><br><span class="line">	<span class="bullet">-</span> <span class="string">LinearLayout</span></span><br><span class="line">		<span class="bullet">-</span> <span class="string">ViewStub [id = action_mode_bar_stub]</span></span><br><span class="line">		<span class="bullet">-</span> <span class="string">FrameLayout</span></span><br><span class="line">			<span class="bullet">-</span> <span class="string">ActionBarOverlayLayout [id = decor_content_parent]</span></span><br><span class="line">				<span class="bullet">-</span> <span class="string">ContentFrameLayout [id = content]</span></span><br><span class="line">					<span class="bullet">-</span> <span class="string">&lt;setContentView加载的布局&gt;</span></span><br><span class="line">				<span class="bullet">-</span> <span class="string">ActionBarContainer [id = action_bar_containe]</span></span><br><span class="line">					<span class="bullet">-</span> <span class="string">Toolbar[id = action_bar]</span></span><br><span class="line">						<span class="bullet">-</span> <span class="string">AppCompatTextView</span></span><br><span class="line">						<span class="bullet">-</span> <span class="string">ActionMenuView</span></span><br><span class="line">	<span class="bullet">-</span> <span class="string">View [id = statusBarBackground]</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
 
       
     </div>
@@ -382,7 +388,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2018/03/05/Android_2018-03-05_View体系之基础常识及技巧/" title="Android View体系之基础常识及技巧">http://yummylau.com/2018/03/05/Android_2018-03-05_View体系之基础常识及技巧/</a>
+    <a href="https://yummylau.cn/2018/03/05/Android_2018-03-05_View%E4%BD%93%E7%B3%BB%E4%B9%8B%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%AF%86%E5%8F%8A%E6%8A%80%E5%B7%A7/" title="Android View体系之基础常识及技巧">https://yummylau.cn/2018/03/05/Android_2018-03-05_View%E4%BD%93%E7%B3%BB%E4%B9%8B%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%AF%86%E5%8F%8A%E6%8A%80%E5%B7%A7/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -397,7 +403,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android-View体系/" rel="tag"># Android View体系</a>
+            <a href="/tags/Android-View%E4%BD%93%E7%B3%BB/" rel="tag"># Android View体系</a>
           
         </div>
       
@@ -410,7 +416,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/05/源码解析_2018-03-05_Touch事件源码解析/" rel="next" title="Android View体系之Touch事件传递源码解析(8.0)">
+              <a href="/2018/03/05/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2018-03-05_Touch%E4%BA%8B%E4%BB%B6%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" rel="next" title="Android View体系之Touch事件传递源码解析(8.0)">
                 <i class="fa fa-chevron-left"></i> Android View体系之Touch事件传递源码解析(8.0)
               </a>
             
@@ -420,7 +426,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/05/Android_2018-03-05_View体系总结/" rel="prev" title="Android View体系总结">
+              <a href="/2018/03/05/Android_2018-03-05_View%E4%BD%93%E7%B3%BB%E6%80%BB%E7%BB%93/" rel="prev" title="Android View体系总结">
                 Android View体系总结 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -491,10 +497,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -569,7 +577,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#可视界面结构"><span class="nav-number">1.</span> <span class="nav-text">可视界面结构</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E8%A7%86%E7%95%8C%E9%9D%A2%E7%BB%93%E6%9E%84"><span class="nav-number">1.</span> <span class="nav-text">可视界面结构</span></a></li></ol></div>
             
 
           </div>
@@ -589,7 +597,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

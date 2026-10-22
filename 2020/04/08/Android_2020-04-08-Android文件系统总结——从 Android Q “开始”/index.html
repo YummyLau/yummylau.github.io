@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Android进阶,">
+  <meta name="keywords" content="Android进阶," />
 
 
 
@@ -78,24 +78,24 @@
 
 
 <meta name="description" content="Android 系统的文件结构相对复杂，目录繁多。对于上层应用开发者来说，针对系统的分区操作及各个分区的掌握可按照下面几个分点掌握。对于boot， bootloader，recoverty相对底层的分区可按需了解即可。  AndroidStudio 提供了 Device File Explorer 可实时查看设备文件系统。部分分区要求 Root 才能查看，可自行刷机或者使用可 Root 配置的模">
-<meta name="keywords" content="Android进阶">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android文件系统总结——从 Android Q “开始”">
-<meta property="og:url" content="http://yummylau.com/2020/04/08/Android_2020-04-08-Android文件系统总结——从 Android Q “开始”/index.html">
+<meta property="og:url" content="https://yummylau.cn/2020/04/08/Android_2020-04-08-Android%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E4%BB%8E%20Android%20Q%20%E2%80%9C%E5%BC%80%E5%A7%8B%E2%80%9D/index.html">
 <meta property="og:site_name" content="YummyLau">
 <meta property="og:description" content="Android 系统的文件结构相对复杂，目录繁多。对于上层应用开发者来说，针对系统的分区操作及各个分区的掌握可按照下面几个分点掌握。对于boot， bootloader，recoverty相对底层的分区可按需了解即可。  AndroidStudio 提供了 Device File Explorer 可实时查看设备文件系统。部分分区要求 Root 才能查看，可自行刷机或者使用可 Root 配置的模">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-21T08:00:14.315Z">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-04-08T07:24:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.045Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="Android进阶">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android文件系统总结——从 Android Q “开始”">
-<meta name="twitter:description" content="Android 系统的文件结构相对复杂，目录繁多。对于上层应用开发者来说，针对系统的分区操作及各个分区的掌握可按照下面几个分点掌握。对于boot， bootloader，recoverty相对底层的分区可按需了解即可。  AndroidStudio 提供了 Device File Explorer 可实时查看设备文件系统。部分分区要求 Root 才能查看，可自行刷机或者使用可 Root 配置的模">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2020/04/08/Android_2020-04-08-Android文件系统总结——从 Android Q “开始”/">
+  <link rel="canonical" href="https://yummylau.cn/2020/04/08/Android_2020-04-08-Android文件系统总结——从 Android Q “开始”/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2020/04/08/Android_2020-04-08-Android文件系统总结——从 Android Q “开始”/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2020/04/08/Android_2020-04-08-Android%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E4%BB%8E%20Android%20Q%20%E2%80%9C%E5%BC%80%E5%A7%8B%E2%80%9D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -313,7 +313,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android进阶/" itemprop="url" rel="index">
+                  <a href="/categories/Android%E8%BF%9B%E9%98%B6/" itemprop="url" rel="index">
                     <span itemprop="name">Android进阶</span>
                   </a>
                 </span>
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/04/08/Android_2020-04-08-Android文件系统总结——从 Android Q “开始”/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/04/08/Android_2020-04-08-Android文件系统总结——从 Android Q “开始”/" itemprop="commentCount"></span>
+                <a href="/2020/04/08/Android_2020-04-08-Android%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E4%BB%8E%20Android%20Q%20%E2%80%9C%E5%BC%80%E5%A7%8B%E2%80%9D/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/04/08/Android_2020-04-08-Android%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E4%BB%8E%20Android%20Q%20%E2%80%9C%E5%BC%80%E5%A7%8B%E2%80%9D/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -363,13 +363,13 @@
         <blockquote>
 <p>Android 系统的文件结构相对复杂，目录繁多。对于上层应用开发者来说，针对系统的分区操作及各个分区的掌握可按照下面几个分点掌握。对于boot， bootloader，recoverty相对底层的分区可按需了解即可。</p>
 </blockquote>
-<p>AndroidStudio 提供了 <strong>Device File Explorer</strong> 可实时查看设备文件系统。部分分区要求 <strong>Root</strong> 才能查看，可自行刷机或者使用可 <strong>Root</strong> 配置的模拟器。其中 system 分区可做了解，data 和 storage 分区需要重点掌握。同时，随着 Android 10 推出 <a href="https://developer.android.com/training/data-storage#scoped-storage" target="_blank" rel="noopener">scoped-storage</a>，以往通过文件路径读取 storage 分区可能失效。并且往后随着系统更新，存储框架的约束并定越收越紧。有必要对整个安卓应用所涉及的存储空间有熟悉的了解，同时做好兼容 Android10 <a href="https://developer.android.com/training/data-storage#scoped-storage" target="_blank" rel="noopener">scoped-storage</a> 的准备工作。</p>
+<p>AndroidStudio 提供了 <strong>Device File Explorer</strong> 可实时查看设备文件系统。部分分区要求 <strong>Root</strong> 才能查看，可自行刷机或者使用可 <strong>Root</strong> 配置的模拟器。其中 system 分区可做了解，data 和 storage 分区需要重点掌握。同时，随着 Android 10 推出 <a href="https://developer.android.com/training/data-storage#scoped-storage">scoped-storage</a>，以往通过文件路径读取 storage 分区可能失效。并且往后随着系统更新，存储框架的约束并定越收越紧。有必要对整个安卓应用所涉及的存储空间有熟悉的了解，同时做好兼容 Android10 <a href="https://developer.android.com/training/data-storage#scoped-storage">scoped-storage</a> 的准备工作。</p>
 <h3 id="system分区"><a href="#system分区" class="headerlink" title="system分区"></a>system分区</h3><p>始终存在且只读挂载，刷 ROM 的分区.</p>
 <p>查看方式</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/system</span><br><span class="line">Environment.getRootDirectory().getAbsolutePath()</span><br></pre></td></tr></table></figure>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">/system</span></span><br><span class="line">Environment.getRootDirectory<span class="params">()</span><span class="string">.getAbsolutePath</span><span class="params">()</span></span><br></pre></td></tr></table></figure>
 <p>主要目录</p>
 <ul>
-<li><code>/system/{packageName}</code> 预装 apk 目录，系统应用</li>
+<li><code>/system/&#123;packageName&#125;</code> 预装 apk 目录，系统应用</li>
 <li><code>/system/lib</code> 自带 apk 用到的库文件</li>
 <li><code>/system/bin</code> 存放一些可执行文件，基本上都是由 C/C++ 编写，比如 app_process 用于启动 Zygote</li>
 <li><code>/system/xbin</code> 存放一些可执行文件，目录可为空</li>
@@ -380,20 +380,31 @@
 <figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/<span class="class"><span class="keyword">data</span></span></span><br><span class="line"><span class="type">Environment</span>.getDataDirectory().getAbsolutePath()</span><br></pre></td></tr></table></figure>
 <p>主要目录</p>
 <ul>
-<li><code>/data/app</code> 用于包含许多 apk 的文件列表</li>
-<li><code>/data/cache</code> 用于保存临时缓存或者下载的文件</li>
-<li><code>/data/data</code> 用于存储 app 的数据</li>
-<li><p><code>/data/data/{packageName}</code> 以包名形式区分，为app的私有存储空间，app卸载之后会删除该包下的文件</p>
+<li><p><code>/data/app</code> 用于包含许多 apk 的文件列表</p>
+</li>
+<li><p><code>/data/cache</code> 用于保存临时缓存或者下载的文件</p>
+</li>
+<li><p><code>/data/data</code> 用于存储 app 的数据</p>
+</li>
+<li><p><code>/data/data/&#123;packageName&#125;</code> 以包名形式区分，为app的私有存储空间，app卸载之后会删除该包下的文件</p>
 <ul>
-<li><code>/database</code>用于存储数据库文件</li>
-<li><code>/shared_prefs</code> 用于存储 shared 文件</li>
-<li><code>/lib</code>用于存储 so 库</li>
-<li><code>/code_cache</code>优化过的代码缓存</li>
-<li>…</li>
-<li><code>/cache</code>缓存空间， context.getCacheDir() 获取</li>
+<li><p><code>/database</code>用于存储数据库文件</p>
+</li>
+<li><p><code>/shared_prefs</code> 用于存储 shared 文件</p>
+</li>
+<li><p><code>/lib</code>用于存储 so 库</p>
+</li>
+<li><p><code>/code_cache </code>优化过的代码缓存</p>
+</li>
+<li><p>…</p>
+</li>
+<li><p><code>/cache</code>缓存空间， context.getCacheDir() 获取</p>
+</li>
 <li><p><code>/files</code> 数据存储空间，contet.getFilesDir() 获取</p>
-<p>一般的，一个应用的内部存储路径未 <code>/data/data/{packageName}/</code> 。但是对于特殊机型比如华为，小米可能为 <code>/data/user/0/{packageName}/</code></p>
+<p>一般的，一个应用的内部存储路径未 <code>/data/data/&#123;packageName&#125;/</code> 。但是对于特殊机型比如华为，小米可能为 <code>/data/user/0/&#123;packageName&#125;/</code></p>
 <figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/<span class="class"><span class="keyword">data</span>/<span class="keyword">data</span>/&#123;<span class="title">packageName</span>&#125;/files/</span></span><br><span class="line"><span class="title">context</span>.getFilesDir().getAbsolutePath();</span><br><span class="line"></span><br><span class="line">/<span class="class"><span class="keyword">data</span>/<span class="keyword">data</span>/&#123;<span class="title">packageName</span>&#125;/cache/</span></span><br><span class="line"><span class="title">context</span>.getCacheDir().getAbsolutePath();</span><br></pre></td></tr></table></figure>
+
+
 </li>
 </ul>
 </li>
@@ -403,13 +414,13 @@
 <p>对于 4.4 以前的手机，设备存储很小，存在一个内置的存储空间，这部分空间就是内部存储。另外，还支持一个可以移除的存储介质，就是外部存储，比如 SD 卡。随着硬件升级，大部分大于 Android 4.4 的设备内置的存储空间可以划分为 “内部存储” 和 “外部存储”。同时，若此时还支持插入 SD 卡，则外部存储空间等于 “外部存储” 和 “SD卡存储” 之和。</p>
 </blockquote>
 <p>查看方式</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/storage/</span>emulated/<span class="number">0</span></span><br><span class="line"><span class="meta">@Deprecated</span>  Android10 版本上不再推荐使用该 Api</span><br><span class="line">Environment.getExternalStorageDirectory()</span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/storage/</span>emulated<span class="operator">/</span><span class="number">0</span></span><br><span class="line"><span class="meta">@Deprecated</span>  <span class="type">Android10</span> 版本上不再推荐使用该 <span class="type">Api</span></span><br><span class="line"><span class="type">Environment</span>.getExternalStorageDirectory() </span><br></pre></td></tr></table></figure>
 <p>主要目录</p>
 <ul>
 <li><code>storage/emulated/0/Android/</code><ul>
-<li><code>media/{packageName}</code>,以包名的形式区分，app的私有多媒体空间,5.0 Api可用</li>
-<li><code>obb/{packageName}</code>,以包名的形式区分，游戏 obb 数据文件</li>
-<li><code>data/{packageName}</code> 以包名的形式区分，app的私有存储空间<ul>
+<li><code>media/&#123;packageName&#125;</code>,以包名的形式区分，app的私有多媒体空间,5.0 Api可用</li>
+<li><code>obb/&#123;packageName&#125;</code>,以包名的形式区分，游戏 obb 数据文件</li>
+<li><code>data/&#123;packageName&#125;</code> 以包名的形式区分，app的私有存储空间<ul>
 <li><code>/cache</code> 缓存空间，可通过 <code>context.getExternalCacheDir()</code> 获取</li>
 <li><code>/files</code> 数据存储空间，可通过 <code>context.getExternalFilesDir()</code> 获取, Android 10 通过以下方法进一步操作<ul>
 <li><code>/Music</code>, 通过 <code>context.getExternalFilesDirs(Environment.DIRECTORY_MUSIC)</code> 获取</li>
@@ -418,14 +429,12 @@
 <li><code>/Alarms</code>, 通过 <code>context.getExternalFilesDirs(Environment.DIRECTORY_ALARMS)</code> 获取</li>
 <li><code>/Notifications</code>, 通过 <code>context.getExternalFilesDirs(Environment.DIRECTORY_NOTIFICATIONS)</code> 获取</li>
 <li><code>/Pictures</code>, 通过 <code>context.getExternalFilesDirs(Environment.DIRECTORY_PICTURES)</code> 获取</li>
-<li><code>/Movies</code>, 通过 <code>context.getExternalFilesDirs(Environment.DIRECTORY_MOVIES)</code> 获取<ul>
+<li><code>/Movies</code>, 通过 <code>context.getExternalFilesDirs(Environment.DIRECTORY_MOVIES)</code> 获取</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><code>media</code>，<code>obb</code>,<code>data</code> Android10及以上 按包名为应用划分 <strong>沙盒目录</strong>，跟随 app 卸载而删除，外部无法访问</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 <li><code>storage/emulated/0/Music/</code>  Android 10及以上 无法通过路径访问，SAF，MediaStore 可行</li>
@@ -490,7 +499,7 @@
 </ul>
 <p><strong>一些重要的建议</strong></p>
 <ol>
-<li>存储作用域 <a href="https://developer.android.com/training/data-storage#scoped-storage" target="_blank" rel="noopener">scoped-storage</a><br>针对 Android10 及以上设备，可通过 <a href="https://developer.android.com/training/data-storage/compatibility" target="_blank" rel="noopener">requestLegacyExternalStorage</a> 来控制，默认 <code>false</code> 。低版本设备可以通过设置为 <code>false</code> 来开启这个特性。以下观点均默认 Andriod 10及以上版本默认支持该特性。</li>
+<li>存储作用域 <a href="https://developer.android.com/training/data-storage#scoped-storage">scoped-storage</a><br>针对 Android10 及以上设备，可通过 <a href="https://developer.android.com/training/data-storage/compatibility">requestLegacyExternalStorage</a> 来控制，默认 <code>false</code> 。低版本设备可以通过设置为 <code>false</code> 来开启这个特性。以下观点均默认 Andriod 10及以上版本默认支持该特性。</li>
 <li>考虑到专用存储空间会随着 app 的卸载而被移除，针对那些用户希望独立于 app 而存在的文件，比如照片，多媒体等，不希望卸载 app 之后被删除则就应该使用共享存储来保留。</li>
 <li>如果希望外部应用可以访问到内部存储的文件，应该使用 <strong>FileProvider</strong> 结合 <em>FLAG_GRANT_READ_URI_PERMISSION</em> 使用。</li>
 <li><code>getCacheDir()</code> 可能因为设备内部存储空间不足而删除部分缓存文件，确保在读取之前检测文件是否存在</li>
@@ -507,28 +516,34 @@
 <li>Android 10及以上版本的设备，每一个多媒体文件都有一个应用归属属性，非归属应用访问时需要授权 <code>READ_EXTERNAL_STORAGE</code> 权限。当应用卸载重装之后，访问之前保存的文件也会需要权限，原因是该保存的文件属于之前安装的应用。</li>
 </ol>
 <h3 id="Android10及以上实践建议"><a href="#Android10及以上实践建议" class="headerlink" title="Android10及以上实践建议"></a>Android10及以上实践建议</h3><ul>
-<li><p>通过控制 [android:requestLegacyExternalStorage] (<a href="https://developer.android.com/training/data-storage/compatibility" target="_blank" rel="noopener">https://developer.android.com/training/data-storage/compatibility</a>) 属性来决定要不要开启新特性 <a href="https://developer.android.com/training/data-storage#scoped-storage" target="_blank" rel="noopener">scoped-storage</a></p>
-  <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">manifest</span> <span class="attr">...</span> &gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- This attribute is "false" by default on apps targeting</span></span><br><span class="line"><span class="comment">       Android 10 or higher. --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">application</span> <span class="attr">android:requestLegacyExternalStorage</span>=<span class="string">"true"</span> <span class="attr">...</span> &gt;</span></span><br><span class="line">      ...</span><br><span class="line">    <span class="tag">&lt;/<span class="name">application</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">manifest</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<li><p>通过控制 [android:requestLegacyExternalStorage] (<a href="https://developer.android.com/training/data-storage/compatibility">https://developer.android.com/training/data-storage/compatibility</a>) 属性来决定要不要开启新特性 <a href="https://developer.android.com/training/data-storage#scoped-storage">scoped-storage</a></p>
+  <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">manifest</span> <span class="attr">...</span> &gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- This attribute is &quot;false&quot; by default on apps targeting</span></span><br><span class="line"><span class="comment">       Android 10 or higher. --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">application</span> <span class="attr">android:requestLegacyExternalStorage</span>=<span class="string">&quot;true&quot;</span> <span class="attr">...</span> &gt;</span></span><br><span class="line">      ...</span><br><span class="line">    <span class="tag">&lt;/<span class="name">application</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">manifest</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>读取非共享外部存储已经不需要 <code>READ_EXTERNAL_STORAGE</code> 和 <code>WRITE_EXTERNAL_STORAGE</code>,因为整体是一个 <strong>沙箱</strong> 涉及，减少权限请求。只有读取其他app的共享外部存储数据才需要，代码向下兼容。</p>
 </li>
-<li>读取共享数据需要请求必要的权限，使用 <strong>MediaStore API</strong> 进行文件访问</li>
-<li>针对其他应用创建的共享文件<ul>
+<li><p>读取共享数据需要请求必要的权限，使用 <strong>MediaStore API</strong> 进行文件访问</p>
+</li>
+<li><p>针对其他应用创建的共享文件</p>
+<ul>
 <li>访问：请求必要权限 -&gt; ContentResoler 查找并打开文件</li>
 <li>写入：当且仅当你的应用是系统某个功能的默认应用才可以，比如照片管理应用，默认音乐应用等。被设置默认角色之后 -&gt; ContentResoler 查找并打开文件,执行编辑、变更操作。</li>
 </ul>
 </li>
-<li>当应用需要进入兼容 <a href="https://developer.android.com/training/data-storage#scoped-storage" target="_blank" rel="noopener">scoped-storage</a> ，面向用户的是允许或拒绝应用程序访问整个外部存储的权限，而不是像图片、视频或音乐等单独的共享集合。</li>
-<li>应用无法在沙盒目录之外的路径新建文件，包括使用 <code>Environment.getExternalStorageDirectory()</code>.</li>
-<li>应用无法直接使用路径访问沙盒之外的文件，<code>MediaStore</code> 只能访问公共目录下的多媒体文件`</li>
-<li>应用无法分享文件，需要 <code>file://</code> 类型的 Uri 转换成 <code>content://</code> 类型</li>
+<li><p>当应用需要进入兼容 <a href="https://developer.android.com/training/data-storage#scoped-storage">scoped-storage</a> ，面向用户的是允许或拒绝应用程序访问整个外部存储的权限，而不是像图片、视频或音乐等单独的共享集合。</p>
+</li>
+<li><p>应用无法在沙盒目录之外的路径新建文件，包括使用 <code>Environment.getExternalStorageDirectory()</code>.</p>
+</li>
+<li><p>应用无法直接使用路径访问沙盒之外的文件，<code>MediaStore</code> 只能访问公共目录下的多媒体文件`</p>
+</li>
+<li><p>应用无法分享文件，需要 <code>file://</code> 类型的 Uri 转换成 <code>content://</code> 类型</p>
+</li>
 </ul>
-<p>细节编码可直接查看 <a href="https://shoewann0402.github.io/2019/03/17/android-q-beta-scoped-storage/" target="_blank" rel="noopener">Android Q 独立存储</a> 一文</p>
+<p>细节编码可直接查看 <a href="https://shoewann0402.github.io/2019/03/17/android-q-beta-scoped-storage/">Android Q 独立存储</a> 一文</p>
 <h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><ul>
-<li><a href="https://developer.android.google.cn/guide/topics/data" target="_blank" rel="noopener">官方 – 应用数据和文件</a></li>
-<li><a href="https://juejin.im/post/5dc23ade6fb9a04ab745b74e" target="_blank" rel="noopener">AndroidQ 适配-存储空间篇</a></li>
-<li><a href="https://shoewann0402.github.io/2019/03/17/android-q-beta-scoped-storage/" target="_blank" rel="noopener">Android Q 独立存储</a></li>
-<li><a href="https://open.oppomobile.com/wiki/doc#id=10432" target="_blank" rel="noopener">Android Q版本应用兼容性适配指导</a></li>
+<li><a href="https://developer.android.google.cn/guide/topics/data">官方 – 应用数据和文件</a></li>
+<li><a href="https://juejin.im/post/5dc23ade6fb9a04ab745b74e">AndroidQ 适配-存储空间篇</a></li>
+<li><a href="https://shoewann0402.github.io/2019/03/17/android-q-beta-scoped-storage/">Android Q 独立存储</a></li>
+<li><a href="https://open.oppomobile.com/wiki/doc#id=10432">Android Q版本应用兼容性适配指导</a></li>
 </ul>
 
       
@@ -550,7 +565,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2020/04/08/Android_2020-04-08-Android文件系统总结——从 Android Q “开始”/" title="Android文件系统总结——从 Android Q “开始”">http://yummylau.com/2020/04/08/Android_2020-04-08-Android文件系统总结——从 Android Q “开始”/</a>
+    <a href="https://yummylau.cn/2020/04/08/Android_2020-04-08-Android%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E4%BB%8E%20Android%20Q%20%E2%80%9C%E5%BC%80%E5%A7%8B%E2%80%9D/" title="Android文件系统总结——从 Android Q “开始”">https://yummylau.cn/2020/04/08/Android_2020-04-08-Android%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E4%BB%8E%20Android%20Q%20%E2%80%9C%E5%BC%80%E5%A7%8B%E2%80%9D/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -565,7 +580,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android进阶/" rel="tag"># Android进阶</a>
+            <a href="/tags/Android%E8%BF%9B%E9%98%B6/" rel="tag"># Android进阶</a>
           
         </div>
       
@@ -578,7 +593,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/04/06/源码解析——LiveData & Life生命周期完整体系详解/" rel="next" title="源码解析——LiveData & Lifecycles 完整体系详解">
+              <a href="/2020/04/06/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E2%80%94%E2%80%94LiveData%20&%20Life%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%AE%8C%E6%95%B4%E4%BD%93%E7%B3%BB%E8%AF%A6%E8%A7%A3/" rel="next" title="源码解析——LiveData & Lifecycles 完整体系详解">
                 <i class="fa fa-chevron-left"></i> 源码解析——LiveData & Lifecycles 完整体系详解
               </a>
             
@@ -588,7 +603,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/05/02/Android_2020-04-14_Android 补丁技术学习总结(一) 冷启动类加载/" rel="prev" title="Android 补丁技术学习总结(一) 冷启动类加载">
+              <a href="/2020/05/02/Android_2020-04-14_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%B8%80)%20%E5%86%B7%E5%90%AF%E5%8A%A8%E7%B1%BB%E5%8A%A0%E8%BD%BD/" rel="prev" title="Android 补丁技术学习总结(一) 冷启动类加载">
                 Android 补丁技术学习总结(一) 冷启动类加载 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -659,10 +674,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -737,7 +754,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#system分区"><span class="nav-number">1.</span> <span class="nav-text">system分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#data分区（Internal-Storage）"><span class="nav-number">2.</span> <span class="nav-text">data分区（Internal Storage）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#storage-分区（External-Storage-Shared-Storage）"><span class="nav-number">3.</span> <span class="nav-text">storage 分区（External Storage/Shared Storage）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-逻辑角度看"><span class="nav-number">4.</span> <span class="nav-text">Android 逻辑角度看</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android10及以上实践建议"><span class="nav-number">5.</span> <span class="nav-text">Android10及以上实践建议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文档"><span class="nav-number">6.</span> <span class="nav-text">参考文档</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#system%E5%88%86%E5%8C%BA"><span class="nav-number">1.</span> <span class="nav-text">system分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#data%E5%88%86%E5%8C%BA%EF%BC%88Internal-Storage%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">data分区（Internal Storage）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#storage-%E5%88%86%E5%8C%BA%EF%BC%88External-Storage-Shared-Storage%EF%BC%89"><span class="nav-number">3.</span> <span class="nav-text">storage 分区（External Storage&#x2F;Shared Storage）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-%E9%80%BB%E8%BE%91%E8%A7%92%E5%BA%A6%E7%9C%8B"><span class="nav-number">4.</span> <span class="nav-text">Android 逻辑角度看</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android10%E5%8F%8A%E4%BB%A5%E4%B8%8A%E5%AE%9E%E8%B7%B5%E5%BB%BA%E8%AE%AE"><span class="nav-number">5.</span> <span class="nav-text">Android10及以上实践建议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3"><span class="nav-number">6.</span> <span class="nav-text">参考文档</span></a></li></ol></div>
             
 
           </div>
@@ -757,7 +774,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

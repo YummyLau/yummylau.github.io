@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="源码解析,">
+  <meta name="keywords" content="源码解析," />
 
 
 
@@ -78,24 +78,24 @@
 
 
 <meta name="description" content="Linxu 及 Android IPClinxu进程间通信手段 管道 Pipe，在创建时分配一个page大小的内存，缓存区大小比较有限（拷贝2次） 信号 Signal，不适用于信息交换，更适用于进程中断控制，比如非法内存访问，杀死某个进程等 信号量 semaphore，常作为一种锁机制，防止某进程正在访问共享资源时，其他进程也访问该资源。因此，主要作为进程间以及同一进程内不同线程之间的同步手段 套">
-<meta name="keywords" content="源码解析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="系统源码解析——AIDL">
-<meta property="og:url" content="http://yummylau.com/2018/09/26/源码解析_2018-09-26_AIDl/index.html">
+<meta property="og:url" content="https://yummylau.cn/2018/09/26/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2018-09-26_AIDl/index.html">
 <meta property="og:site_name" content="YummyLau">
 <meta property="og:description" content="Linxu 及 Android IPClinxu进程间通信手段 管道 Pipe，在创建时分配一个page大小的内存，缓存区大小比较有限（拷贝2次） 信号 Signal，不适用于信息交换，更适用于进程中断控制，比如非法内存访问，杀死某个进程等 信号量 semaphore，常作为一种锁机制，防止某进程正在访问共享资源时，其他进程也访问该资源。因此，主要作为进程间以及同一进程内不同线程之间的同步手段 套">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-18T14:56:57.920Z">
+<meta property="og:locale">
+<meta property="article:published_time" content="2018-09-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.056Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="源码解析">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="系统源码解析——AIDL">
-<meta name="twitter:description" content="Linxu 及 Android IPClinxu进程间通信手段 管道 Pipe，在创建时分配一个page大小的内存，缓存区大小比较有限（拷贝2次） 信号 Signal，不适用于信息交换，更适用于进程中断控制，比如非法内存访问，杀死某个进程等 信号量 semaphore，常作为一种锁机制，防止某进程正在访问共享资源时，其他进程也访问该资源。因此，主要作为进程间以及同一进程内不同线程之间的同步手段 套">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2018/09/26/源码解析_2018-09-26_AIDl/">
+  <link rel="canonical" href="https://yummylau.cn/2018/09/26/源码解析_2018-09-26_AIDl/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2018/09/26/源码解析_2018-09-26_AIDl/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2018/09/26/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2018-09-26_AIDl/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/09/26/源码解析_2018-09-26_AIDl/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/26/源码解析_2018-09-26_AIDl/" itemprop="commentCount"></span>
+                <a href="/2018/09/26/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2018-09-26_AIDl/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/26/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2018-09-26_AIDl/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -400,7 +400,9 @@
 <li>绑定启动则能直接得到</li>
 </ul>
 </li>
-<li>取得ServiceConnection对象<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span></span>&#123;</span><br><span class="line"><span class="keyword">private</span> IMyAidlInterface iMyAidlInterface; </span><br><span class="line"><span class="meta">@Override</span> </span><br><span class="line">  <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span></span>&#123; </span><br><span class="line">      <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">     setContentView(R.layout.activity_main); </span><br><span class="line">     bindService(<span class="keyword">new</span> Intent(<span class="string">"cc.abto.server"</span>), <span class="keyword">new</span> ServiceConnection() &#123; </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onServiceConnected</span><span class="params">(ComponentName name, IBinder service)</span></span>&#123;</span><br><span class="line">         iMyAidlInterface = IMyAidlInterface.Stub.asInterface(service);</span><br><span class="line">     &#125; </span><br><span class="line"></span><br><span class="line">    <span class="meta">@Overridepublic</span> <span class="function"><span class="keyword">void</span> <span class="title">onServiceDisconnected</span><span class="params">(ComponentName name)</span></span>&#123; </span><br><span class="line">     &#125;</span><br><span class="line">     &#125;, BIND_AUTO_CREATE); </span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View view)</span></span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">         Toast.makeText(MainActivity.<span class="keyword">this</span>, iMyAidlInterface.getName(), Toast.LENGTH_SHORT).show();</span><br><span class="line">     &#125; <span class="keyword">catch</span> (RemoteException e) &#123; </span><br><span class="line">         e.printStackTrace(); </span><br><span class="line">     &#125;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<li>取得ServiceConnection对象<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MainActivity</span> <span class="keyword">extends</span> <span class="title class_ inherited__">AppCompatActivity</span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="title class_">IMyAidlInterface</span> iMyAidlInterface; </span><br><span class="line"><span class="meta">@Override</span> </span><br><span class="line">  <span class="keyword">protected</span> <span class="built_in">void</span> <span class="title function_">onCreate</span>(<span class="params"><span class="title class_">Bundle</span> savedInstanceState</span>)&#123; </span><br><span class="line">      <span class="variable language_">super</span>.<span class="title function_">onCreate</span>(savedInstanceState);</span><br><span class="line">     <span class="title function_">setContentView</span>(R.<span class="property">layout</span>.<span class="property">activity_main</span>); </span><br><span class="line">     <span class="title function_">bindService</span>(<span class="keyword">new</span> <span class="title class_">Intent</span>(<span class="string">&quot;cc.abto.server&quot;</span>), <span class="keyword">new</span> <span class="title class_">ServiceConnection</span>() &#123; </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">void</span> <span class="title function_">onServiceConnected</span>(<span class="params"><span class="title class_">ComponentName</span> name, <span class="title class_">IBinder</span> service</span>)&#123;</span><br><span class="line">         iMyAidlInterface = <span class="title class_">IMyAidlInterface</span>.<span class="property">Stub</span>.<span class="title function_">asInterface</span>(service);</span><br><span class="line">     &#125; </span><br><span class="line"></span><br><span class="line">    <span class="meta">@Overridepublic</span> <span class="built_in">void</span> <span class="title function_">onServiceDisconnected</span>(<span class="params"><span class="title class_">ComponentName</span> name</span>)&#123; </span><br><span class="line">     &#125;</span><br><span class="line">     &#125;, <span class="variable constant_">BIND_AUTO_CREATE</span>); </span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">void</span> <span class="title function_">onClick</span>(<span class="params"><span class="title class_">View</span> view</span>)&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">         <span class="title class_">Toast</span>.<span class="title function_">makeText</span>(<span class="title class_">MainActivity</span>.<span class="property">this</span>, iMyAidlInterface.<span class="title function_">getName</span>(), <span class="title class_">Toast</span>.<span class="property">LENGTH_SHORT</span>).<span class="title function_">show</span>();</span><br><span class="line">     &#125; <span class="keyword">catch</span> (<span class="title class_">RemoteException</span> e) &#123; </span><br><span class="line">         e.<span class="title function_">printStackTrace</span>(); </span><br><span class="line">     &#125;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+
 </li>
 </ul>
 <h3 id="通讯过程"><a href="#通讯过程" class="headerlink" title="通讯过程"></a>通讯过程</h3><ul>
@@ -425,8 +427,9 @@
 </ul>
 </li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IBinder</span> </span>&#123; </span><br><span class="line"> ... ... <span class="comment">// 查看 binder 对应的进程是否存活</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">pingBinder</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 查看 binder 是否存活，需要注意的是，可能在返回的过程中，binder 不可用 </span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isBinderAlive</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 执行一个对象的方法， </span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> 需要执行的命令</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> 传输的命令数据，这里一定不能为空</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> 目标 Binder 返回的结果，可能为空</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> 操作方式，0 等待 RPC 返回结果，1 单向的命令，最常见的就是 Intent.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">transact</span><span class="params">(<span class="keyword">int</span> code, Parcel data, Parcel reply, <span class="keyword">int</span> flags)</span> <span class="keyword">throws</span> RemoteException</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 注册对Binder死亡通知的观察者，在其死亡后，会收到相应的通知 </span></span><br><span class="line">  <span class="comment">// 这里先跳过，后续</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">linkToDeath</span><span class="params">(DeathRecipient recipient, <span class="keyword">int</span> flags)</span> <span class="keyword">throws</span> RemoteException</span>; </span><br><span class="line"> ... ... </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<h4 id="aidl接口生成-Stub"><a href="#aidl接口生成-Stub" class="headerlink" title="aidl接口生成 Stub"></a>aidl接口生成 Stub</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">IMyAidlInterface</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">basicTypes</span><span class="params">(<span class="keyword">int</span> anInt, <span class="keyword">long</span> aLong, <span class="keyword">boolean</span> aBoolean, <span class="keyword">float</span> aFloat,</span></span></span><br><span class="line"><span class="function"><span class="params">            <span class="keyword">double</span> aDouble, String aString)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IBinder</span> </span>&#123; </span><br><span class="line"> ... ... <span class="comment">// 查看 binder 对应的进程是否存活</span></span><br><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">boolean</span> <span class="title">pingBinder</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 查看 binder 是否存活，需要注意的是，可能在返回的过程中，binder 不可用 </span></span><br><span class="line">  <span class="keyword">public</span> <span class="function"><span class="keyword">boolean</span> <span class="title">isBinderAlive</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 执行一个对象的方法， </span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> 需要执行的命令</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> 传输的命令数据，这里一定不能为空</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> 目标 Binder 返回的结果，可能为空</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> 操作方式，0 等待 RPC 返回结果，1 单向的命令，最常见的就是 Intent.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">boolean</span> <span class="title">transact</span><span class="params">(<span class="keyword">int</span> code, Parcel data, Parcel reply, <span class="keyword">int</span> flags)</span> <span class="keyword">throws</span> RemoteException</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 注册对Binder死亡通知的观察者，在其死亡后，会收到相应的通知 </span></span><br><span class="line">  <span class="comment">// 这里先跳过，后续</span></span><br><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">void</span> <span class="title">linkToDeath</span><span class="params">(DeathRecipient recipient, <span class="keyword">int</span> flags)</span> <span class="keyword">throws</span> RemoteException</span>; </span><br><span class="line"> ... ... </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="aidl接口生成-Stub"><a href="#aidl接口生成-Stub" class="headerlink" title="aidl接口生成 Stub"></a>aidl接口生成 Stub</h4><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">interface IMyAidlInterface &#123;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">basicTypes</span><span class="params">(<span class="type">int</span> anInt, <span class="type">long</span> aLong, <span class="type">boolean</span> aBoolean, <span class="type">float</span> aFloat,</span></span></span><br><span class="line"><span class="params"><span class="function">            <span class="type">double</span> aDouble, <span class="type">String</span> aString)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>生成的实现IInterface类</p>
 <ul>
 <li>stub内部类<ul>
@@ -435,7 +438,11 @@
 </ul>
 </li>
 <li>proxy内部类<ul>
-<li>每一个接口定义的方法，写入参数，读取值，调用，mRemote.transact(Stub.TRANSACTION_basicTypes, _data, _reply, 0)<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IMyAidlInterface</span> <span class="keyword">extends</span> <span class="title">android</span>.<span class="title">os</span>.<span class="title">IInterface</span></span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">//生成的stub内部类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Stub</span> <span class="keyword">extends</span> <span class="title">android</span>.<span class="title">os</span>.<span class="title">Binder</span> <span class="keyword">implements</span> <span class="title">com</span>.<span class="title">example</span>.<span class="title">code</span>.<span class="title">IMyAidlInterface</span>   </span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> java.lang.String DESCRIPTOR = <span class="string">"com.example.code.IMyAidlInterface"</span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Stub</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.attachInterface(<span class="keyword">this</span>, DESCRIPTOR);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//用户外部service获取</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> com.example.code.<span class="function">IMyAidlInterface <span class="title">asInterface</span><span class="params">(android.os.IBinder obj)</span></span>&#123;</span><br><span class="line"><span class="keyword">if</span> ((obj==<span class="keyword">null</span>)) &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line">android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);</span><br><span class="line"><span class="keyword">if</span> (((iin!=<span class="keyword">null</span>)&amp;&amp;(iin <span class="keyword">instanceof</span> com.example.code.IMyAidlInterface))) &#123;</span><br><span class="line">    <span class="keyword">return</span> ((com.example.code.IMyAidlInterface)iin);</span><br><span class="line">&#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> com.example.code.IMyAidlInterface.Stub.Proxy(obj);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span> <span class="keyword">public</span> android.os.<span class="function">IBinder <span class="title">asBinder</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span> <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onTransact</span><span class="params">(<span class="keyword">int</span> code, android.os.Parcel data, android.os.Parcel reply, <span class="keyword">int</span> flags)</span> <span class="keyword">throws</span> android.os.RemoteException</span>&#123;</span><br><span class="line">    <span class="keyword">switch</span> (code)&#123;</span><br><span class="line">        <span class="keyword">case</span> INTERFACE_TRANSACTION:&#123;</span><br><span class="line">reply.writeString(DESCRIPTOR);</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">case</span> TRANSACTION_basicTypes:&#123;</span><br><span class="line">    data.enforceInterface(DESCRIPTOR);</span><br><span class="line">    <span class="keyword">int</span> _arg0;</span><br><span class="line">    _arg0 = data.readInt();</span><br><span class="line">    <span class="keyword">long</span> _arg1;</span><br><span class="line">    _arg1 = data.readLong();</span><br><span class="line">    <span class="keyword">boolean</span> _arg2;</span><br><span class="line">    _arg2 = (<span class="number">0</span>!=data.readInt());</span><br><span class="line">    <span class="keyword">float</span> _arg3;</span><br><span class="line">    _arg3 = data.readFloat();</span><br><span class="line">    <span class="keyword">double</span> _arg4;</span><br><span class="line">    _arg4 = data.readDouble();</span><br><span class="line">    java.lang.String _arg5;</span><br><span class="line">    _arg5 = data.readString();</span><br><span class="line">    <span class="keyword">this</span>.basicTypes(_arg0, _arg1, _arg2, _arg3, _arg4, _arg5);</span><br><span class="line">    reply.writeNoException();</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">super</span>.onTransact(code, data, reply, flags);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Proxy</span> <span class="keyword">implements</span> <span class="title">com</span>.<span class="title">example</span>.<span class="title">code</span>.<span class="title">IMyAidlInterface</span> </span>&#123;</span><br><span class="line">        <span class="keyword">private</span> android.os.IBinder mRemote;</span><br><span class="line">    Proxy(android.os.IBinder remote)    &#123;</span><br><span class="line">            mRemote = remote;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span> </span><br><span class="line"><span class="keyword">public</span> android.os.<span class="function">IBinder <span class="title">asBinder</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> mRemote;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> java.lang.<span class="function">String <span class="title">getInterfaceDescriptor</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> DESCRIPTOR;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Demonstrates some basic types that you can use as parameters</span></span><br><span class="line"><span class="comment">     * and return values in AIDL.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"><span class="meta">@Override</span> </span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">basicTypes</span><span class="params">(<span class="keyword">int</span> anInt, <span class="keyword">long</span> aLong, <span class="keyword">boolean</span> aBoolean, <span class="keyword">float</span> aFloat, <span class="keyword">double</span> aDouble, java.lang.String aString)</span> <span class="keyword">throws</span> android.os.RemoteException</span>&#123;</span><br><span class="line">    android.os.Parcel _data = android.os.Parcel.obtain();</span><br><span class="line">    android.os.Parcel _reply = android.os.Parcel.obtain();</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        _data.writeInterfaceToken(DESCRIPTOR);</span><br><span class="line">        _data.writeInt(anInt);</span><br><span class="line">        _data.writeLong(aLong);</span><br><span class="line">_data.writeInt(((aBoolean)?(<span class="number">1</span>):(<span class="number">0</span>)));</span><br><span class="line">_data.writeFloat(aFloat);</span><br><span class="line">_data.writeDouble(aDouble);</span><br><span class="line">_data.writeString(aString);</span><br><span class="line">mRemote.transact(Stub.TRANSACTION_basicTypes, _data, _reply, <span class="number">0</span>);</span><br><span class="line">_reply.readException();</span><br><span class="line">    &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">_reply.recycle();</span><br><span class="line">_data.recycle();</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> TRANSACTION_basicTypes = (android.os.IBinder.FIRST_CALL_TRANSACTION + <span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Demonstrates some basic types that you can use as parameters</span></span><br><span class="line"><span class="comment">     * and return values in AIDL.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">basicTypes</span><span class="params">(<span class="keyword">int</span> anInt, <span class="keyword">long</span> aLong, <span class="keyword">boolean</span> aBoolean, <span class="keyword">float</span> aFloat, <span class="keyword">double</span> aDouble, java.lang.String aString)</span> <span class="keyword">throws</span> android.os.RemoteException</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>每一个接口定义的方法，写入参数，读取值，调用，mRemote.transact(Stub.TRANSACTION_basicTypes, _data, _reply, 0)<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">IMyAidlInterface</span> <span class="keyword">extends</span> <span class="title class_">android</span>.os.IInterface&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">//生成的stub内部类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">Stub</span> <span class="keyword">extends</span> <span class="title class_">android</span>.os.Binder <span class="keyword">implements</span> <span class="title class_">com</span>.example.code.IMyAidlInterface   &#123;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> java.lang.<span class="type">String</span> <span class="variable">DESCRIPTOR</span> <span class="operator">=</span> <span class="string">&quot;com.example.code.IMyAidlInterface&quot;</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="title function_">Stub</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.attachInterface(<span class="built_in">this</span>, DESCRIPTOR);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//用户外部service获取</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> com.example.code.IMyAidlInterface <span class="title function_">asInterface</span><span class="params">(android.os.IBinder obj)</span>&#123;</span><br><span class="line"><span class="keyword">if</span> ((obj==<span class="literal">null</span>)) &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br><span class="line">android.os.<span class="type">IInterface</span> <span class="variable">iin</span> <span class="operator">=</span> obj.queryLocalInterface(DESCRIPTOR);</span><br><span class="line"><span class="keyword">if</span> (((iin!=<span class="literal">null</span>)&amp;&amp;(iin <span class="keyword">instanceof</span> com.example.code.IMyAidlInterface))) &#123;</span><br><span class="line">    <span class="keyword">return</span> ((com.example.code.IMyAidlInterface)iin);</span><br><span class="line">&#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">com</span>.example.code.IMyAidlInterface.Stub.Proxy(obj);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span> <span class="keyword">public</span> android.os.IBinder <span class="title function_">asBinder</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span> <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">onTransact</span><span class="params">(<span class="type">int</span> code, android.os.Parcel data, android.os.Parcel reply, <span class="type">int</span> flags)</span> <span class="keyword">throws</span> android.os.RemoteException&#123;</span><br><span class="line">    <span class="keyword">switch</span> (code)&#123;</span><br><span class="line">        <span class="keyword">case</span> INTERFACE_TRANSACTION:&#123;</span><br><span class="line">reply.writeString(DESCRIPTOR);</span><br><span class="line"><span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">case</span> TRANSACTION_basicTypes:&#123;</span><br><span class="line">    data.enforceInterface(DESCRIPTOR);</span><br><span class="line">    <span class="type">int</span> _arg0;</span><br><span class="line">    _arg0 = data.readInt();</span><br><span class="line">    <span class="type">long</span> _arg1;</span><br><span class="line">    _arg1 = data.readLong();</span><br><span class="line">    <span class="type">boolean</span> _arg2;</span><br><span class="line">    _arg2 = (<span class="number">0</span>!=data.readInt());</span><br><span class="line">    <span class="type">float</span> _arg3;</span><br><span class="line">    _arg3 = data.readFloat();</span><br><span class="line">    <span class="type">double</span> _arg4;</span><br><span class="line">    _arg4 = data.readDouble();</span><br><span class="line">    java.lang.String _arg5;</span><br><span class="line">    _arg5 = data.readString();</span><br><span class="line">    <span class="built_in">this</span>.basicTypes(_arg0, _arg1, _arg2, _arg3, _arg4, _arg5);</span><br><span class="line">    reply.writeNoException();</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">super</span>.onTransact(code, data, reply, flags);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">Proxy</span> <span class="keyword">implements</span> <span class="title class_">com</span>.example.code.IMyAidlInterface &#123;</span><br><span class="line">        <span class="keyword">private</span> android.os.IBinder mRemote;</span><br><span class="line">    Proxy(android.os.IBinder remote)    &#123;</span><br><span class="line">            mRemote = remote;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span> </span><br><span class="line"><span class="keyword">public</span> android.os.IBinder <span class="title function_">asBinder</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> mRemote;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> java.lang.String <span class="title function_">getInterfaceDescriptor</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> DESCRIPTOR;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Demonstrates some basic types that you can use as parameters</span></span><br><span class="line"><span class="comment">     * and return values in AIDL.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"><span class="meta">@Override</span> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">basicTypes</span><span class="params">(<span class="type">int</span> anInt, <span class="type">long</span> aLong, <span class="type">boolean</span> aBoolean, <span class="type">float</span> aFloat, <span class="type">double</span> aDouble, java.lang.String aString)</span> <span class="keyword">throws</span> android.os.RemoteException&#123;</span><br><span class="line">    android.os.<span class="type">Parcel</span> <span class="variable">_data</span> <span class="operator">=</span> android.os.Parcel.obtain();</span><br><span class="line">    android.os.<span class="type">Parcel</span> <span class="variable">_reply</span> <span class="operator">=</span> android.os.Parcel.obtain();</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        _data.writeInterfaceToken(DESCRIPTOR);</span><br><span class="line">        _data.writeInt(anInt);</span><br><span class="line">        _data.writeLong(aLong);</span><br><span class="line">_data.writeInt(((aBoolean)?(<span class="number">1</span>):(<span class="number">0</span>)));</span><br><span class="line">_data.writeFloat(aFloat);</span><br><span class="line">_data.writeDouble(aDouble);</span><br><span class="line">_data.writeString(aString);</span><br><span class="line">mRemote.transact(Stub.TRANSACTION_basicTypes, _data, _reply, <span class="number">0</span>);</span><br><span class="line">_reply.readException();</span><br><span class="line">    &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">_reply.recycle();</span><br><span class="line">_data.recycle();</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">TRANSACTION_basicTypes</span> <span class="operator">=</span> (android.os.IBinder.FIRST_CALL_TRANSACTION + <span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Demonstrates some basic types that you can use as parameters</span></span><br><span class="line"><span class="comment">     * and return values in AIDL.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">basicTypes</span><span class="params">(<span class="type">int</span> anInt, <span class="type">long</span> aLong, <span class="type">boolean</span> aBoolean, <span class="type">float</span> aFloat, <span class="type">double</span> aDouble, java.lang.String aString)</span> <span class="keyword">throws</span> android.os.RemoteException;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
 </li>
 </ul>
 </li>
@@ -460,7 +467,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2018/09/26/源码解析_2018-09-26_AIDl/" title="系统源码解析——AIDL">http://yummylau.com/2018/09/26/源码解析_2018-09-26_AIDl/</a>
+    <a href="https://yummylau.cn/2018/09/26/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2018-09-26_AIDl/" title="系统源码解析——AIDL">https://yummylau.cn/2018/09/26/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2018-09-26_AIDl/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -475,7 +482,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/源码解析/" rel="tag"># 源码解析</a>
+            <a href="/tags/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" rel="tag"># 源码解析</a>
           
         </div>
       
@@ -488,8 +495,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/26/源码解析_2018-09-26_Messenger/" rel="next" title="系统源码解析——Messenger">
-                <i class="fa fa-chevron-left"></i> 系统源码解析——Messenger
+              <a href="/2018/09/26/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2018-09-26_Handler/" rel="next" title="系统源码解析——Handler">
+                <i class="fa fa-chevron-left"></i> 系统源码解析——Handler
               </a>
             
           </div>
@@ -498,8 +505,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/02/01/net_http及https详解/" rel="prev" title="http及https详解">
-                http及https详解 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/09/26/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2018-09-26_Messenger/" rel="prev" title="系统源码解析——Messenger">
+                系统源码解析——Messenger <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -569,10 +576,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -647,7 +656,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linxu-及-Android-IPC"><span class="nav-number">1.</span> <span class="nav-text">Linxu 及 Android IPC</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#linxu进程间通信手段"><span class="nav-number">1.1.</span> <span class="nav-text">linxu进程间通信手段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android-Binder驱动"><span class="nav-number">1.2.</span> <span class="nav-text">Android - Binder驱动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android-多进程"><span class="nav-number">1.3.</span> <span class="nav-text">Android - 多进程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义AIDL接口"><span class="nav-number">2.</span> <span class="nav-text">定义AIDL接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取aidl对象"><span class="nav-number">3.</span> <span class="nav-text">获取aidl对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通讯过程"><span class="nav-number">4.</span> <span class="nav-text">通讯过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#aidl接口生成-Stub"><span class="nav-number">4.1.</span> <span class="nav-text">aidl接口生成 Stub</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linxu-%E5%8F%8A-Android-IPC"><span class="nav-number">1.</span> <span class="nav-text">Linxu 及 Android IPC</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#linxu%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E6%89%8B%E6%AE%B5"><span class="nav-number">1.1.</span> <span class="nav-text">linxu进程间通信手段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android-Binder%E9%A9%B1%E5%8A%A8"><span class="nav-number">1.2.</span> <span class="nav-text">Android - Binder驱动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android-%E5%A4%9A%E8%BF%9B%E7%A8%8B"><span class="nav-number">1.3.</span> <span class="nav-text">Android - 多进程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89AIDL%E6%8E%A5%E5%8F%A3"><span class="nav-number">2.</span> <span class="nav-text">定义AIDL接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96aidl%E5%AF%B9%E8%B1%A1"><span class="nav-number">3.</span> <span class="nav-text">获取aidl对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E8%AE%AF%E8%BF%87%E7%A8%8B"><span class="nav-number">4.</span> <span class="nav-text">通讯过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#aidl%E6%8E%A5%E5%8F%A3%E7%94%9F%E6%88%90-Stub"><span class="nav-number">4.1.</span> <span class="nav-text">aidl接口生成 Stub</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -667,7 +676,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

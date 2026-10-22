@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Android进阶,">
+  <meta name="keywords" content="Android进阶," />
 
 
 
@@ -77,25 +77,25 @@
 
 
 
-<meta name="description" content="目前主端，依赖库，独立游戏助手等众多分支功能稳定，团队开发环境 AS 版本满足，编译打包版本满足。为了把 AndroidX 的债提前换了，决心全面切换到 AndroidX。  从 官网指南 上看，我们直接开干。  从上一个 develop 分支拉出一个 AndroidX 迁移版本； gradle.properties 添加申明   12android.useAndroidX=true //使用">
-<meta name="keywords" content="Android进阶">
+<meta name="description" content="目前主端，依赖库，独立游戏助手等众多分支功能稳定，团队开发环境 AS 版本满足，编译打包版本满足。为了把 AndroidX 的债提前换了，决心全面切换到 AndroidX。  从 官网指南 上看，我们直接开干。  从上一个 develop 分支拉出一个 AndroidX 迁移版本；  gradle.properties 添加申明   12android.useAndroidX&#x3D;true &#x2F;&#x2F;使用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="大神主端&#x2F;库 AndroidX 迁移记录">
-<meta property="og:url" content="http://yummylau.com/2020/03/30/项目总结_2020-03-30_大神androidx迁移记录/index.html">
+<meta property="og:url" content="https://yummylau.cn/2020/03/30/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2020-03-30_%E5%A4%A7%E7%A5%9Eandroidx%E8%BF%81%E7%A7%BB%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="YummyLau">
-<meta property="og:description" content="目前主端，依赖库，独立游戏助手等众多分支功能稳定，团队开发环境 AS 版本满足，编译打包版本满足。为了把 AndroidX 的债提前换了，决心全面切换到 AndroidX。  从 官网指南 上看，我们直接开干。  从上一个 develop 分支拉出一个 AndroidX 迁移版本； gradle.properties 添加申明   12android.useAndroidX=true //使用">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-05T03:40:49.659Z">
+<meta property="og:description" content="目前主端，依赖库，独立游戏助手等众多分支功能稳定，团队开发环境 AS 版本满足，编译打包版本满足。为了把 AndroidX 的债提前换了，决心全面切换到 AndroidX。  从 官网指南 上看，我们直接开干。  从上一个 develop 分支拉出一个 AndroidX 迁移版本；  gradle.properties 添加申明   12android.useAndroidX&#x3D;true &#x2F;&#x2F;使用">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-03-29T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.062Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="Android进阶">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大神主端&#x2F;库 AndroidX 迁移记录">
-<meta name="twitter:description" content="目前主端，依赖库，独立游戏助手等众多分支功能稳定，团队开发环境 AS 版本满足，编译打包版本满足。为了把 AndroidX 的债提前换了，决心全面切换到 AndroidX。  从 官网指南 上看，我们直接开干。  从上一个 develop 分支拉出一个 AndroidX 迁移版本； gradle.properties 添加申明   12android.useAndroidX=true //使用">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2020/03/30/项目总结_2020-03-30_大神androidx迁移记录/">
+  <link rel="canonical" href="https://yummylau.cn/2020/03/30/项目总结_2020-03-30_大神androidx迁移记录/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2020/03/30/项目总结_2020-03-30_大神androidx迁移记录/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2020/03/30/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2020-03-30_%E5%A4%A7%E7%A5%9Eandroidx%E8%BF%81%E7%A7%BB%E8%AE%B0%E5%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/03/30/项目总结_2020-03-30_大神androidx迁移记录/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/30/项目总结_2020-03-30_大神androidx迁移记录/" itemprop="commentCount"></span>
+                <a href="/2020/03/30/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2020-03-30_%E5%A4%A7%E7%A5%9Eandroidx%E8%BF%81%E7%A7%BB%E8%AE%B0%E5%BD%95/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/30/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2020-03-30_%E5%A4%A7%E7%A5%9Eandroidx%E8%BF%81%E7%A7%BB%E8%AE%B0%E5%BD%95/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -363,11 +363,12 @@
         <blockquote>
 <p>目前主端，依赖库，独立游戏助手等众多分支功能稳定，团队开发环境 AS 版本满足，编译打包版本满足。为了把 AndroidX 的债提前换了，决心全面切换到 AndroidX。</p>
 </blockquote>
-<p>从 <a href="https://developer.android.google.cn/jetpack/androidx/migrate?hl=zh-cn" target="_blank" rel="noopener">官网指南</a> 上看，我们直接开干。</p>
+<p>从 <a href="https://developer.android.google.cn/jetpack/androidx/migrate?hl=zh-cn">官网指南</a> 上看，我们直接开干。</p>
 <ul>
-<li>从上一个 develop 分支拉出一个 AndroidX 迁移版本；</li>
+<li><p>从上一个 develop 分支拉出一个 AndroidX 迁移版本；</p>
+</li>
 <li><p>gradle.properties 添加申明</p>
-  <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">android.useAndroidX=<span class="literal">true</span> <span class="comment">//使用 AndroidX 库</span></span><br><span class="line">android.enableJetifier=<span class="literal">true</span>  <span class="comment">//依赖库依赖 AndroidX 库</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">android.useAndroidX</span>=<span class="literal">true</span> //使用 AndroidX 库</span><br><span class="line"><span class="attr">android.enableJetifier</span>=<span class="literal">true</span>  //依赖库依赖 AndroidX 库</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>使用 AS 自带的 Refactor-Magrate to AndroidX 先帮你改一下，包括 dependence，import 等</p>
 </li>
@@ -380,8 +381,8 @@
 </ul>
 </li>
 <li><p>解决坑</p>
-  <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Execution failed <span class="keyword">for</span> task <span class="string">':compmkey:mergeReleaseJavaResource'</span>.</span><br><span class="line">&gt; A failure occurred while executing com<span class="selector-class">.android</span><span class="selector-class">.build</span><span class="selector-class">.gradle</span><span class="selector-class">.internal</span><span class="selector-class">.tasks</span><span class="selector-class">.Workers</span><span class="variable">$ActionFacade</span></span><br><span class="line">   &gt; More than one file was found with OS independent path <span class="string">'classes.jar'</span></span><br></pre></td></tr></table></figure>
-<p>  原因是使用 gradle 3.5 版本打包编译时，如果 module 包含了本地 aar 且 aar 包含同名的 jar ，则会出现以上异常。这实际上是 gradle 的一个 <a href="https://github.com/gradle/gradle/issues/10882" target="_blank" rel="noopener">BUG</a>.j解决方法是 gradle 从 3.5 暂时降级到 3.4 解决。</p>
+  <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Execution failed <span class="keyword">for</span> task <span class="string">&#x27;:compmkey:mergeReleaseJavaResource&#x27;</span>.</span><br><span class="line">&gt; A failure occurred while executing com<span class="selector-class">.android</span><span class="selector-class">.build</span><span class="selector-class">.gradle</span><span class="selector-class">.internal</span><span class="selector-class">.tasks</span>.Workers<span class="variable">$ActionFacade</span></span><br><span class="line">   &gt; More than one file was found with OS independent <span class="selector-tag">path</span> <span class="string">&#x27;classes.jar&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>  原因是使用 gradle 3.5 版本打包编译时，如果 module 包含了本地 aar 且 aar 包含同名的 jar ，则会出现以上异常。这实际上是 gradle 的一个 <a href="https://github.com/gradle/gradle/issues/10882">BUG</a>.j解决方法是 gradle 从 3.5 暂时降级到 3.4 解决。</p>
 </li>
 <li><p>稳定打包之后测试回归， AndroidX 迁移分支则合并到 develop 即可。这个过程非常中，AndroidX的升级可能会涉及原来业务中使用库的 api 升级，可能会因 api 使用场景差异化导致 crash。比如 <strong>LiveData</strong> 的观测需要在 <strong>MainThread</strong> 完成等。需要覆盖每个界面和每个业务逻辑，确保无误。</p>
 </li>
@@ -407,7 +408,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2020/03/30/项目总结_2020-03-30_大神androidx迁移记录/" title="大神主端/库 AndroidX 迁移记录">http://yummylau.com/2020/03/30/项目总结_2020-03-30_大神androidx迁移记录/</a>
+    <a href="https://yummylau.cn/2020/03/30/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2020-03-30_%E5%A4%A7%E7%A5%9Eandroidx%E8%BF%81%E7%A7%BB%E8%AE%B0%E5%BD%95/" title="大神主端/库 AndroidX 迁移记录">https://yummylau.cn/2020/03/30/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93_2020-03-30_%E5%A4%A7%E7%A5%9Eandroidx%E8%BF%81%E7%A7%BB%E8%AE%B0%E5%BD%95/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -422,7 +423,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android进阶/" rel="tag"># Android进阶</a>
+            <a href="/tags/Android%E8%BF%9B%E9%98%B6/" rel="tag"># Android进阶</a>
           
         </div>
       
@@ -435,7 +436,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/03/22/开源项目_20120-03-22_输入法切换框架(2)/" rel="next" title="开源项目之 PanelSwitchHelper（二）">
+              <a href="/2020/03/22/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE_20120-03-22_%E8%BE%93%E5%85%A5%E6%B3%95%E5%88%87%E6%8D%A2%E6%A1%86%E6%9E%B6(2)/" rel="next" title="开源项目之 PanelSwitchHelper（二）">
                 <i class="fa fa-chevron-left"></i> 开源项目之 PanelSwitchHelper（二）
               </a>
             
@@ -445,7 +446,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/03/30/Android_2016-08-28_Androidl开发踩坑录/" rel="prev" title="Android开发踩坑经验贴(持续更新...)">
+              <a href="/2020/03/30/Android_2016-08-28_Androidl%E5%BC%80%E5%8F%91%E8%B8%A9%E5%9D%91%E5%BD%95/" rel="prev" title="Android开发踩坑经验贴(持续更新...)">
                 Android开发踩坑经验贴(持续更新...) <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -507,10 +508,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -589,7 +592,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

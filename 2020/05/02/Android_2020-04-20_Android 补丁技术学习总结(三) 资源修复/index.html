@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="热修复,">
+  <meta name="keywords" content="热修复," />
 
 
 
@@ -78,24 +78,24 @@
 
 
 <meta name="description" content="资源修复是很常见的操作，热修复方案中的资源修复很多参考了 Instant Run 的实现，Instant Run 的资源修复核心流程大致如下：  构建一个新的 AssetManager 对象，并调用 addAssetPath 添加新的资源包； 修改所有 Activity 的 Activity.mAssets(AssetManager实例) 引用指向新构建的 AssetManager 对象； 修改所">
-<meta name="keywords" content="热修复">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android 补丁技术学习总结(三) 资源修复">
-<meta property="og:url" content="http://yummylau.com/2020/05/02/Android_2020-04-20_Android 补丁技术学习总结(三) 资源修复/index.html">
+<meta property="og:url" content="https://yummylau.cn/2020/05/02/Android_2020-04-20_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%B8%89)%20%E8%B5%84%E6%BA%90%E4%BF%AE%E5%A4%8D/index.html">
 <meta property="og:site_name" content="YummyLau">
 <meta property="og:description" content="资源修复是很常见的操作，热修复方案中的资源修复很多参考了 Instant Run 的实现，Instant Run 的资源修复核心流程大致如下：  构建一个新的 AssetManager 对象，并调用 addAssetPath 添加新的资源包； 修改所有 Activity 的 Activity.mAssets(AssetManager实例) 引用指向新构建的 AssetManager 对象； 修改所">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-05-02T11:49:47.508Z">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-05-02T10:00:03.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.046Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="热修复">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android 补丁技术学习总结(三) 资源修复">
-<meta name="twitter:description" content="资源修复是很常见的操作，热修复方案中的资源修复很多参考了 Instant Run 的实现，Instant Run 的资源修复核心流程大致如下：  构建一个新的 AssetManager 对象，并调用 addAssetPath 添加新的资源包； 修改所有 Activity 的 Activity.mAssets(AssetManager实例) 引用指向新构建的 AssetManager 对象； 修改所">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2020/05/02/Android_2020-04-20_Android 补丁技术学习总结(三) 资源修复/">
+  <link rel="canonical" href="https://yummylau.cn/2020/05/02/Android_2020-04-20_Android 补丁技术学习总结(三) 资源修复/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2020/05/02/Android_2020-04-20_Android 补丁技术学习总结(三) 资源修复/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2020/05/02/Android_2020-04-20_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%B8%89)%20%E8%B5%84%E6%BA%90%E4%BF%AE%E5%A4%8D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -313,7 +313,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android进阶/" itemprop="url" rel="index">
+                  <a href="/categories/Android%E8%BF%9B%E9%98%B6/" itemprop="url" rel="index">
                     <span itemprop="name">Android进阶</span>
                   </a>
                 </span>
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/05/02/Android_2020-04-20_Android 补丁技术学习总结(三) 资源修复/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/05/02/Android_2020-04-20_Android 补丁技术学习总结(三) 资源修复/" itemprop="commentCount"></span>
+                <a href="/2020/05/02/Android_2020-04-20_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%B8%89)%20%E8%B5%84%E6%BA%90%E4%BF%AE%E5%A4%8D/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/05/02/Android_2020-04-20_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%B8%89)%20%E8%B5%84%E6%BA%90%E4%BF%AE%E5%A4%8D/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -366,7 +366,7 @@
 <li>修改所有 <strong>Activity</strong> 的 <em>Activity.mAssets(AssetManager实例)</em> 引用指向新构建的 <strong>AssetManager</strong> 对象；</li>
 <li>修改所有 <strong>Resource</strong> 的 <em>Resource.mAssets(AssetManager实例)</em> 引用指向新构建的 <strong>AssetManager</strong> 对象.</li>
 </ol>
-<p>对于任意的资源包，被 <em>AssetManager#addAssetPath</em> 添加之后，解析 <strong>resourecs.asrc</strong> 并在 native <em>mResources</em> 侧保存起来。可参考 <a href="https://android.googlesource.com/platform/frameworks/base/+/master/libs/androidfw/include/androidfw/AssetManager.h" target="_blank" rel="noopener">AssetManager.h</a> 的实现，实际上 <em>mResources</em>  是一个 <strong>ResTable</strong> 结构体,存放 <strong>resourecs.asrc</strong> 信息用的。而且一个进程只会有一个  <strong>ResTable</strong>。</p>
+<p>对于任意的资源包，被 <em>AssetManager#addAssetPath</em> 添加之后，解析 <strong>resourecs.asrc</strong> 并在 native <em>mResources</em> 侧保存起来。可参考 <a href="https://android.googlesource.com/platform/frameworks/base/+/master/libs/androidfw/include/androidfw/AssetManager.h">AssetManager.h</a> 的实现，实际上 <em>mResources</em>  是一个 <strong>ResTable</strong> 结构体,存放 <strong>resourecs.asrc</strong> 信息用的。而且一个进程只会有一个  <strong>ResTable</strong>。</p>
 <ul>
 <li><strong>ResTable</strong> 可加载多个资源包</li>
 <li>一个资源包都包含一个 <strong>resourecs.asrc</strong> </li>
@@ -415,7 +415,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2020/05/02/Android_2020-04-20_Android 补丁技术学习总结(三) 资源修复/" title="Android 补丁技术学习总结(三) 资源修复">http://yummylau.com/2020/05/02/Android_2020-04-20_Android 补丁技术学习总结(三) 资源修复/</a>
+    <a href="https://yummylau.cn/2020/05/02/Android_2020-04-20_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%B8%89)%20%E8%B5%84%E6%BA%90%E4%BF%AE%E5%A4%8D/" title="Android 补丁技术学习总结(三) 资源修复">https://yummylau.cn/2020/05/02/Android_2020-04-20_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%B8%89)%20%E8%B5%84%E6%BA%90%E4%BF%AE%E5%A4%8D/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -430,7 +430,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/热修复/" rel="tag"># 热修复</a>
+            <a href="/tags/%E7%83%AD%E4%BF%AE%E5%A4%8D/" rel="tag"># 热修复</a>
           
         </div>
       
@@ -443,7 +443,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/05/02/Android_2020-04-09_Android 补丁技术学习总结(二) 类热替换 /" rel="next" title="Android 补丁技术学习总结(二) 类热替换">
+              <a href="/2020/05/02/Android_2020-04-09_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%BA%8C)%20%E7%B1%BB%E7%83%AD%E6%9B%BF%E6%8D%A2%20/" rel="next" title="Android 补丁技术学习总结(二) 类热替换">
                 <i class="fa fa-chevron-left"></i> Android 补丁技术学习总结(二) 类热替换
               </a>
             
@@ -453,7 +453,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/05/02/Android_2020-04-26_Android 补丁技术学习总结(四) so修复/" rel="prev" title="Android 补丁技术学习总结(四) so修复">
+              <a href="/2020/05/02/Android_2020-04-26_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E5%9B%9B)%20so%E4%BF%AE%E5%A4%8D/" rel="prev" title="Android 补丁技术学习总结(四) so修复">
                 Android 补丁技术学习总结(四) so修复 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -515,10 +515,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -597,7 +599,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

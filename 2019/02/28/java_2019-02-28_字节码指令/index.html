@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="字节码,">
+  <meta name="keywords" content="字节码," />
 
 
 
@@ -77,25 +77,25 @@
 
 
 
-<meta name="description" content="内容参考来自于 “深入理解Java虚拟机：JVM高级特定及最佳实践” 及 官方文档  字节码指令总表     字节码 助记符 指令含义     0x00 nop 什么都不做   0x01 aconst_null 将 null 推送至栈顶   0x02 iconst_m1 将 int 型 -1 推送至栈顶   0x03 iconst_0 将 int 型 0 推送至栈顶   0x04 iconst_">
-<meta name="keywords" content="字节码">
+<meta name="description" content="内容参考来自于 “深入理解Java虚拟机：JVM高级特定及最佳实践” 及 官方文档  字节码指令总表     字节码 助记符 指令含义    0x00 nop 什么都不做   0x01 aconst_null 将 null 推送至栈顶   0x02 iconst_m1 将 int 型 -1 推送至栈顶   0x03 iconst_0 将 int 型 0 推送至栈顶   0x04 iconst_1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java字节码的那些指令">
-<meta property="og:url" content="http://yummylau.com/2019/02/28/java_2019-02-28_字节码指令/index.html">
+<meta property="og:url" content="https://yummylau.cn/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4/index.html">
 <meta property="og:site_name" content="YummyLau">
-<meta property="og:description" content="内容参考来自于 “深入理解Java虚拟机：JVM高级特定及最佳实践” 及 官方文档  字节码指令总表     字节码 助记符 指令含义     0x00 nop 什么都不做   0x01 aconst_null 将 null 推送至栈顶   0x02 iconst_m1 将 int 型 -1 推送至栈顶   0x03 iconst_0 将 int 型 0 推送至栈顶   0x04 iconst_">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-10T05:35:03.475Z">
+<meta property="og:description" content="内容参考来自于 “深入理解Java虚拟机：JVM高级特定及最佳实践” 及 官方文档  字节码指令总表     字节码 助记符 指令含义    0x00 nop 什么都不做   0x01 aconst_null 将 null 推送至栈顶   0x02 iconst_m1 将 int 型 -1 推送至栈顶   0x03 iconst_0 将 int 型 0 推送至栈顶   0x04 iconst_1">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-02-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.048Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="字节码">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java字节码的那些指令">
-<meta name="twitter:description" content="内容参考来自于 “深入理解Java虚拟机：JVM高级特定及最佳实践” 及 官方文档  字节码指令总表     字节码 助记符 指令含义     0x00 nop 什么都不做   0x01 aconst_null 将 null 推送至栈顶   0x02 iconst_m1 将 int 型 -1 推送至栈顶   0x03 iconst_0 将 int 型 0 推送至栈顶   0x04 iconst_">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2019/02/28/java_2019-02-28_字节码指令/">
+  <link rel="canonical" href="https://yummylau.cn/2019/02/28/java_2019-02-28_字节码指令/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2019/02/28/java_2019-02-28_字节码指令/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/02/28/java_2019-02-28_字节码指令/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/28/java_2019-02-28_字节码指令/" itemprop="commentCount"></span>
+                <a href="/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -368,1384 +368,1377 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">字节码</th>
-<th style="text-align:center">助记符</th>
-<th style="text-align:center">指令含义</th>
+<th align="center">字节码</th>
+<th align="center">助记符</th>
+<th align="center">指令含义</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">0x00</td>
-<td style="text-align:center">nop</td>
-<td style="text-align:center">什么都不做</td>
+<tbody><tr>
+<td align="center">0x00</td>
+<td align="center">nop</td>
+<td align="center">什么都不做</td>
 </tr>
 <tr>
-<td style="text-align:center">0x01</td>
-<td style="text-align:center">aconst_null</td>
-<td style="text-align:center">将 null 推送至栈顶</td>
+<td align="center">0x01</td>
+<td align="center">aconst_null</td>
+<td align="center">将 null 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x02</td>
-<td style="text-align:center">iconst_m1</td>
-<td style="text-align:center">将 int 型 -1 推送至栈顶</td>
+<td align="center">0x02</td>
+<td align="center">iconst_m1</td>
+<td align="center">将 int 型 -1 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x03</td>
-<td style="text-align:center">iconst_0</td>
-<td style="text-align:center">将 int 型 0 推送至栈顶</td>
+<td align="center">0x03</td>
+<td align="center">iconst_0</td>
+<td align="center">将 int 型 0 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x04</td>
-<td style="text-align:center">iconst_1</td>
-<td style="text-align:center">将 int 型 1 推送至栈顶</td>
+<td align="center">0x04</td>
+<td align="center">iconst_1</td>
+<td align="center">将 int 型 1 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x05</td>
-<td style="text-align:center">iconst_2</td>
-<td style="text-align:center">将 int 型 2 推送至栈顶</td>
+<td align="center">0x05</td>
+<td align="center">iconst_2</td>
+<td align="center">将 int 型 2 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x06</td>
-<td style="text-align:center">iconst_3</td>
-<td style="text-align:center">将 int 型 3 推送至栈顶</td>
+<td align="center">0x06</td>
+<td align="center">iconst_3</td>
+<td align="center">将 int 型 3 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x07</td>
-<td style="text-align:center">iconst_4</td>
-<td style="text-align:center">将 int 型 4 推送至栈顶</td>
+<td align="center">0x07</td>
+<td align="center">iconst_4</td>
+<td align="center">将 int 型 4 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x08</td>
-<td style="text-align:center">iconst_5</td>
-<td style="text-align:center">将 int 型 5 推送至栈顶</td>
+<td align="center">0x08</td>
+<td align="center">iconst_5</td>
+<td align="center">将 int 型 5 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x09</td>
-<td style="text-align:center">lconst_0</td>
-<td style="text-align:center">将 long 型 0 推送至栈顶</td>
+<td align="center">0x09</td>
+<td align="center">lconst_0</td>
+<td align="center">将 long 型 0 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x0a</td>
-<td style="text-align:center">lconst_1</td>
-<td style="text-align:center">将 long 型 1 推送至栈顶</td>
+<td align="center">0x0a</td>
+<td align="center">lconst_1</td>
+<td align="center">将 long 型 1 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x0b</td>
-<td style="text-align:center">fconst_0</td>
-<td style="text-align:center">将 float 型 0 推送至栈顶</td>
+<td align="center">0x0b</td>
+<td align="center">fconst_0</td>
+<td align="center">将 float 型 0 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x0c</td>
-<td style="text-align:center">fconst_1</td>
-<td style="text-align:center">将 float 型 1 推送至栈顶</td>
+<td align="center">0x0c</td>
+<td align="center">fconst_1</td>
+<td align="center">将 float 型 1 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x0d</td>
-<td style="text-align:center">fconst_2</td>
-<td style="text-align:center">将 float 型 2 推送至栈顶</td>
+<td align="center">0x0d</td>
+<td align="center">fconst_2</td>
+<td align="center">将 float 型 2 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x0e</td>
-<td style="text-align:center">dconst_0</td>
-<td style="text-align:center">将 double 型 0 推送至栈顶</td>
+<td align="center">0x0e</td>
+<td align="center">dconst_0</td>
+<td align="center">将 double 型 0 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x0f</td>
-<td style="text-align:center">dconst_1</td>
-<td style="text-align:center">将 double 型 1 推送至栈顶</td>
+<td align="center">0x0f</td>
+<td align="center">dconst_1</td>
+<td align="center">将 double 型 1 推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x10</td>
-<td style="text-align:center">bipush</td>
-<td style="text-align:center">将单字节的常量（-128 - 127）推送至栈顶</td>
+<td align="center">0x10</td>
+<td align="center">bipush</td>
+<td align="center">将单字节的常量（-128 - 127）推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x11</td>
-<td style="text-align:center">sipush</td>
-<td style="text-align:center">将一个短整形常量常量（-32768 - 32767）推送至栈顶</td>
+<td align="center">0x11</td>
+<td align="center">sipush</td>
+<td align="center">将一个短整形常量常量（-32768 - 32767）推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x12</td>
-<td style="text-align:center">ldc</td>
-<td style="text-align:center">将 int, float, String 型常量值从常量池中推送至栈顶</td>
+<td align="center">0x12</td>
+<td align="center">ldc</td>
+<td align="center">将 int, float, String 型常量值从常量池中推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x13</td>
-<td style="text-align:center">ldc_w</td>
-<td style="text-align:center">将 int, float, String 型常量值从常量池中推送至栈顶（宽索引）</td>
+<td align="center">0x13</td>
+<td align="center">ldc_w</td>
+<td align="center">将 int, float, String 型常量值从常量池中推送至栈顶（宽索引）</td>
 </tr>
 <tr>
-<td style="text-align:center">0x14</td>
-<td style="text-align:center">ldc2_w</td>
-<td style="text-align:center">将 long 或 float 型常量值从常量池中推送至栈顶（宽索引）</td>
+<td align="center">0x14</td>
+<td align="center">ldc2_w</td>
+<td align="center">将 long 或 float 型常量值从常量池中推送至栈顶（宽索引）</td>
 </tr>
 <tr>
-<td style="text-align:center">0x15</td>
-<td style="text-align:center">iload</td>
-<td style="text-align:center">将指定的 int 型本地变量推送至栈顶</td>
+<td align="center">0x15</td>
+<td align="center">iload</td>
+<td align="center">将指定的 int 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x16</td>
-<td style="text-align:center">lload</td>
-<td style="text-align:center">将指定的 long 型本地变量推送至栈顶</td>
+<td align="center">0x16</td>
+<td align="center">lload</td>
+<td align="center">将指定的 long 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x17</td>
-<td style="text-align:center">fload</td>
-<td style="text-align:center">将指定的 float 型本地变量推送至栈顶</td>
+<td align="center">0x17</td>
+<td align="center">fload</td>
+<td align="center">将指定的 float 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x18</td>
-<td style="text-align:center">dload</td>
-<td style="text-align:center">将指定的 dload 型本地变量推送至栈顶</td>
+<td align="center">0x18</td>
+<td align="center">dload</td>
+<td align="center">将指定的 dload 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x19</td>
-<td style="text-align:center">aload</td>
-<td style="text-align:center">将指定的引用类型本地变量推送至栈顶</td>
+<td align="center">0x19</td>
+<td align="center">aload</td>
+<td align="center">将指定的引用类型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x1a</td>
-<td style="text-align:center">iload_0</td>
-<td style="text-align:center">将第一个 int 型本地变量推送至栈顶</td>
+<td align="center">0x1a</td>
+<td align="center">iload_0</td>
+<td align="center">将第一个 int 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x1b</td>
-<td style="text-align:center">iload_1</td>
-<td style="text-align:center">将第二个 int 型本地变量推送至栈顶</td>
+<td align="center">0x1b</td>
+<td align="center">iload_1</td>
+<td align="center">将第二个 int 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x1c</td>
-<td style="text-align:center">iload_2</td>
-<td style="text-align:center">将第三个 int 型本地变量推送至栈顶</td>
+<td align="center">0x1c</td>
+<td align="center">iload_2</td>
+<td align="center">将第三个 int 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x1d</td>
-<td style="text-align:center">iload_3</td>
-<td style="text-align:center">将第四个 int 型本地变量推送至栈顶</td>
+<td align="center">0x1d</td>
+<td align="center">iload_3</td>
+<td align="center">将第四个 int 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x1e</td>
-<td style="text-align:center">lload_0</td>
-<td style="text-align:center">将第一个 long 型本地变量推送至栈顶</td>
+<td align="center">0x1e</td>
+<td align="center">lload_0</td>
+<td align="center">将第一个 long 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x1f</td>
-<td style="text-align:center">lload_1</td>
-<td style="text-align:center">将第二个 long 型本地变量推送至栈顶</td>
+<td align="center">0x1f</td>
+<td align="center">lload_1</td>
+<td align="center">将第二个 long 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x20</td>
-<td style="text-align:center">lload_2</td>
-<td style="text-align:center">将第三个 long 型本地变量推送至栈顶</td>
+<td align="center">0x20</td>
+<td align="center">lload_2</td>
+<td align="center">将第三个 long 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x21</td>
-<td style="text-align:center">lload_3</td>
-<td style="text-align:center">将第四个 long 型本地变量推送至栈顶</td>
+<td align="center">0x21</td>
+<td align="center">lload_3</td>
+<td align="center">将第四个 long 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x22</td>
-<td style="text-align:center">fload_0</td>
-<td style="text-align:center">将第一个 float 型本地变量推送至栈顶</td>
+<td align="center">0x22</td>
+<td align="center">fload_0</td>
+<td align="center">将第一个 float 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x23</td>
-<td style="text-align:center">fload_1</td>
-<td style="text-align:center">将第二个 float 型本地变量推送至栈顶</td>
+<td align="center">0x23</td>
+<td align="center">fload_1</td>
+<td align="center">将第二个 float 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x24</td>
-<td style="text-align:center">fload_2</td>
-<td style="text-align:center">将第三个 float 型本地变量推送至栈顶</td>
+<td align="center">0x24</td>
+<td align="center">fload_2</td>
+<td align="center">将第三个 float 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x25</td>
-<td style="text-align:center">fload_3</td>
-<td style="text-align:center">将第四个 float 型本地变量推送至栈顶</td>
+<td align="center">0x25</td>
+<td align="center">fload_3</td>
+<td align="center">将第四个 float 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x26</td>
-<td style="text-align:center">dload_0</td>
-<td style="text-align:center">将第一个 double 型本地变量推送至栈顶</td>
+<td align="center">0x26</td>
+<td align="center">dload_0</td>
+<td align="center">将第一个 double 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x27</td>
-<td style="text-align:center">dload_1</td>
-<td style="text-align:center">将第二个 double 型本地变量推送至栈顶</td>
+<td align="center">0x27</td>
+<td align="center">dload_1</td>
+<td align="center">将第二个 double 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x28</td>
-<td style="text-align:center">dload_2</td>
-<td style="text-align:center">将第三个 double 型本地变量推送至栈顶</td>
+<td align="center">0x28</td>
+<td align="center">dload_2</td>
+<td align="center">将第三个 double 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x29</td>
-<td style="text-align:center">dload_3</td>
-<td style="text-align:center">将第四个 double 型本地变量推送至栈顶</td>
+<td align="center">0x29</td>
+<td align="center">dload_3</td>
+<td align="center">将第四个 double 型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x2a</td>
-<td style="text-align:center">aload_0</td>
-<td style="text-align:center">将第一个引用类型本地变量推送至栈顶</td>
+<td align="center">0x2a</td>
+<td align="center">aload_0</td>
+<td align="center">将第一个引用类型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x2b</td>
-<td style="text-align:center">aload_1</td>
-<td style="text-align:center">将第二个引用类型本地变量推送至栈顶</td>
+<td align="center">0x2b</td>
+<td align="center">aload_1</td>
+<td align="center">将第二个引用类型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x2c</td>
-<td style="text-align:center">aload_2</td>
-<td style="text-align:center">将第三个引用类型本地变量推送至栈顶</td>
+<td align="center">0x2c</td>
+<td align="center">aload_2</td>
+<td align="center">将第三个引用类型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x2d</td>
-<td style="text-align:center">aload_3</td>
-<td style="text-align:center">将第四个引用类型本地变量推送至栈顶</td>
+<td align="center">0x2d</td>
+<td align="center">aload_3</td>
+<td align="center">将第四个引用类型本地变量推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x2e</td>
-<td style="text-align:center">iaload</td>
-<td style="text-align:center">将 int 型数组指定索引的值推送至栈顶</td>
+<td align="center">0x2e</td>
+<td align="center">iaload</td>
+<td align="center">将 int 型数组指定索引的值推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x2f</td>
-<td style="text-align:center">laload</td>
-<td style="text-align:center">将 long 型数组指定索引的值推送至栈顶</td>
+<td align="center">0x2f</td>
+<td align="center">laload</td>
+<td align="center">将 long 型数组指定索引的值推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x30</td>
-<td style="text-align:center">faload</td>
-<td style="text-align:center">将 float 型数组指定索引的值推送至栈顶</td>
+<td align="center">0x30</td>
+<td align="center">faload</td>
+<td align="center">将 float 型数组指定索引的值推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x31</td>
-<td style="text-align:center">daload</td>
-<td style="text-align:center">将 double 型数组指定索引的值推送至栈顶</td>
+<td align="center">0x31</td>
+<td align="center">daload</td>
+<td align="center">将 double 型数组指定索引的值推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x32</td>
-<td style="text-align:center">aaload</td>
-<td style="text-align:center">将引用型数组指定索引的值推送至栈顶</td>
+<td align="center">0x32</td>
+<td align="center">aaload</td>
+<td align="center">将引用型数组指定索引的值推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x33</td>
-<td style="text-align:center">baload</td>
-<td style="text-align:center">将 boolean 或 byte 型数组指定索引的值推送至栈顶</td>
+<td align="center">0x33</td>
+<td align="center">baload</td>
+<td align="center">将 boolean 或 byte 型数组指定索引的值推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x34</td>
-<td style="text-align:center">caload</td>
-<td style="text-align:center">将 char 型数组指定索引的值推送至栈顶</td>
+<td align="center">0x34</td>
+<td align="center">caload</td>
+<td align="center">将 char 型数组指定索引的值推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x35</td>
-<td style="text-align:center">saload</td>
-<td style="text-align:center">将 short 型数组指定索引的值推送至栈顶</td>
+<td align="center">0x35</td>
+<td align="center">saload</td>
+<td align="center">将 short 型数组指定索引的值推送至栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x36</td>
-<td style="text-align:center">istore</td>
-<td style="text-align:center">将栈顶 int 型数值存入指定本地变量</td>
+<td align="center">0x36</td>
+<td align="center">istore</td>
+<td align="center">将栈顶 int 型数值存入指定本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x37</td>
-<td style="text-align:center">lstore</td>
-<td style="text-align:center">将栈顶 long 型数值存入指定本地变量</td>
+<td align="center">0x37</td>
+<td align="center">lstore</td>
+<td align="center">将栈顶 long 型数值存入指定本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x38</td>
-<td style="text-align:center">fstore</td>
-<td style="text-align:center">将栈顶 float 型数值存入指定本地变量</td>
+<td align="center">0x38</td>
+<td align="center">fstore</td>
+<td align="center">将栈顶 float 型数值存入指定本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x39</td>
-<td style="text-align:center">dstore</td>
-<td style="text-align:center">将栈顶 double 型数值存入指定本地变量</td>
+<td align="center">0x39</td>
+<td align="center">dstore</td>
+<td align="center">将栈顶 double 型数值存入指定本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x3a</td>
-<td style="text-align:center">astore</td>
-<td style="text-align:center">将栈顶引用型数值存入指定本地变量</td>
+<td align="center">0x3a</td>
+<td align="center">astore</td>
+<td align="center">将栈顶引用型数值存入指定本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x3b</td>
-<td style="text-align:center">istore_0</td>
-<td style="text-align:center">将栈顶 int 型数值存入第一个本地变量</td>
+<td align="center">0x3b</td>
+<td align="center">istore_0</td>
+<td align="center">将栈顶 int 型数值存入第一个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x3c</td>
-<td style="text-align:center">istore_1</td>
-<td style="text-align:center">将栈顶 int 型数值存入第二个本地变量</td>
+<td align="center">0x3c</td>
+<td align="center">istore_1</td>
+<td align="center">将栈顶 int 型数值存入第二个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x3d</td>
-<td style="text-align:center">istore_2</td>
-<td style="text-align:center">将栈顶 int 型数值存入第三个本地变量</td>
+<td align="center">0x3d</td>
+<td align="center">istore_2</td>
+<td align="center">将栈顶 int 型数值存入第三个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x3e</td>
-<td style="text-align:center">istore_3</td>
-<td style="text-align:center">将栈顶 int 型数值存入第四个本地变量</td>
+<td align="center">0x3e</td>
+<td align="center">istore_3</td>
+<td align="center">将栈顶 int 型数值存入第四个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x3f</td>
-<td style="text-align:center">lstore_0</td>
-<td style="text-align:center">将栈顶 long 型数值存入第一个本地变量</td>
+<td align="center">0x3f</td>
+<td align="center">lstore_0</td>
+<td align="center">将栈顶 long 型数值存入第一个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x40</td>
-<td style="text-align:center">lstore_1</td>
-<td style="text-align:center">将栈顶 long 型数值存入第二个本地变量</td>
+<td align="center">0x40</td>
+<td align="center">lstore_1</td>
+<td align="center">将栈顶 long 型数值存入第二个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x41</td>
-<td style="text-align:center">lstore_2</td>
-<td style="text-align:center">将栈顶 long 型数值存入第三个本地变量</td>
+<td align="center">0x41</td>
+<td align="center">lstore_2</td>
+<td align="center">将栈顶 long 型数值存入第三个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x42</td>
-<td style="text-align:center">lstore_3</td>
-<td style="text-align:center">将栈顶 long 型数值存入第四个本地变量</td>
+<td align="center">0x42</td>
+<td align="center">lstore_3</td>
+<td align="center">将栈顶 long 型数值存入第四个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x43</td>
-<td style="text-align:center">fstore_0</td>
-<td style="text-align:center">将栈顶 float 型数值存入第一个本地变量</td>
+<td align="center">0x43</td>
+<td align="center">fstore_0</td>
+<td align="center">将栈顶 float 型数值存入第一个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x44</td>
-<td style="text-align:center">fstore_1</td>
-<td style="text-align:center">将栈顶 float 型数值存入第二个本地变量</td>
+<td align="center">0x44</td>
+<td align="center">fstore_1</td>
+<td align="center">将栈顶 float 型数值存入第二个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x45</td>
-<td style="text-align:center">fstore_2</td>
-<td style="text-align:center">将栈顶 float 型数值存入第三个本地变量</td>
+<td align="center">0x45</td>
+<td align="center">fstore_2</td>
+<td align="center">将栈顶 float 型数值存入第三个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x46</td>
-<td style="text-align:center">fstore_3</td>
-<td style="text-align:center">将栈顶 float 型数值存入第四个本地变量</td>
+<td align="center">0x46</td>
+<td align="center">fstore_3</td>
+<td align="center">将栈顶 float 型数值存入第四个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x47</td>
-<td style="text-align:center">dstore_0</td>
-<td style="text-align:center">将栈顶 double 型数值存入第一个本地变量</td>
+<td align="center">0x47</td>
+<td align="center">dstore_0</td>
+<td align="center">将栈顶 double 型数值存入第一个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x48</td>
-<td style="text-align:center">dstore_1</td>
-<td style="text-align:center">将栈顶 double 型数值存入第二个本地变量</td>
+<td align="center">0x48</td>
+<td align="center">dstore_1</td>
+<td align="center">将栈顶 double 型数值存入第二个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x49</td>
-<td style="text-align:center">dstore_2</td>
-<td style="text-align:center">将栈顶 double 型数值存入第三个本地变量</td>
+<td align="center">0x49</td>
+<td align="center">dstore_2</td>
+<td align="center">将栈顶 double 型数值存入第三个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x4a</td>
-<td style="text-align:center">dstore_3</td>
-<td style="text-align:center">将栈顶 double 型数值存入第四个本地变量</td>
+<td align="center">0x4a</td>
+<td align="center">dstore_3</td>
+<td align="center">将栈顶 double 型数值存入第四个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x4b</td>
-<td style="text-align:center">astore_0</td>
-<td style="text-align:center">将栈顶引用型数值存入第一个本地变量</td>
+<td align="center">0x4b</td>
+<td align="center">astore_0</td>
+<td align="center">将栈顶引用型数值存入第一个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x4c</td>
-<td style="text-align:center">astore_1</td>
-<td style="text-align:center">将栈顶引用型数值存入第二个本地变量</td>
+<td align="center">0x4c</td>
+<td align="center">astore_1</td>
+<td align="center">将栈顶引用型数值存入第二个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x4d</td>
-<td style="text-align:center">astore_2</td>
-<td style="text-align:center">将栈顶引用型数值存入第三个本地变量</td>
+<td align="center">0x4d</td>
+<td align="center">astore_2</td>
+<td align="center">将栈顶引用型数值存入第三个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x4e</td>
-<td style="text-align:center">astore_3</td>
-<td style="text-align:center">将栈顶引用型数值存入第四个本地变量</td>
+<td align="center">0x4e</td>
+<td align="center">astore_3</td>
+<td align="center">将栈顶引用型数值存入第四个本地变量</td>
 </tr>
 <tr>
-<td style="text-align:center">0x4f</td>
-<td style="text-align:center">iastore</td>
-<td style="text-align:center">将栈顶 int 型数值存入指定数组的指定索引位置</td>
+<td align="center">0x4f</td>
+<td align="center">iastore</td>
+<td align="center">将栈顶 int 型数值存入指定数组的指定索引位置</td>
 </tr>
 <tr>
-<td style="text-align:center">0x50</td>
-<td style="text-align:center">lastore</td>
-<td style="text-align:center">将栈顶 long 型数值存入指定数组的指定索引位置</td>
+<td align="center">0x50</td>
+<td align="center">lastore</td>
+<td align="center">将栈顶 long 型数值存入指定数组的指定索引位置</td>
 </tr>
 <tr>
-<td style="text-align:center">0x51</td>
-<td style="text-align:center">fastore</td>
-<td style="text-align:center">将栈顶 float 型数值存入指定数组的指定索引位置</td>
+<td align="center">0x51</td>
+<td align="center">fastore</td>
+<td align="center">将栈顶 float 型数值存入指定数组的指定索引位置</td>
 </tr>
 <tr>
-<td style="text-align:center">0x52</td>
-<td style="text-align:center">dastore</td>
-<td style="text-align:center">将栈顶 double 型数值存入指定数组的指定索引位置</td>
+<td align="center">0x52</td>
+<td align="center">dastore</td>
+<td align="center">将栈顶 double 型数值存入指定数组的指定索引位置</td>
 </tr>
 <tr>
-<td style="text-align:center">0x53</td>
-<td style="text-align:center">aastore</td>
-<td style="text-align:center">将栈顶引用型数值存入指定数组的指定索引位置</td>
+<td align="center">0x53</td>
+<td align="center">aastore</td>
+<td align="center">将栈顶引用型数值存入指定数组的指定索引位置</td>
 </tr>
 <tr>
-<td style="text-align:center">0x54</td>
-<td style="text-align:center">bastore</td>
-<td style="text-align:center">将栈顶 boolean 或 byte 型数值存入指定数组的指定索引位置</td>
+<td align="center">0x54</td>
+<td align="center">bastore</td>
+<td align="center">将栈顶 boolean 或 byte 型数值存入指定数组的指定索引位置</td>
 </tr>
 <tr>
-<td style="text-align:center">0x55</td>
-<td style="text-align:center">castore</td>
-<td style="text-align:center">将栈顶 char 型数值存入指定数组的指定索引位置</td>
+<td align="center">0x55</td>
+<td align="center">castore</td>
+<td align="center">将栈顶 char 型数值存入指定数组的指定索引位置</td>
 </tr>
 <tr>
-<td style="text-align:center">0x56</td>
-<td style="text-align:center">sastore</td>
-<td style="text-align:center">将栈顶 short 型数值存入指定数组的指定索引位置</td>
+<td align="center">0x56</td>
+<td align="center">sastore</td>
+<td align="center">将栈顶 short 型数值存入指定数组的指定索引位置</td>
 </tr>
 <tr>
-<td style="text-align:center">0x57</td>
-<td style="text-align:center">pop</td>
-<td style="text-align:center">将栈顶数值弹出（数值不能是 long 或 double 类型）</td>
+<td align="center">0x57</td>
+<td align="center">pop</td>
+<td align="center">将栈顶数值弹出（数值不能是 long 或 double 类型）</td>
 </tr>
 <tr>
-<td style="text-align:center">0x58</td>
-<td style="text-align:center">pop_2</td>
-<td style="text-align:center">将栈顶的一个（对于 long 或 double 类型）或两个数值（对于非 long 或 double 的其他类型）弹出</td>
+<td align="center">0x58</td>
+<td align="center">pop_2</td>
+<td align="center">将栈顶的一个（对于 long 或 double 类型）或两个数值（对于非 long 或 double 的其他类型）弹出</td>
 </tr>
 <tr>
-<td style="text-align:center">0x59</td>
-<td style="text-align:center">dup</td>
-<td style="text-align:center">复制栈顶数值并将复制值压入栈顶</td>
+<td align="center">0x59</td>
+<td align="center">dup</td>
+<td align="center">复制栈顶数值并将复制值压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x5a</td>
-<td style="text-align:center">dup_x1</td>
-<td style="text-align:center">复制栈顶数值并将两个复制值压入栈顶</td>
+<td align="center">0x5a</td>
+<td align="center">dup_x1</td>
+<td align="center">复制栈顶数值并将两个复制值压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x5b</td>
-<td style="text-align:center">dup_x2</td>
-<td style="text-align:center">复制栈顶数值并将三个（或两个）复制值压入栈顶</td>
+<td align="center">0x5b</td>
+<td align="center">dup_x2</td>
+<td align="center">复制栈顶数值并将三个（或两个）复制值压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x5c</td>
-<td style="text-align:center">dup_2</td>
-<td style="text-align:center">复制栈顶一个（对于 long 或 double 类型）或两个（非 long 或 double 的其他类型）数值并将复制值压入栈顶 ）</td>
+<td align="center">0x5c</td>
+<td align="center">dup_2</td>
+<td align="center">复制栈顶一个（对于 long 或 double 类型）或两个（非 long 或 double 的其他类型）数值并将复制值压入栈顶 ）</td>
 </tr>
 <tr>
-<td style="text-align:center">0x5d</td>
-<td style="text-align:center">dup_2_x1</td>
-<td style="text-align:center">dup_x1 指令的双倍版本</td>
+<td align="center">0x5d</td>
+<td align="center">dup_2_x1</td>
+<td align="center">dup_x1 指令的双倍版本</td>
 </tr>
 <tr>
-<td style="text-align:center">0x5e</td>
-<td style="text-align:center">dup_2_x2</td>
-<td style="text-align:center">dup_x2 指令的双倍版本</td>
+<td align="center">0x5e</td>
+<td align="center">dup_2_x2</td>
+<td align="center">dup_x2 指令的双倍版本</td>
 </tr>
 <tr>
-<td style="text-align:center">0x5f</td>
-<td style="text-align:center">swap</td>
-<td style="text-align:center">将栈最顶端的两个数值互换（数值不能是 long 或 double 类型）</td>
+<td align="center">0x5f</td>
+<td align="center">swap</td>
+<td align="center">将栈最顶端的两个数值互换（数值不能是 long 或 double 类型）</td>
 </tr>
 <tr>
-<td style="text-align:center">0x60</td>
-<td style="text-align:center">iadd</td>
-<td style="text-align:center">将栈顶两 int 型数值相加并将结果压入栈顶</td>
+<td align="center">0x60</td>
+<td align="center">iadd</td>
+<td align="center">将栈顶两 int 型数值相加并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x61</td>
-<td style="text-align:center">ladd</td>
-<td style="text-align:center">将栈顶两 long 型数值相加并将结果压入栈顶</td>
+<td align="center">0x61</td>
+<td align="center">ladd</td>
+<td align="center">将栈顶两 long 型数值相加并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x62</td>
-<td style="text-align:center">fadd</td>
-<td style="text-align:center">将栈顶两 float 型数值相加并将结果压入栈顶</td>
+<td align="center">0x62</td>
+<td align="center">fadd</td>
+<td align="center">将栈顶两 float 型数值相加并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x63</td>
-<td style="text-align:center">dadd</td>
-<td style="text-align:center">将栈顶两 double 型数值相加并将结果压入栈顶</td>
+<td align="center">0x63</td>
+<td align="center">dadd</td>
+<td align="center">将栈顶两 double 型数值相加并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x64</td>
-<td style="text-align:center">isub</td>
-<td style="text-align:center">将栈顶两 int 型数值相减并将结果压入栈顶</td>
+<td align="center">0x64</td>
+<td align="center">isub</td>
+<td align="center">将栈顶两 int 型数值相减并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x65</td>
-<td style="text-align:center">lsub</td>
-<td style="text-align:center">将栈顶两 long 型数值相减并将结果压入栈顶</td>
+<td align="center">0x65</td>
+<td align="center">lsub</td>
+<td align="center">将栈顶两 long 型数值相减并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x66</td>
-<td style="text-align:center">fsub</td>
-<td style="text-align:center">将栈顶两 float 型数值相减并将结果压入栈顶</td>
+<td align="center">0x66</td>
+<td align="center">fsub</td>
+<td align="center">将栈顶两 float 型数值相减并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x67</td>
-<td style="text-align:center">dsub</td>
-<td style="text-align:center">将栈顶两 double 型数值相减并将结果压入栈顶</td>
+<td align="center">0x67</td>
+<td align="center">dsub</td>
+<td align="center">将栈顶两 double 型数值相减并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x68</td>
-<td style="text-align:center">imul</td>
-<td style="text-align:center">将栈顶两 int 型数值相乘并将结果压入栈顶</td>
+<td align="center">0x68</td>
+<td align="center">imul</td>
+<td align="center">将栈顶两 int 型数值相乘并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x69</td>
-<td style="text-align:center">lmul</td>
-<td style="text-align:center">将栈顶两 long 型数值相乘并将结果压入栈顶</td>
+<td align="center">0x69</td>
+<td align="center">lmul</td>
+<td align="center">将栈顶两 long 型数值相乘并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x6a</td>
-<td style="text-align:center">fmul</td>
-<td style="text-align:center">将栈顶两 float 型数值相乘并将结果压入栈顶</td>
+<td align="center">0x6a</td>
+<td align="center">fmul</td>
+<td align="center">将栈顶两 float 型数值相乘并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x6b</td>
-<td style="text-align:center">dmul</td>
-<td style="text-align:center">将栈顶两 double 型数值相乘并将结果压入栈顶</td>
+<td align="center">0x6b</td>
+<td align="center">dmul</td>
+<td align="center">将栈顶两 double 型数值相乘并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x6c</td>
-<td style="text-align:center">idiv</td>
-<td style="text-align:center">将栈顶两 int 型数值相除并将结果压入栈顶</td>
+<td align="center">0x6c</td>
+<td align="center">idiv</td>
+<td align="center">将栈顶两 int 型数值相除并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x6d</td>
-<td style="text-align:center">ldiv</td>
-<td style="text-align:center">将栈顶两 long 型数值相除并将结果压入栈顶</td>
+<td align="center">0x6d</td>
+<td align="center">ldiv</td>
+<td align="center">将栈顶两 long 型数值相除并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x6e</td>
-<td style="text-align:center">fdiv</td>
-<td style="text-align:center">将栈顶两 float 型数值相除并将结果压入栈顶</td>
+<td align="center">0x6e</td>
+<td align="center">fdiv</td>
+<td align="center">将栈顶两 float 型数值相除并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x6f</td>
-<td style="text-align:center">ddiv</td>
-<td style="text-align:center">将栈顶两 double 型数值相除并将结果压入栈顶</td>
+<td align="center">0x6f</td>
+<td align="center">ddiv</td>
+<td align="center">将栈顶两 double 型数值相除并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x70</td>
-<td style="text-align:center">irem</td>
-<td style="text-align:center">将栈顶两 int 型数值作取模运算并将结果压入栈顶</td>
+<td align="center">0x70</td>
+<td align="center">irem</td>
+<td align="center">将栈顶两 int 型数值作取模运算并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x71</td>
-<td style="text-align:center">lrem</td>
-<td style="text-align:center">将栈顶两 long 型数值作取模运算并将结果压入栈顶</td>
+<td align="center">0x71</td>
+<td align="center">lrem</td>
+<td align="center">将栈顶两 long 型数值作取模运算并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x72</td>
-<td style="text-align:center">frem</td>
-<td style="text-align:center">将栈顶两 float 型数值作取模运算并将结果压入栈顶</td>
+<td align="center">0x72</td>
+<td align="center">frem</td>
+<td align="center">将栈顶两 float 型数值作取模运算并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x73</td>
-<td style="text-align:center">drem</td>
-<td style="text-align:center">将栈顶两 double 型数值作取模运算并将结果压入栈顶</td>
+<td align="center">0x73</td>
+<td align="center">drem</td>
+<td align="center">将栈顶两 double 型数值作取模运算并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x74</td>
-<td style="text-align:center">ineg</td>
-<td style="text-align:center">将栈顶两 int 型数值作负并将结果压入栈顶</td>
+<td align="center">0x74</td>
+<td align="center">ineg</td>
+<td align="center">将栈顶两 int 型数值作负并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x75</td>
-<td style="text-align:center">lneg</td>
-<td style="text-align:center">将栈顶两 long 型数值作负并将结果压入栈顶</td>
+<td align="center">0x75</td>
+<td align="center">lneg</td>
+<td align="center">将栈顶两 long 型数值作负并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x76</td>
-<td style="text-align:center">fneg</td>
-<td style="text-align:center">将栈顶两 float 型数值作负并将结果压入栈顶</td>
+<td align="center">0x76</td>
+<td align="center">fneg</td>
+<td align="center">将栈顶两 float 型数值作负并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x77</td>
-<td style="text-align:center">dneg</td>
-<td style="text-align:center">将栈顶两 double 型数值作负并将结果压入栈顶</td>
+<td align="center">0x77</td>
+<td align="center">dneg</td>
+<td align="center">将栈顶两 double 型数值作负并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x78</td>
-<td style="text-align:center">ishl</td>
-<td style="text-align:center">将栈顶两 int 型数值左移位指定位数并将结果压入栈顶</td>
+<td align="center">0x78</td>
+<td align="center">ishl</td>
+<td align="center">将栈顶两 int 型数值左移位指定位数并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x79</td>
-<td style="text-align:center">lshl</td>
-<td style="text-align:center">将栈顶两 long 型数值左移位指定位数并将结果压入栈顶</td>
+<td align="center">0x79</td>
+<td align="center">lshl</td>
+<td align="center">将栈顶两 long 型数值左移位指定位数并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x7a</td>
-<td style="text-align:center">ishr</td>
-<td style="text-align:center">将栈顶两 int 型数值右（带符号）移位指定位数并将结果压入栈顶</td>
+<td align="center">0x7a</td>
+<td align="center">ishr</td>
+<td align="center">将栈顶两 int 型数值右（带符号）移位指定位数并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x7b</td>
-<td style="text-align:center">lshr</td>
-<td style="text-align:center">将栈顶两 long 型数值右（带符号）移位指定位数并将结果压入栈顶</td>
+<td align="center">0x7b</td>
+<td align="center">lshr</td>
+<td align="center">将栈顶两 long 型数值右（带符号）移位指定位数并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x7c</td>
-<td style="text-align:center">iushr</td>
-<td style="text-align:center">将栈顶两 int 型数值右（无符号）移位指定位数并将结果压入栈顶</td>
+<td align="center">0x7c</td>
+<td align="center">iushr</td>
+<td align="center">将栈顶两 int 型数值右（无符号）移位指定位数并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x7d</td>
-<td style="text-align:center">lushr</td>
-<td style="text-align:center">将栈顶两 long 型数值右（无符号）移位指定位数并将结果压入栈顶</td>
+<td align="center">0x7d</td>
+<td align="center">lushr</td>
+<td align="center">将栈顶两 long 型数值右（无符号）移位指定位数并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x7e</td>
-<td style="text-align:center">iand</td>
-<td style="text-align:center">将栈顶两 int 型数值作 “按位与” 并将结果压入栈顶</td>
+<td align="center">0x7e</td>
+<td align="center">iand</td>
+<td align="center">将栈顶两 int 型数值作 “按位与” 并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x7f</td>
-<td style="text-align:center">land</td>
-<td style="text-align:center">将栈顶两 long 型数值作 “按位与” 并将结果压入栈顶</td>
+<td align="center">0x7f</td>
+<td align="center">land</td>
+<td align="center">将栈顶两 long 型数值作 “按位与” 并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x80</td>
-<td style="text-align:center">ior</td>
-<td style="text-align:center">将栈顶两 int 型数值作 “按位或” 并将结果压入栈顶</td>
+<td align="center">0x80</td>
+<td align="center">ior</td>
+<td align="center">将栈顶两 int 型数值作 “按位或” 并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x81</td>
-<td style="text-align:center">lor</td>
-<td style="text-align:center">将栈顶两 long 型数值作 “按位或” 并将结果压入栈顶</td>
+<td align="center">0x81</td>
+<td align="center">lor</td>
+<td align="center">将栈顶两 long 型数值作 “按位或” 并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x82</td>
-<td style="text-align:center">ixor</td>
-<td style="text-align:center">将栈顶两 int 型数值作 “按位异或” 并将结果压入栈顶</td>
+<td align="center">0x82</td>
+<td align="center">ixor</td>
+<td align="center">将栈顶两 int 型数值作 “按位异或” 并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x83</td>
-<td style="text-align:center">lxor</td>
-<td style="text-align:center">将栈顶两 long 型数值作 “按位异或” 并将结果压入栈顶</td>
+<td align="center">0x83</td>
+<td align="center">lxor</td>
+<td align="center">将栈顶两 long 型数值作 “按位异或” 并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x84</td>
-<td style="text-align:center">iinc</td>
-<td style="text-align:center">将栈顶 int 型变量增加指定值（如i++， i–， i+=2等）</td>
+<td align="center">0x84</td>
+<td align="center">iinc</td>
+<td align="center">将栈顶 int 型变量增加指定值（如i++， i–， i+=2等）</td>
 </tr>
 <tr>
-<td style="text-align:center">0x85</td>
-<td style="text-align:center">i2l</td>
-<td style="text-align:center">将栈顶 int 型数值强制转成 long 型数值并将结果压入栈顶</td>
+<td align="center">0x85</td>
+<td align="center">i2l</td>
+<td align="center">将栈顶 int 型数值强制转成 long 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x86</td>
-<td style="text-align:center">i2f</td>
-<td style="text-align:center">将栈顶 int 型数值强制转成 float 型数值并将结果压入栈顶</td>
+<td align="center">0x86</td>
+<td align="center">i2f</td>
+<td align="center">将栈顶 int 型数值强制转成 float 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x87</td>
-<td style="text-align:center">i2d</td>
-<td style="text-align:center">将栈顶 int 型数值强制转成 double 型数值并将结果压入栈顶</td>
+<td align="center">0x87</td>
+<td align="center">i2d</td>
+<td align="center">将栈顶 int 型数值强制转成 double 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x88</td>
-<td style="text-align:center">l2i</td>
-<td style="text-align:center">将栈顶 long 型数值强制转成 int 型数值并将结果压入栈顶</td>
+<td align="center">0x88</td>
+<td align="center">l2i</td>
+<td align="center">将栈顶 long 型数值强制转成 int 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x89</td>
-<td style="text-align:center">l2f</td>
-<td style="text-align:center">将栈顶 long 型数值强制转成 float 型数值并将结果压入栈顶</td>
+<td align="center">0x89</td>
+<td align="center">l2f</td>
+<td align="center">将栈顶 long 型数值强制转成 float 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x8a</td>
-<td style="text-align:center">l2d</td>
-<td style="text-align:center">将栈顶 long 型数值强制转成 double 型数值并将结果压入栈顶</td>
+<td align="center">0x8a</td>
+<td align="center">l2d</td>
+<td align="center">将栈顶 long 型数值强制转成 double 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x8b</td>
-<td style="text-align:center">f2i</td>
-<td style="text-align:center">将栈顶 float 型数值强制转成 int 型数值并将结果压入栈顶</td>
+<td align="center">0x8b</td>
+<td align="center">f2i</td>
+<td align="center">将栈顶 float 型数值强制转成 int 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x8c</td>
-<td style="text-align:center">f2l</td>
-<td style="text-align:center">将栈顶 float 型数值强制转成 long 型数值并将结果压入栈顶</td>
+<td align="center">0x8c</td>
+<td align="center">f2l</td>
+<td align="center">将栈顶 float 型数值强制转成 long 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x8d</td>
-<td style="text-align:center">f2d</td>
-<td style="text-align:center">将栈顶 float 型数值强制转成 double 型数值并将结果压入栈顶</td>
+<td align="center">0x8d</td>
+<td align="center">f2d</td>
+<td align="center">将栈顶 float 型数值强制转成 double 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x8e</td>
-<td style="text-align:center">d2i</td>
-<td style="text-align:center">将栈顶 double 型数值强制转成 int 型数值并将结果压入栈顶</td>
+<td align="center">0x8e</td>
+<td align="center">d2i</td>
+<td align="center">将栈顶 double 型数值强制转成 int 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x8f</td>
-<td style="text-align:center">d2l</td>
-<td style="text-align:center">将栈顶 double 型数值强制转成 long 型数值并将结果压入栈顶</td>
+<td align="center">0x8f</td>
+<td align="center">d2l</td>
+<td align="center">将栈顶 double 型数值强制转成 long 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x90</td>
-<td style="text-align:center">d2f</td>
-<td style="text-align:center">将栈顶 double 型数值强制转成 float 型数值并将结果压入栈顶</td>
+<td align="center">0x90</td>
+<td align="center">d2f</td>
+<td align="center">将栈顶 double 型数值强制转成 float 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x91</td>
-<td style="text-align:center">i2b</td>
-<td style="text-align:center">将栈顶 int 型数值强制转成 byte 型数值并将结果压入栈顶</td>
+<td align="center">0x91</td>
+<td align="center">i2b</td>
+<td align="center">将栈顶 int 型数值强制转成 byte 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x92</td>
-<td style="text-align:center">i2c</td>
-<td style="text-align:center">将栈顶 int 型数值强制转成 char 型数值并将结果压入栈顶</td>
+<td align="center">0x92</td>
+<td align="center">i2c</td>
+<td align="center">将栈顶 int 型数值强制转成 char 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x93</td>
-<td style="text-align:center">i2s</td>
-<td style="text-align:center">将栈顶 int 型数值强制转成 short 型数值并将结果压入栈顶</td>
+<td align="center">0x93</td>
+<td align="center">i2s</td>
+<td align="center">将栈顶 int 型数值强制转成 short 型数值并将结果压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x94</td>
-<td style="text-align:center">lcmp</td>
-<td style="text-align:center">比较栈顶两 long 型数值的大小，并将结果（1， 0 或 -1）压入栈顶</td>
+<td align="center">0x94</td>
+<td align="center">lcmp</td>
+<td align="center">比较栈顶两 long 型数值的大小，并将结果（1， 0 或 -1）压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x95</td>
-<td style="text-align:center">fcmpl</td>
-<td style="text-align:center">比较栈顶两 float 型数值的大小，并将结果（1， 0 或 -1）压入栈顶; 当其中一个数值为 “NaN” 时，将 -1 压入栈顶</td>
+<td align="center">0x95</td>
+<td align="center">fcmpl</td>
+<td align="center">比较栈顶两 float 型数值的大小，并将结果（1， 0 或 -1）压入栈顶; 当其中一个数值为 “NaN” 时，将 -1 压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x96</td>
-<td style="text-align:center">fcmpg</td>
-<td style="text-align:center">比较栈顶两 float 型数值的大小，并将结果（1， 0 或 -1）压入栈顶; 当其中一个数值为 “NaN” 时，将 1 压入栈顶</td>
+<td align="center">0x96</td>
+<td align="center">fcmpg</td>
+<td align="center">比较栈顶两 float 型数值的大小，并将结果（1， 0 或 -1）压入栈顶; 当其中一个数值为 “NaN” 时，将 1 压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x97</td>
-<td style="text-align:center">dcmpl</td>
-<td style="text-align:center">比较栈顶两 double 型数值的大小，并将结果（1， 0 或 -1）压入栈顶; 当其中一个数值为 “NaN” 时，将 -1 压入栈顶</td>
+<td align="center">0x97</td>
+<td align="center">dcmpl</td>
+<td align="center">比较栈顶两 double 型数值的大小，并将结果（1， 0 或 -1）压入栈顶; 当其中一个数值为 “NaN” 时，将 -1 压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x98</td>
-<td style="text-align:center">dcmpg</td>
-<td style="text-align:center">比较栈顶两 double 型数值的大小，并将结果（1， 0 或 -1）压入栈顶; 当其中一个数值为 “NaN” 时，将 1 压入栈顶</td>
+<td align="center">0x98</td>
+<td align="center">dcmpg</td>
+<td align="center">比较栈顶两 double 型数值的大小，并将结果（1， 0 或 -1）压入栈顶; 当其中一个数值为 “NaN” 时，将 1 压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0x99</td>
-<td style="text-align:center">ifeg</td>
-<td style="text-align:center">当栈顶 int 型数值等于 0 时跳转</td>
+<td align="center">0x99</td>
+<td align="center">ifeg</td>
+<td align="center">当栈顶 int 型数值等于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0x9a</td>
-<td style="text-align:center">ifne</td>
-<td style="text-align:center">当栈顶 int 型数值不等于 0 时跳转</td>
+<td align="center">0x9a</td>
+<td align="center">ifne</td>
+<td align="center">当栈顶 int 型数值不等于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0x9b</td>
-<td style="text-align:center">iflt</td>
-<td style="text-align:center">当栈顶 int 型数值小于 0 时跳转</td>
+<td align="center">0x9b</td>
+<td align="center">iflt</td>
+<td align="center">当栈顶 int 型数值小于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0x9c</td>
-<td style="text-align:center">ifge</td>
-<td style="text-align:center">当栈顶 int 型数值大于或等于 0 时跳转</td>
+<td align="center">0x9c</td>
+<td align="center">ifge</td>
+<td align="center">当栈顶 int 型数值大于或等于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0x9d</td>
-<td style="text-align:center">ifgt</td>
-<td style="text-align:center">当栈顶 int 型数值大于 0 时跳转</td>
+<td align="center">0x9d</td>
+<td align="center">ifgt</td>
+<td align="center">当栈顶 int 型数值大于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0x9e</td>
-<td style="text-align:center">ifle</td>
-<td style="text-align:center">当栈顶 int 型数值小于或等于 0 时跳转</td>
+<td align="center">0x9e</td>
+<td align="center">ifle</td>
+<td align="center">当栈顶 int 型数值小于或等于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0x9f</td>
-<td style="text-align:center">if_icmpeq</td>
-<td style="text-align:center">比较栈顶两 int 型数值的大小，当结果等于 0 时跳转</td>
+<td align="center">0x9f</td>
+<td align="center">if_icmpeq</td>
+<td align="center">比较栈顶两 int 型数值的大小，当结果等于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0xa0</td>
-<td style="text-align:center">if_icmpne</td>
-<td style="text-align:center">比较栈顶两 int 型数值的大小，当结果不等于 0 时跳转</td>
+<td align="center">0xa0</td>
+<td align="center">if_icmpne</td>
+<td align="center">比较栈顶两 int 型数值的大小，当结果不等于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0xa1</td>
-<td style="text-align:center">if_icmplt</td>
-<td style="text-align:center">比较栈顶两 int 型数值的大小，当结果小于 0 时跳转</td>
+<td align="center">0xa1</td>
+<td align="center">if_icmplt</td>
+<td align="center">比较栈顶两 int 型数值的大小，当结果小于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0xa2</td>
-<td style="text-align:center">if_icmpge</td>
-<td style="text-align:center">比较栈顶两 int 型数值的大小，当结果大于或等于 0 时跳转</td>
+<td align="center">0xa2</td>
+<td align="center">if_icmpge</td>
+<td align="center">比较栈顶两 int 型数值的大小，当结果大于或等于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0xa3</td>
-<td style="text-align:center">if_icmpgt</td>
-<td style="text-align:center">比较栈顶两 int 型数值的大小，当结果大于 0 时跳转</td>
+<td align="center">0xa3</td>
+<td align="center">if_icmpgt</td>
+<td align="center">比较栈顶两 int 型数值的大小，当结果大于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0xa4</td>
-<td style="text-align:center">if_icmple</td>
-<td style="text-align:center">比较栈顶两 int 型数值的大小，当结果小于或等于 0 时跳转</td>
+<td align="center">0xa4</td>
+<td align="center">if_icmple</td>
+<td align="center">比较栈顶两 int 型数值的大小，当结果小于或等于 0 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0xa5</td>
-<td style="text-align:center">if_icmpeq</td>
-<td style="text-align:center">比较栈顶两引用型数值，当结果相等时跳转</td>
+<td align="center">0xa5</td>
+<td align="center">if_icmpeq</td>
+<td align="center">比较栈顶两引用型数值，当结果相等时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0xa6</td>
-<td style="text-align:center">if_icmpnc</td>
-<td style="text-align:center">比较栈顶两引用型数值，当结果不相等时跳转</td>
+<td align="center">0xa6</td>
+<td align="center">if_icmpnc</td>
+<td align="center">比较栈顶两引用型数值，当结果不相等时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0xa7</td>
-<td style="text-align:center">goto</td>
-<td style="text-align:center">无条件跳转</td>
+<td align="center">0xa7</td>
+<td align="center">goto</td>
+<td align="center">无条件跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0xa8</td>
-<td style="text-align:center">jsr</td>
-<td style="text-align:center">跳转至指定的 16 位 offset 位置，并将 jsr 的下一条指令地址压入栈顶</td>
+<td align="center">0xa8</td>
+<td align="center">jsr</td>
+<td align="center">跳转至指定的 16 位 offset 位置，并将 jsr 的下一条指令地址压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0xa9</td>
-<td style="text-align:center">ret</td>
-<td style="text-align:center">返回至本地变量指定的 index 的指令位置（一般与 jsr 或 jsr_w 联合使用）</td>
+<td align="center">0xa9</td>
+<td align="center">ret</td>
+<td align="center">返回至本地变量指定的 index 的指令位置（一般与 jsr 或 jsr_w 联合使用）</td>
 </tr>
 <tr>
-<td style="text-align:center">0xaa</td>
-<td style="text-align:center">tableswitch</td>
-<td style="text-align:center">用于 switch 条件跳转， case 值连续（可变长度指令）</td>
+<td align="center">0xaa</td>
+<td align="center">tableswitch</td>
+<td align="center">用于 switch 条件跳转， case 值连续（可变长度指令）</td>
 </tr>
 <tr>
-<td style="text-align:center">0xab</td>
-<td style="text-align:center">lookupswitch</td>
-<td style="text-align:center">用于 switch 条件跳转， case 值连不续（可变长度指令）</td>
+<td align="center">0xab</td>
+<td align="center">lookupswitch</td>
+<td align="center">用于 switch 条件跳转， case 值连不续（可变长度指令）</td>
 </tr>
 <tr>
-<td style="text-align:center">0xac</td>
-<td style="text-align:center">ireturn</td>
-<td style="text-align:center">从当前方法返回 int</td>
+<td align="center">0xac</td>
+<td align="center">ireturn</td>
+<td align="center">从当前方法返回 int</td>
 </tr>
 <tr>
-<td style="text-align:center">0xad</td>
-<td style="text-align:center">lreturn</td>
-<td style="text-align:center">从当前方法返回 long</td>
+<td align="center">0xad</td>
+<td align="center">lreturn</td>
+<td align="center">从当前方法返回 long</td>
 </tr>
 <tr>
-<td style="text-align:center">0xae</td>
-<td style="text-align:center">freturn</td>
-<td style="text-align:center">从当前方法返回 float</td>
+<td align="center">0xae</td>
+<td align="center">freturn</td>
+<td align="center">从当前方法返回 float</td>
 </tr>
 <tr>
-<td style="text-align:center">0xaf</td>
-<td style="text-align:center">dreturn</td>
-<td style="text-align:center">从当前方法返回 double</td>
+<td align="center">0xaf</td>
+<td align="center">dreturn</td>
+<td align="center">从当前方法返回 double</td>
 </tr>
 <tr>
-<td style="text-align:center">0xb0</td>
-<td style="text-align:center">areturn</td>
-<td style="text-align:center">从当前方法返回对象引用</td>
+<td align="center">0xb0</td>
+<td align="center">areturn</td>
+<td align="center">从当前方法返回对象引用</td>
 </tr>
 <tr>
-<td style="text-align:center">0xb1</td>
-<td style="text-align:center">return</td>
-<td style="text-align:center">从当前方法返回 void</td>
+<td align="center">0xb1</td>
+<td align="center">return</td>
+<td align="center">从当前方法返回 void</td>
 </tr>
 <tr>
-<td style="text-align:center">0xb2</td>
-<td style="text-align:center">getstatic</td>
-<td style="text-align:center">获取指定类的静态域，并将其值压入栈顶</td>
+<td align="center">0xb2</td>
+<td align="center">getstatic</td>
+<td align="center">获取指定类的静态域，并将其值压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0xb3</td>
-<td style="text-align:center">putstatic</td>
-<td style="text-align:center">为指定的类的静态域赋值</td>
+<td align="center">0xb3</td>
+<td align="center">putstatic</td>
+<td align="center">为指定的类的静态域赋值</td>
 </tr>
 <tr>
-<td style="text-align:center">0xb4</td>
-<td style="text-align:center">getfield</td>
-<td style="text-align:center">获取指定类的实例域，并将其值压入栈顶</td>
+<td align="center">0xb4</td>
+<td align="center">getfield</td>
+<td align="center">获取指定类的实例域，并将其值压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0xb5</td>
-<td style="text-align:center">putfield</td>
-<td style="text-align:center">为指定的类的实例域赋值</td>
+<td align="center">0xb5</td>
+<td align="center">putfield</td>
+<td align="center">为指定的类的实例域赋值</td>
 </tr>
 <tr>
-<td style="text-align:center">0xb6</td>
-<td style="text-align:center">invokevirtual</td>
-<td style="text-align:center">调用实例方法</td>
+<td align="center">0xb6</td>
+<td align="center">invokevirtual</td>
+<td align="center">调用实例方法</td>
 </tr>
 <tr>
-<td style="text-align:center">0xb7</td>
-<td style="text-align:center">invokespecial</td>
-<td style="text-align:center">调用超类构造方法， 实例初始化方法，私有方法</td>
+<td align="center">0xb7</td>
+<td align="center">invokespecial</td>
+<td align="center">调用超类构造方法， 实例初始化方法，私有方法</td>
 </tr>
 <tr>
-<td style="text-align:center">0xb8</td>
-<td style="text-align:center">invokestatic</td>
-<td style="text-align:center">调用静态方法</td>
+<td align="center">0xb8</td>
+<td align="center">invokestatic</td>
+<td align="center">调用静态方法</td>
 </tr>
 <tr>
-<td style="text-align:center">0xb9</td>
-<td style="text-align:center">invokeinterface</td>
-<td style="text-align:center">调用接口方法</td>
+<td align="center">0xb9</td>
+<td align="center">invokeinterface</td>
+<td align="center">调用接口方法</td>
 </tr>
 <tr>
-<td style="text-align:center">0xba</td>
-<td style="text-align:center">invokedynamic</td>
-<td style="text-align:center">调用动态方法</td>
+<td align="center">0xba</td>
+<td align="center">invokedynamic</td>
+<td align="center">调用动态方法</td>
 </tr>
 <tr>
-<td style="text-align:center">0xbb</td>
-<td style="text-align:center">new</td>
-<td style="text-align:center">创建一个对象，并将其引用值压入栈顶</td>
+<td align="center">0xbb</td>
+<td align="center">new</td>
+<td align="center">创建一个对象，并将其引用值压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0xbc</td>
-<td style="text-align:center">newarray</td>
-<td style="text-align:center">创建一个指定的原始类型（如 int， float等）的数组，并将其引用值压入栈顶</td>
+<td align="center">0xbc</td>
+<td align="center">newarray</td>
+<td align="center">创建一个指定的原始类型（如 int， float等）的数组，并将其引用值压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0xbd</td>
-<td style="text-align:center">anewarray</td>
-<td style="text-align:center">创建一个引用型（如 类，接口，数组）的数组，并将其引用值压入栈顶</td>
+<td align="center">0xbd</td>
+<td align="center">anewarray</td>
+<td align="center">创建一个引用型（如 类，接口，数组）的数组，并将其引用值压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0xbe</td>
-<td style="text-align:center">arraylength</td>
-<td style="text-align:center">获得数组的长度值并压入栈顶</td>
+<td align="center">0xbe</td>
+<td align="center">arraylength</td>
+<td align="center">获得数组的长度值并压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0xbf</td>
-<td style="text-align:center">athrow</td>
-<td style="text-align:center">将栈顶的异常抛出</td>
+<td align="center">0xbf</td>
+<td align="center">athrow</td>
+<td align="center">将栈顶的异常抛出</td>
 </tr>
 <tr>
-<td style="text-align:center">0xc0</td>
-<td style="text-align:center">checkcast</td>
-<td style="text-align:center">检验类型转换， 检验未通过将抛出 ClassCastException</td>
+<td align="center">0xc0</td>
+<td align="center">checkcast</td>
+<td align="center">检验类型转换， 检验未通过将抛出 ClassCastException</td>
 </tr>
 <tr>
-<td style="text-align:center">0xc1</td>
-<td style="text-align:center">instanceof</td>
-<td style="text-align:center">检验对象是否时指定类的实例， 如果是， 则将 1 压入栈顶，否则将 0 压入栈顶</td>
+<td align="center">0xc1</td>
+<td align="center">instanceof</td>
+<td align="center">检验对象是否时指定类的实例， 如果是， 则将 1 压入栈顶，否则将 0 压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0xc2</td>
-<td style="text-align:center">monitorenter</td>
-<td style="text-align:center">获得对象的锁，用于同步方法或同步块</td>
+<td align="center">0xc2</td>
+<td align="center">monitorenter</td>
+<td align="center">获得对象的锁，用于同步方法或同步块</td>
 </tr>
 <tr>
-<td style="text-align:center">0xc3</td>
-<td style="text-align:center">monitorexit</td>
-<td style="text-align:center">释放对象的锁，用于同步方法或同步块</td>
+<td align="center">0xc3</td>
+<td align="center">monitorexit</td>
+<td align="center">释放对象的锁，用于同步方法或同步块</td>
 </tr>
 <tr>
-<td style="text-align:center">0xc4</td>
-<td style="text-align:center">wide</td>
-<td style="text-align:center">扩展本地变量的宽度</td>
+<td align="center">0xc4</td>
+<td align="center">wide</td>
+<td align="center">扩展本地变量的宽度</td>
 </tr>
 <tr>
-<td style="text-align:center">0xc5</td>
-<td style="text-align:center">multianewarray</td>
-<td style="text-align:center">创建指定类型和指定维度的多维数组（执行该指令时，操作栈中必须包含各维度的长度值），并将其引用值压入栈顶</td>
+<td align="center">0xc5</td>
+<td align="center">multianewarray</td>
+<td align="center">创建指定类型和指定维度的多维数组（执行该指令时，操作栈中必须包含各维度的长度值），并将其引用值压入栈顶</td>
 </tr>
 <tr>
-<td style="text-align:center">0xc6</td>
-<td style="text-align:center">ifnull</td>
-<td style="text-align:center">为 null 时跳转</td>
+<td align="center">0xc6</td>
+<td align="center">ifnull</td>
+<td align="center">为 null 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0xc7</td>
-<td style="text-align:center">ifnonnull</td>
-<td style="text-align:center">不为 null 时跳转</td>
+<td align="center">0xc7</td>
+<td align="center">ifnonnull</td>
+<td align="center">不为 null 时跳转</td>
 </tr>
 <tr>
-<td style="text-align:center">0xc8</td>
-<td style="text-align:center">goto_w</td>
-<td style="text-align:center">无条件跳转（宽索引）</td>
+<td align="center">0xc8</td>
+<td align="center">goto_w</td>
+<td align="center">无条件跳转（宽索引）</td>
 </tr>
 <tr>
-<td style="text-align:center">0xc9</td>
-<td style="text-align:center">jsr_w</td>
-<td style="text-align:center">跳转至指定的 32 位 offset 位置，并将 jsr_w 的下一条指令地址压入栈顶</td>
+<td align="center">0xc9</td>
+<td align="center">jsr_w</td>
+<td align="center">跳转至指定的 32 位 offset 位置，并将 jsr_w 的下一条指令地址压入栈顶</td>
 </tr>
-</tbody>
-</table>
-<p><em>tip</em> : <a href="https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-6.html" target="_blank" rel="noopener">官方JVM指令文档</a></p>
+</tbody></table>
+<p><em>tip</em> : <a href="https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-6.html">官方JVM指令文档</a></p>
 <h3 id="2">数据类型在指令中的转化</h3>
 
 <table>
 <thead>
 <tr>
-<th style="text-align:center">数据类型</th>
-<th style="text-align:center">byte</th>
-<th style="text-align:center">short</th>
-<th style="text-align:center">int</th>
-<th style="text-align:center">long</th>
-<th style="text-align:center">float</th>
-<th style="text-align:center">double</th>
-<th style="text-align:center">char</th>
-<th style="text-align:center">reference</th>
+<th align="center">数据类型</th>
+<th align="center">byte</th>
+<th align="center">short</th>
+<th align="center">int</th>
+<th align="center">long</th>
+<th align="center">float</th>
+<th align="center">double</th>
+<th align="center">char</th>
+<th align="center">reference</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">简化转化</td>
-<td style="text-align:center">b</td>
-<td style="text-align:center">s</td>
-<td style="text-align:center">i</td>
-<td style="text-align:center">l</td>
-<td style="text-align:center">f</td>
-<td style="text-align:center">d</td>
-<td style="text-align:center">c</td>
-<td style="text-align:center">a</td>
+<tbody><tr>
+<td align="center">简化转化</td>
+<td align="center">b</td>
+<td align="center">s</td>
+<td align="center">i</td>
+<td align="center">l</td>
+<td align="center">f</td>
+<td align="center">d</td>
+<td align="center">c</td>
+<td align="center">a</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="3">指令集支持的数据类型</h3>
 
 <p>下面表格中T+指令构成 <code>opcode</code>, T 为上面表格各数据类型的简化转化。</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">opcode</th>
-<th style="text-align:center">byte</th>
-<th style="text-align:center">short</th>
-<th style="text-align:center">int</th>
-<th style="text-align:center">long</th>
-<th style="text-align:center">float</th>
-<th style="text-align:center">double</th>
-<th style="text-align:center">char</th>
-<th style="text-align:center">reference</th>
+<th align="center">opcode</th>
+<th align="center">byte</th>
+<th align="center">short</th>
+<th align="center">int</th>
+<th align="center">long</th>
+<th align="center">float</th>
+<th align="center">double</th>
+<th align="center">char</th>
+<th align="center">reference</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">Tipush</td>
-<td style="text-align:center">bipush</td>
-<td style="text-align:center">sipush</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<tbody><tr>
+<td align="center">Tipush</td>
+<td align="center">bipush</td>
+<td align="center">sipush</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tconst</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">iconst</td>
-<td style="text-align:center">lconst</td>
-<td style="text-align:center">fconst</td>
-<td style="text-align:center">dconst</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">aconst</td>
+<td align="center">Tconst</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iconst</td>
+<td align="center">lconst</td>
+<td align="center">fconst</td>
+<td align="center">dconst</td>
+<td align="center"></td>
+<td align="center">aconst</td>
 </tr>
 <tr>
-<td style="text-align:center">Tload</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">iload</td>
-<td style="text-align:center">lload</td>
-<td style="text-align:center">fload</td>
-<td style="text-align:center">dload</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">aload</td>
+<td align="center">Tload</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iload</td>
+<td align="center">lload</td>
+<td align="center">fload</td>
+<td align="center">dload</td>
+<td align="center"></td>
+<td align="center">aload</td>
 </tr>
 <tr>
-<td style="text-align:center">Tstore</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">istore</td>
-<td style="text-align:center">lstore</td>
-<td style="text-align:center">fstore</td>
-<td style="text-align:center">dstore</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">astore</td>
+<td align="center">Tstore</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">istore</td>
+<td align="center">lstore</td>
+<td align="center">fstore</td>
+<td align="center">dstore</td>
+<td align="center"></td>
+<td align="center">astore</td>
 </tr>
 <tr>
-<td style="text-align:center">Tinc</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">iinc</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td></td>
+<td align="center">Tinc</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iinc</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Taload</td>
-<td style="text-align:center">baload</td>
-<td style="text-align:center">saload</td>
-<td style="text-align:center">iaload</td>
-<td style="text-align:center">laload</td>
-<td style="text-align:center">faload</td>
-<td style="text-align:center">daload</td>
-<td style="text-align:center">caload</td>
-<td style="text-align:center">aaload</td>
+<td align="center">Taload</td>
+<td align="center">baload</td>
+<td align="center">saload</td>
+<td align="center">iaload</td>
+<td align="center">laload</td>
+<td align="center">faload</td>
+<td align="center">daload</td>
+<td align="center">caload</td>
+<td align="center">aaload</td>
 </tr>
 <tr>
-<td style="text-align:center">Tastore</td>
-<td style="text-align:center">bastore</td>
-<td style="text-align:center">sastore</td>
-<td style="text-align:center">iastore</td>
-<td style="text-align:center">lastore</td>
-<td style="text-align:center">fastore</td>
-<td style="text-align:center">dastore</td>
-<td style="text-align:center">castore</td>
-<td style="text-align:center">aastore</td>
+<td align="center">Tastore</td>
+<td align="center">bastore</td>
+<td align="center">sastore</td>
+<td align="center">iastore</td>
+<td align="center">lastore</td>
+<td align="center">fastore</td>
+<td align="center">dastore</td>
+<td align="center">castore</td>
+<td align="center">aastore</td>
 </tr>
 <tr>
-<td style="text-align:center">Tadd</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">iadd</td>
-<td style="text-align:center">ladd</td>
-<td style="text-align:center">fadd</td>
-<td style="text-align:center">dadd</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tadd</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iadd</td>
+<td align="center">ladd</td>
+<td align="center">fadd</td>
+<td align="center">dadd</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tsub</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">isub</td>
-<td style="text-align:center">lsub</td>
-<td style="text-align:center">fsub</td>
-<td style="text-align:center">dsub</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tsub</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">isub</td>
+<td align="center">lsub</td>
+<td align="center">fsub</td>
+<td align="center">dsub</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tmul</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">imul</td>
-<td style="text-align:center">lmul</td>
-<td style="text-align:center">fmul</td>
-<td style="text-align:center">dmul</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tmul</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">imul</td>
+<td align="center">lmul</td>
+<td align="center">fmul</td>
+<td align="center">dmul</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tdiv</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">idiv</td>
-<td style="text-align:center">ldiv</td>
-<td style="text-align:center">fdiv</td>
-<td style="text-align:center">ddiv</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tdiv</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">idiv</td>
+<td align="center">ldiv</td>
+<td align="center">fdiv</td>
+<td align="center">ddiv</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Trem</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">irem</td>
-<td style="text-align:center">lrem</td>
-<td style="text-align:center">frem</td>
-<td style="text-align:center">drem</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Trem</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">irem</td>
+<td align="center">lrem</td>
+<td align="center">frem</td>
+<td align="center">drem</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tneg</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ineg</td>
-<td style="text-align:center">lneg</td>
-<td style="text-align:center">fneg</td>
-<td style="text-align:center">dneg</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tneg</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ineg</td>
+<td align="center">lneg</td>
+<td align="center">fneg</td>
+<td align="center">dneg</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tshl</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ishl</td>
-<td style="text-align:center">lshl</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tshl</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ishl</td>
+<td align="center">lshl</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tshr</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ishr</td>
-<td style="text-align:center">lshr</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tshr</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ishr</td>
+<td align="center">lshr</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tushr</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">iushr</td>
-<td style="text-align:center">lushr</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tushr</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iushr</td>
+<td align="center">lushr</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tand</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">iand</td>
-<td style="text-align:center">land</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tand</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">iand</td>
+<td align="center">land</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tor</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ior</td>
-<td style="text-align:center">lor</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tor</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ior</td>
+<td align="center">lor</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Txor</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ixor</td>
-<td style="text-align:center">lxor</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Txor</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ixor</td>
+<td align="center">lxor</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">i2T</td>
-<td style="text-align:center">i2b</td>
-<td style="text-align:center">i2s</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">i2l</td>
-<td style="text-align:center">i2f</td>
-<td style="text-align:center">i2d</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">i2T</td>
+<td align="center">i2b</td>
+<td align="center">i2s</td>
+<td align="center"></td>
+<td align="center">i2l</td>
+<td align="center">i2f</td>
+<td align="center">i2d</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">l2T</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">l2i</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">l2f</td>
-<td style="text-align:center">l2d</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">l2T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">l2i</td>
+<td align="center"></td>
+<td align="center">l2f</td>
+<td align="center">l2d</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">f2T</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">f2i</td>
-<td style="text-align:center">f2l</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">f2d</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">f2T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">f2i</td>
+<td align="center">f2l</td>
+<td align="center"></td>
+<td align="center">f2d</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">d2T</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">d2i</td>
-<td style="text-align:center">d2l</td>
-<td style="text-align:center">d2f</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">d2T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">d2i</td>
+<td align="center">d2l</td>
+<td align="center">d2f</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tcmp</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">lcmp</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tcmp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">lcmp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tcml</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">fcml</td>
-<td style="text-align:center">dcml</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tcml</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">fcml</td>
+<td align="center">dcml</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">Tcmpg</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">fcmpg</td>
-<td style="text-align:center">dcmpg</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center">Tcmpg</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">fcmpg</td>
+<td align="center">dcmpg</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">if_TcmpOP</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">if_icmpOP</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">if_acopOP</td>
+<td align="center">if_TcmpOP</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">if_icmpOP</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">if_acopOP</td>
 </tr>
 <tr>
-<td style="text-align:center">Treturn</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ireturn</td>
-<td style="text-align:center">lreturn</td>
-<td style="text-align:center">freturn</td>
-<td style="text-align:center">dreturn</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">areturn</td>
+<td align="center">Treturn</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ireturn</td>
+<td align="center">lreturn</td>
+<td align="center">freturn</td>
+<td align="center">dreturn</td>
+<td align="center"></td>
+<td align="center">areturn</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>大部分指令没有支持byte，char和short甚至是boolean，编译器会在编译器或者运行期把这类数据扩展为 int类型数据。</p>
 <h3 id="4">加载/存储指令</h3>
 
@@ -1888,7 +1881,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2019/02/28/java_2019-02-28_字节码指令/" title="Java字节码的那些指令">http://yummylau.com/2019/02/28/java_2019-02-28_字节码指令/</a>
+    <a href="https://yummylau.cn/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4/" title="Java字节码的那些指令">https://yummylau.cn/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -1903,7 +1896,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/字节码/" rel="tag"># 字节码</a>
+            <a href="/tags/%E5%AD%97%E8%8A%82%E7%A0%81/" rel="tag"># 字节码</a>
           
         </div>
       
@@ -1916,8 +1909,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/28/java_2019-02-28_字节码内容表格/" rel="next" title="Java字节码内容的那些表">
-                <i class="fa fa-chevron-left"></i> Java字节码内容的那些表
+              <a href="/2019/02/01/net_http%E5%8F%8Ahttps%E8%AF%A6%E8%A7%A3/" rel="next" title="http及https详解">
+                <i class="fa fa-chevron-left"></i> http及https详解
               </a>
             
           </div>
@@ -1926,8 +1919,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/02/28/java_2019-03-01_class文件解析/" rel="prev" title="如何读懂一个 class 文件">
-                如何读懂一个 class 文件 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/02/28/java_2019-02-28_%E5%AD%97%E8%8A%82%E7%A0%81%E5%86%85%E5%AE%B9%E8%A1%A8%E6%A0%BC/" rel="prev" title="Java字节码内容的那些表">
+                Java字节码内容的那些表 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -1997,10 +1990,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -2075,7 +2070,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">字节码指令总表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">2.</span> <span class="nav-text">数据类型在指令中的转化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3"><span class="nav-number">3.</span> <span class="nav-text">指令集支持的数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4"><span class="nav-number">4.</span> <span class="nav-text">加载/存储指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5"><span class="nav-number">5.</span> <span class="nav-text">运算指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6"><span class="nav-number">6.</span> <span class="nav-text">类型转化指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7"><span class="nav-number">7.</span> <span class="nav-text">对象创建与访问指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8"><span class="nav-number">8.</span> <span class="nav-text">操作数栈管理指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9"><span class="nav-number">9.</span> <span class="nav-text">控制转移指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10"><span class="nav-number">10.</span> <span class="nav-text">方法调用和返回指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11"><span class="nav-number">11.</span> <span class="nav-text">异常处理指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12"><span class="nav-number">12.</span> <span class="nav-text">同步指令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">字节码指令总表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">2.</span> <span class="nav-text">数据类型在指令中的转化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3"><span class="nav-number">3.</span> <span class="nav-text">指令集支持的数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4"><span class="nav-number">4.</span> <span class="nav-text">加载&#x2F;存储指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5"><span class="nav-number">5.</span> <span class="nav-text">运算指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6"><span class="nav-number">6.</span> <span class="nav-text">类型转化指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7"><span class="nav-number">7.</span> <span class="nav-text">对象创建与访问指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8"><span class="nav-number">8.</span> <span class="nav-text">操作数栈管理指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9"><span class="nav-number">9.</span> <span class="nav-text">控制转移指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10"><span class="nav-number">10.</span> <span class="nav-text">方法调用和返回指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11"><span class="nav-number">11.</span> <span class="nav-text">异常处理指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12"><span class="nav-number">12.</span> <span class="nav-text">同步指令</span></a></li></ol></div>
             
 
           </div>
@@ -2095,7 +2090,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="快速开发,">
+  <meta name="keywords" content="快速开发," />
 
 
 
@@ -77,20 +77,20 @@
 
 
 
-<meta name="description" content="随着 Android 系统的持续更新，权限的处理也发生变化。针对 6.0 版本以上的设备，在应用构建  targetSdkVersion &amp;gt; 22 时需要考虑应用运行时权限的授予对业务功能的影响.所以有必要构建一套兼容所有 Android 版本的权限处理模块来处理业务场景的权限交互.  Android 4.3Application Operations 出现 Android 4.4Api支">
-<meta name="keywords" content="快速开发">
+<meta name="description" content="随着 Android 系统的持续更新，权限的处理也发生变化。针对 6.0 版本以上的设备，在应用构建  targetSdkVersion &gt; 22 时需要考虑应用运行时权限的授予对业务功能的影响.所以有必要构建一套兼容所有 Android 版本的权限处理模块来处理业务场景的权限交互.  Android 4.3Application Operations 出现 Android 4.4Api支">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于 RxPermission 构建权限交互">
-<meta property="og:url" content="http://yummylau.com/2020/04/01/基于RxPermission 快速处理权限请求/index.html">
+<meta property="og:url" content="https://yummylau.cn/2020/04/01/%E5%9F%BA%E4%BA%8ERxPermission%20%E5%BF%AB%E9%80%9F%E5%A4%84%E7%90%86%E6%9D%83%E9%99%90%E8%AF%B7%E6%B1%82/index.html">
 <meta property="og:site_name" content="YummyLau">
-<meta property="og:description" content="随着 Android 系统的持续更新，权限的处理也发生变化。针对 6.0 版本以上的设备，在应用构建  targetSdkVersion &amp;gt; 22 时需要考虑应用运行时权限的授予对业务功能的影响.所以有必要构建一套兼容所有 Android 版本的权限处理模块来处理业务场景的权限交互.  Android 4.3Application Operations 出现 Android 4.4Api支">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:description" content="随着 Android 系统的持续更新，权限的处理也发生变化。针对 6.0 版本以上的设备，在应用构建  targetSdkVersion &gt; 22 时需要考虑应用运行时权限的授予对业务功能的影响.所以有必要构建一套兼容所有 Android 版本的权限处理模块来处理业务场景的权限交互.  Android 4.3Application Operations 出现 Android 4.4Api支">
+<meta property="og:locale">
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/20200401/rxpermission_3.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/20200401/rxpermission_4.png">
-<meta property="og:updated_time" content="2020-04-21T08:00:14.316Z">
+<meta property="article:published_time" content="2020-04-01T10:24:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.050Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="快速开发">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基于 RxPermission 构建权限交互">
-<meta name="twitter:description" content="随着 Android 系统的持续更新，权限的处理也发生变化。针对 6.0 版本以上的设备，在应用构建  targetSdkVersion &amp;gt; 22 时需要考虑应用运行时权限的授予对业务功能的影响.所以有必要构建一套兼容所有 Android 版本的权限处理模块来处理业务场景的权限交互.  Android 4.3Application Operations 出现 Android 4.4Api支">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/20200401/rxpermission_3.png">
 
 
@@ -98,7 +98,7 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -121,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2020/04/01/基于RxPermission 快速处理权限请求/">
+  <link rel="canonical" href="https://yummylau.cn/2020/04/01/基于RxPermission 快速处理权限请求/"/>
 
 
 
@@ -137,7 +137,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -155,7 +155,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -185,7 +185,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -195,7 +195,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -205,7 +205,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -215,7 +215,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -225,7 +225,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -264,11 +264,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2020/04/01/基于RxPermission 快速处理权限请求/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2020/04/01/%E5%9F%BA%E4%BA%8ERxPermission%20%E5%BF%AB%E9%80%9F%E5%A4%84%E7%90%86%E6%9D%83%E9%99%90%E8%AF%B7%E6%B1%82/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -304,7 +304,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -334,8 +334,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/04/01/基于RxPermission 快速处理权限请求/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/04/01/基于RxPermission 快速处理权限请求/" itemprop="commentCount"></span>
+                <a href="/2020/04/01/%E5%9F%BA%E4%BA%8ERxPermission%20%E5%BF%AB%E9%80%9F%E5%A4%84%E7%90%86%E6%9D%83%E9%99%90%E8%AF%B7%E6%B1%82/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/04/01/%E5%9F%BA%E4%BA%8ERxPermission%20%E5%BF%AB%E9%80%9F%E5%A4%84%E7%90%86%E6%9D%83%E9%99%90%E8%AF%B7%E6%B1%82/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -367,7 +367,9 @@
 <p>随着 Android 系统的持续更新，权限的处理也发生变化。针对 6.0 版本以上的设备，在应用构建  targetSdkVersion &gt; 22 时需要考虑应用运行时权限的授予对业务功能的影响.所以有必要构建一套兼容所有 Android 版本的权限处理模块来处理业务场景的权限交互.</p>
 </blockquote>
 <h4 id="Android-4-3"><a href="#Android-4-3" class="headerlink" title="Android 4.3"></a>Android 4.3</h4><p>Application Operations 出现</p>
-<h4 id="Android-4-4"><a href="#Android-4-4" class="headerlink" title="Android 4.4"></a>Android 4.4</h4><p>Api支持获取App Ops实例<br><figure class="highlight coq"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Context</span>.getSystemService(<span class="keyword">Context</span>.APP_OPS_SERVICE)</span><br></pre></td></tr></table></figure></p>
+<h4 id="Android-4-4"><a href="#Android-4-4" class="headerlink" title="Android 4.4"></a>Android 4.4</h4><p>Api支持获取App Ops实例</p>
+<figure class="highlight coq"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Context</span>.getSystemService(<span class="keyword">Context</span>.APP_OPS_SERVICE)</span><br></pre></td></tr></table></figure>
+
 <h4 id="Android-6-0"><a href="#Android-6-0" class="headerlink" title="Android 6.0"></a>Android 6.0</h4><p>如果操作需要某一项权限而App却没有被授予该权限，则会抛出异常。</p>
 <ol>
 <li>提高 targetSdkVersion 到23.意味着6.0以下的设备表现得和以往一样。而6.0及以上设备则会接受权限检测。</li>
@@ -386,8 +388,7 @@
 <th>权限说明</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>ACCESS_LOCATION_EXTRA_COMMANDS</td>
 <td>允许应用程序访问额外的位置提供命令</td>
 </tr>
@@ -503,8 +504,7 @@
 <td>WRITE_SYNC_SETTINGS</td>
 <td>写入Google在线同步设置</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>除此之外，被视为“危险”权限，因此需要用户明确向您的应用授予相应访问权限。如果设备运行的是 Android6.0（API级别23），并且应用 targetSdkVersion 是 23 或更高版本，则当用户请求危险权限是系统会发生以下行为：</p>
 <ul>
 <li>如果应用请求其清单中列出的危险权限，而应用目前在权限组中没有任何权限，则系统会向用户显示一个对话框，描述应用要访问的权限组。对话框不描述该组内的具体权限。例如，如果应用请求 <code>READ_CONTACTS</code> 权限，系统对话框只说明该应用需要访问设备的联系信息。如果用户批准，系统将向应用授予其请求的权限。</li>
@@ -519,8 +519,7 @@
 <th>权限说明</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>CALENDAR</td>
 <td>READ_CALENDAR</td>
 <td>日历</td>
@@ -528,6 +527,7 @@
 <tr>
 <td></td>
 <td>WRITE_CALENDAR</td>
+<td></td>
 </tr>
 <tr>
 <td>CAMERA</td>
@@ -542,10 +542,12 @@
 <tr>
 <td></td>
 <td>WRITE_CONTACTS</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td>GET_ACCOUNTS</td>
+<td></td>
 </tr>
 <tr>
 <td>LOCATION</td>
@@ -555,10 +557,12 @@
 <tr>
 <td></td>
 <td>ACCESS_COARSE_LOCATION</td>
+<td></td>
 </tr>
 <tr>
 <td>MICROPHONE</td>
 <td>RECORD_AUDIO</td>
+<td></td>
 </tr>
 <tr>
 <td>PHONE</td>
@@ -568,26 +572,32 @@
 <tr>
 <td></td>
 <td>CALL_PHONE</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td>READ_CALL_LOG</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td>WRITE_CALL_LOG</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td>ADD_VOICEMAIL</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td>USE_SIP</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td>PROCESS_OUTGOING_CALLS</td>
+<td></td>
 </tr>
 <tr>
 <td>SENSORS</td>
@@ -602,18 +612,22 @@
 <tr>
 <td></td>
 <td>RECEIVE_SMS</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td>READ_SMS</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td>RECEIVE_WAP_PUSH</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td>RECEIVE_MMS</td>
+<td></td>
 </tr>
 <tr>
 <td>STORAGE</td>
@@ -623,9 +637,9 @@
 <tr>
 <td></td>
 <td>WRITE_EXTERNAL_STORAGE</td>
+<td></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>权限通过组别来申请</p>
 <ul>
 <li>通过<code>Activity#checkSelfPermission</code>来检测权限  </li>
@@ -650,18 +664,20 @@
 <h3 id="gt-Android6-0-的终极方案"><a href="#gt-Android6-0-的终极方案" class="headerlink" title="&gt;=Android6.0 的终极方案"></a>&gt;=Android6.0 的终极方案</h3><blockquote>
 <p>善于利用别人的轮子来提升效率，才是编程的最佳手段。</p>
 </blockquote>
-<p>一开始，我们维护了一套针对不同 context 场景的权限请求，后面发现处理 Result 的回调的时候很麻烦。后来发现 <a href="https://github.com/tbruyelle/RxPermissions" target="_blank" rel="noopener">RxPermissions</a> 处理得非常完美。结合我们自己的项目使用场景，基于 RxPermissions 基础封装我们自己的权限库，针对 6.0 以上的版本进行权限动态判断。</p>
-<p>关于 RxPermissions 的原理解析,可以参考 <a href>系统源码解析——RxPermissions</a></p>
+<p>一开始，我们维护了一套针对不同 context 场景的权限请求，后面发现处理 Result 的回调的时候很麻烦。后来发现 <a href="https://github.com/tbruyelle/RxPermissions">RxPermissions</a> 处理得非常完美。结合我们自己的项目使用场景，基于 RxPermissions 基础封装我们自己的权限库，针对 6.0 以上的版本进行权限动态判断。</p>
+<p>关于 RxPermissions 的原理解析,可以参考 <a href="">系统源码解析——RxPermissions</a></p>
 <p>参考项目维护的旧权限请求模块,我们希望对 RxPermissions 进一步改进,基于 <strong>RxPermissions</strong> 封装了 PermissionManager用于代理 <em>rxPermissions</em> 功能,并收集请求返回的 <em>Disposable</em> 对象,统一解绑避免内存泄漏. 同时针对项目一次/多次请求权限的场景,封装了 <strong>ResultCall</strong> 和 <strong>MultiResultCall</strong> 用于简化一次/多次请求结果的回调。</p>
 <p>则从 <strong>RxPermissions</strong> 扩展的类图结构变为</p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/20200401/rxpermission_3.png" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/20200401/rxpermission_3.png" align=center  />
+
 <p>时序图结构更改为</p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/20200401/rxpermission_4.png" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/20200401/rxpermission_4.png" align=center  />
+
 <p>目前整套流程稳定服务于项目场景。</p>
 <h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><ul>
-<li><a href="https://inthecheesefactory.com/blog/things-you-need-to-know-about-android-m-permission-developer-edition/en" target="_blank" rel="noopener">Everything every Android Android Developer must konw about new Android’s Runtime Permission</a></li>
-<li><a href="https://github.com/ReactiveX/RxJava" target="_blank" rel="noopener">RxJava</a></li>
-<li><a href="https://github.com/vanniktech/RxPermission" target="_blank" rel="noopener">RxPermission</a></li>
+<li><a href="https://inthecheesefactory.com/blog/things-you-need-to-know-about-android-m-permission-developer-edition/en">Everything every Android Android Developer must konw about new Android’s Runtime Permission</a></li>
+<li><a href="https://github.com/ReactiveX/RxJava">RxJava</a></li>
+<li><a href="https://github.com/vanniktech/RxPermission">RxPermission</a></li>
 </ul>
 
       
@@ -683,7 +699,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2020/04/01/基于RxPermission 快速处理权限请求/" title="基于 RxPermission 构建权限交互">http://yummylau.com/2020/04/01/基于RxPermission 快速处理权限请求/</a>
+    <a href="https://yummylau.cn/2020/04/01/%E5%9F%BA%E4%BA%8ERxPermission%20%E5%BF%AB%E9%80%9F%E5%A4%84%E7%90%86%E6%9D%83%E9%99%90%E8%AF%B7%E6%B1%82/" title="基于 RxPermission 构建权限交互">https://yummylau.cn/2020/04/01/%E5%9F%BA%E4%BA%8ERxPermission%20%E5%BF%AB%E9%80%9F%E5%A4%84%E7%90%86%E6%9D%83%E9%99%90%E8%AF%B7%E6%B1%82/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -698,7 +714,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/快速开发/" rel="tag"># 快速开发</a>
+            <a href="/tags/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91/" rel="tag"># 快速开发</a>
           
         </div>
       
@@ -711,7 +727,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/04/01/源码解析_2020-04-01_rxpermission/" rel="next" title="系统源码解析——RxPermissions">
+              <a href="/2020/04/01/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2020-04-01_rxpermission/" rel="next" title="系统源码解析——RxPermissions">
                 <i class="fa fa-chevron-left"></i> 系统源码解析——RxPermissions
               </a>
             
@@ -721,7 +737,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/04/06/源码解析——LiveData & Life生命周期完整体系详解/" rel="prev" title="源码解析——LiveData & Lifecycles 完整体系详解">
+              <a href="/2020/04/06/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E2%80%94%E2%80%94LiveData%20&%20Life%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%AE%8C%E6%95%B4%E4%BD%93%E7%B3%BB%E8%AF%A6%E8%A7%A3/" rel="prev" title="源码解析——LiveData & Lifecycles 完整体系详解">
                 源码解析——LiveData & Lifecycles 完整体系详解 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -792,10 +808,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -870,7 +888,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Android-4-3"><span class="nav-number">1.</span> <span class="nav-text">Android 4.3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android-4-4"><span class="nav-number">2.</span> <span class="nav-text">Android 4.4</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android-6-0"><span class="nav-number">3.</span> <span class="nav-text">Android 6.0</span></a></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#gt-Android6-0-的终极方案"><span class="nav-number"></span> <span class="nav-text">&gt;=Android6.0 的终极方案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章"><span class="nav-number"></span> <span class="nav-text">参考文章</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Android-4-3"><span class="nav-number">1.</span> <span class="nav-text">Android 4.3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android-4-4"><span class="nav-number">2.</span> <span class="nav-text">Android 4.4</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android-6-0"><span class="nav-number">3.</span> <span class="nav-text">Android 6.0</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gt-Android6-0-%E7%9A%84%E7%BB%88%E6%9E%81%E6%96%B9%E6%A1%88"><span class="nav-number"></span> <span class="nav-text">&gt;&#x3D;Android6.0 的终极方案</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-number"></span> <span class="nav-text">参考文章</span></a></div>
             
 
           </div>
@@ -890,7 +908,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

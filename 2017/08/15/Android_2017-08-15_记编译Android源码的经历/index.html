@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="源码阅读,">
+  <meta name="keywords" content="源码阅读," />
 
 
 
@@ -77,25 +77,25 @@
 
 
 
-<meta name="description" content="由于之前的渣本试过一次裸ubuntu编译Android源码，一次则用虚拟机。过程中参考了官网/网络博客的教程，失败了好几次，也成功了两次。上一次买了个稍微好一点的笔记本，也裸ubuntu编译过一次7.0的源码，后面因为其他工作的需求，暂且换成window系统，再一次重新折腾编译源码。整理下之前的笔记及参考资料，写下记录供需要者参考，减少踩坑。题外话：把之前在ubuntu编译的源码拉到window">
-<meta name="keywords" content="源码阅读">
+<meta name="description" content="由于之前的渣本试过一次裸ubuntu编译Android源码，一次则用虚拟机。过程中参考了官网&#x2F;网络博客的教程，失败了好几次，也成功了两次。上一次买了个稍微好一点的笔记本，也裸ubuntu编译过一次7.0的源码，后面因为其他工作的需求，暂且换成window系统，再一次重新折腾编译源码。整理下之前的笔记及参考资料，写下记录供需要者参考，减少踩坑。题外话：把之前在ubuntu编译的源码拉到window">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记编译Android源码的经历">
-<meta property="og:url" content="http://yummylau.com/2017/08/15/Android_2017-08-15_记编译Android源码的经历/index.html">
+<meta property="og:url" content="https://yummylau.cn/2017/08/15/Android_2017-08-15_%E8%AE%B0%E7%BC%96%E8%AF%91Android%E6%BA%90%E7%A0%81%E7%9A%84%E7%BB%8F%E5%8E%86/index.html">
 <meta property="og:site_name" content="YummyLau">
-<meta property="og:description" content="由于之前的渣本试过一次裸ubuntu编译Android源码，一次则用虚拟机。过程中参考了官网/网络博客的教程，失败了好几次，也成功了两次。上一次买了个稍微好一点的笔记本，也裸ubuntu编译过一次7.0的源码，后面因为其他工作的需求，暂且换成window系统，再一次重新折腾编译源码。整理下之前的笔记及参考资料，写下记录供需要者参考，减少踩坑。题外话：把之前在ubuntu编译的源码拉到window">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-10T05:35:03.471Z">
+<meta property="og:description" content="由于之前的渣本试过一次裸ubuntu编译Android源码，一次则用虚拟机。过程中参考了官网&#x2F;网络博客的教程，失败了好几次，也成功了两次。上一次买了个稍微好一点的笔记本，也裸ubuntu编译过一次7.0的源码，后面因为其他工作的需求，暂且换成window系统，再一次重新折腾编译源码。整理下之前的笔记及参考资料，写下记录供需要者参考，减少踩坑。题外话：把之前在ubuntu编译的源码拉到window">
+<meta property="og:locale">
+<meta property="article:published_time" content="2017-08-15T15:06:34.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.044Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="源码阅读">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="记编译Android源码的经历">
-<meta name="twitter:description" content="由于之前的渣本试过一次裸ubuntu编译Android源码，一次则用虚拟机。过程中参考了官网/网络博客的教程，失败了好几次，也成功了两次。上一次买了个稍微好一点的笔记本，也裸ubuntu编译过一次7.0的源码，后面因为其他工作的需求，暂且换成window系统，再一次重新折腾编译源码。整理下之前的笔记及参考资料，写下记录供需要者参考，减少踩坑。题外话：把之前在ubuntu编译的源码拉到window">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2017/08/15/Android_2017-08-15_记编译Android源码的经历/">
+  <link rel="canonical" href="https://yummylau.cn/2017/08/15/Android_2017-08-15_记编译Android源码的经历/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2017/08/15/Android_2017-08-15_记编译Android源码的经历/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2017/08/15/Android_2017-08-15_%E8%AE%B0%E7%BC%96%E8%AF%91Android%E6%BA%90%E7%A0%81%E7%9A%84%E7%BB%8F%E5%8E%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/08/15/Android_2017-08-15_记编译Android源码的经历/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2017/08/15/Android_2017-08-15_记编译Android源码的经历/" itemprop="commentCount"></span>
+                <a href="/2017/08/15/Android_2017-08-15_%E8%AE%B0%E7%BC%96%E8%AF%91Android%E6%BA%90%E7%A0%81%E7%9A%84%E7%BB%8F%E5%8E%86/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/08/15/Android_2017-08-15_%E8%AE%B0%E7%BC%96%E8%AF%91Android%E6%BA%90%E7%A0%81%E7%9A%84%E7%BB%8F%E5%8E%86/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -367,42 +367,43 @@
 <li><p>编译环境选择<code>Ubuntu</code></p>
 <ul>
 <li>我的电脑 <code>Window</code> <code>64bit</code>，<code>8G</code>内存，<code>256</code>固态硬盘</li>
-<li><a href="http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso.torrent?_ga=2.264336523.581782411.1501948873-450244967.1501948873" target="_blank" rel="noopener">ubuntu-16.04.3-desktop-amd64</a> 运行于<code>VMware</code>，分配<code>4G</code>内存，<code>100G</code>硬盘空间</li>
-<li>若是其他硬件基础，可参考<a href="https://source.android.com/source/requirements" target="_blank" rel="noopener">源代码-下载和构建-概要-硬件要求</a></li>
+<li><a href="http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso.torrent?_ga=2.264336523.581782411.1501948873-450244967.1501948873">ubuntu-16.04.3-desktop-amd64</a> 运行于<code>VMware</code>，分配<code>4G</code>内存，<code>100G</code>硬盘空间</li>
+<li>若是其他硬件基础，可参考<a href="https://source.android.com/source/requirements">源代码-下载和构建-概要-硬件要求</a></li>
 </ul>
 </li>
 <li><p>Git安装  </p>
 </li>
 </ul>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-<span class="builtin-name">get</span> install git  </span><br><span class="line">$ git<span class="built_in"> config </span>--global user.email <span class="string">"yummyl.lau@gmail"</span></span><br><span class="line">$ git<span class="built_in"> config </span>--global user.name <span class="string">"yummyLau"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-<span class="built_in">get</span> install git  </span><br><span class="line">$ git<span class="built_in"> config </span>--global user.email <span class="string">&quot;yummyl.lau@gmail&quot;</span></span><br><span class="line">$ git<span class="built_in"> config </span>--global user.name <span class="string">&quot;yummyLau&quot;</span></span><br></pre></td></tr></table></figure>
+
 <h1 id="下载源码"><a href="#下载源码" class="headerlink" title="下载源码"></a>下载源码</h1><ul>
-<li><a href="https://source.android.com/source/build-numbers" target="_blank" rel="noopener">选择源码分支</a>，这里我选择<code>android-6.0.1_r66</code>分支作为下载版本目标。</li>
-<li>安装 <a href="https://source.android.com/source/downloading" target="_blank" rel="noopener">Repo
+<li><a href="https://source.android.com/source/build-numbers">选择源码分支</a>，这里我选择<code>android-6.0.1_r66</code>分支作为下载版本目标。</li>
+<li>安装 <a href="https://source.android.com/source/downloading">Repo
 </a>  </li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> mkdir ~/bin</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> PATH=~/bin:<span class="variable">$PATH</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> curl https://storage.googleapis.com/git-repo-downloads/repo &gt; ~/bin/repo</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> chmod a+x ~/bin/repo</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">mkdir</span> ~/bin</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">PATH=~/bin:<span class="variable">$PATH</span></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">curl https://storage.googleapis.com/git-repo-downloads/repo &gt; ~/bin/repo</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">chmod</span> a+x ~/bin/repo</span></span><br></pre></td></tr></table></figure>
 <ul>
-<li>弃用官方下载源码方法，改用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/" target="_blank" rel="noopener">清华大学开源软件镜像</a><br>这里我选择传统的初始化方法下载源码，创建存放源码的<code>source</code>目录，取名自定。    </li>
+<li>弃用官方下载源码方法，改用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/">清华大学开源软件镜像</a><br>这里我选择传统的初始化方法下载源码，创建存放源码的<code>source</code>目录，取名自定。    </li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> mkdir <span class="built_in">source</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> <span class="built_in">source</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> touch auto_asyn_source.sh</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> chmod +x auto_asyn_source.sh</span></span><br></pre></td></tr></table></figure>
-<p>新建<code>auto_asyn_source.sh</code>是用来保证执行<code>repo编译环境选择
- sync</code>命令同步代码如果失败，则可以自动重试，参考的是<a href="http://blog.csdn.net/dd864140130/article/details/51718187" target="_blank" rel="noopener">自己动手编译最新Android源码及SDK</a>一文的做法，感谢该博主。<br>写入shell脚本自动同步内容：   </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vim auto_asyn_source.sh</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">mkdir</span> <span class="built_in">source</span></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> <span class="built_in">source</span></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">touch</span> auto_asyn_source.sh</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">chmod</span> +x auto_asyn_source.sh</span></span><br></pre></td></tr></table></figure>
+<p>新建<code>auto_asyn_source.sh</code>是用来保证执行<code>repo编译环境选择  sync</code>命令同步代码如果失败，则可以自动重试，参考的是<a href="http://blog.csdn.net/dd864140130/article/details/51718187">自己动手编译最新Android源码及SDK</a>一文的做法，感谢该博主。<br>写入shell脚本自动同步内容：   </p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">vim</span> auto_asyn_source.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure>
 <p>把下面的代码复制进去并保存 </p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PATH=~/bin:$PATH</span><br><span class="line">repo init -<span class="keyword">u</span> http<span class="variable">s:</span>//aosp.tuna.tsinghua.edu.<span class="keyword">cn</span>/platform/manifest -<span class="keyword">b</span> android-<span class="number">6.0</span>.<span class="number">1</span>_r66</span><br><span class="line">repo <span class="keyword">sync</span></span><br><span class="line"><span class="keyword">while</span> [$? = <span class="number">1</span>]: <span class="keyword">do</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">"=========download failed,again============"</span></span><br><span class="line"><span class="keyword">sleep</span> <span class="number">5</span></span><br><span class="line">repo <span class="keyword">sync</span></span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PATH=~/bin:<span class="variable">$PATH</span></span><br><span class="line">repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-6.0.1_r66</span><br><span class="line">repo <span class="built_in">sync</span></span><br><span class="line"><span class="keyword">while</span> [$? = 1]: <span class="keyword">do</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;=========download failed,again============&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 5</span><br><span class="line">repo <span class="built_in">sync</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
 <p>其中<code>android-6.0.1_r66</code>是我选择下载的源码分支，可替换成其他。然后添加修改Repo的url  </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> ~/</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> vim .bashrc</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> <span class="built_in">cd</span> ~/</span><br><span class="line"><span class="variable">$</span> vim .bashrc</span><br></pre></td></tr></table></figure>
 <p>把下面的链接添加进入并保存  </p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">REPO_URL</span> = <span class="string">'https://gerrit-google.tuna.tsinghua.edu.cn/git-repo'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">REPO_URL</span> = <span class="string">&#x27;https://gerrit-google.tuna.tsinghua.edu.cn/git-repo&#x27;</span></span><br></pre></td></tr></table></figure>
 <p>最后，跑一下脚本下载，静心等待呗…  </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> <span class="built_in">source</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ./auto_asyn_source.sh</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> <span class="built_in">source</span></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">./auto_asyn_source.sh</span></span><br></pre></td></tr></table></figure>
 <p><strong>Tip</strong>：过程中我的虚拟机比较卡，可能会出现卡死的现象=。=，只需要<code>Ctrl+C</code>结束之后重新执行脚本就行了。<br>由于上班折腾下很久才下载完，和下载环境的网络有关，下载完成后大概有<code>58G</code>大小。</p>
-<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">yummylau@ubuntu:~<span class="string">/source</span>$ du -h <span class="params">--max-depth=1</span></span><br><span class="line">53M	<span class="string">./libcore</span></span><br><span class="line">11M	<span class="string">./dalvik</span></span><br><span class="line">124M	<span class="string">./device</span></span><br><span class="line">128K	<span class="string">./abi</span></span><br><span class="line">112M	<span class="string">./hardware</span></span><br><span class="line">31M	<span class="string">./system</span></span><br><span class="line">16M	<span class="string">./build</span></span><br><span class="line">27G	<span class="string">./out</span>					<span class="string">//</span>编译后生成的</span><br><span class="line">308M	<span class="string">./development</span></span><br><span class="line">84M	<span class="string">./ndk</span></span><br><span class="line">1.5G	<span class="string">./frameworks</span></span><br><span class="line">30M	<span class="string">./docs</span></span><br><span class="line">44G	<span class="string">./.repo</span></span><br><span class="line">948K	<span class="string">./platform_testing</span></span><br><span class="line">686M	<span class="string">./tools</span></span><br><span class="line">2.6G	<span class="string">./external</span></span><br><span class="line">278M	<span class="string">./developers</span></span><br><span class="line">6.5G	<span class="string">./prebuilts</span></span><br><span class="line">408M	<span class="string">./packages</span></span><br><span class="line">900K	<span class="string">./pdk</span></span><br><span class="line">31M	<span class="string">./sdk</span></span><br><span class="line">498M	<span class="string">./cts</span></span><br><span class="line">29M	<span class="string">./bionic</span></span><br><span class="line">29M	<span class="string">./art</span></span><br><span class="line">5.7M	<span class="string">./bootable</span></span><br><span class="line">232K	<span class="string">./libnativehelper</span></span><br><span class="line">83G	.</span><br></pre></td></tr></table></figure>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">yummylau@ubuntu:~<span class="string">/source</span>$ du -h <span class="params">--max-depth=1</span></span><br><span class="line">53M	<span class="string">./libcore</span></span><br><span class="line">11M	<span class="string">./dalvik</span></span><br><span class="line">124M	<span class="string">./device</span></span><br><span class="line">128K	<span class="string">./abi</span></span><br><span class="line">112M	<span class="string">./hardware</span></span><br><span class="line">31M	<span class="string">./system</span></span><br><span class="line">16M	<span class="string">./build</span></span><br><span class="line">27G	<span class="string">./out</span>					<span class="string">//</span>编译后生成的</span><br><span class="line">308M	<span class="string">./development</span></span><br><span class="line">84M	<span class="string">./ndk</span></span><br><span class="line">1.5G	<span class="string">./frameworks</span></span><br><span class="line">30M	<span class="string">./docs</span></span><br><span class="line">44G	<span class="string">./.repo</span></span><br><span class="line">948K	<span class="string">./platform_testing</span></span><br><span class="line">686M	<span class="string">./tools</span></span><br><span class="line">2.6G	<span class="string">./external</span></span><br><span class="line">278M	<span class="string">./developers</span></span><br><span class="line">6.5G	<span class="string">./prebuilts</span></span><br><span class="line">408M	<span class="string">./packages</span></span><br><span class="line">900K	<span class="string">./pdk</span></span><br><span class="line">31M	<span class="string">./sdk</span></span><br><span class="line">498M	<span class="string">./cts</span></span><br><span class="line">29M	<span class="string">./bionic</span></span><br><span class="line">29M	<span class="string">./art</span></span><br><span class="line">5.7M	<span class="string">./bootable</span></span><br><span class="line">232K	<span class="string">./libnativehelper</span></span><br><span class="line">83G	.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <h1 id="选择编译目标"><a href="#选择编译目标" class="headerlink" title="选择编译目标"></a>选择编译目标</h1><p>使用<code>lunch</code>选择要编译的目标。根据官网教程。该命令表示针对模拟器进行完整编译，并且所有调试功能均处于启用状态。 如果没有提供任何参数就运行命令，<code>lunch</code>将提示您从菜单中选择一个目标，所有编译目标都采用<code>BUILD-BUILDTYPE</code>形式。<br>这里，我输入以下指令选择编译目标。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> lunch aosp_arm-eng</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>lunch aosp_arm-eng</span><br></pre></td></tr></table></figure>
 <p>解释下上述名下的参数，<code>aosp_arm-eng</code>即<code>BUILD-BUILDTYPE</code>形式，分为<code>BUILD</code>和<code>BUILDTYPE</code>两部分。  </p>
 <ul>
-<li>BUILD为特定功能的组合代号，如<code>aosp_arm</code>为支持<code>32位ARM</code>架构，也有<code>64位ARM</code>架构，<code>X86</code>也有。关于CPU<code>ARM</code>和<code>X86</code>架构，可以看下这篇<a href="https://zhuanlan.zhihu.com/p/21266987" target="_blank" rel="noopener">分不清ARM和X86架构，别跟我说你懂CPU！</a>科普文。</li>
+<li>BUILD为特定功能的组合代号，如<code>aosp_arm</code>为支持<code>32位ARM</code>架构，也有<code>64位ARM</code>架构，<code>X86</code>也有。关于CPU<code>ARM</code>和<code>X86</code>架构，可以看下这篇<a href="https://zhuanlan.zhihu.com/p/21266987">分不清ARM和X86架构，别跟我说你懂CPU！</a>科普文。</li>
 <li>BUILDTYPE为编译类型，主要用于指定系统权限，有以下三种：  <ul>
 <li><code>user</code>，权限受限，适用于生产环境；</li>
 <li><code>userdebug</code>，与“user”类似，但具有 root 权限和可调试性；是进行调试时的首选编译类型；</li>
@@ -418,16 +419,16 @@
 <li>NumberOfLogicalProcessors：表示CPU线程数    </li>
 </ul>
 <p>运行<code>make</code>使用单线程编译。  </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> make</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>make</span><br></pre></td></tr></table></figure>
 <p>慢悠悠看了几集冰与火之歌，大概编译了4个多小时，就搞定了，编译后的产物有<code>out</code>目录中。</p>
 <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source/out</span><span class="variable">$ </span>du -h --max-depth=<span class="number">1</span></span><br><span class="line"><span class="number">8.5</span>G	./host</span><br><span class="line"><span class="number">18</span>G	./target</span><br><span class="line"><span class="number">27</span>G	.</span><br></pre></td></tr></table></figure>
-<p>其中各个目录的内容为：<br><code>/out/host/</code>:该目录下包含了针对主机的 Android 开发工具的产物。即 SDK 中的各种工具，例如：emulator，adb，aapt 等。<br><code>/out/target/common/</code>：该目录下包含了针对设备的共通的编译产物，主要是 Java 应用代码和 Java 库。<br><code>/out/target/product/&lt;product_name&gt;/</code>：包含了针对特定设备的编译结果以及平台相关的 C/C++ 库和二进制文件。其中，&lt;product_name&gt;是具体目标设备的名称，产物如下图。</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source/out/target/product</span><span class="variable">$ </span>cd generic/</span><br><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source/out/target/product/generic</span><span class="variable">$ </span>ls</span><br><span class="line">android-info.txt  hardware-qemu.ini         symbols</span><br><span class="line">cache             installed-files.txt       system</span><br><span class="line">cache.img         obj                       system.img</span><br><span class="line">clean_steps.mk    previous_build_config.mk  userdata.img</span><br><span class="line">data              ramdisk.img               userdata-qemu.img</span><br><span class="line">dex_bootjars      recovery</span><br><span class="line">gen               root</span><br><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source/out/target/product/generic</span>$</span><br></pre></td></tr></table></figure>
-<p>注意下，上述有三个核心的镜像文件：<code>system.img</code>，<code>ramdisk.img</code>和<code>userdata.img</code>。<br><code>system.img</code>：包含了 Android OS 的系统文件，库，可执行文件以及预置的应用程序，将被挂载为根分区。<br><code>ramdisk.img</code>：在启动时将被 Linux 内核挂载为只读分区，它包含了 /init 文件和一些配置文件。它用来挂载其他系统镜像并启动 init 进程。<br><code>userdata.img</code>：将被挂载为 /data，包含了应用程序相关的数据以及和用户相关的数据。<br>关于如何理解Android的Build系统，推荐阅读<a href="https://www.ibm.com/developerworks/cn/opensource/os-cn-android-build/" target="_blank" rel="noopener">IBM-理解 Android Build 系统</a>。</p>
+<p>其中各个目录的内容为：<br><code>/out/host/</code>:该目录下包含了针对主机的 Android 开发工具的产物。即 SDK 中的各种工具，例如：emulator，adb，aapt 等。<br><code>/out/target/common/</code>：该目录下包含了针对设备的共通的编译产物，主要是 Java 应用代码和 Java 库。<br><code>/out/target/product/&lt;product_name&gt;/</code>：包含了针对特定设备的编译结果以及平台相关的 C/C++ 库和二进制文件。其中，<product_name>是具体目标设备的名称，产物如下图。</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source/out/target/product</span><span class="variable">$ </span>cd generic/</span><br><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source/out/target/product/generic</span><span class="variable">$ </span>ls</span><br><span class="line">android-info.txt  hardware-qemu.ini         symbols</span><br><span class="line">cache             installed-files.txt       system</span><br><span class="line">cache.img         obj                       system.img</span><br><span class="line">clean_steps.mk    previous_build_config.mk  userdata.img</span><br><span class="line">data              ramdisk.img               userdata-qemu.img</span><br><span class="line">dex_bootjars      recovery</span><br><span class="line">gen               root</span><br><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source/out/target/product/generic</span><span class="variable">$ </span></span><br></pre></td></tr></table></figure>
+<p>注意下，上述有三个核心的镜像文件：<code>system.img</code>，<code>ramdisk.img</code>和<code>userdata.img</code>。<br><code>system.img</code>：包含了 Android OS 的系统文件，库，可执行文件以及预置的应用程序，将被挂载为根分区。<br><code>ramdisk.img</code>：在启动时将被 Linux 内核挂载为只读分区，它包含了 /init 文件和一些配置文件。它用来挂载其他系统镜像并启动 init 进程。<br><code>userdata.img</code>：将被挂载为 /data，包含了应用程序相关的数据以及和用户相关的数据。<br>关于如何理解Android的Build系统，推荐阅读<a href="https://www.ibm.com/developerworks/cn/opensource/os-cn-android-build/">IBM-理解 Android Build 系统</a>。</p>
 <h1 id="运行编译系统"><a href="#运行编译系统" class="headerlink" title="运行编译系统"></a>运行编译系统</h1><p>在源码个目录重新执行  </p>
-<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yummylau@ubuntu:~/<span class="keyword">source</span>$ <span class="keyword">source</span> build/envsetup.sh</span><br><span class="line">yummylau@ubuntu:~/<span class="keyword">source</span>$ lunch aosp_arm-eng 			<span class="comment">//选择之前的编译目标,如果还在当前编译环境，则这前两句不必执行</span></span><br><span class="line">yummylau@ubuntu:~/<span class="keyword">source</span>$ emulator</span><br></pre></td></tr></table></figure>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source</span><span class="variable">$ </span>source build/envsetup.sh</span><br><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source</span><span class="variable">$ </span>lunch aosp_arm-eng 			//选择之前的编译目标,如果还在当前编译环境，则这前两句不必执行</span><br><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source</span><span class="variable">$ </span>emulator						</span><br></pre></td></tr></table></figure>
 <p>在之前的编译流程会自动将模拟器添加到您的路径中，<code>emulator</code>加载的内核所在的目录为 </p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source/prebuilts/qemu-kernel/arm</span><span class="variable">$ </span>ls</span><br><span class="line"><span class="number">2.6</span>          kernel-qemu-armv7     README      vmlinux-qemu</span><br><span class="line">kernel-qemu  LINUX_KERNEL_COPYING  rebuild.sh  vmlinux-qemu-armv7</span><br></pre></td></tr></table></figure>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yummylau<span class="variable">@ubuntu</span><span class="symbol">:~/source/prebuilts/qemu-kernel/arm</span><span class="variable">$ </span>ls</span><br><span class="line"><span class="number">2.6</span>          kernel-qemu-armv7     <span class="title class_">README</span>      vmlinux-qemu</span><br><span class="line">kernel-qemu  <span class="title class_">LINUX_KERNEL_COPYING</span>  rebuild.sh  vmlinux-qemu-armv7</span><br></pre></td></tr></table></figure>
 <p>其中，<code>kernel-qemu</code>为加载的内核。<br>同时在<code>~/source/out/target/product/generic</code>中生成的<code>system.img</code>，<code>ramdisk.img</code>和<code>userdata.img</code>也被载入了。<br>最后，我们就静静地等待系统启动吧~</p>
 
       
@@ -449,7 +450,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2017/08/15/Android_2017-08-15_记编译Android源码的经历/" title="记编译Android源码的经历">http://yummylau.com/2017/08/15/Android_2017-08-15_记编译Android源码的经历/</a>
+    <a href="https://yummylau.cn/2017/08/15/Android_2017-08-15_%E8%AE%B0%E7%BC%96%E8%AF%91Android%E6%BA%90%E7%A0%81%E7%9A%84%E7%BB%8F%E5%8E%86/" title="记编译Android源码的经历">https://yummylau.cn/2017/08/15/Android_2017-08-15_%E8%AE%B0%E7%BC%96%E8%AF%91Android%E6%BA%90%E7%A0%81%E7%9A%84%E7%BB%8F%E5%8E%86/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -464,7 +465,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/源码阅读/" rel="tag"># 源码阅读</a>
+            <a href="/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" rel="tag"># 源码阅读</a>
           
         </div>
       
@@ -477,7 +478,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/24/源码解析_2017-06-24_Observable构建/" rel="next" title="Rxjava源码分析－一次完成的事件消费过程">
+              <a href="/2017/06/24/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2017-06-24_Observable%E6%9E%84%E5%BB%BA/" rel="next" title="Rxjava源码分析－一次完成的事件消费过程">
                 <i class="fa fa-chevron-left"></i> Rxjava源码分析－一次完成的事件消费过程
               </a>
             
@@ -487,7 +488,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/30/源码解析_2018-01-30_xml布局时如何生成view/" rel="prev" title="源码解析 之 xml布局时如何生成view">
+              <a href="/2018/01/30/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2018-01-30_xml%E5%B8%83%E5%B1%80%E6%97%B6%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90view/" rel="prev" title="源码解析 之 xml布局时如何生成view">
                 源码解析 之 xml布局时如何生成view <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -558,10 +559,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -636,7 +639,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备环境"><span class="nav-number">1.</span> <span class="nav-text">准备环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#下载源码"><span class="nav-number">2.</span> <span class="nav-text">下载源码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#选择编译目标"><span class="nav-number">3.</span> <span class="nav-text">选择编译目标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开始编译"><span class="nav-number">4.</span> <span class="nav-text">开始编译</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运行编译系统"><span class="nav-number">5.</span> <span class="nav-text">运行编译系统</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E7%8E%AF%E5%A2%83"><span class="nav-number">1.</span> <span class="nav-text">准备环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E6%BA%90%E7%A0%81"><span class="nav-number">2.</span> <span class="nav-text">下载源码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E7%BC%96%E8%AF%91%E7%9B%AE%E6%A0%87"><span class="nav-number">3.</span> <span class="nav-text">选择编译目标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E7%BC%96%E8%AF%91"><span class="nav-number">4.</span> <span class="nav-text">开始编译</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F"><span class="nav-number">5.</span> <span class="nav-text">运行编译系统</span></a></li></ol></div>
             
 
           </div>
@@ -656,7 +659,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

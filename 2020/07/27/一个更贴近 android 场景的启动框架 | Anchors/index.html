@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Java,">
+  <meta name="keywords" content="Java," />
 
 
 
@@ -77,14 +77,13 @@
 
 
 
-<meta name="description" content="背景随着公司项目需求迭代，项目依赖库越来越多，Application#onCreate() 承载的初始化逻辑变得越来越复杂。 以上一年线上项目的初始化逻辑例子。 123456789101112131415161718192021222324@Overridepublic void onCreate() &amp;#123;    super.onCreate();    if (LeakCanary.i">
-<meta name="keywords" content="Java">
+<meta name="description" content="背景随着公司项目需求迭代，项目依赖库越来越多，Application#onCreate() 承载的初始化逻辑变得越来越复杂。 以上一年线上项目的初始化逻辑例子。 123456789101112131415161718192021222324@Overridepublic void onCreate() &#123;    super.onCreate();    if (LeakCanary">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一个更贴近 android 场景的启动框架 | Anchors">
-<meta property="og:url" content="http://yummylau.com/2020/07/27/一个更贴近 android 场景的启动框架 | Anchors/index.html">
+<meta property="og:url" content="https://yummylau.cn/2020/07/27/%E4%B8%80%E4%B8%AA%E6%9B%B4%E8%B4%B4%E8%BF%91%20android%20%E5%9C%BA%E6%99%AF%E7%9A%84%E5%90%AF%E5%8A%A8%E6%A1%86%E6%9E%B6%20|%20Anchors/index.html">
 <meta property="og:site_name" content="YummyLau">
-<meta property="og:description" content="背景随着公司项目需求迭代，项目依赖库越来越多，Application#onCreate() 承载的初始化逻辑变得越来越复杂。 以上一年线上项目的初始化逻辑例子。 123456789101112131415161718192021222324@Overridepublic void onCreate() &amp;#123;    super.onCreate();    if (LeakCanary.i">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:description" content="背景随着公司项目需求迭代，项目依赖库越来越多，Application#onCreate() 承载的初始化逻辑变得越来越复杂。 以上一年线上项目的初始化逻辑例子。 123456789101112131415161718192021222324@Overridepublic void onCreate() &#123;    super.onCreate();    if (LeakCanary">
+<meta property="og:locale">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2020/7/24/17380cf17ac0b9b1?w=1686&h=214&f=jpeg&s=59978">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2020/7/24/17380cefe3c80e89?w=1183&h=629&f=jpeg&s=69420">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2020/7/24/17380cf2f146fecf?w=1039&h=433&f=jpeg&s=62975">
@@ -92,10 +91,11 @@
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2020/7/21/173701f13f298121?w=466&h=808&f=png&s=33688">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2020/7/21/173705ad69836fd6?w=1861&h=629&f=jpeg&s=798284">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2020/7/21/17370752f8e8b62b?w=590&h=1280&f=gif&s=545960">
-<meta property="og:updated_time" content="2022-02-06T18:25:08.927Z">
+<meta property="article:published_time" content="2020-07-26T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.050Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一个更贴近 android 场景的启动框架 | Anchors">
-<meta name="twitter:description" content="背景随着公司项目需求迭代，项目依赖库越来越多，Application#onCreate() 承载的初始化逻辑变得越来越复杂。 以上一年线上项目的初始化逻辑例子。 123456789101112131415161718192021222324@Overridepublic void onCreate() &amp;#123;    super.onCreate();    if (LeakCanary.i">
 <meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2020/7/24/17380cf17ac0b9b1?w=1686&h=214&f=jpeg&s=59978">
 
 
@@ -103,7 +103,7 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -126,7 +126,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2020/07/27/一个更贴近 android 场景的启动框架 | Anchors/">
+  <link rel="canonical" href="https://yummylau.cn/2020/07/27/一个更贴近 android 场景的启动框架 | Anchors/"/>
 
 
 
@@ -142,7 +142,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -160,7 +160,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -190,7 +190,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -200,7 +200,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -210,7 +210,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -220,7 +220,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -230,7 +230,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -269,11 +269,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2020/07/27/一个更贴近 android 场景的启动框架 | Anchors/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2020/07/27/%E4%B8%80%E4%B8%AA%E6%9B%B4%E8%B4%B4%E8%BF%91%20android%20%E5%9C%BA%E6%99%AF%E7%9A%84%E5%90%AF%E5%8A%A8%E6%A1%86%E6%9E%B6%20%7C%20Anchors/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -309,7 +309,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -339,8 +339,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/07/27/一个更贴近 android 场景的启动框架 | Anchors/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/07/27/一个更贴近 android 场景的启动框架 | Anchors/" itemprop="commentCount"></span>
+                <a href="/2020/07/27/%E4%B8%80%E4%B8%AA%E6%9B%B4%E8%B4%B4%E8%BF%91%20android%20%E5%9C%BA%E6%99%AF%E7%9A%84%E5%90%AF%E5%8A%A8%E6%A1%86%E6%9E%B6%20%7C%20Anchors/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/07/27/%E4%B8%80%E4%B8%AA%E6%9B%B4%E8%B4%B4%E8%BF%91%20android%20%E5%9C%BA%E6%99%AF%E7%9A%84%E5%90%AF%E5%8A%A8%E6%A1%86%E6%9E%B6%20%7C%20Anchors/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -368,10 +368,12 @@
       
 
       
-        <a id="more"></a>
+        <span id="more"></span>
+
+
 <h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>随着公司项目需求迭代，项目依赖库越来越多，<code>Application#onCreate()</code> 承载的初始化逻辑变得越来越复杂。</p>
 <p>以上一年线上项目的初始化逻辑例子。</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@Override</span></span><br><span class="line">public void onCreate() &#123;</span><br><span class="line">    <span class="selector-tag">super</span><span class="selector-class">.onCreate</span>();</span><br><span class="line">    <span class="selector-tag">if</span> (LeakCanary.isInAnalyzerProcess(this))</span><br><span class="line">        <span class="selector-tag">return</span>;</span><br><span class="line">    <span class="selector-tag">if</span> (YXFDebuggable.strictMode()) &#123;</span><br><span class="line">        <span class="selector-tag">StrictModeUtil</span><span class="selector-class">.startStrictMode</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">AppDirs</span><span class="selector-class">.init</span>(app, PACKAGE_NAME);        	<span class="comment">// dirs</span></span><br><span class="line">    <span class="selector-tag">YXFStorage</span><span class="selector-class">.init</span>(app);   <span class="comment">// storage</span></span><br><span class="line">    <span class="selector-tag">YXFLogs</span><span class="selector-class">.init</span>(app, YXFDebuggable.log(), YXFBuildInfo.getBuildStamp()); 	<span class="comment">// logs</span></span><br><span class="line">    <span class="selector-tag">YXFBuildInfo</span><span class="selector-class">.init</span>(app);</span><br><span class="line">    <span class="selector-tag">YXFDeviceInfo</span><span class="selector-class">.init</span>(app);  	<span class="comment">// device &amp; build info</span></span><br><span class="line">    <span class="selector-tag">YXFReceivers</span><span class="selector-class">.init</span>(app); </span><br><span class="line">    <span class="selector-tag">GLLogManager</span><span class="selector-class">.init</span>(app);</span><br><span class="line">    <span class="selector-tag">CrashHandler</span><span class="selector-class">.getInstance</span>()<span class="selector-class">.init</span>(app); 	<span class="comment">//crash</span></span><br><span class="line">    <span class="selector-tag">YXCrashManager</span><span class="selector-class">.init</span>(app, new Bugrpt163Capture());  <span class="comment">// skin</span></span><br><span class="line">    <span class="selector-tag">ServiceManager</span><span class="selector-class">.register</span>(app, SkinGuideImpl.class);</span><br><span class="line">    <span class="selector-tag">ServiceManager</span><span class="selector-class">.register</span>(app, SkinServiceImpl.class);</span><br><span class="line">    <span class="comment">//rxjavaplugins</span></span><br><span class="line">    <span class="selector-tag">GodlikeRxPlugins</span><span class="selector-class">.init</span>();</span><br><span class="line">        <span class="comment">//省略 200 行逻辑</span></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@Override</span></span><br><span class="line">public void onCreate() &#123;</span><br><span class="line">    super<span class="selector-class">.onCreate</span>();</span><br><span class="line">    if (LeakCanary.isInAnalyzerProcess(this))</span><br><span class="line">        return;</span><br><span class="line">    if (YXFDebuggable.strictMode()) &#123;</span><br><span class="line">        StrictModeUtil<span class="selector-class">.startStrictMode</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    AppDirs<span class="selector-class">.init</span>(app, PACKAGE_NAME);        	<span class="comment">// dirs</span></span><br><span class="line">    YXFStorage<span class="selector-class">.init</span>(app);   <span class="comment">// storage</span></span><br><span class="line">    YXFLogs<span class="selector-class">.init</span>(app, YXFDebuggable.log(), YXFBuildInfo<span class="selector-class">.getBuildStamp</span>()); 	<span class="comment">// logs</span></span><br><span class="line">    YXFBuildInfo<span class="selector-class">.init</span>(app);</span><br><span class="line">    YXFDeviceInfo<span class="selector-class">.init</span>(app);  	<span class="comment">// device &amp; build info</span></span><br><span class="line">    YXFReceivers<span class="selector-class">.init</span>(app); </span><br><span class="line">    GLLogManager<span class="selector-class">.init</span>(app);</span><br><span class="line">    CrashHandler<span class="selector-class">.getInstance</span>()<span class="selector-class">.init</span>(app); 	<span class="comment">//crash</span></span><br><span class="line">    YXCrashManager<span class="selector-class">.init</span>(app, new Bugrpt163Capture());  <span class="comment">// skin</span></span><br><span class="line">    ServiceManager<span class="selector-class">.register</span>(app, SkinGuideImpl.class);</span><br><span class="line">    ServiceManager<span class="selector-class">.register</span>(app, SkinServiceImpl.class);</span><br><span class="line">    <span class="comment">//rxjavaplugins</span></span><br><span class="line">    GodlikeRxPlugins<span class="selector-class">.init</span>();</span><br><span class="line">        <span class="comment">//省略 200 行逻辑</span></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>项目的初始化代码真的又臭又长… 在第一次项目重构的时候，尝试拆分初始化逻辑, 把原来的所有初始化逻辑划分为同步初始化和异步初始化，相对聚合的逻辑合成一个 Task 任务，Task 任务之间可相互依赖。在代码逻辑上划分三个方法来承载 Task 初始化。</p>
 <ul>
 <li>onCreateBlock(), 确保所有的 Task 在主线程上执行且在 <code>Application#onCreate()</code> 前完成</li>
@@ -379,21 +381,22 @@
 <li>onCreateAsync(),在子线程上完成所有 Task 执行</li>
 </ul>
 <p>代码逻辑大致如下。</p>
-<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">void</span> <span class="title">onCreate</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.onCreate();</span><br><span class="line">    <span class="keyword">if</span> (LeakCanary.isInAnalyzerProcess(<span class="keyword">this</span>)) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    onCreateBlock(<span class="keyword">this</span>);</span><br><span class="line">    onCreateSync(<span class="keyword">this</span>);</span><br><span class="line">    onCreateAsync(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">private</span> <span class="function"><span class="keyword">void</span> <span class="title">onCreateBlock</span><span class="params">(Application app)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//task running</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">private</span> <span class="function"><span class="keyword">void</span> <span class="title">onCreateSync</span><span class="params">(Application app)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//post task to looper</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">private</span> <span class="function"><span class="keyword">void</span> <span class="title">onCreateAsync</span><span class="params">(<span class="keyword">final</span> Application app)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">new</span> Thread(<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="keyword">public</span> <span class="function"><span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        	<span class="comment">//task running</span></span><br><span class="line">        &#125;).start();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="built_in">void</span> <span class="title function_">onCreate</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>.<span class="title function_">onCreate</span>();</span><br><span class="line">    <span class="keyword">if</span> (<span class="title class_">LeakCanary</span>.<span class="title function_">isInAnalyzerProcess</span>(<span class="variable language_">this</span>)) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">onCreateBlock</span>(<span class="variable language_">this</span>);</span><br><span class="line">    <span class="title function_">onCreateSync</span>(<span class="variable language_">this</span>);</span><br><span class="line">    <span class="title function_">onCreateAsync</span>(<span class="variable language_">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">private</span> <span class="built_in">void</span> <span class="title function_">onCreateBlock</span>(<span class="params"><span class="title class_">Application</span> app</span>) &#123;</span><br><span class="line">    <span class="comment">//task running</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">private</span> <span class="built_in">void</span> <span class="title function_">onCreateSync</span>(<span class="params"><span class="title class_">Application</span> app</span>) &#123;</span><br><span class="line">    <span class="comment">//post task to looper</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">private</span> <span class="built_in">void</span> <span class="title function_">onCreateAsync</span>(<span class="params">final <span class="title class_">Application</span> app</span>) &#123;</span><br><span class="line">      <span class="keyword">new</span> <span class="title class_">Thread</span>(<span class="keyword">new</span> <span class="title class_">Runnable</span>() &#123;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="keyword">public</span> <span class="built_in">void</span> <span class="title function_">run</span>(<span class="params"></span>) &#123;</span><br><span class="line">        	<span class="comment">//task running</span></span><br><span class="line">        &#125;).<span class="title function_">start</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><code>onCreateBlock()</code> 内的任务为串行初始化，很大程度会影响到应用首帧显示的时机。如果 <code>onCreateBlock()</code> 耗费的时间太长，那就要好好考虑下这些代码存在的必要性及合理性，重新设计了。<br><code>onCreateSync()</code>  对首帧显示的时机无影响，<code>onCreateAsync()</code> 则不一定。</p>
 <p>倘若不进行任务分类初始化，则首帧显示前需要完成所有任务的初始化</p>
-<p><img src="https://user-gold-cdn.xitu.io/2020/7/24/17380cf17ac0b9b1?w=1686&amp;h=214&amp;f=jpeg&amp;s=59978" alt></p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/7/24/17380cf17ac0b9b1?w=1686&h=214&f=jpeg&s=59978"></p>
 <p>分类之后，对原来 Task 进行依赖排列如下 </p>
-<p><img src="https://user-gold-cdn.xitu.io/2020/7/24/17380cefe3c80e89?w=1183&amp;h=629&amp;f=jpeg&amp;s=69420" alt></p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/7/24/17380cefe3c80e89?w=1183&h=629&f=jpeg&s=69420"></p>
 <p>降低初始化阻塞时间收益如下</p>
-<p><img src="https://user-gold-cdn.xitu.io/2020/7/24/17380cf2f146fecf?w=1039&amp;h=433&amp;f=jpeg&amp;s=62975" alt></p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/7/24/17380cf2f146fecf?w=1039&h=433&f=jpeg&s=62975"></p>
 <p>然而在实际场景中，拆分出来的三个方法中的任务可能存在依赖关系导致情况变得复杂：</p>
 <ol>
 <li>onCreateBlock() 只能依赖 onCreateAsync() 内任务m依赖 onCreateSync() 会导致死锁；</li>
 <li>onCreateSync()  可依赖其他两个方法内的任务；</li>
 <li>onCreateAsync() 可依赖其他两个方法内的任务,同时可尽可能支持多条子线程任务来加快缩短所有异步任务的完成时间，这取决于当前设备的 CPU 状态</li>
 </ol>
-<p><img src="https://user-gold-cdn.xitu.io/2020/7/24/17380d5b608588e1?w=717&amp;h=748&amp;f=jpeg&amp;s=57642" alt></p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/7/24/17380d5b608588e1?w=717&h=748&f=jpeg&s=57642"></p>
 <p>如果按照上述的逻辑来重新梳理启动任务的初始化，则需要实现一下逻辑：</p>
 <ol>
 <li>封装 Task 支持上述三种场景的运行</li>
@@ -403,18 +406,18 @@
 <li>多条异步子链运行时尽可能保持同时并发</li>
 <li>…</li>
 </ol>
-<p>希望完成上述功能，优先考虑现有轮子。于是在 github找到了 <a href="https://github.com/alibaba/alpha" target="_blank" rel="noopener">alpha</a> 。 alpha  是一个阿里巴巴开源的，基于PERT图构建的Android异步启动框架，协助应用启动时正确执行依赖任务。集成了之后发现满足不了项目的应用场景，当时并没有很好的解决方法，迫于项目需求当晚就 clone 下了源码研究了实现，略感失落，但也找到了优化的方向。</p>
+<p>希望完成上述功能，优先考虑现有轮子。于是在 github找到了 <a href="https://github.com/alibaba/alpha">alpha</a> 。 alpha  是一个阿里巴巴开源的，基于PERT图构建的Android异步启动框架，协助应用启动时正确执行依赖任务。集成了之后发现满足不了项目的应用场景，当时并没有很好的解决方法，迫于项目需求当晚就 clone 下了源码研究了实现，略感失落，但也找到了优化的方向。</p>
 <h3 id="alpha-的缺陷"><a href="#alpha-的缺陷" class="headerlink" title="alpha 的缺陷"></a>alpha 的缺陷</h3><ol>
 <li><p>启动节点粒度不够细</p>
-<p> <strong>alpha</strong> 封装了 Task 类用于表示一个异步任务, 衍生出Project 及 AnchorTask 用于处理多个 task 对象构成的图结构。其外层业务只需要继承 Task 或者同个构建 Project 来编写业务依赖逻辑,理想的结构应该如下<br> <img src="https://user-gold-cdn.xitu.io/2020/7/21/173701f13f298121?w=466&amp;h=808&amp;f=png&amp;s=33688" alt><br> 但是如果你添加 Task 启动的时候，会收到 <code>xxxTask cannot be cast to com.alibaba.android.alpha.Project</code>。 从源码层上看确实不能从一个 task 启动，缺乏灵活性。</p>
+<p> <strong>alpha</strong> 封装了 Task 类用于表示一个异步任务, 衍生出Project 及 AnchorTask 用于处理多个 task 对象构成的图结构。其外层业务只需要继承 Task 或者同个构建 Project 来编写业务依赖逻辑,理想的结构应该如下<br> <img src="https://user-gold-cdn.xitu.io/2020/7/21/173701f13f298121?w=466&h=808&f=png&s=33688"><br> 但是如果你添加 Task 启动的时候，会收到 <code>xxxTask cannot be cast to com.alibaba.android.alpha.Project</code>。 从源码层上看确实不能从一个 task 启动，缺乏灵活性。</p>
 </li>
 <li><p>无法满足同异步初始化依赖并阻塞 Application#onCreate</p>
 <p> <strong>alpha</strong> 定位为异步启动框架。在执行启动任务时判断其是否是主线程执行，如果是则通过 <code>handler#post</code> 发送出去排队处理, 否则交给线程池处理。任务处理完成之后通知依赖该任务的任务进行依赖检查, 此时若依赖其的所有依赖都已完成，则启动该任务。</p>
 <p> 定义一个任务 T，其启动任务时刻为 tTStart，结束任务时刻为 tTEnd。若存在以下依赖任务，</p>
  <figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D（异步）-&gt; C（异步） -&gt;B （同步）-&gt;A（同步）</span><br></pre></td></tr></table></figure>
 <p> 则 <strong>alpha</strong> 中恒满足 <code>tAStart &lt; tAEnd &lt; tBStart &lt; tBEnd &lt; tCStart &lt; tCEnd &lt; tDStart &lt; tDEnd</code>。<br> 由于同步任务时通过队列排队处理，任务的执行并不是与代码块的上下文严格同步，当 Application#onCreate() 中要求严格的代码执行同步时，如</p>
- <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">()</span></span>&#123;</span><br><span class="line">    startInitTask（） <span class="comment">//启动上述链	 </span></span><br><span class="line">    code	          <span class="comment">//后置代码块</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p> 则后置代码块会优先被执行。当<code>tCode</code> 为代码块执行时刻时，恒满足 <code>tCode &lt; txStart (x = {A,B,C,D})</code></p>
+ <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span>()</span>&#123;</span><br><span class="line">    startInitTask（） <span class="comment">//启动上述链	 </span></span><br><span class="line">    code	          <span class="comment">//后置代码块</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 则后置代码块会优先被执行。当<code>tCode</code> 为代码块执行时刻时，恒满足 <code>tCode &lt; txStart (x = &#123;A,B,C,D&#125;)</code></p>
 <p> 尽管 <strong>alpha</strong> 中提供 AlphaManager#waitUntilFinish 用于阻塞执行线程，但是存在很大缺陷：</p>
 <p> <em>假如在UI线程等待，则会造成死锁。其原因在于当前执行代码处等待解锁，而只有等到所有在主线程执行的 task 执行完才可能解锁，而 task 被 post 到消息队列里面，只有当解锁之后才能执行到消息队列的 task。</em></p>
 </li>
@@ -423,7 +426,7 @@
 </li>
 </ol>
 <p>遗憾的是，官方上一次更新时 2 年前了，并没有好好打算支持并维护好 <em>alpha</em> 库。</p>
-<h3 id="anchors-更适合-Android-启动场景"><a href="#anchors-更适合-Android-启动场景" class="headerlink" title="anchors 更适合 Android 启动场景"></a>anchors 更适合 Android 启动场景</h3><p><a href="https://github.com/YummyLau/Anchors" target="_blank" rel="noopener">anchors</a> 是一个基于图结构，支持同异步依赖任务初始化 Android 启动框架。其锚点特性提供 “勾住” 依赖的功能，能灵活解决初始化过程中复杂的同步问题。参考 alpha 并改进其部分细节, 更贴合 Android 启动的场景, 同时支持优化依赖初始化流程, 选择较优的路径进行初始化。</p>
+<h3 id="anchors-更适合-Android-启动场景"><a href="#anchors-更适合-Android-启动场景" class="headerlink" title="anchors 更适合 Android 启动场景"></a>anchors 更适合 Android 启动场景</h3><p><a href="https://github.com/YummyLau/Anchors">anchors</a> 是一个基于图结构，支持同异步依赖任务初始化 Android 启动框架。其锚点特性提供 “勾住” 依赖的功能，能灵活解决初始化过程中复杂的同步问题。参考 alpha 并改进其部分细节, 更贴合 Android 启动的场景, 同时支持优化依赖初始化流程, 选择较优的路径进行初始化。</p>
 <p>目前已经稳定服务于我们线上项目一年多了，经过改造之后，相比 <code>alpha</code> 的优势</p>
 <ol>
 <li>支持配置 <code>anchors</code> 等待任务链，常用于 <code>application#onCreate</code> 前保证某些初始化任务完成之后再进入 <code>activity</code> 生命周期回调。</li>
@@ -432,41 +435,46 @@
 </ol>
 <p>如果一个任务要确保在 <code>application#onCreate</code> 前执行完毕，则该任务成为锚点任务，使用起来非常简单。</p>
 <p>添加依赖 </p>
-<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">implementation</span> <span class="string">'com.effective.android:anchors:1.1.0'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">implementation</span> &#x27;com.effective.android:anchors:<span class="number">1</span>.<span class="number">1</span>.<span class="number">0</span>&#x27;</span><br></pre></td></tr></table></figure>
+
 <p>在 <code>Application</code> 中启动依赖图，提供 java/kotlin 两套 api 方便使用。</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//java 代码</span></span><br><span class="line"><span class="selector-tag">AnchorsManager</span><span class="selector-class">.getInstance</span>()<span class="selector-class">.debuggable</span>(true) </span><br><span class="line">        <span class="selector-class">.addAnchors</span>(anchorYouNeed)          <span class="comment">//传递任务id设置锚点任务</span></span><br><span class="line">        <span class="selector-class">.start</span>(dependencyGraphHead);        <span class="comment">//传入依赖图头部</span></span><br><span class="line">        </span><br><span class="line"><span class="comment">//kotlin code</span></span><br><span class="line"><span class="selector-tag">getInstance</span>()</span><br><span class="line">    <span class="selector-class">.debuggable</span> &#123; <span class="selector-tag">true</span> &#125;</span><br><span class="line">    <span class="selector-class">.taskFactory</span> &#123; <span class="selector-tag">TestTaskFactory</span>() &#125;          <span class="comment">//可选，构建依赖图可以使用工厂，</span></span><br><span class="line">    <span class="selector-class">.anchors</span> &#123; <span class="selector-tag">arrayOf</span>(<span class="string">"TASK_9"</span>, <span class="string">"TASK_10"</span>) &#125;   <span class="comment">//传递任务 id 设置锚点任务</span></span><br><span class="line">    <span class="selector-class">.block</span>(<span class="string">"TASK_13"</span>) &#123;			                <span class="comment">//可选，如果需要用户在某个任务结束之后进行交互，则使用 block 功能</span></span><br><span class="line">        <span class="comment">//According to business  it.smash() or it.unlock()</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.graphics</span> &#123;							      <span class="comment">// 可选，当使用工程时支持 dsl 构建图，sons 接受子节点</span></span><br><span class="line">        <span class="selector-tag">UITHREAD_TASK_A</span><span class="selector-class">.sons</span>(</span><br><span class="line">                TASK_10.sons(</span><br><span class="line">                        TASK_11.sons(</span><br><span class="line">                                TASK_12.sons(</span><br><span class="line">                                        TASK_13))),</span><br><span class="line">                TASK_20.sons(</span><br><span class="line">                        TASK_21.sons(</span><br><span class="line">                                TASK_22.sons(TASK_23))),</span><br><span class="line"></span><br><span class="line">                UITHREAD_TASK_B.alsoParents(TASK_22),</span><br><span class="line"></span><br><span class="line">                UITHREAD_TASK_C</span><br><span class="line">        )</span><br><span class="line">        <span class="selector-tag">arrayOf</span>(UITHREAD_TASK_A)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.startUp</span>()</span><br></pre></td></tr></table></figure>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//java 代码</span></span><br><span class="line">AnchorsManager<span class="selector-class">.getInstance</span>()<span class="selector-class">.debuggable</span>(true) </span><br><span class="line">        <span class="selector-class">.addAnchors</span>(anchorYouNeed)          <span class="comment">//传递任务id设置锚点任务</span></span><br><span class="line">        <span class="selector-class">.start</span>(dependencyGraphHead);        <span class="comment">//传入依赖图头部</span></span><br><span class="line">        </span><br><span class="line"><span class="comment">//kotlin code</span></span><br><span class="line"><span class="built_in">getInstance</span>()</span><br><span class="line">    <span class="selector-class">.debuggable</span> &#123; true &#125;</span><br><span class="line">    <span class="selector-class">.taskFactory</span> &#123; <span class="built_in">TestTaskFactory</span>() &#125;          <span class="comment">//可选，构建依赖图可以使用工厂，</span></span><br><span class="line">    <span class="selector-class">.anchors</span> &#123; <span class="built_in">arrayOf</span>(&quot;TASK_9&quot;, &quot;TASK_10&quot;) &#125;   <span class="comment">//传递任务 id 设置锚点任务</span></span><br><span class="line">    <span class="selector-class">.block</span>(&quot;TASK_13&quot;) &#123;			                <span class="comment">//可选，如果需要用户在某个任务结束之后进行交互，则使用 block 功能</span></span><br><span class="line">        <span class="comment">//According to business  it.smash() or it.unlock()</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.graphics</span> &#123;							      <span class="comment">// 可选，当使用工程时支持 dsl 构建图，sons 接受子节点</span></span><br><span class="line">        UITHREAD_TASK_A<span class="selector-class">.sons</span>(</span><br><span class="line">                TASK_10.sons(</span><br><span class="line">                        TASK_11.sons(</span><br><span class="line">                                TASK_12.sons(</span><br><span class="line">                                        TASK_13))),</span><br><span class="line">                TASK_20<span class="selector-class">.sons</span>(</span><br><span class="line">                        TASK_21.sons(</span><br><span class="line">                                TASK_22.sons(TASK_23))),</span><br><span class="line"></span><br><span class="line">                UITHREAD_TASK_B<span class="selector-class">.alsoParents</span>(TASK_22),</span><br><span class="line"></span><br><span class="line">                UITHREAD_TASK_C</span><br><span class="line">        )</span><br><span class="line">        <span class="built_in">arrayOf</span>(UITHREAD_TASK_A)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.startUp</span>()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>如果你打开了 <em>debug</em> 模式，则可以看到整个初始化过程的详细信息，可过渡不同 <code>TAG</code> 来获取对应信息。</p>
 <ul>
 <li><p><strong>TASK_DETAIL</strong> 任务执行信息</p>
-  <figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">D/TASK<span class="emphasis">_DETAIL: TASK_</span>DETAIL</span><br><span class="line">======================= task (UITHREAD<span class="emphasis">_TASK_</span>A ) =======================</span><br><span class="line">| 依赖任务 :</span><br><span class="line">| 是否是锚点任务 : false</span><br><span class="line">| 线程信息 : main</span><br><span class="line">| 开始时刻 : 1552889985401 ms</span><br><span class="line">| 等待运行耗时 : 85 ms</span><br><span class="line">| 运行任务耗时 : 200 ms</span><br><span class="line">| 结束时刻 : 1552889985686</span><br><span class="line">==============================================</span><br></pre></td></tr></table></figure>
+  <figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">D/TASK<span class="emphasis">_DETAIL: TASK_DETAIL</span></span><br><span class="line"><span class="emphasis">======================= task (UITHREAD_TASK_</span>A ) =======================</span><br><span class="line">| 依赖任务 :</span><br><span class="line">| 是否是锚点任务 : false</span><br><span class="line">| 线程信息 : main</span><br><span class="line">| 开始时刻 : 1552889985401 ms</span><br><span class="line">| 等待运行耗时 : 85 ms</span><br><span class="line">| 运行任务耗时 : 200 ms</span><br><span class="line"><span class="section">| 结束时刻 : 1552889985686</span></span><br><span class="line"><span class="section">==============================================</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>ANCHOR_DETAIL</strong> 锚点任务信息</p>
-  <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">W/ANCHOR_DETAIL: anchor <span class="string">"TASK_100"</span> no found !</span><br><span class="line">W/ANCHOR_DETAIL: anchor <span class="string">"TASK_E"</span> no found !</span><br><span class="line">D/ANCHOR_DETAIL: has some anchors！( <span class="string">"TASK_93"</span> )</span><br><span class="line">D/ANCHOR_DETAIL: TASK_DETAIL</span><br><span class="line">======================= task (TASK_93 ) =======================</span><br><span class="line">| 依赖任务 : TASK_92</span><br><span class="line">| 是否是锚点任务 : <span class="literal">true</span></span><br><span class="line">| 线程信息 : Anchors Thread <span class="comment">#7</span></span><br><span class="line">| 开始时刻 : <span class="number">1552891353984</span> ms</span><br><span class="line">| 等待运行耗时 : <span class="number">4</span> ms</span><br><span class="line">| 运行任务耗时 : <span class="number">200</span> ms</span><br><span class="line">| 结束时刻 : <span class="number">1552891354188</span></span><br><span class="line">==============================================</span><br><span class="line">D/ANCHOR_DETAIL: All anchors were released！</span><br></pre></td></tr></table></figure>
+  <figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">W/ANCHOR_DETAIL: <span class="built_in">anchor</span> <span class="string">&quot;TASK_100&quot;</span> <span class="keyword">no</span> found !</span><br><span class="line">W/ANCHOR_DETAIL: <span class="built_in">anchor</span> <span class="string">&quot;TASK_E&quot;</span> <span class="keyword">no</span> found !</span><br><span class="line">D/ANCHOR_DETAIL: has some anchors！( <span class="string">&quot;TASK_93&quot;</span> )</span><br><span class="line">D/ANCHOR_DETAIL: TASK_DETAIL</span><br><span class="line">======================= task (TASK_93 ) =======================</span><br><span class="line">| 依赖任务 : TASK_92</span><br><span class="line">| 是否是锚点任务 : true</span><br><span class="line">| 线程信息 : Anchors Thread <span class="comment">#7</span></span><br><span class="line">| 开始时刻 : <span class="number">1552891353984</span> ms</span><br><span class="line">| 等待运行耗时 : <span class="number">4</span> ms</span><br><span class="line">| 运行任务耗时 : <span class="number">200</span> ms</span><br><span class="line">| 结束时刻 : <span class="number">1552891354188</span></span><br><span class="line">==============================================</span><br><span class="line">D/ANCHOR_DETAIL: All anchors were released！</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>LOCK_DETAIL</strong> 阻塞等待信息</p>
-  <figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">D</span>/LOCK_DETAIL: Anchors <span class="keyword">Thread</span> #<span class="number">9</span>- lock( TASK_10 )</span><br><span class="line"><span class="keyword">D</span>/LOCK_DETAIL: main- unlock( TASK_10 )</span><br><span class="line"><span class="keyword">D</span>/LOCK_DETAIL: <span class="keyword">Continue</span> the task chain...</span><br></pre></td></tr></table></figure>
+  <figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">D</span><span class="operator">/</span><span class="type">LOCK_DETAIL</span><span class="operator">:</span> <span class="variable">Anchors</span> <span class="built_in">Thread</span> <span class="type">#9</span><span class="operator">-</span> <span class="variable">lock</span><span class="punctuation">(</span> <span class="type">TASK_</span><span class="number">10</span> <span class="punctuation">)</span></span><br><span class="line"><span class="built_in">D</span><span class="operator">/</span><span class="type">LOCK_DETAIL</span><span class="operator">:</span> <span class="variable">main</span><span class="operator">-</span> <span class="variable">unlock</span><span class="punctuation">(</span> <span class="type">TASK_</span><span class="number">10</span> <span class="punctuation">)</span></span><br><span class="line"><span class="built_in">D</span><span class="operator">/</span><span class="type">LOCK_DETAIL</span><span class="operator">:</span> <span class="built_in">Continue</span> <span class="variable">the</span> <span class="variable">task</span> <span class="variable">chain</span><span class="operator">...</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>DEPENDENCE_DETAIL</strong> 依赖图信息</p>
-  <figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_9_start<span class="function"><span class="params">(<span class="number">1552890473721</span>)</span> --&gt;</span> TASK_90<span class="function"> --&gt;</span> TASK_91<span class="function"> --&gt;</span> PROJECT_9_end(<span class="number">1552890473721</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_9_start<span class="function"><span class="params">(<span class="number">1552890473721</span>)</span> --&gt;</span> TASK_90<span class="function"> --&gt;</span> TASK_92<span class="function"> --&gt;</span> TASK_93<span class="function"> --&gt;</span> PROJECT_9_end(<span class="number">1552890473721</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_8_start<span class="function"><span class="params">(<span class="number">1552890473721</span>)</span> --&gt;</span> TASK_80<span class="function"> --&gt;</span> TASK_81<span class="function"> --&gt;</span> PROJECT_8_end(<span class="number">1552890473721</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_8_start<span class="function"><span class="params">(<span class="number">1552890473721</span>)</span> --&gt;</span> TASK_80<span class="function"> --&gt;</span> TASK_82<span class="function"> --&gt;</span> TASK_83<span class="function"> --&gt;</span> PROJECT_8_end(<span class="number">1552890473721</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_7_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_70<span class="function"> --&gt;</span> TASK_71<span class="function"> --&gt;</span> PROJECT_7_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_7_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_70<span class="function"> --&gt;</span> TASK_72<span class="function"> --&gt;</span> TASK_73<span class="function"> --&gt;</span> PROJECT_7_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_6_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_60<span class="function"> --&gt;</span> TASK_61<span class="function"> --&gt;</span> PROJECT_6_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_6_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_60<span class="function"> --&gt;</span> TASK_62<span class="function"> --&gt;</span> TASK_63<span class="function"> --&gt;</span> PROJECT_6_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_5_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_50<span class="function"> --&gt;</span> TASK_51<span class="function"> --&gt;</span> PROJECT_5_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_5_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_50<span class="function"> --&gt;</span> TASK_52<span class="function"> --&gt;</span> TASK_53<span class="function"> --&gt;</span> PROJECT_5_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_4_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_40<span class="function"> --&gt;</span> TASK_41<span class="function"> --&gt;</span> TASK_42<span class="function"> --&gt;</span> TASK_43<span class="function"> --&gt;</span> PROJECT_4_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_3_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_30<span class="function"> --&gt;</span> TASK_31<span class="function"> --&gt;</span> TASK_32<span class="function"> --&gt;</span> TASK_33<span class="function"> --&gt;</span> PROJECT_3_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_2_start<span class="function"><span class="params">(<span class="number">1552890473719</span>)</span> --&gt;</span> TASK_20<span class="function"> --&gt;</span> TASK_21<span class="function"> --&gt;</span> TASK_22<span class="function"> --&gt;</span> TASK_23<span class="function"> --&gt;</span> PROJECT_2_end(<span class="number">1552890473719</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> PROJECT_1_start<span class="function"><span class="params">(<span class="number">1552890473719</span>)</span> --&gt;</span> TASK_10<span class="function"> --&gt;</span> TASK_11<span class="function"> --&gt;</span> TASK_12<span class="function"> --&gt;</span> TASK_13<span class="function"> --&gt;</span> PROJECT_1_end(<span class="number">1552890473719</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> UITHREAD_TASK_B</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A<span class="function"> --&gt;</span> UITHREAD_TASK_C</span><br></pre></td></tr></table></figure>
+  <figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_9_start<span class="function"><span class="params">(<span class="number">1552890473721</span>)</span> --&gt;</span> TASK_90 --&gt; TASK_91 --&gt; PROJECT_9_end(<span class="number">1552890473721</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_9_start<span class="function"><span class="params">(<span class="number">1552890473721</span>)</span> --&gt;</span> TASK_90 --&gt; TASK_92 --&gt; TASK_93 --&gt; PROJECT_9_end(<span class="number">1552890473721</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_8_start<span class="function"><span class="params">(<span class="number">1552890473721</span>)</span> --&gt;</span> TASK_80 --&gt; TASK_81 --&gt; PROJECT_8_end(<span class="number">1552890473721</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_8_start<span class="function"><span class="params">(<span class="number">1552890473721</span>)</span> --&gt;</span> TASK_80 --&gt; TASK_82 --&gt; TASK_83 --&gt; PROJECT_8_end(<span class="number">1552890473721</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_7_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_70 --&gt; TASK_71 --&gt; PROJECT_7_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_7_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_70 --&gt; TASK_72 --&gt; TASK_73 --&gt; PROJECT_7_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_6_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_60 --&gt; TASK_61 --&gt; PROJECT_6_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_6_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_60 --&gt; TASK_62 --&gt; TASK_63 --&gt; PROJECT_6_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_5_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_50 --&gt; TASK_51 --&gt; PROJECT_5_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_5_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_50 --&gt; TASK_52 --&gt; TASK_53 --&gt; PROJECT_5_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_4_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_40 --&gt; TASK_41 --&gt; TASK_42 --&gt; TASK_43 --&gt; PROJECT_4_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_3_start<span class="function"><span class="params">(<span class="number">1552890473720</span>)</span> --&gt;</span> TASK_30 --&gt; TASK_31 --&gt; TASK_32 --&gt; TASK_33 --&gt; PROJECT_3_end(<span class="number">1552890473720</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_2_start<span class="function"><span class="params">(<span class="number">1552890473719</span>)</span> --&gt;</span> TASK_20 --&gt; TASK_21 --&gt; TASK_22 --&gt; TASK_23 --&gt; PROJECT_2_end(<span class="number">1552890473719</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; PROJECT_1_start<span class="function"><span class="params">(<span class="number">1552890473719</span>)</span> --&gt;</span> TASK_10 --&gt; TASK_11 --&gt; TASK_12 --&gt; TASK_13 --&gt; PROJECT_1_end(<span class="number">1552890473719</span>)</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; UITHREAD_TASK_B</span><br><span class="line">D/DEPENDENCE_DETAIL: UITHREAD_TASK_A --&gt; UITHREAD_TASK_C</span><br></pre></td></tr></table></figure>
+
+
 </li>
 </ul>
 <p>有使用锚点和使用锚点场景下, 针对每个依赖任务做 Trace 追踪, 可以通过 python systrace.py 来输出 trace.html 进行时间分析。</p>
-<p><img src="https://user-gold-cdn.xitu.io/2020/7/21/173705ad69836fd6?w=1861&amp;h=629&amp;f=jpeg&amp;s=798284" alt></p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/7/21/173705ad69836fd6?w=1861&h=629&f=jpeg&s=798284"></p>
 <p>依赖图中有着一条 <code>UITHREAD_TASK_A -&gt; TASK_90 -&gt; TASK_92 -&gt; Task_93</code> 依赖。假设我们的这条依赖路径是后续业务的前置条件,则我们需要等待该业务完成后再进行自身的业务代码。如果不是则我们不关系他们的结束时机。在使用锚点功能时，我们勾住 TASK_93，则从始端到该锚点的优先级将被提升，当在优先的 cpu 资源可用前提下，高优先级的链会优先抢占 cpu 资源进行使用。从上图可以看到执行该依赖链的时间缩短了。</p>
-<p><a href="https://github.com/YummyLau/Anchors/blob/master/README-zh.md" target="_blank" rel="noopener">anchors</a> 项目同时提供了核心的 Sample 场景进行演示。</p>
+<p><a href="https://github.com/YummyLau/Anchors/blob/master/README-zh.md">anchors</a> 项目同时提供了核心的 Sample 场景进行演示。</p>
 <ol>
 <li>多进程初始化</li>
 <li>某初始化链中间节点需要等待响应</li>
 <li>某初始化链完成之后可能会再启动另一条新链</li>
 </ol>
 <p>如 <code>某初始化链中间节点需要等待响应</code> 例子中，业务逻辑可决定是否终止链继续初始化等,如下点击 <strong>继续执行</strong> 。</p>
-<p><img src="https://user-gold-cdn.xitu.io/2020/7/21/17370752f8e8b62b?w=590&amp;h=1280&amp;f=gif&amp;s=545960" alt></p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/7/21/17370752f8e8b62b?w=590&h=1280&f=gif&s=545960"></p>
 <p>Log 信息能看到阻塞解除了。</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">D/LOCK_DETAIL: main- unlock( TASK_10 )</span><br><span class="line">D/LOCK_DETAIL: Continue the task chain...</span><br><span class="line">D/Anchors: TASK_10_waiter -- onFinish -- </span><br><span class="line">D/TASK_DETAIL: TASK_DETAIL</span><br><span class="line">    </span><br><span class="line">    ======================= task (TASK_10_waiter ) =======================</span><br><span class="line">    | 依赖任务 :  </span><br><span class="line">    | 是否是锚点任务 : <span class="literal">false</span> </span><br><span class="line">    | 线程信息 : Anchors Thread <span class="comment">#10 </span></span><br><span class="line">    | 开始时刻 : <span class="number">1595319503047</span> ms</span><br><span class="line">    | 等待运行耗时 : <span class="number">1</span> ms</span><br><span class="line">    | 运行任务耗时 : <span class="number">3653</span> ms</span><br><span class="line">    | 结束时刻 : <span class="number">1595319506701</span> </span><br><span class="line">    ==============================================</span><br><span class="line">D/Anchors: TASK_10_waiter -- onRelease --</span><br></pre></td></tr></table></figure>
+<figure class="highlight nestedtext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">D/LOCK_DETAIL</span><span class="punctuation">:</span> <span class="string">main- unlock( TASK_10 )</span></span><br><span class="line"><span class="attribute">D/LOCK_DETAIL</span><span class="punctuation">:</span> <span class="string">Continue the task chain...</span></span><br><span class="line"><span class="attribute">D/Anchors</span><span class="punctuation">:</span> <span class="string">TASK_10_waiter -- onFinish -- </span></span><br><span class="line"><span class="attribute">D/TASK_DETAIL</span><span class="punctuation">:</span> <span class="string">TASK_DETAIL</span></span><br><span class="line">    </span><br><span class="line">    <span class="attribute">======================= task (TASK_10_waiter ) =======================</span></span><br><span class="line"><span class="attribute">    | 依赖任务 </span><span class="punctuation">:  </span></span><br><span class="line">    <span class="attribute">| 是否是锚点任务</span><span class="punctuation"> :</span> <span class="string">false </span></span><br><span class="line">    <span class="attribute">| 线程信息</span><span class="punctuation"> :</span> <span class="string">Anchors Thread #10 </span></span><br><span class="line">    <span class="attribute">| 开始时刻</span><span class="punctuation"> :</span> <span class="string">1595319503047 ms</span></span><br><span class="line">    <span class="attribute">| 等待运行耗时</span><span class="punctuation"> :</span> <span class="string">1 ms</span></span><br><span class="line">    <span class="attribute">| 运行任务耗时</span><span class="punctuation"> :</span> <span class="string">3653 ms</span></span><br><span class="line">    <span class="attribute">| 结束时刻</span><span class="punctuation"> :</span> <span class="string">1595319506701 </span></span><br><span class="line">    <span class="attribute">==============================================</span></span><br><span class="line"><span class="attribute">D/Anchors</span><span class="punctuation">:</span> <span class="string">TASK_10_waiter -- onRelease -- </span></span><br></pre></td></tr></table></figure>
+
 <p><strong>anchors</strong> 框架自由度非常高，同异步混合链及 anchor 功能的结合使用可以灵活处理很多复杂初始化场景，但是要充分理解使用功能时的线程场景哦。</p>
 <p>如果你还在梳理凌乱无序的启动任务而烦恼，<br>又或者为任务的同异步任务控制而心烦， anchors 绝对适合你哦 👏 👏 👏</p>
 <p>如果对启动场景有任何疑惑或者框架设计的意见与建议，欢迎评论留言～ </p>
-<p>文章首发于 <a href="https://juejin.im/post/5f168dd9f265da22ce394a7a" target="_blank" rel="noopener">掘金-一个更贴近 android 场景的启动框架 | Anchors</a> 欢迎关注我 👏 </p>
+<p>文章首发于 <a href="https://juejin.im/post/5f168dd9f265da22ce394a7a">掘金-一个更贴近 android 场景的启动框架 | Anchors</a> 欢迎关注我 👏 </p>
 
       
     </div>
@@ -487,7 +495,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2020/07/27/一个更贴近 android 场景的启动框架 | Anchors/" title="一个更贴近 android 场景的启动框架 | Anchors">http://yummylau.com/2020/07/27/一个更贴近 android 场景的启动框架 | Anchors/</a>
+    <a href="https://yummylau.cn/2020/07/27/%E4%B8%80%E4%B8%AA%E6%9B%B4%E8%B4%B4%E8%BF%91%20android%20%E5%9C%BA%E6%99%AF%E7%9A%84%E5%90%AF%E5%8A%A8%E6%A1%86%E6%9E%B6%20|%20Anchors/" title="一个更贴近 android 场景的启动框架 | Anchors">https://yummylau.cn/2020/07/27/%E4%B8%80%E4%B8%AA%E6%9B%B4%E8%B4%B4%E8%BF%91%20android%20%E5%9C%BA%E6%99%AF%E7%9A%84%E5%90%AF%E5%8A%A8%E6%A1%86%E6%9E%B6%20|%20Anchors/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -515,8 +523,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/07/27/拖更了三年，带回了一个非常好用的库｜墙裂推荐/" rel="next" title="拖更了三年，带回了一个非常好用的库｜墙贴推荐">
-                <i class="fa fa-chevron-left"></i> 拖更了三年，带回了一个非常好用的库｜墙贴推荐
+              <a href="/2020/07/27/%E5%A6%82%E4%BD%95%E8%AF%BB%E6%87%82%E6%99%A6%E6%B6%A9%E7%9A%84%20Class%20%E6%96%87%E4%BB%B6%EF%BD%9C%E8%BF%9B%E9%98%B6%E5%BF%85%E5%A4%87/" rel="next" title="如何读懂晦涩的Class文件｜进阶必备">
+                <i class="fa fa-chevron-left"></i> 如何读懂晦涩的Class文件｜进阶必备
               </a>
             
           </div>
@@ -525,8 +533,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/07/27/如何读懂晦涩的 Class 文件｜进阶必备/" rel="prev" title="如何读懂晦涩的Class文件｜进阶必备">
-                如何读懂晦涩的Class文件｜进阶必备 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/12/07/2020-12-07/" rel="prev" title="救我于水深火热的「热修复」">
+                救我于水深火热的「热修复」 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -596,10 +604,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -674,7 +684,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#alpha-的缺陷"><span class="nav-number">2.</span> <span class="nav-text">alpha 的缺陷</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#anchors-更适合-Android-启动场景"><span class="nav-number">3.</span> <span class="nav-text">anchors 更适合 Android 启动场景</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#alpha-%E7%9A%84%E7%BC%BA%E9%99%B7"><span class="nav-number">2.</span> <span class="nav-text">alpha 的缺陷</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#anchors-%E6%9B%B4%E9%80%82%E5%90%88-Android-%E5%90%AF%E5%8A%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">3.</span> <span class="nav-text">anchors 更适合 Android 启动场景</span></a></li></ol></div>
             
 
           </div>
@@ -694,7 +704,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

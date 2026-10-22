@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="网络,">
+  <meta name="keywords" content="网络," />
 
 
 
@@ -77,14 +77,13 @@
 
 
 
-<meta name="description" content="阅读本文你能收获到  了解网络模型中各层的工作内容及使用协议 掌握各层中比较核心的协议及运行原理  协议模型主流网络结构分为 OSI七层协议和五层协议模型  七层：物理层，数据链路层，网络层，传输层，（会话层， 表示层，应用层 五层：物理层，数据链路层，网络层，传输层，应用层  应用层  通过进程之间的交互来完成特定网络应用，所以对应的协议也定义为应用进程间通信和交互的规则 电子邮件SMTP协议，">
-<meta name="keywords" content="网络">
+<meta name="description" content="阅读本文你能收获到  了解网络模型中各层的工作内容及使用协议 掌握各层中比较核心的协议及运行原理  协议模型 主流网络结构分为 OSI七层协议和五层协议模型   七层：物理层，数据链路层，网络层，传输层，（会话层， 表示层，应用层 五层：物理层，数据链路层，网络层，传输层，应用层  应用层  通过进程之间的交互来完成特定网络应用，所以对应的协议也定义为应用进程间通信和交互的规则 电子邮件SMTP协">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网络模型详解">
-<meta property="og:url" content="http://yummylau.com/2019/02/01/net_网络模型详解/index.html">
+<meta property="og:url" content="https://yummylau.cn/2019/02/01/net_%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/index.html">
 <meta property="og:site_name" content="YummyLau">
-<meta property="og:description" content="阅读本文你能收获到  了解网络模型中各层的工作内容及使用协议 掌握各层中比较核心的协议及运行原理  协议模型主流网络结构分为 OSI七层协议和五层协议模型  七层：物理层，数据链路层，网络层，传输层，（会话层， 表示层，应用层 五层：物理层，数据链路层，网络层，传输层，应用层  应用层  通过进程之间的交互来完成特定网络应用，所以对应的协议也定义为应用进程间通信和交互的规则 电子邮件SMTP协议，">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:description" content="阅读本文你能收获到  了解网络模型中各层的工作内容及使用协议 掌握各层中比较核心的协议及运行原理  协议模型 主流网络结构分为 OSI七层协议和五层协议模型   七层：物理层，数据链路层，网络层，传输层，（会话层， 表示层，应用层 五层：物理层，数据链路层，网络层，传输层，应用层  应用层  通过进程之间的交互来完成特定网络应用，所以对应的协议也定义为应用进程间通信和交互的规则 电子邮件SMTP协">
+<meta property="og:locale">
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/email_1.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/ftp_1.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/tcp_1.png">
@@ -99,10 +98,11 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/frame_1.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/frame_2.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/frame_3.png">
-<meta property="og:updated_time" content="2019-03-10T05:35:03.476Z">
+<meta property="article:published_time" content="2019-01-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.049Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="网络">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网络模型详解">
-<meta name="twitter:description" content="阅读本文你能收获到  了解网络模型中各层的工作内容及使用协议 掌握各层中比较核心的协议及运行原理  协议模型主流网络结构分为 OSI七层协议和五层协议模型  七层：物理层，数据链路层，网络层，传输层，（会话层， 表示层，应用层 五层：物理层，数据链路层，网络层，传输层，应用层  应用层  通过进程之间的交互来完成特定网络应用，所以对应的协议也定义为应用进程间通信和交互的规则 电子邮件SMTP协议，">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/email_1.png">
 
 
@@ -110,7 +110,7 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -133,7 +133,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2019/02/01/net_网络模型详解/">
+  <link rel="canonical" href="https://yummylau.cn/2019/02/01/net_网络模型详解/"/>
 
 
 
@@ -149,7 +149,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -167,7 +167,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -197,7 +197,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -207,7 +207,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -217,7 +217,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -227,7 +227,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -237,7 +237,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -276,11 +276,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2019/02/01/net_网络模型详解/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2019/02/01/net_%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -316,7 +316,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -328,7 +328,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/网络/" itemprop="url" rel="index">
+                  <a href="/categories/%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index">
                     <span itemprop="name">网络</span>
                   </a>
                 </span>
@@ -346,8 +346,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/02/01/net_网络模型详解/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/01/net_网络模型详解/" itemprop="commentCount"></span>
+                <a href="/2019/02/01/net_%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/01/net_%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -380,7 +380,9 @@
 <li>了解网络模型中各层的工作内容及使用协议</li>
 <li>掌握各层中比较核心的协议及运行原理</li>
 </ul>
-<p></p><h2 id="1">协议模型</h2><br>主流网络结构分为 OSI七层协议和五层协议模型<p></p>
+<h2 id="1">协议模型</h2>
+主流网络结构分为 OSI七层协议和五层协议模型
+
 <ul>
 <li>七层：物理层，数据链路层，网络层，传输层，（会话层， 表示层，应用层</li>
 <li>五层：物理层，数据链路层，网络层，传输层，应用层</li>
@@ -399,19 +401,27 @@
 <li><p>简单文件传输协议TFTP</p>
 <p>  使用UDP传输但是有自己的差错改正策略, 只支持文件传输不支持交互</p>
 </li>
-<li>路由信息协议RIP</li>
-<li>动态主机配置协议DHCP</li>
-<li>简单网络管理协议SNMP</li>
+<li><p>路由信息协议RIP</p>
+</li>
+<li><p>动态主机配置协议DHCP</p>
+</li>
+<li><p>简单网络管理协议SNMP</p>
+</li>
 <li><p>网络文件系统NFS（允许打开远地文件，允许读写）</p>
 <p>  上面基于UDP，下面基于TCP</p>
 </li>
-<li><code>简单邮件传送协议SMTP，邮件读取协议POP3/IMAP(重点掌握)</code></li>
-<li>远程终端协议TELNET</li>
-<li>网络虚拟终端 NVT 格式</li>
-<li><code>超文本传送协议HTTP (重点掌握)</code></li>
-<li><code>文件传送协议FTP（重点掌握）</code></li>
-</ul>
+<li><p><code>简单邮件传送协议SMTP，邮件读取协议POP3/IMAP(重点掌握)</code></p>
+</li>
+<li><p>远程终端协议TELNET</p>
+</li>
+<li><p>网络虚拟终端 NVT 格式</p>
+</li>
+<li><p><code>超文本传送协议HTTP (重点掌握)</code></p>
+</li>
+<li><p><code>文件传送协议FTP（重点掌握）</code></p>
 <p>了解应用层, 首先了解下域名系统DNS</p>
+</li>
+</ul>
 <h4 id="1_1_1"> DNS域名系统</h4>
 
 <p>DNS系统主要用于根据域名查询对应的IP地址, 是域名和IP映射的分布式数据库。</p>
@@ -438,7 +448,8 @@
 </ul>
 <p>MIME 在其邮件首部中说明了邮件的数据类型(如文本、声音、图像、视像等)，使用MIME可在邮件中同时传送多种类型的数据。</p>
 <p><strong>邮件的传输流程</strong></p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/email_1.png" width="600" height="400" alt="图片名称" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/email_1.png" width = "600" height = "400" alt="图片名称" align=center />
+
 <p><strong>发送和接收邮件的步骤</strong></p>
 <ol>
 <li>发件人调用 PC 中的用户代理撰写和编辑要发送的邮件。</li>
@@ -452,7 +463,8 @@
 
 <p>FTP服务器进程由：主进程（负责接受新的请求）、从属进程（负责处理单个请求）构成。 传输文件时, FTP客户端和服务端之间建立两个并行的TCP连接。在整个回话期间一直保持打开，FTP客户所发送的传送请求通过该连接发送给服务器端的控制进程。 </p>
 <p><strong>FTP文件传送流程</strong></p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/ftp_1.png" width="600" height="300" alt="图片名称" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/ftp_1.png" width = "600" height = "300" alt="图片名称" align=center />
+
 <h3 id="1_2">传输层</h3>
 
 <blockquote>
@@ -473,9 +485,11 @@
 
 <p>TCP 作为连接双方的基础, 每一条 TCP 链接都对应两个端点, TCP 连接的端点不是主机, 不是主机的IP 地址, 不是应用进程, 也不是运输层的协议端口, TCP 连接的端点叫做套接字(socket)或插口。 </p>
 <p>所谓套接字, 就是socket, 格式为 <code>IP地址:端口号</code>, TCP 连接的唯一确定通讯的两端可表示为 </p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TCP 连接 ::= &#123;socket1, socket2&#125; = &#123;(IP1: port1), (IP2: port2)&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml">TCP 连接 ::= </span><span class="template-variable">&#123;socket1, socket2&#125;</span><span class="language-xml"> = </span><span class="template-variable">&#123;(IP1: port1), (IP2: port2)&#125;</span></span><br></pre></td></tr></table></figure>
+
 <p><strong>TCP报文头部</strong></p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/tcp_1.png" width="600" height="300" alt="图片名称" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/tcp_1.png" width = "600" height = "300" alt="图片名称" align=center />
+
 <p>TCP报文头部长度为 固定20字节 + 可选长度 + 填充, 各字段的含义如下</p>
 <ul>
 <li>源端口和目的端口字段 —— 各占 2 字节。端口是运输层与应用层的服务接口。运输层的复用和分用功能都要通过端口才能实现</li>
@@ -496,16 +510,45 @@
 <blockquote>
 <p>值得注意的是: “MSS (Maximum Segment Size)是 TCP 报文段中的数据字段的最大长度, 数据字段加上 TCP 首部”。<br>MSS 为TCP数据包每次能够传输的最大数据分段, 为了达到最佳的传输效能, TCP协议在建立连接的时候会写上双方的 MSS 值, 而这值的计算往往是</p>
 </blockquote>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">MSS</span> = MTU - IP数据报首部<span class="number">20</span>字节 - TCP数据报头部大小</span><br></pre></td></tr></table></figure>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">MSS</span> <span class="operator">=</span> MTU - IP数据报首部<span class="number">20</span>字节 - TCP数据报头部大小</span><br></pre></td></tr></table></figure>
 <p>默认的 MSS 为 536字节<br>那么 MTU 又是什么东东呢？ 但是从公式上看 MTU 就是 IP 数据包的大小呀 ！如果想进一步了解 MTU, 在下面 <code>网际协议 IP</code> 有涉及到。<br>而这个值的大小是由链路层中帧所能携带的数据字段决定的, 称为 <code>最大传输单元（Maximun Transfer Unit）</code><br>所以一个 TCP 包的大小受到限制 MSS, 如果应用层数据超过 MSS 则会进行分段处理. 但是 UDP 却不同，UDP 可传输数据报（网络层）, 直接把数据报交给网络层, 如果超过IP数据报的总长度, 才会进行分片。</p>
 <p><strong>TCP的有限状态机</strong></p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/tcp_2.png" width="700" height="600" alt="图片名称" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/tcp_2.png" width = "700" height = "600" alt="图片名称" align=center />
+
 <p>TCP的状态机诠释了整个TCP连接到终结的流程, 详情页握手信息见另一篇文章。</p>
-<h4 id="1_2_2">UDP协议</h4><br>发送方 UDP 对应用程序交下来的报文，在添加首部后就向下交付 IP 层。UDP 对应用层交下来的报文，既不合并，也不拆分，而是保留这些报文的边界。也就是说，应用层交给 UDP 多长的报文，UDP 就照样发送，即一次发送一个报文。<br><br>接收方 UDP 对 IP 层交上来的 UDP 用户数据报，在去除首部后就原封不动地交付上层的应用进程，一次交付一个完整的报文。<br><br><br><strong>UDP的数据报格式</strong><br><br><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/udp_1.png" width="500" height="200" alt="图片名称" align="center"><br><br>从上图上看, UDP 把整个数据都交付给网络层处理。UDP传输数据报受限于MTU, 如果下层IP数据报超过该限制则需要IP分片, 而TCP传输报文段受限于MSS, 如果传输报文段超过 MSS 则需要 TCP 分段。<br><br><br><h3 id="1_3">网络层</h3><br><br>传输层和应用层分别提供了通讯数据内容规则和数据传输服务，那么怎么知道传输的目的地在哪里呢 ？在没有细看下面篇章的情况下, 如果让你设计一个网络层, 你会有哪些思路呢 ？<br><br><br><strong>假想场景</strong><br><br>应用层和传输层其实有个贴合显示的场景代入： 某一个淘宝店家 (应用程序) 打包自己的货物 (类应用层), 然后让快递员揽件突突突开车发送给买家（类传输层）。  那么快递员要怎么知道这个包裹要送到哪里呢？ 显然是根据卖家提供的地址。 在互联网上的众多主机便是对应现实中的 house, 所以需要为互联网的主机提供地址服务<br><br><br><strong>主要内容</strong><br><br>为通讯双方设计地址服务, 涉及的协议包括<br><br><em> <code>网际协议IP (重点掌握)</code>
-</em> 地址解析协议ARP（网络层下部）,每一个主机都设有ARP高速缓存, 里面有本局域网上的各主机和路由器的IP地址和硬件地址的映射表。如果表中还没存在目标IP项, 则广播通知所有局域网上的主机，响应者以单播的形式发送硬件地址到广播者。<br>          主要作用是通过 IP 获取 MAC 地址。它的作用和 <code>逆地址解析协议RARP</code> 刚好是相反的。<br><em> 逆地址解析协议RARP,把硬件地址解析成ip地址
-</em> <code>网际控制报文协议ICMP（重点掌握, 网络层上部）</code><br><em> 网际组管理协议IGMP（网络层上部),连接在本地局域网上的多播路由器知道本局域网上是否在主机（其实是主机上的某个进程）参加或退出了某个多播组。
-</em> IP隧道技术,常用于 vpn, 用于多个专用网之间的通讯<br><em> 网络地址转换NAT,比如说一个专用网192.168.0.0内所有主机通过NAT路由（NAT软件，至少有一个全球IP），所有IP数据报都改成全球IP；如果接收到的IP数据包会根据本地的NAT地址转换表来发送给专用网内的主机。
-</em> <code>内部网关协议RIP/OSPF（重点掌握）</code><br>* <code>外部网关协议BGP（重点掌握）</code><br><br>&gt; 重点掌握的协议在下面子篇章中进行详解, 同时还有路由器原理<br><br> 通过中间设备路由器来传输 IP 数据报<br><br><h4 id="1_3_1">网际协议 IP</h4>
+<h4 id="1_2_2">UDP协议</h4>
+发送方 UDP 对应用程序交下来的报文，在添加首部后就向下交付 IP 层。UDP 对应用层交下来的报文，既不合并，也不拆分，而是保留这些报文的边界。也就是说，应用层交给 UDP 多长的报文，UDP 就照样发送，即一次发送一个报文。 
+
+<p>接收方 UDP 对 IP 层交上来的 UDP 用户数据报，在去除首部后就原封不动地交付上层的应用进程，一次交付一个完整的报文。</p>
+<p><strong>UDP的数据报格式</strong></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/udp_1.png" width = "500" height = "200" alt="图片名称" align=center />
+
+<p>从上图上看, UDP 把整个数据都交付给网络层处理。UDP传输数据报受限于MTU, 如果下层IP数据报超过该限制则需要IP分片, 而TCP传输报文段受限于MSS, 如果传输报文段超过 MSS 则需要 TCP 分段。</p>
+<h3 id="1_3">网络层</h3>
+
+<p>传输层和应用层分别提供了通讯数据内容规则和数据传输服务，那么怎么知道传输的目的地在哪里呢 ？在没有细看下面篇章的情况下, 如果让你设计一个网络层, 你会有哪些思路呢 ？ </p>
+<p><strong>假想场景</strong></p>
+<p>应用层和传输层其实有个贴合显示的场景代入： 某一个淘宝店家 (应用程序) 打包自己的货物 (类应用层), 然后让快递员揽件突突突开车发送给买家（类传输层）。  那么快递员要怎么知道这个包裹要送到哪里呢？ 显然是根据卖家提供的地址。 在互联网上的众多主机便是对应现实中的 house, 所以需要为互联网的主机提供地址服务</p>
+<p><strong>主要内容</strong></p>
+<p>为通讯双方设计地址服务, 涉及的协议包括</p>
+<ul>
+<li><code>网际协议IP (重点掌握)</code></li>
+<li>地址解析协议ARP（网络层下部）,每一个主机都设有ARP高速缓存, 里面有本局域网上的各主机和路由器的IP地址和硬件地址的映射表。如果表中还没存在目标IP项, 则广播通知所有局域网上的主机，响应者以单播的形式发送硬件地址到广播者。<pre><code>    主要作用是通过 IP 获取 MAC 地址。它的作用和 `逆地址解析协议RARP` 刚好是相反的。
+</code></pre>
+</li>
+<li>逆地址解析协议RARP,把硬件地址解析成ip地址</li>
+<li><code>网际控制报文协议ICMP（重点掌握, 网络层上部）</code></li>
+<li>网际组管理协议IGMP（网络层上部),连接在本地局域网上的多播路由器知道本局域网上是否在主机（其实是主机上的某个进程）参加或退出了某个多播组。</li>
+<li>IP隧道技术,常用于 vpn, 用于多个专用网之间的通讯</li>
+<li>网络地址转换NAT,比如说一个专用网192.168.0.0内所有主机通过NAT路由（NAT软件，至少有一个全球IP），所有IP数据报都改成全球IP；如果接收到的IP数据包会根据本地的NAT地址转换表来发送给专用网内的主机。</li>
+<li><code>内部网关协议RIP/OSPF（重点掌握）</code></li>
+<li><code>外部网关协议BGP（重点掌握）</code></li>
+</ul>
+<blockquote>
+<p>重点掌握的协议在下面子篇章中进行详解, 同时还有路由器原理</p>
+</blockquote>
+<p> 通过中间设备路由器来传输 IP 数据报</p>
+<h4 id="1_3_1">网际协议 IP</h4>
 
 <p><strong>定义地址</strong> </p>
 <p>使用 32位地址, 以 <code>点分十进制</code> 表示。常见的网络格式为 IP地址 = 网络地址（net-id） + 主机地址（host-id）</p>
@@ -514,48 +557,46 @@
 <thead>
 <tr>
 <th>类型</th>
-<th style="text-align:center">限制</th>
-<th style="text-align:center">net-id有效位数</th>
-<th style="text-align:center">host-id有效位数</th>
-<th style="text-align:center">最大网络数</th>
-<th style="text-align:center">最大主机数</th>
-<th style="text-align:center">IP地址范围</th>
-<th style="text-align:center">私有IP地址范围</th>
+<th align="center">限制</th>
+<th align="center">net-id有效位数</th>
+<th align="center">host-id有效位数</th>
+<th align="center">最大网络数</th>
+<th align="center">最大主机数</th>
+<th align="center">IP地址范围</th>
+<th align="center">私有IP地址范围</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>A类</td>
-<td style="text-align:center">第一位必须是0</td>
-<td style="text-align:center">8-1</td>
-<td style="text-align:center">24</td>
-<td style="text-align:center">126(2^7-2)</td>
-<td style="text-align:center">16777214</td>
-<td style="text-align:center">0.0.0.0-127.255.255.255</td>
-<td style="text-align:center">10.0.0.0-10.255.255.255</td>
+<td align="center">第一位必须是0</td>
+<td align="center">8-1</td>
+<td align="center">24</td>
+<td align="center">126(2^7-2)</td>
+<td align="center">16777214</td>
+<td align="center">0.0.0.0-127.255.255.255</td>
+<td align="center">10.0.0.0-10.255.255.255</td>
 </tr>
 <tr>
 <td>B类</td>
-<td style="text-align:center">前两位必须是10</td>
-<td style="text-align:center">16-2</td>
-<td style="text-align:center">16</td>
-<td style="text-align:center">16384(2^14-2)</td>
-<td style="text-align:center">65534</td>
-<td style="text-align:center">128.0.0.0-191.255.255.255</td>
-<td style="text-align:center">172.16.0.0-172.31.255.255</td>
+<td align="center">前两位必须是10</td>
+<td align="center">16-2</td>
+<td align="center">16</td>
+<td align="center">16384(2^14-2)</td>
+<td align="center">65534</td>
+<td align="center">128.0.0.0-191.255.255.255</td>
+<td align="center">172.16.0.0-172.31.255.255</td>
 </tr>
 <tr>
 <td>C类</td>
-<td style="text-align:center">前三位必须是110</td>
-<td style="text-align:center">24-3</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">2097152(2^21-2)</td>
-<td style="text-align:center">254</td>
-<td style="text-align:center">192.0.0.0-223.255.255.255</td>
-<td style="text-align:center">192.168.0.0-192.168.255.255</td>
+<td align="center">前三位必须是110</td>
+<td align="center">24-3</td>
+<td align="center">8</td>
+<td align="center">2097152(2^21-2)</td>
+<td align="center">254</td>
+<td align="center">192.0.0.0-223.255.255.255</td>
+<td align="center">192.168.0.0-192.168.255.255</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <blockquote>
 <p>上述表格有个 “私有IP地址范围”, 这部分地址无法在英特网中使用, 但是为什么需要从 ABC类抽离这部分 IP 地址呢？<br>了解为需要这两个部分 IP 的是用之前先看看几个通俗的概念。<br>所谓网络数, 即某类型网络的数量, 主机数指的是单个网络中IP的数量<br>公网IP, 即上述表格 “IP地址范围中” 的IP, 公网 IP 的主机可以相互随意访问。<br>内网IP, 即上述表格 “私有IP地址范围” 内的 IP, 也就是子网中使用的 IP</p>
 </blockquote>
@@ -566,47 +607,151 @@
 <thead>
 <tr>
 <th>类型</th>
-<th style="text-align:center">默认子网掩码</th>
-<th style="text-align:center">二进制表示方法</th>
-<th style="text-align:center">子网能容纳的主机数</th>
+<th align="center">默认子网掩码</th>
+<th align="center">二进制表示方法</th>
+<th align="center">子网能容纳的主机数</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>A类</td>
-<td style="text-align:center">255.0.0.0</td>
-<td style="text-align:center">11111111 00000000 00000000 00000000</td>
-<td style="text-align:center">最多1677万</td>
+<td align="center">255.0.0.0</td>
+<td align="center">11111111 00000000 00000000 00000000</td>
+<td align="center">最多1677万</td>
 </tr>
 <tr>
 <td>B类</td>
-<td style="text-align:center">255.255.0.0</td>
-<td style="text-align:center">11111111 11111111 00000000 00000000</td>
-<td style="text-align:center">最多6万</td>
+<td align="center">255.255.0.0</td>
+<td align="center">11111111 11111111 00000000 00000000</td>
+<td align="center">最多6万</td>
 </tr>
 <tr>
 <td>C类</td>
-<td style="text-align:center">255.255.255.0</td>
-<td style="text-align:center">11111111 11111111 11111111 00000000</td>
-<td style="text-align:center">最多253</td>
+<td align="center">255.255.255.0</td>
+<td align="center">11111111 11111111 11111111 00000000</td>
+<td align="center">最多253</td>
 </tr>
-</tbody>
-</table>
-<p>如何选择子网掩码是根据需要容纳的子网主机数量来决定的。比如说想要构建一个 1000 台主机的子网, 则需要的主机地址位至少10位。 此时子网掩码为</p>
-<p>11111111 11111111 11111100 00000000</p>
-<p>可以看出, 该掩码是属于 B 类子网掩码, 所以我们再 B 类的私有 IP 地址中找一个符合条件范围的 176.16.<em>.</em></p>
-<p>10110000 00010000 ??????<strong> <strong>**</strong></strong> （其中 ?????? 为任意 0 或者 1。 这里取 0, 则得到下面 IP）</p>
-<p>10110000 00010000 000000<strong> <strong>**</strong></strong></p>
-<p>那么就得到这 1000 台主机可使用的 IP 有 176.16.1.x, 176.16.2.x, 176.16.3.x</p>
-<p>该子网内的任何 IP 与子网掩码做 <code>与运算</code> 都能得到</p>
-<p>10110000 00010000 00000000 00000000 （176.16.0.0）</p>
-<p>所以它们都在同一个网段 </p>
+<tr>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>如何选择子网掩码是根据需要容纳的子网主机数量来决定的。比如说想要构建一个 1000 台主机的子网, 则需要的主机地址位至少10位。 此时子网掩码为</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>11111111 11111111 11111100 00000000</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>可以看出, 该掩码是属于 B 类子网掩码, 所以我们再 B 类的私有 IP 地址中找一个符合条件范围的 176.16.<em>.</em></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>10110000 00010000 ??????** <strong>****</strong> （其中 ?????? 为任意 0 或者 1。 这里取 0, 则得到下面 IP）</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>10110000 00010000 000000** <strong>****</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>那么就得到这 1000 台主机可使用的 IP 有 176.16.1.x, 176.16.2.x, 176.16.3.x</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>该子网内的任何 IP 与子网掩码做 <code>与运算</code> 都能得到</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>10110000 00010000 00000000 00000000 （176.16.0.0）</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>所以它们都在同一个网段</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
 <blockquote>
 <p>评判两个 IP 地址是否处于同个网段手段是与各自对应的子网掩码做与运算得到的结果是否一致。</p>
 </blockquote>
 <ul>
 <li><p>定义数据报结构</p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/ip_1.png" width="600" height="200" alt="图片名称" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/ip_1.png" width = "600" height = "200" alt="图片名称" align=center />
+
 <p> IP数据包的结构说明</p>
 <ul>
 <li>版本, 4位,  指定 IP 协议版本, 比如 IPv4 等</li>
@@ -625,7 +770,14 @@
 </ul>
 </li>
 </ul>
-<h4 id="1_3_2">网际控制报文协议ICMP</h4><br>常见于 ping, traceroute 等功能, 前者是基于ICMP询问报文, 后者是基于ICMP差错控制报文<br><br>差错报告报文：终点不可达、源站抑制、时间超过、参数问题、改变路由<br><br>询问报文：回送请求或回答、时间戳请求或回答<br>其报文结构<br><br><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/icmp_1.png" width="500" height="200" alt="图片名称" align="center"><br><br><h4 id="1_3_3">内部网关协议RIP/OSPF</h4> 
+<h4 id="1_3_2">网际控制报文协议ICMP</h4>
+常见于 ping, traceroute 等功能, 前者是基于ICMP询问报文, 后者是基于ICMP差错控制报文
+
+<p>差错报告报文：终点不可达、源站抑制、时间超过、参数问题、改变路由</p>
+<p>询问报文：回送请求或回答、时间戳请求或回答<br>其报文结构</p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/icmp_1.png" width = "500" height = "200" alt="图片名称" align=center />
+
+<h4 id="1_3_3">内部网关协议RIP/OSPF</h4> 
 
 <p><strong>RIP协议</strong>, 分布式基于距离向量的路由选择协议</p>
 <ul>
@@ -637,13 +789,15 @@
 </ul>
 </li>
 <li><p>报文格式</p>
-<p>  <img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/rip_1.png" width="500" height="250" alt="图片名称" align="center"></p>
+  <img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/rip_1.png" width = "500" height = "250" alt="图片名称" align=center />
+
 </li>
 </ul>
 <p><strong>OSPF协议</strong>, 使用 Dijkstra 提出的最短路径算法SPF, 它并不表示其他的路由选择协议不是“最短路径优先”，是分布式的链路状态协议。</p>
 <ul>
 <li><p>报文格式</p>
-<p>  <img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/ospf_1.png" width="500" height="300" alt="图片名称" align="center"></p>
+  <img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/ospf_1.png" width = "500" height = "300" alt="图片名称" align=center />
+
 </li>
 </ul>
 <h4 id="1_3_4">外部网关协议BGP</h4> 
@@ -657,11 +811,13 @@
 <li>通知(NOTIFICATION)报文, 用来发送检测到的差错。</li>
 </ol>
 <p><strong>报文格式</strong></p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/bgp_1.png" width="500" height="300" alt="图片名称" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/bgp_1.png" width = "500" height = "300" alt="图片名称" align=center />
+
 <h4 id="1_3_5">路由器详解</h4> 
 
 <p>先看一张计算机网络路由结构图</p>
-<p> <img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/route_1.png" width="600" height="300" alt="图片名称" align="center"></p>
+ <img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/route_1.png" width = "600" height = "300" alt="图片名称" align=center />
+
 <p><strong>分组处理</strong></p>
 <p>从上图结构中可以看到, 分组(数据片)从物理层 -&gt; 链路层 -&gt; 网络层, 将分组送到网络层队列之前需要去除帧首部和尾部。在队列等待处理会存在一定的时延。 等交换结构传送过来的分组需要先进行缓存, 在数据链路层中分别加上帧头部和尾部, 然后交给物理层发送到外部线路。</p>
 <p><strong>路由表和转发表</strong></p>
@@ -679,8 +835,10 @@
 <p>  距离向量路由选择协议的分组传送路由是根据到接收站的hop数或费用决定的，这些信息由各相邻的路由器提供。技术上通常都遵循Bellman－Ford（单源最短路经算法）算法。</p>
 <p>  价值度度量是价值度量是路由器向前传送分组到网中下一个路由器时选择路径所用的量值, 可使用RIP协议或者内部网关路由选择协议IGRP。 路由器可能存在多个端口, 每个端口管理员可以设置价值, 加上把分组传送到目的地所用的代价计算除量值。</p>
 <ul>
-<li>端口1价值10 + 相邻路由器价值17=27</li>
-<li>端口2价值20 + 相邻路由器价值5=25</li>
+<li><p>端口1价值10 + 相邻路由器价值17=27</p>
+</li>
+<li><p>端口2价值20 + 相邻路由器价值5=25</p>
+</li>
 <li><p>端口3价值30 + 相邻路由器价值7=37</p>
 <p>上述三个端口中传送分组代价最小的是端口2, 所以使用端口2进行分发。</p>
 </li>
@@ -701,18 +859,19 @@
 <p>如果前面我们认为一个基本的传送已经好了，当时事实上上面的一系列都是逻辑层面的，我们需要在现实中建立物理连接。把上面的那些内容封装成链路层发送单位（帧），然后加上特定的一些控制信息；MAC地址。</p>
 <p>数据链路层研究的是在同一个局域网中，分组怎样从一个主机传送到另一个主机（不经过路由器）；其协议就是接收方每收到一个帧，就进行CRC检验，若检验正确就收下这个帧，反之则丢弃</p>
 <p><strong>数据帧结构</strong></p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/frame_1.png" width="500" height="150" alt="图片名称" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/frame_1.png" width = "500" height = "150" alt="图片名称" align=center />
+
 <p>帧的传输传输一定是可靠传输,  并且链路是一条无源的点到点的物理线路段, 中间没有任何其他的交换节点</p>
 <p>数据链路层除了有物理线路外, 还必须要通讯协议来控制传输的传输, 如 点对点协议ppp</p>
 <p><strong>点对点协议ppp</strong></p>
 <p>是用户计算机和ISP进行通信时所使用的数据链路协议</p>
 <ul>
 <li><p>协议涉及的范围</p>
-<p>  <img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/frame_2.png" width="500" height="150" alt="图片名称" align="center"></p>
+  <img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/frame_2.png" width = "500" height = "150" alt="图片名称" align=center />
 </li>
 <li><p>ppp协议帧格式</p>
-<p>  <img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/frame_3.png" width="500" height="250" alt="图片名称" align="center"></p>
-</li>
+  <img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/net/frame_3.png" width = "500" height = "250" alt="图片名称" align=center />
+  </li>
 <li><p>工作流程</p>
 <ul>
 <li>当用户拨号接入 ISP 时，路由器的调制解调器对拨号做出确认，并建立一条物理连接。</li>
@@ -723,17 +882,17 @@
 </li>
 </ul>
 <h3 id="1_5">物理层</h3> 
+   
+这个是把我们封装的帧转成比特流，通过物理路径传过去我们的通信方
 
-<p>这个是把我们封装的帧转成比特流，通过物理路径传过去我们的通信方</p>
 <p><strong>物理层规程（物理层协议）</strong></p>
 <ul>
 <li>数据(data)——运送消息的实体。</li>
 <li>信号(signal)——数据的电气的或电磁的表现。</li>
 <li>“模拟的”(analogous)——代表消息的参数的取值是连续的。</li>
 <li>“数字的”(digital)——代表消息的参数的取值是离散的。</li>
-<li>码元(code)——在使用时间域（或简称为时域）的波形表示数字信号时，代表不同离散数值的基本波形。</li>
+<li>码元(code)——在使用时间域（或简称为时域）的波形表示数字信号时，代表不同离散数值的基本波形。在任何信道中，码元传输的速率是有上限的，否则就会出现码间串扰的问题，使接收端对码元的判决（即识别）成为不可能。（奈氏准则）如果信道的频带越宽，也就是能够通过的信号高频分量越多，那么就可以用更高的速率传送码元而不出现码间串扰。这涉及到 “信号调制”, “速率问题”及“信道复用问题”。</li>
 </ul>
-<p>在任何信道中，码元传输的速率是有上限的，否则就会出现码间串扰的问题，使接收端对码元的判决（即识别）成为不可能。（奈氏准则）如果信道的频带越宽，也就是能够通过的信号高频分量越多，那么就可以用更高的速率传送码元而不出现码间串扰。这涉及到 “信号调制”, “速率问题”及“信道复用问题”。</p>
 
       
     </div>
@@ -754,7 +913,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2019/02/01/net_网络模型详解/" title="网络模型详解">http://yummylau.com/2019/02/01/net_网络模型详解/</a>
+    <a href="https://yummylau.cn/2019/02/01/net_%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/" title="网络模型详解">https://yummylau.cn/2019/02/01/net_%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -769,7 +928,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/网络/" rel="tag"># 网络</a>
+            <a href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag"># 网络</a>
           
         </div>
       
@@ -782,8 +941,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/01/net_http及https详解/" rel="next" title="http及https详解">
-                <i class="fa fa-chevron-left"></i> http及https详解
+              <a href="/2018/09/26/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2018-09-26_Messenger/" rel="next" title="系统源码解析——Messenger">
+                <i class="fa fa-chevron-left"></i> 系统源码解析——Messenger
               </a>
             
           </div>
@@ -792,8 +951,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/02/28/java_2019-02-28_字节码内容表格/" rel="prev" title="Java字节码内容的那些表">
-                Java字节码内容的那些表 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/02/01/net_http%E5%8F%8Ahttps%E8%AF%A6%E8%A7%A3/" rel="prev" title="http及https详解">
+                http及https详解 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -863,10 +1022,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -941,7 +1102,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">协议模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1_1"><span class="nav-number">1.1.</span> <span class="nav-text">应用层</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1_1_1"><span class="nav-number">1.1.1.</span> <span class="nav-text"> DNS域名系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_1_2"><span class="nav-number">1.1.2.</span> <span class="nav-text">简单邮件传送协议SMTP，邮件读取协议POP3/IMAP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_1_3"><span class="nav-number">1.1.3.</span> <span class="nav-text">文件传送协议FTP</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1_2"><span class="nav-number">1.2.</span> <span class="nav-text">传输层</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1_2_1"><span class="nav-number">1.2.1.</span> <span class="nav-text">TCP协议</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_2_2"><span class="nav-number">1.2.2.</span> <span class="nav-text">UDP协议</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1_3"><span class="nav-number">1.3.</span> <span class="nav-text">网络层</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1_3_1"><span class="nav-number">1.3.1.</span> <span class="nav-text">网际协议 IP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_3_2"><span class="nav-number">1.3.2.</span> <span class="nav-text">网际控制报文协议ICMP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_3_3"><span class="nav-number">1.3.3.</span> <span class="nav-text">内部网关协议RIP/OSPF</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_3_4"><span class="nav-number">1.3.4.</span> <span class="nav-text">外部网关协议BGP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_3_5"><span class="nav-number">1.3.5.</span> <span class="nav-text">路由器详解</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1_4"><span class="nav-number">1.4.</span> <span class="nav-text">数据链路层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1_5"><span class="nav-number">1.5.</span> <span class="nav-text">物理层</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">协议模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1_1"><span class="nav-number">1.1.</span> <span class="nav-text">应用层</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1_1_1"><span class="nav-number">1.1.1.</span> <span class="nav-text"> DNS域名系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_1_2"><span class="nav-number">1.1.2.</span> <span class="nav-text">简单邮件传送协议SMTP，邮件读取协议POP3&#x2F;IMAP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_1_3"><span class="nav-number">1.1.3.</span> <span class="nav-text">文件传送协议FTP</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1_2"><span class="nav-number">1.2.</span> <span class="nav-text">传输层</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1_2_1"><span class="nav-number">1.2.1.</span> <span class="nav-text">TCP协议</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_2_2"><span class="nav-number">1.2.2.</span> <span class="nav-text">UDP协议</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1_3"><span class="nav-number">1.3.</span> <span class="nav-text">网络层</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1_3_1"><span class="nav-number">1.3.1.</span> <span class="nav-text">网际协议 IP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_3_2"><span class="nav-number">1.3.2.</span> <span class="nav-text">网际控制报文协议ICMP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_3_3"><span class="nav-number">1.3.3.</span> <span class="nav-text">内部网关协议RIP&#x2F;OSPF</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_3_4"><span class="nav-number">1.3.4.</span> <span class="nav-text">外部网关协议BGP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1_3_5"><span class="nav-number">1.3.5.</span> <span class="nav-text">路由器详解</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1_4"><span class="nav-number">1.4.</span> <span class="nav-text">数据链路层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1_5"><span class="nav-number">1.5.</span> <span class="nav-text">物理层</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -961,7 +1122,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

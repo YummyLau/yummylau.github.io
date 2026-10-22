@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="RxJava,">
+  <meta name="keywords" content="RxJava," />
 
 
 
@@ -78,24 +78,24 @@
 
 
 <meta name="description" content="最近 Code Review 项目的时候，发现有一些场景使用 rxjava 的写法并不对。后来在团队一问才了解有些 api 大家虽然使用熟悉，但是内部的原理及 api 的使用场景理解得并不好。所以希望在技术认识一致性的前提下，把 rxjava 的体会同步给伙伴。  Rxjava从4年前走进 Androider 的视野后非常火，除了编程风格深受喜爱外，开发效率的提升也是至关重要。一直以来 Rxja">
-<meta name="keywords" content="RxJava">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Rxjava 的归纳思考">
-<meta property="og:url" content="http://yummylau.com/2020/03/31/rxjava_2020-03-31_rxjava思路总结/index.html">
+<meta property="og:url" content="https://yummylau.cn/2020/03/31/rxjava_2020-03-31_rxjava%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="YummyLau">
 <meta property="og:description" content="最近 Code Review 项目的时候，发现有一些场景使用 rxjava 的写法并不对。后来在团队一问才了解有些 api 大家虽然使用熟悉，但是内部的原理及 api 的使用场景理解得并不好。所以希望在技术认识一致性的前提下，把 rxjava 的体会同步给伙伴。  Rxjava从4年前走进 Androider 的视野后非常火，除了编程风格深受喜爱外，开发效率的提升也是至关重要。一直以来 Rxja">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-05T03:40:49.658Z">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-03-30T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.050Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="RxJava">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Rxjava 的归纳思考">
-<meta name="twitter:description" content="最近 Code Review 项目的时候，发现有一些场景使用 rxjava 的写法并不对。后来在团队一问才了解有些 api 大家虽然使用熟悉，但是内部的原理及 api 的使用场景理解得并不好。所以希望在技术认识一致性的前提下，把 rxjava 的体会同步给伙伴。  Rxjava从4年前走进 Androider 的视野后非常火，除了编程风格深受喜爱外，开发效率的提升也是至关重要。一直以来 Rxja">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2020/03/31/rxjava_2020-03-31_rxjava思路总结/">
+  <link rel="canonical" href="https://yummylau.cn/2020/03/31/rxjava_2020-03-31_rxjava思路总结/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2020/03/31/rxjava_2020-03-31_rxjava思路总结/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2020/03/31/rxjava_2020-03-31_rxjava%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/03/31/rxjava_2020-03-31_rxjava思路总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/31/rxjava_2020-03-31_rxjava思路总结/" itemprop="commentCount"></span>
+                <a href="/2020/03/31/rxjava_2020-03-31_rxjava%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/31/rxjava_2020-03-31_rxjava%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -374,38 +374,45 @@
 <li><p>理解 <strong>Observer/Subscriber</strong> 观察者是如何消费的，有哪些 api 可以符合项目场景使用.</p>
 </li>
 <li><p>观察者和被观察者的关联是通过 <strong>Observable#subscribe</strong> 绑定的,进而触发事件.</p>
-  <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">observable</span><span class="selector-class">.subscribe</span>(observer)</span><br><span class="line"><span class="comment">//最终调用于</span></span><br><span class="line"><span class="selector-tag">observableOnSubscribe</span><span class="selector-class">.subscribe</span>(observer);</span><br></pre></td></tr></table></figure>
+  <figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">observable<span class="selector-class">.subscribe</span>(observer)</span><br><span class="line"><span class="comment">//最终调用于</span></span><br><span class="line">observableOnSubscribe<span class="selector-class">.subscribe</span>(observer);</span><br></pre></td></tr></table></figure>
+<p>也就是说，当在绑定的那一刻，被观察者才会开始触发事件，消费者才开始消费事件，而这一过程全部在 <em>observableOnSubscribe#subscribe</em> 被处理了。</p>
 </li>
 </ul>
-<p>也就是说，当在绑定的那一刻，被观察者才会开始触发事件，消费者才开始消费事件，而这一过程全部在 <em>observableOnSubscribe#subscribe</em> 被处理了。</p>
 <h3 id="掌握变换的原理机制才可以对操作符的使用游刃有余"><a href="#掌握变换的原理机制才可以对操作符的使用游刃有余" class="headerlink" title="掌握变换的原理机制才可以对操作符的使用游刃有余"></a>掌握变换的原理机制才可以对操作符的使用游刃有余</h3><p><strong>lift变换</strong> 是操作符的基础，<strong>lift变换</strong> 的本质就是  <em>“针对事件序列的处理和再发送“</em> 。</p>
 <p>基于操作符生成新的观察者，新的观察者重新订阅原被观察者。核心逻辑如下：</p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Observer <span class="keyword">new</span><span class="type">Observer</span> = operator.apply(observer);</span><br><span class="line">source.subscribe(<span class="keyword">new</span><span class="type">Observer</span>)</span><br><span class="line"><span class="comment">//等价于 </span></span><br><span class="line">observableOnSubscribe.subscribe(<span class="keyword">new</span><span class="type">Observer</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Observer newObserver = <span class="keyword">operator</span>.<span class="built_in">apply</span>(observer);</span><br><span class="line">source.<span class="built_in">subscribe</span>(newObserver)</span><br><span class="line"><span class="comment">//等价于 </span></span><br><span class="line">observableOnSubscribe.<span class="built_in">subscribe</span>(newObserver)</span><br></pre></td></tr></table></figure>
+
 <p>每次经过 <em>lift()</em> 调用返回的 <em>observable</em> 会成为下游 <strong>Observable#subscribe</strong> 的调用者，而新的 <em>observable</em>  在执行 <strong>Observable#subscribe</strong> 的时候，会完成上面代码端的逻辑。不要忘记,新的 Observable 中持有的 source 就是 上游的 <em>observable</em>，<em>observableOnSubscribe</em> 就是上游 <em>observable</em> 的 <em>observableOnSubscribe</em>。</p>
 <p>那么 N 次的变换抽象为</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">Observable</span><span class="selector-class">.lift1</span>()<span class="selector-class">.lift2</span>()..<span class="selector-class">.liftN-1</span>()<span class="selector-class">.liftN</span>()<span class="selector-class">.subscribe</span>(<span class="selector-tag">observer</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Observable<span class="selector-class">.lift1</span>()<span class="selector-class">.lift2</span>()..<span class="selector-class">.liftN-1</span>()<span class="selector-class">.liftN</span>()<span class="selector-class">.subscribe</span>(observer)</span><br></pre></td></tr></table></figure>
+
 <p>第 N 次 <em>lift()</em> 返回的 <em>observable#subscribe</em> 逻辑为 </p>
-<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Observer observerN = operatorN.apply(observerN<span class="number">-1</span>);</span><br><span class="line">ObservableN<span class="number">-1.</span>subscribe(observerN)</span><br></pre></td></tr></table></figure>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Observer observerN <span class="operator">=</span> operatorN.apply(observerN-<span class="number">1</span>)<span class="comment">;</span></span><br><span class="line">ObservableN-<span class="number">1</span>.subscribe(observerN)</span><br></pre></td></tr></table></figure>
 <p>经过 N-1 次递归订阅之后，等价为</p>
-<figure class="highlight sqf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//经过 N-1 次递归订阅之后，等价为</span></span><br><span class="line">Observer observer1 = operatorN1.<span class="built_in">apply</span>(observer);</span><br><span class="line">Observer observer2 = operatorN2.<span class="built_in">apply</span>(observer1);</span><br><span class="line">......</span><br><span class="line">Observer observerN-<span class="number">2</span> = operatorN-<span class="number">2</span>.<span class="built_in">apply</span>(observerN-<span class="number">3</span>);</span><br><span class="line">Observer observerN-<span class="number">1</span> = operatorN-<span class="number">1</span>.<span class="built_in">apply</span>(observerN-<span class="number">2</span>);</span><br><span class="line">Observer observerN = operatorN.<span class="built_in">apply</span>(observerN-<span class="number">1</span>);</span><br><span class="line">Observable.subscribe(observerN)   <span class="comment">//等价于下一句</span></span><br><span class="line">observableOnSubscribe.subscribe(observerN)  <span class="comment">//等价于下一句</span></span><br><span class="line">observableOnSubscribe.subscribe(operatorN.<span class="built_in">apply</span>( ... ( operator3.<span class="built_in">apply</span>( operator2.<span class="built_in">apply</span>( operator1.<span class="built_in">apply</span>( observer ) ) ) ) )  )</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//经过 N-1 次递归订阅之后，等价为</span></span><br><span class="line">Observer observer1 = operatorN<span class="number">1.</span><span class="built_in">apply</span>(observer);</span><br><span class="line">Observer observer2 = operatorN<span class="number">2.</span><span class="built_in">apply</span>(observer1);</span><br><span class="line">......</span><br><span class="line">Observer observerN<span class="number">-2</span> = operatorN<span class="number">-2.</span><span class="built_in">apply</span>(observerN<span class="number">-3</span>);</span><br><span class="line">Observer observerN<span class="number">-1</span> = operatorN<span class="number">-1.</span><span class="built_in">apply</span>(observerN<span class="number">-2</span>);</span><br><span class="line">Observer observerN = operatorN.<span class="built_in">apply</span>(observerN<span class="number">-1</span>);</span><br><span class="line">Observable.<span class="built_in">subscribe</span>(observerN)   <span class="comment">//等价于下一句</span></span><br><span class="line">observableOnSubscribe.<span class="built_in">subscribe</span>(observerN)  <span class="comment">//等价于下一句</span></span><br><span class="line">observableOnSubscribe.<span class="built_in">subscribe</span>(operatorN.<span class="built_in">apply</span>( ... ( <span class="keyword">operator</span><span class="number">3.</span><span class="built_in">apply</span>( <span class="keyword">operator</span><span class="number">2.</span><span class="built_in">apply</span>( <span class="keyword">operator</span><span class="number">1.</span><span class="built_in">apply</span>( observer ) ) ) ) )  )</span><br></pre></td></tr></table></figure>
+
 <p><em>每一次变换无非就是生成新的观察者，而新的观察者重新订阅原被观察者。当下游完成订阅之后，向上游搜索源被观察者。无论经过多少次变换 最终observableOnSubscribe 对象就是源被观察者 observable 创建时持有的 observableOnSubscribe 对象</em></p>
 <p><strong>基于 lift 变换的线程切换 subscribeOn 和 observeOn</strong></p>
 <ul>
 <li><p><em>subscribeOn</em> 线程切换的逻辑为 <strong>“通过 scheduler 把 source.subscribe(observer)  进行线程切换”</strong>。核心代码如下：</p>
-  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> SubscribeOnObserver&lt;T&gt; <span class="keyword">parent</span> = <span class="keyword">new</span> SubscribeOnObserver&lt;T&gt;(observer);</span><br><span class="line">scheduler.scheduleDirect(<span class="keyword">new</span> SubscribeTask(<span class="keyword">parent</span>))</span><br><span class="line"><span class="comment">//SubscribeTask 本质是一个 runnable</span></span><br><span class="line"><span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">SubscribeTask</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> SubscribeOnObserver&lt;T&gt; <span class="keyword">parent</span>;</span><br><span class="line"></span><br><span class="line">    SubscribeTask(SubscribeOnObserver&lt;T&gt; <span class="keyword">parent</span>) &#123;</span><br><span class="line">        this.<span class="keyword">parent</span> = <span class="keyword">parent</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    <span class="keyword">public</span> void run() &#123;</span><br><span class="line">        source.subscribe(<span class="keyword">parent</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> SubscribeOnObserver&lt;T&gt; parent = <span class="keyword">new</span> SubscribeOnObserver&lt;T&gt;(observer);</span><br><span class="line">scheduler.scheduleDirect(<span class="keyword">new</span> SubscribeTask(parent))</span><br><span class="line"><span class="comment">//SubscribeTask 本质是一个 runnable</span></span><br><span class="line"><span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">SubscribeTask</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> SubscribeOnObserver&lt;T&gt; parent;</span><br><span class="line"></span><br><span class="line">    SubscribeTask(SubscribeOnObserver&lt;T&gt; parent) &#123;</span><br><span class="line">        <span class="keyword">this</span>.parent = parent;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        source.subscribe(parent);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>source* 为上游 <strong>Observable</strong> 对象，所以每一次 <em>subscribeOn</em> 的调用都作用到其上游上，并最终调用源 <em>observableOnSubscribe.subscribe</em>。所有如果出现多次调用 <em>subscribeOn</em> ，实际上只有最上游的调用才是决定 <em>observableOnSubscribe.subscribe</em> 最终的线程环境。</p>
 </li>
 </ul>
-<p><em>source</em> 为上游 <strong>Observable</strong> 对象，所以每一次 <em>subscribeOn</em> 的调用都作用到其上游上，并最终调用源 <em>observableOnSubscribe.subscribe</em>。所有如果出现多次调用 <em>subscribeOn</em> ，实际上只有最上游的调用才是决定 <em>observableOnSubscribe.subscribe</em> 最终的线程环境。</p>
 <ul>
 <li><p><em>observerOn</em> 线程切换的逻辑为 <strong>“通过 scheduler 把 operator.apply(observer) 进行线程切换”</strong>。核心代码如下：</p>
-  <figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">source.subscribe(<span class="keyword">new</span> <span class="type">ObserveOnObserver</span>&lt;<span class="type">T</span>&gt;(observer, w, delayError, bufferSize))</span><br><span class="line"><span class="comment">//ObserveOnObserver 本质是一个 runable ,队列 和 观察者, Observer 的消费行为队列化并交给 scheduler 处理.</span></span><br><span class="line">static <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">ObserveOnObserver&lt;T&gt;</span> <span class="keyword">extends</span> <span class="title">BasicIntQueueDisposable&lt;T&gt;</span> <span class="title">implements</span> <span class="title">Observer&lt;T&gt;</span>, <span class="title">Runnable</span></span></span><br></pre></td></tr></table></figure>
-<p>  则下游 <em>subscribe</em> 触发时, <em>observer</em> 获取到的是下游的观察者,而 <em>observer</em> 的行为会被 <em>scheduler</em> 进行线程调度.故<br><em>observerOn</em> 的线程切换会影响下游的线程环境。</p>
+  <figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">source.subscribe(<span class="keyword">new</span> <span class="type">ObserveOnObserver</span>&lt;<span class="type">T</span>&gt;(observer, w, delayError, bufferSize))</span><br><span class="line"><span class="comment">//ObserveOnObserver 本质是一个 runable ,队列 和 观察者, Observer 的消费行为队列化并交给 scheduler 处理.</span></span><br><span class="line">static <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">ObserveOnObserver&lt;T&gt;</span> <span class="keyword">extends</span> <span class="title">BasicIntQueueDisposable&lt;T&gt;</span> <span class="title">implements</span> <span class="title">Observer&lt;T&gt;</span>, <span class="title">Runnable</span> </span></span><br></pre></td></tr></table></figure>
+
+<p>  则下游 <em>subscribe</em> 触发时, <em>observer</em> 获取到的是下游的观察者,而 <em>observer</em> 的行为会被 <em>scheduler</em> 进行线程调度.故 </p>
+</li>
+<li><p>observerOn* 的线程切换会影响下游的线程环境。</p>
 </li>
 </ul>
 <p>上述 N 次变换有</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">observableOnSubscribe</span><span class="selector-class">.subscribe</span>(<span class="selector-tag">operatorN</span><span class="selector-class">.apply</span>( ... ( <span class="selector-tag">operator3</span><span class="selector-class">.apply</span>( <span class="selector-tag">operator2</span><span class="selector-class">.apply</span>( <span class="selector-tag">operator1</span><span class="selector-class">.apply</span>( <span class="selector-tag">observer</span> ) ) ) ) )  )</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">observableOnSubscribe.<span class="built_in">subscribe</span>(operatorN.<span class="built_in">apply</span>( ... ( <span class="keyword">operator</span><span class="number">3.</span><span class="built_in">apply</span>( <span class="keyword">operator</span><span class="number">2.</span><span class="built_in">apply</span>( <span class="keyword">operator</span><span class="number">1.</span><span class="built_in">apply</span>( observer ) ) ) ) )  )</span><br></pre></td></tr></table></figure>
+
 <p>存在线程切换作用后为</p>
-<p><strong>observableOnSubscribe.subscribe</strong>   &lt;== <em>subscribeOn</em><br><em>observeOn</em> ==&gt;    <strong>(operatorN.apply( … ( operator3.apply( operator2.apply( operator1.apply( observer ) ) ) ) )</strong></p>
+<p><strong>observableOnSubscribe.subscribe</strong>   &lt;== *subscribeOn*<br>*observeOn* ==&gt;    <strong>(operatorN.apply( … ( operator3.apply( operator2.apply( operator1.apply( observer ) ) ) ) )</strong></p>
 <blockquote>
 <p>灵活使用变换才能让承载着复杂业务逻的代码代码变得干净清晰</p>
 </blockquote>
@@ -429,7 +436,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2020/03/31/rxjava_2020-03-31_rxjava思路总结/" title="Rxjava 的归纳思考">http://yummylau.com/2020/03/31/rxjava_2020-03-31_rxjava思路总结/</a>
+    <a href="https://yummylau.cn/2020/03/31/rxjava_2020-03-31_rxjava%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/" title="Rxjava 的归纳思考">https://yummylau.cn/2020/03/31/rxjava_2020-03-31_rxjava%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -457,7 +464,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/03/30/Android_2016-08-28_Androidl开发踩坑录/" rel="next" title="Android开发踩坑经验贴(持续更新...)">
+              <a href="/2020/03/30/Android_2016-08-28_Androidl%E5%BC%80%E5%8F%91%E8%B8%A9%E5%9D%91%E5%BD%95/" rel="next" title="Android开发踩坑经验贴(持续更新...)">
                 <i class="fa fa-chevron-left"></i> Android开发踩坑经验贴(持续更新...)
               </a>
             
@@ -467,7 +474,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/04/01/源码解析_2020-04-01_rxpermission/" rel="prev" title="系统源码解析——RxPermissions">
+              <a href="/2020/04/01/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_2020-04-01_rxpermission/" rel="prev" title="系统源码解析——RxPermissions">
                 系统源码解析——RxPermissions <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -538,10 +545,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -616,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#理解观察者、被观察者的关联及事件触发"><span class="nav-number">1.</span> <span class="nav-text">理解观察者、被观察者的关联及事件触发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#掌握变换的原理机制才可以对操作符的使用游刃有余"><span class="nav-number">2.</span> <span class="nav-text">掌握变换的原理机制才可以对操作符的使用游刃有余</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%90%86%E8%A7%A3%E8%A7%82%E5%AF%9F%E8%80%85%E3%80%81%E8%A2%AB%E8%A7%82%E5%AF%9F%E8%80%85%E7%9A%84%E5%85%B3%E8%81%94%E5%8F%8A%E4%BA%8B%E4%BB%B6%E8%A7%A6%E5%8F%91"><span class="nav-number">1.</span> <span class="nav-text">理解观察者、被观察者的关联及事件触发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%8C%E6%8F%A1%E5%8F%98%E6%8D%A2%E7%9A%84%E5%8E%9F%E7%90%86%E6%9C%BA%E5%88%B6%E6%89%8D%E5%8F%AF%E4%BB%A5%E5%AF%B9%E6%93%8D%E4%BD%9C%E7%AC%A6%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B8%B8%E5%88%83%E6%9C%89%E4%BD%99"><span class="nav-number">2.</span> <span class="nav-text">掌握变换的原理机制才可以对操作符的使用游刃有余</span></a></li></ol></div>
             
 
           </div>
@@ -636,7 +645,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

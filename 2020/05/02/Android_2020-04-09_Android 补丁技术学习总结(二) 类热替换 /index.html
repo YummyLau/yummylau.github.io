@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="热修复,">
+  <meta name="keywords" content="热修复," />
 
 
 
@@ -78,24 +78,24 @@
 
 
 <meta name="description" content="所谓 热替换，指的是在不需要重启应用的前提下修复类的已知问题。 如果一个类已经被虚拟机所加载，要修正该类的某些方法，只能通过实现 热替换 来实现：”在 navite 层替换到对应被虚拟机加载过的类的方法”。在业界还有其他冷启动的方案，比如 tinker，让 Classloader 去加载新的类，而原来的类还在虚拟机中，不重启应用是无法加载新的类的。 以阿里 Andfix 开源项目 及 Sophix">
-<meta name="keywords" content="热修复">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android 补丁技术学习总结(二) 类热替换">
-<meta property="og:url" content="http://yummylau.com/2020/05/02/Android_2020-04-09_Android 补丁技术学习总结(二) 类热替换 /index.html">
+<meta property="og:url" content="https://yummylau.cn/2020/05/02/Android_2020-04-09_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%BA%8C)%20%E7%B1%BB%E7%83%AD%E6%9B%BF%E6%8D%A2%20/index.html">
 <meta property="og:site_name" content="YummyLau">
 <meta property="og:description" content="所谓 热替换，指的是在不需要重启应用的前提下修复类的已知问题。 如果一个类已经被虚拟机所加载，要修正该类的某些方法，只能通过实现 热替换 来实现：”在 navite 层替换到对应被虚拟机加载过的类的方法”。在业界还有其他冷启动的方案，比如 tinker，让 Classloader 去加载新的类，而原来的类还在虚拟机中，不重启应用是无法加载新的类的。 以阿里 Andfix 开源项目 及 Sophix">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-05-02T11:49:26.742Z">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-05-02T10:00:02.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.046Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="热修复">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android 补丁技术学习总结(二) 类热替换">
-<meta name="twitter:description" content="所谓 热替换，指的是在不需要重启应用的前提下修复类的已知问题。 如果一个类已经被虚拟机所加载，要修正该类的某些方法，只能通过实现 热替换 来实现：”在 navite 层替换到对应被虚拟机加载过的类的方法”。在业界还有其他冷启动的方案，比如 tinker，让 Classloader 去加载新的类，而原来的类还在虚拟机中，不重启应用是无法加载新的类的。 以阿里 Andfix 开源项目 及 Sophix">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2020/05/02/Android_2020-04-09_Android 补丁技术学习总结(二) 类热替换 /">
+  <link rel="canonical" href="https://yummylau.cn/2020/05/02/Android_2020-04-09_Android 补丁技术学习总结(二) 类热替换 /"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2020/05/02/Android_2020-04-09_Android 补丁技术学习总结(二) 类热替换 /">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2020/05/02/Android_2020-04-09_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%BA%8C)%20%E7%B1%BB%E7%83%AD%E6%9B%BF%E6%8D%A2%20/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -313,7 +313,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android进阶/" itemprop="url" rel="index">
+                  <a href="/categories/Android%E8%BF%9B%E9%98%B6/" itemprop="url" rel="index">
                     <span itemprop="name">Android进阶</span>
                   </a>
                 </span>
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/05/02/Android_2020-04-09_Android 补丁技术学习总结(二) 类热替换 /#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/05/02/Android_2020-04-09_Android 补丁技术学习总结(二) 类热替换 /" itemprop="commentCount"></span>
+                <a href="/2020/05/02/Android_2020-04-09_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%BA%8C)%20%E7%B1%BB%E7%83%AD%E6%9B%BF%E6%8D%A2%20/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/05/02/Android_2020-04-09_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%BA%8C)%20%E7%B1%BB%E7%83%AD%E6%9B%BF%E6%8D%A2%20/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -362,43 +362,45 @@
       
         <p>所谓 <strong>热替换</strong>，指的是在不需要重启应用的前提下修复类的已知问题。</p>
 <p>如果一个类已经被虚拟机所加载，要修正该类的某些方法，只能通过实现 <strong>热替换</strong> 来实现：”在 <strong>navite</strong> 层替换到对应被虚拟机加载过的类的方法”。在业界还有其他冷启动的方案，比如 <em>tinker</em>，让 <em>Classloader</em> 去加载新的类，而原来的类还在虚拟机中，不重启应用是无法加载新的类的。</p>
-<p>以阿里 <strong>Andfix</strong> <a href="https://github.com/alibaba/AndFix" target="_blank" rel="noopener">开源项目</a> 及 <strong>Sophix</strong> 方案为分析。</p>
+<p>以阿里 <strong>Andfix</strong> <a href="https://github.com/alibaba/AndFix">开源项目</a> 及 <strong>Sophix</strong> 方案为分析。</p>
 <ol>
-<li><strong><a href="https://github.com/alibaba/AndFix/blob/master/src/com/alipay/euler/andfix/AndFix.java" target="_blank" rel="noopener">AndFix#replaceMethod(Method src,Method dest)</a></strong> 为 Java 层替换错误方法的入口，通过 JNI 调用 Navite 层代码</li>
-<li><p><strong><a href="https://github.com/alibaba/AndFix/blob/master/jni/andfix.cpp" target="_blank" rel="noopener">andifx#replaceMethod</a></strong> 为 Navite 层被上层所调用的代码,对虚拟机内的方法进行 ”替换“</p>
- <figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">	static void replaceMethod(<span class="keyword">JNIEnv* </span>env, <span class="keyword">jclass </span>clazz, <span class="keyword">jobject </span>src,<span class="keyword">jobject </span>dest) &#123;</span><br><span class="line">		if (isArt) &#123;</span><br><span class="line">			art_replaceMethod(env, src, dest)<span class="comment">;</span></span><br><span class="line">		&#125; else &#123;</span><br><span class="line">			dalvik_replaceMethod(env, src, dest)<span class="comment">;</span></span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p> 代码区分了 Dalvik 虚拟机和 Art 虚拟机的不同实现</p>
-<p> <strong><a href="https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace.cpp" target="_blank" rel="noopener">art_method_replace#art_replaceMethod</a></strong> 实现 Art 虚拟机上的替换</p>
- <figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">extern void __attribute__ ((visibility (<span class="string">"hidden"</span>))) art_replaceMethod(JNIEnv* <span class="keyword">env</span>, jobject src, jobject dest) &#123;</span><br><span class="line">	    <span class="keyword">if</span> (apilevel &gt; <span class="number">23</span>) &#123;</span><br><span class="line">	        replace_7_0(<span class="keyword">env</span>, src, dest);</span><br><span class="line">	    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (apilevel &gt; <span class="number">22</span>) &#123;</span><br><span class="line">			replace_6_0(<span class="keyword">env</span>, src, dest);</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (apilevel &gt; <span class="number">21</span>) &#123;</span><br><span class="line">			replace_5_1(<span class="keyword">env</span>, src, dest);</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (apilevel &gt; <span class="number">19</span>) &#123;</span><br><span class="line">			replace_5_0(<span class="keyword">env</span>, src, dest);</span><br><span class="line">	    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	        replace_4_4(<span class="keyword">env</span>, src, dest);</span><br><span class="line">	    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p><strong><a href="https://github.com/alibaba/AndFix/blob/master/src/com/alipay/euler/andfix/AndFix.java">AndFix#replaceMethod(Method src,Method dest)</a></strong> 为 Java 层替换错误方法的入口，通过 JNI 调用 Navite 层代码</p>
 </li>
-</ol>
-<pre><code>不同的虚拟机版本，由于虚拟机底层数据结构并不相同，所以还进一步针对不同 Android 版本再做区分
-
-* **[art_method_replace_4_4#replace_4_4](https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_4_4.cpp)**
-* **[art_method_replace_5_0#replace_5_0](https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_5_0.cpp)**
-* **[art_method_replace_5_1#replace_5_1](https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_5_1.cpp)**
-* **[art_method_replace_6_0#replace_6_0](https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_6_0.cpp)**
-* **[art_method_replace_7_0#replace_7_0](https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_7_0.cpp)**
-</code></pre><ol>
+<li><p><strong><a href="https://github.com/alibaba/AndFix/blob/master/jni/andfix.cpp">andifx#replaceMethod</a></strong> 为 Navite 层被上层所调用的代码,对虚拟机内的方法进行 ”替换“</p>
+ <figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">	static void <span class="built_in">replaceMethod</span>(JNIEnv* env, jclass clazz, jobject src,jobject dest) &#123;</span><br><span class="line">		if (isArt) &#123;</span><br><span class="line">			<span class="built_in">art_replaceMethod</span>(env, src, dest);</span><br><span class="line">		&#125; else &#123;</span><br><span class="line">			<span class="built_in">dalvik_replaceMethod</span>(env, src, dest);</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 代码区分了 Dalvik 虚拟机和 Art 虚拟机的不同实现</p>
+<p> <strong><a href="https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace.cpp">art_method_replace#art_replaceMethod</a></strong> 实现 Art 虚拟机上的替换</p>
+ <figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">extern void __attribute__ ((visibility (&quot;hidden&quot;))) <span class="built_in">art_replaceMethod</span>(JNIEnv* env, jobject src, jobject dest) &#123;</span><br><span class="line">	    if (apilevel &gt; <span class="number">23</span>) &#123;</span><br><span class="line">	        <span class="built_in">replace_7_0</span>(env, src, dest);</span><br><span class="line">	    &#125; else if (apilevel &gt; <span class="number">22</span>) &#123;</span><br><span class="line">			<span class="built_in">replace_6_0</span>(env, src, dest);</span><br><span class="line">		&#125; else if (apilevel &gt; <span class="number">21</span>) &#123;</span><br><span class="line">			<span class="built_in">replace_5_1</span>(env, src, dest);</span><br><span class="line">		&#125; else if (apilevel &gt; <span class="number">19</span>) &#123;</span><br><span class="line">			<span class="built_in">replace_5_0</span>(env, src, dest);</span><br><span class="line">	    &#125;else&#123;</span><br><span class="line">	        <span class="built_in">replace_4_4</span>(env, src, dest);</span><br><span class="line">	    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 不同的虚拟机版本，由于虚拟机底层数据结构并不相同，所以还进一步针对不同 Android 版本再做区分</p>
+<ul>
+<li><strong><a href="https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_4_4.cpp">art_method_replace_4_4#replace_4_4</a></strong></li>
+<li><strong><a href="https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_5_0.cpp">art_method_replace_5_0#replace_5_0</a></strong></li>
+<li><strong><a href="https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_5_1.cpp">art_method_replace_5_1#replace_5_1</a></strong></li>
+<li><strong><a href="https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_6_0.cpp">art_method_replace_6_0#replace_6_0</a></strong></li>
+<li><strong><a href="https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_7_0.cpp">art_method_replace_7_0#replace_7_0</a></strong></li>
+</ul>
+</li>
 <li><p>以 6.0 版本的 Art虚拟机替换为例子</p>
- <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">replace_6_0</span><span class="params">(JNIEnv* env, jobject src, jobject dest)</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">		<span class="comment">//获取 被替换 Method 对象对应 ArtMethod 的地址</span></span><br><span class="line">		art::mirror::ArtMethod* smeth =</span><br><span class="line">				(art::mirror::ArtMethod*) env-&gt;FromReflectedMethod(src);</span><br><span class="line">				</span><br><span class="line">		<span class="comment">//获取 替换 Method 对象对应 ArtMethod 的地址</span></span><br><span class="line">		art::mirror::ArtMethod* dmeth =</span><br><span class="line">				(art::mirror::ArtMethod*) env-&gt;FromReflectedMethod(dest);</span><br><span class="line">	</span><br><span class="line">		<span class="comment">//确保 Classloader 一致</span></span><br><span class="line">	    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;declaring_class_)-&gt;class_loader_ =</span><br><span class="line">	    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(smeth-&gt;declaring_class_)-&gt;class_loader_; <span class="comment">//for plugin classloader</span></span><br><span class="line">	    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;declaring_class_)-&gt;clinit_thread_id_ =</span><br><span class="line">	    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(smeth-&gt;declaring_class_)-&gt;clinit_thread_id_;</span><br><span class="line">	    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;declaring_class_)-&gt;status_ = <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(smeth-&gt;declaring_class_)-&gt;status_<span class="number">-1</span>;</span><br><span class="line">	    <span class="comment">//for reflection invoke</span></span><br><span class="line">	    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;declaring_class_)-&gt;super_class_ = <span class="number">0</span>;</span><br><span class="line">	</span><br><span class="line">		 <span class="comment">// 旧的函数所有成员变量都需要替换成新的函数的成员变量</span></span><br><span class="line">	    smeth-&gt;declaring_class_ = dmeth-&gt;declaring_class_;</span><br><span class="line">	    smeth-&gt;dex_cache_resolved_methods_ = dmeth-&gt;dex_cache_resolved_methods_;</span><br><span class="line">	    smeth-&gt;dex_cache_resolved_types_ = dmeth-&gt;dex_cache_resolved_types_;</span><br><span class="line">	    smeth-&gt;access_flags_ = dmeth-&gt;access_flags_ | <span class="number">0x0001</span>;</span><br><span class="line">	    smeth-&gt;dex_code_item_offset_ = dmeth-&gt;dex_code_item_offset_;</span><br><span class="line">	    smeth-&gt;dex_method_index_ = dmeth-&gt;dex_method_index_;</span><br><span class="line">	    smeth-&gt;method_index_ = dmeth-&gt;method_index_;</span><br><span class="line">	    </span><br><span class="line">	    smeth-&gt;ptr_sized_fields_.entry_point_from_interpreter_ =</span><br><span class="line">	    dmeth-&gt;ptr_sized_fields_.entry_point_from_interpreter_;</span><br><span class="line">	    </span><br><span class="line">	    smeth-&gt;ptr_sized_fields_.entry_point_from_jni_ =</span><br><span class="line">	    dmeth-&gt;ptr_sized_fields_.entry_point_from_jni_;</span><br><span class="line">	    smeth-&gt;ptr_sized_fields_.entry_point_from_quick_compiled_code_ =</span><br><span class="line">	    dmeth-&gt;ptr_sized_fields_.entry_point_from_quick_compiled_code_;</span><br><span class="line">	    </span><br><span class="line">	    LOGD(<span class="string">"replace_6_0: %d , %d"</span>,</span><br><span class="line">	         smeth-&gt;ptr_sized_fields_.entry_point_from_quick_compiled_code_,</span><br><span class="line">	         dmeth-&gt;ptr_sized_fields_.entry_point_from_quick_compiled_code_);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p> 每一个 Java 方法在 Art 虚拟机内都对应一个 <strong><a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-release/runtime/art_method.h" target="_blank" rel="noopener">art_method</a></strong>, 用于记录 Java 方法的所有信息，包括归属类，访问权限，代码执行地址等等。替换完之后，再次调用替换方法的时候就会直接运行到新方法的实现。</p>
+ <figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">	void replace_6_0(JNIEnv* env, jobject src, jobject dest) &#123;</span><br><span class="line">	</span><br><span class="line">		<span class="comment">//获取 被替换 Method 对象对应 ArtMethod 的地址</span></span><br><span class="line">		art::mirror::ArtMethod* smeth =</span><br><span class="line">				(<span class="function"><span class="title">art</span>::mirror::ArtMethod*) env-&gt;</span>FromReflectedMethod(src);</span><br><span class="line">				</span><br><span class="line">		<span class="comment">//获取 替换 Method 对象对应 ArtMethod 的地址</span></span><br><span class="line">		art::mirror::ArtMethod* dmeth =</span><br><span class="line">				(<span class="function"><span class="title">art</span>::mirror::ArtMethod*) env-&gt;</span>FromReflectedMethod(dest);</span><br><span class="line">	</span><br><span class="line">		<span class="comment">//确保 Classloader 一致</span></span><br><span class="line">	    <span class="function"><span class="title">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;</span><span class="function"><span class="title">declaring_class_</span>)-&gt;</span>class_loader_ =</span><br><span class="line">	    <span class="function"><span class="title">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(smeth-&gt;</span><span class="function"><span class="title">declaring_class_</span>)-&gt;</span>class_loader_; <span class="comment">//for plugin classloader</span></span><br><span class="line">	    <span class="function"><span class="title">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;</span><span class="function"><span class="title">declaring_class_</span>)-&gt;</span>clinit_thread_id_ =</span><br><span class="line">	    <span class="function"><span class="title">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(smeth-&gt;</span><span class="function"><span class="title">declaring_class_</span>)-&gt;</span>clinit_thread_id_;</span><br><span class="line">	    <span class="function"><span class="title">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;</span><span class="function"><span class="title">declaring_class_</span>)-&gt;</span><span class="function"><span class="title">status_</span> = reinterpret_cast&lt;art::mirror::Class*&gt;(smeth-&gt;</span><span class="function"><span class="title">declaring_class_</span>)-&gt;</span>status_-<span class="number">1</span>;</span><br><span class="line">	    <span class="comment">//for reflection invoke</span></span><br><span class="line">	    <span class="function"><span class="title">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;</span><span class="function"><span class="title">declaring_class_</span>)-&gt;</span>super_class_ = <span class="number">0</span>;</span><br><span class="line">	</span><br><span class="line">		 <span class="comment">// 旧的函数所有成员变量都需要替换成新的函数的成员变量</span></span><br><span class="line">	    <span class="function"><span class="title">smeth</span>-&gt;</span><span class="function"><span class="title">declaring_class_</span> = dmeth-&gt;</span>declaring_class_;</span><br><span class="line">	    <span class="function"><span class="title">smeth</span>-&gt;</span><span class="function"><span class="title">dex_cache_resolved_methods_</span> = dmeth-&gt;</span>dex_cache_resolved_methods_;</span><br><span class="line">	    <span class="function"><span class="title">smeth</span>-&gt;</span><span class="function"><span class="title">dex_cache_resolved_types_</span> = dmeth-&gt;</span>dex_cache_resolved_types_;</span><br><span class="line">	    <span class="function"><span class="title">smeth</span>-&gt;</span><span class="function"><span class="title">access_flags_</span> = dmeth-&gt;</span>access_flags_ | <span class="number">0</span>x0001;</span><br><span class="line">	    <span class="function"><span class="title">smeth</span>-&gt;</span><span class="function"><span class="title">dex_code_item_offset_</span> = dmeth-&gt;</span>dex_code_item_offset_;</span><br><span class="line">	    <span class="function"><span class="title">smeth</span>-&gt;</span><span class="function"><span class="title">dex_method_index_</span> = dmeth-&gt;</span>dex_method_index_;</span><br><span class="line">	    <span class="function"><span class="title">smeth</span>-&gt;</span><span class="function"><span class="title">method_index_</span> = dmeth-&gt;</span>method_index_;</span><br><span class="line">	    </span><br><span class="line">	    <span class="function"><span class="title">smeth</span>-&gt;</span>ptr_sized_fields_.entry_point_from_interpreter_ =</span><br><span class="line">	    <span class="function"><span class="title">dmeth</span>-&gt;</span>ptr_sized_fields_.entry_point_from_interpreter_;</span><br><span class="line">	    </span><br><span class="line">	    <span class="function"><span class="title">smeth</span>-&gt;</span>ptr_sized_fields_.entry_point_from_jni_ =</span><br><span class="line">	    <span class="function"><span class="title">dmeth</span>-&gt;</span>ptr_sized_fields_.entry_point_from_jni_;</span><br><span class="line">	    <span class="function"><span class="title">smeth</span>-&gt;</span>ptr_sized_fields_.entry_point_from_quick_compiled_code_ =</span><br><span class="line">	    <span class="function"><span class="title">dmeth</span>-&gt;</span>ptr_sized_fields_.entry_point_from_quick_compiled_code_;</span><br><span class="line">	    </span><br><span class="line">	    LOGD(<span class="string">&quot;replace_6_0: %d , %d&quot;</span>,</span><br><span class="line">	         <span class="function"><span class="title">smeth</span>-&gt;</span>ptr_sized_fields_.entry_point_from_quick_compiled_code_,</span><br><span class="line">	         <span class="function"><span class="title">dmeth</span>-&gt;</span>ptr_sized_fields_.entry_point_from_quick_compiled_code_);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 每一个 Java 方法在 Art 虚拟机内都对应一个 <strong><a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-release/runtime/art_method.h">art_method</a></strong>, 用于记录 Java 方法的所有信息，包括归属类，访问权限，代码执行地址等等。替换完之后，再次调用替换方法的时候就会直接运行到新方法的实现。</p>
 <p> Java Code 会被编译成 Dex Code ，然后被 Art 虚拟机加载，可通过解释模式或者 AOT模式执行.但都先需要获取方法的执行入口:</p>
 <ul>
-<li>解释模式，获取 <a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-release/runtime/art_method.h" target="_blank" rel="noopener">art_method.entry_point_from_jni_</a></li>
-<li><p>AOT模式模式，获取 <a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-release/runtime/art_method.h" target="_blank" rel="noopener">art_method.entry_point_from_jni_</a></p>
+<li><p>解释模式，获取 <a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-release/runtime/art_method.h">art_method.entry_point_from_jni_</a></p>
+</li>
+<li><p>AOT模式模式，获取 <a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-release/runtime/art_method.h">art_method.entry_point_from_jni_</a></p>
 <p>要实现方法替换,除了替换这几个指针入口地址. </p>
-<p>上述的例子需要保证 <strong><a href="https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_6_0.cpp" target="_blank" rel="noopener">art_method_replace_6_0#replace_6_0</a></strong> 所用的数据结构与 <strong><a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-release/runtime/art_method.h" target="_blank" rel="noopener">art_method</a></strong>    对应的数据结构完全一致才可以.但是由于各种厂商存在各式各样经过改造的 ROM,难以保证能够修复成功.</p>
+<p>上述的例子需要保证 <strong><a href="https://github.com/alibaba/AndFix/blob/master/jni/art/art_method_replace_6_0.cpp">art_method_replace_6_0#replace_6_0</a></strong> 所用的数据结构与 <strong><a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-release/runtime/art_method.h">art_method</a></strong>    对应的数据结构完全一致才可以.但是由于各种厂商存在各式各样经过改造的 ROM,难以保证能够修复成功.</p>
 </li>
 </ul>
 </li>
-<li><p><strong>Sophix</strong> 探索出了一种突破底层结构差异的方法。这种方法把一个 <strong><a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-release/runtime/art_method.h" target="_blank" rel="noopener">art_method</a></strong> 看成了一个整体进行替换而不必针对每个版本的 method 严格控制内容。<strong>换句话说，只要知道当前设备 <em>art_method</em> 的长度，就可以把整个结构体完全替换掉。</strong></p>
+<li><p><strong>Sophix</strong> 探索出了一种突破底层结构差异的方法。这种方法把一个 <strong><a href="https://android.googlesource.com/platform/art/+/refs/heads/nougat-release/runtime/art_method.h">art_method</a></strong> 看成了一个整体进行替换而不必针对每个版本的 method 严格控制内容。<strong>换句话说，只要知道当前设备 <em>art_method</em> 的长度，就可以把整个结构体完全替换掉。</strong></p>
 <p> 由于 ArtMethod 是紧密排列的，所以相邻两个 ArtMethod 的起始地址差值就是 ArtMethod 的大小。通过定义一个简单的类来计算。</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">NativeMethodCal</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">final</span> <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">f1</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">final</span> <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">f2</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">NativeMethodCal</span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">final</span> <span class="keyword">public</span> <span class="type">static</span> <span class="type">void</span> <span class="title">f1</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">final</span> <span class="keyword">public</span> <span class="type">static</span> <span class="type">void</span> <span class="title">f2</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p> 两个方法属于 static 方法 且该类只有这两个方法，所以必定相邻,计算如下</p>
- <figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">size_t firMid = (<span class="name">size_t</span>) env-&gt;GetStaticMethodID(<span class="name">nativeMethodCalClazz</span>,<span class="string">"f1"</span>,<span class="string">"()V"</span>)<span class="comment">;</span></span><br><span class="line">size_t secMid = (<span class="name">size_t</span>) env-&gt;GetStaticMethodID(<span class="name">nativeMethodCalClazz</span>,<span class="string">"f2"</span>,<span class="string">"()V"</span>)<span class="comment">;</span></span><br><span class="line">size_t methodSize = secMid - firMid</span><br></pre></td></tr></table></figure>
+ <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">size_t</span> firMid = (<span class="type">size_t</span>) env-&gt;<span class="built_in">GetStaticMethodID</span>(nativeMethodCalClazz,<span class="string">&quot;f1&quot;</span>,<span class="string">&quot;()V&quot;</span>);</span><br><span class="line"><span class="type">size_t</span> secMid = (<span class="type">size_t</span>) env-&gt;<span class="built_in">GetStaticMethodID</span>(nativeMethodCalClazz,<span class="string">&quot;f2&quot;</span>,<span class="string">&quot;()V&quot;</span>);</span><br><span class="line"><span class="type">size_t</span> methodSize = secMid - firMid</span><br></pre></td></tr></table></figure>
 <p> navice 层的替换可为</p>
- <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">replacee</span><span class="params">(JNIEnv* env, jobject src, jobject dest)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	art::mirror::ArtMethod* smeth =</span><br><span class="line">			(art::mirror::ArtMethod*) env-&gt;FromReflectedMethod(src);</span><br><span class="line">			</span><br><span class="line">	art::mirror::ArtMethod* dmeth =</span><br><span class="line">			(art::mirror::ArtMethod*) env-&gt;FromReflectedMethod(dest);</span><br><span class="line">			</span><br><span class="line">	<span class="comment">//确保 Classloader 一致</span></span><br><span class="line">    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;declaring_class_)-&gt;class_loader_ =</span><br><span class="line">    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(smeth-&gt;declaring_class_)-&gt;class_loader_; <span class="comment">//for plugin classloader</span></span><br><span class="line">    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;declaring_class_)-&gt;clinit_thread_id_ =</span><br><span class="line">    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(smeth-&gt;declaring_class_)-&gt;clinit_thread_id_;</span><br><span class="line">    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;declaring_class_)-&gt;status_ = <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(smeth-&gt;declaring_class_)-&gt;status_<span class="number">-1</span>;</span><br><span class="line">    <span class="comment">//for reflection invoke</span></span><br><span class="line">    <span class="keyword">reinterpret_cast</span>&lt;art::mirror::Class*&gt;(dmeth-&gt;declaring_class_)-&gt;super_class_ = <span class="number">0</span>;</span><br><span class="line">			</span><br><span class="line">	<span class="keyword">size_t</span> firMid = (<span class="keyword">size_t</span>) env-&gt;GetStaticMethodID(nativeMethodCalClazz,<span class="string">"f1"</span>,<span class="string">"()V"</span>);</span><br><span class="line">	<span class="keyword">size_t</span> secMid = (<span class="keyword">size_t</span>) env-&gt;GetStaticMethodID(nativeMethodCalClazz,<span class="string">"f2"</span>,<span class="string">"()V"</span>);</span><br><span class="line">	<span class="keyword">size_t</span> methodSize = secMid - firMid</span><br><span class="line">	<span class="built_in">memcpy</span>(smeth,dmeth, methodSize);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">void <span class="title function_ invoke__">replacee</span>(JNIEnv* env, jobject src, jobject dest) &#123;</span><br><span class="line"></span><br><span class="line">	art::mirror::ArtMethod* smeth =</span><br><span class="line">			(art::mirror::ArtMethod*) env<span class="punctuation">-&gt;</span><span class="title function_ invoke__">FromReflectedMethod</span>(src);</span><br><span class="line">			</span><br><span class="line">	art::mirror::ArtMethod* dmeth =</span><br><span class="line">			(art::mirror::ArtMethod*) env<span class="punctuation">-&gt;</span><span class="title function_ invoke__">FromReflectedMethod</span>(dest);</span><br><span class="line">			</span><br><span class="line">	<span class="comment">//确保 Classloader 一致</span></span><br><span class="line">    reinterpret_cast&lt;art::mirror::Class*&gt;(dmeth<span class="punctuation">-&gt;</span>declaring_class_)<span class="punctuation">-&gt;</span>class_loader_ =</span><br><span class="line">    reinterpret_cast&lt;art::mirror::Class*&gt;(smeth<span class="punctuation">-&gt;</span>declaring_class_)<span class="punctuation">-&gt;</span>class_loader_; <span class="comment">//for plugin classloader</span></span><br><span class="line">    reinterpret_cast&lt;art::mirror::Class*&gt;(dmeth<span class="punctuation">-&gt;</span>declaring_class_)<span class="punctuation">-&gt;</span>clinit_thread_id_ =</span><br><span class="line">    reinterpret_cast&lt;art::mirror::Class*&gt;(smeth<span class="punctuation">-&gt;</span>declaring_class_)<span class="punctuation">-&gt;</span>clinit_thread_id_;</span><br><span class="line">    reinterpret_cast&lt;art::mirror::Class*&gt;(dmeth<span class="punctuation">-&gt;</span>declaring_class_)<span class="punctuation">-&gt;</span>status_ = reinterpret_cast&lt;art::mirror::Class*&gt;(smeth<span class="punctuation">-&gt;</span>declaring_class_)<span class="punctuation">-&gt;</span>status_-<span class="number">1</span>;</span><br><span class="line">    <span class="comment">//for reflection invoke</span></span><br><span class="line">    reinterpret_cast&lt;art::mirror::Class*&gt;(dmeth<span class="punctuation">-&gt;</span>declaring_class_)<span class="punctuation">-&gt;</span>super_class_ = <span class="number">0</span>;</span><br><span class="line">			</span><br><span class="line">	size_t firMid = (size_t) env<span class="punctuation">-&gt;</span><span class="title function_ invoke__">GetStaticMethodID</span>(nativeMethodCalClazz,<span class="string">&quot;f1&quot;</span>,<span class="string">&quot;()V&quot;</span>);</span><br><span class="line">	size_t secMid = (size_t) env<span class="punctuation">-&gt;</span><span class="title function_ invoke__">GetStaticMethodID</span>(nativeMethodCalClazz,<span class="string">&quot;f2&quot;</span>,<span class="string">&quot;()V&quot;</span>);</span><br><span class="line">	size_t methodSize = secMid - firMid</span><br><span class="line">	<span class="title function_ invoke__">memcpy</span>(smeth,dmeth, methodSize);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 </li>
 </ol>
 <p><strong>存在的问题与限制</strong></p>
@@ -408,8 +410,8 @@
 </ol>
 <p><strong>参考资料</strong></p>
 <ul>
-<li><a href="https://github.com/alibaba/AndFix" target="_blank" rel="noopener">AndFix</a></li>
-<li><a href="https://www.aliyun.com/product/hotfix?spm=5176.56143.765261.332.2NlVMD" target="_blank" rel="noopener">Sophix</a></li>
+<li><a href="https://github.com/alibaba/AndFix">AndFix</a></li>
+<li><a href="https://www.aliyun.com/product/hotfix?spm=5176.56143.765261.332.2NlVMD">Sophix</a></li>
 </ul>
 
       
@@ -431,7 +433,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2020/05/02/Android_2020-04-09_Android 补丁技术学习总结(二) 类热替换 /" title="Android 补丁技术学习总结(二) 类热替换">http://yummylau.com/2020/05/02/Android_2020-04-09_Android 补丁技术学习总结(二) 类热替换 /</a>
+    <a href="https://yummylau.cn/2020/05/02/Android_2020-04-09_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%BA%8C)%20%E7%B1%BB%E7%83%AD%E6%9B%BF%E6%8D%A2%20/" title="Android 补丁技术学习总结(二) 类热替换">https://yummylau.cn/2020/05/02/Android_2020-04-09_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%BA%8C)%20%E7%B1%BB%E7%83%AD%E6%9B%BF%E6%8D%A2%20/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -446,7 +448,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/热修复/" rel="tag"># 热修复</a>
+            <a href="/tags/%E7%83%AD%E4%BF%AE%E5%A4%8D/" rel="tag"># 热修复</a>
           
         </div>
       
@@ -459,7 +461,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/05/02/Android_2020-04-14_Android 补丁技术学习总结(一) 冷启动类加载/" rel="next" title="Android 补丁技术学习总结(一) 冷启动类加载">
+              <a href="/2020/05/02/Android_2020-04-14_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%B8%80)%20%E5%86%B7%E5%90%AF%E5%8A%A8%E7%B1%BB%E5%8A%A0%E8%BD%BD/" rel="next" title="Android 补丁技术学习总结(一) 冷启动类加载">
                 <i class="fa fa-chevron-left"></i> Android 补丁技术学习总结(一) 冷启动类加载
               </a>
             
@@ -469,7 +471,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/05/02/Android_2020-04-20_Android 补丁技术学习总结(三) 资源修复/" rel="prev" title="Android 补丁技术学习总结(三) 资源修复">
+              <a href="/2020/05/02/Android_2020-04-20_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%B8%89)%20%E8%B5%84%E6%BA%90%E4%BF%AE%E5%A4%8D/" rel="prev" title="Android 补丁技术学习总结(三) 资源修复">
                 Android 补丁技术学习总结(三) 资源修复 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -531,10 +533,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -613,7 +617,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

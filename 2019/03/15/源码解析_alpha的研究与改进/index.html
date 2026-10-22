@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="源码解析,">
+  <meta name="keywords" content="源码解析," />
 
 
 
@@ -78,19 +78,19 @@
 
 
 <meta name="description" content="阅读本文你能收获到  alpha 如何解决异步依赖的初始化 如何满足同异步初始化依赖并阻塞 Application 的场景   前段时间在做项目初始化整理发现Application#onCreate 内的初始化任务已经“乱七八糟”。有时候要添加和修改一个依赖时很是头疼，所以在整理代码的同时也在 Github 上看到 alpha 异步启动框架。所以当前晚上就 clone 下源码研究一番， 但最后还是">
-<meta name="keywords" content="源码解析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于 Android 异步启动框架 alpha 的思考">
-<meta property="og:url" content="http://yummylau.com/2019/03/15/源码解析_alpha的研究与改进/index.html">
+<meta property="og:url" content="https://yummylau.cn/2019/03/15/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_alpha%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%94%B9%E8%BF%9B/index.html">
 <meta property="og:site_name" content="YummyLau">
 <meta property="og:description" content="阅读本文你能收获到  alpha 如何解决异步依赖的初始化 如何满足同异步初始化依赖并阻塞 Application 的场景   前段时间在做项目初始化整理发现Application#onCreate 内的初始化任务已经“乱七八糟”。有时候要添加和修改一个依赖时很是头疼，所以在整理代码的同时也在 Github 上看到 alpha 异步启动框架。所以当前晚上就 clone 下源码研究一番， 但最后还是">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale">
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/alpha/alpha_1.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/alpha/alpha_2.png">
-<meta property="og:updated_time" content="2019-10-18T14:56:57.921Z">
+<meta property="article:published_time" content="2019-03-14T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:20:22.660Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="源码解析">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于 Android 异步启动框架 alpha 的思考">
-<meta name="twitter:description" content="阅读本文你能收获到  alpha 如何解决异步依赖的初始化 如何满足同异步初始化依赖并阻塞 Application 的场景   前段时间在做项目初始化整理发现Application#onCreate 内的初始化任务已经“乱七八糟”。有时候要添加和修改一个依赖时很是头疼，所以在整理代码的同时也在 Github 上看到 alpha 异步启动框架。所以当前晚上就 clone 下源码研究一番， 但最后还是">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/alpha/alpha_1.png">
 
 
@@ -98,7 +98,7 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -121,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2019/03/15/源码解析_alpha的研究与改进/">
+  <link rel="canonical" href="https://yummylau.cn/2019/03/15/源码解析_alpha的研究与改进/"/>
 
 
 
@@ -137,7 +137,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -155,7 +155,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -185,7 +185,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -195,7 +195,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -205,7 +205,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -215,7 +215,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -225,7 +225,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -264,11 +264,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2019/03/15/源码解析_alpha的研究与改进/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2019/03/15/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_alpha%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%94%B9%E8%BF%9B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -304,7 +304,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -334,8 +334,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/03/15/源码解析_alpha的研究与改进/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/15/源码解析_alpha的研究与改进/" itemprop="commentCount"></span>
+                <a href="/2019/03/15/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_alpha%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%94%B9%E8%BF%9B/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/15/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_alpha%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%94%B9%E8%BF%9B/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -372,27 +372,31 @@
 <p>前段时间在做项目初始化整理发现Application#onCreate 内的初始化任务已经“乱七八糟”。有时候要添加和修改一个依赖时很是头疼，所以在整理代码的同时也在 Github 上看到 alpha 异步启动框架。所以当前晚上就 clone 下源码研究一番， 但最后还是有点点失落。。。</p>
 </blockquote>
 <h3 id="alpha-如何解决异步依赖的初始化"><a href="#alpha-如何解决异步依赖的初始化" class="headerlink" title="alpha 如何解决异步依赖的初始化"></a>alpha 如何解决异步依赖的初始化</h3><p><strong>Alpha</strong> 的定位是基于 PERT 图构建的 Android 异步启动框架，用于启动时并发完成依赖初始化。封装了 <code>Task</code> 类用于表示一个异步任务, 衍生出<code>Project</code> 及 <code>AnchorTask</code> 用于处理多个 <em>task</em> 对象构成的图结构。 其类图关系如下：</p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/alpha/alpha_1.png" width="260" height="350" alt="图片名称" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/alpha/alpha_1.png" width = "260" height = "350" alt="图片名称" align=center />
+
 <p>其外层业务只需要继承 <code>Task</code> 或者同个构建 <code>Project</code> 来编写业务依赖逻辑, 并通过设置 <em>successor</em> 和 <em>predecessor</em> 构建依赖图， 理想的结构应该如下:</p>
-<p><img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/alpha/alpha_2.png" width="463" height="808" alt="图片名称" align="center"></p>
+<img src="https://raw.githubusercontent.com/YummyLau/hexo/master/source/pics/alpha/alpha_2.png" width = "463" height = "808" alt="图片名称" align=center />
+
 <p>但是如果你添加 Task 启动的时候，会收到 <code>xxxTask cannot be cast to com.alibaba.android.alpha.Project</code>。 从源码层上看确实不能从一个 <em>task</em> 启动。</p>
 <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//声明存放任务的容器</span></span><br><span class="line"><span class="keyword">private</span> SparseArray&lt;<span class="keyword">Task</span>&gt; mProjectArray = <span class="keyword">new</span> SparseArray&lt;<span class="keyword">Task</span>&gt;();</span><br><span class="line"></span><br><span class="line"><span class="comment">//提供了添加的方法</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> addProject(<span class="keyword">Task</span> <span class="keyword">project</span>, String processName) &#123;</span><br><span class="line">    <span class="keyword">if</span> (AlphaUtils.isMatchProcess(mContext, processName)) &#123;</span><br><span class="line">        mProjectForCurrentProcess = <span class="keyword">project</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//启动的时候判断</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> start() &#123;</span><br><span class="line">    <span class="keyword">Project</span> <span class="keyword">project</span> = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">    	 <span class="comment">//...略去获取逻辑</span></span><br><span class="line">	    <span class="keyword">project</span> = (<span class="keyword">Project</span>) <span class="keyword">task</span>;</span><br><span class="line">    &#125; <span class="keyword">while</span> (<span class="keyword">false</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">project</span>.start();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>从 <code>API</code> 设计上看, 如果暴露 <em>addProject</em> 方法添加  <em>task</em> 对象的话, 应该能从 <em>task</em> 对象启动才对。如果强制从 <em>project</em> 启动, 那么 <em>addProject</em> 方法就应该限制 <code>Project</code> 类型。</p>
 <p>有了任务图之后, 在看看如何异步启动.</p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> start() &#123;</span><br><span class="line">    <span class="keyword">if</span> (mCurrentState != STATE_IDLE) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"You try to run task "</span> + mName + <span class="string">" twice, is there a circular dependency?"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    switchState(STATE_WAIT);</span><br><span class="line"></span><br><span class="line">	 <span class="comment">//内部保留一个 runnable对象，存放真正的业务逻辑</span></span><br><span class="line">    <span class="keyword">if</span> (mInternalRunnable == <span class="keyword">null</span>) &#123;</span><br><span class="line">        mInternalRunnable = <span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            <span class="keyword">public</span> <span class="keyword">void</span> run() &#123;</span><br><span class="line">                android.os.Process.setThreadPriority(mThreadPriority);</span><br><span class="line">                <span class="keyword">long</span> startTime = System.currentTimeMillis();</span><br><span class="line"></span><br><span class="line">                switchState(STATE_RUNNING);</span><br><span class="line">                <span class="keyword">Task</span>.<span class="keyword">this</span>.run();</span><br><span class="line">                switchState(STATE_FINISHED);</span><br><span class="line"></span><br><span class="line">                <span class="keyword">long</span> finishTime = System.currentTimeMillis();</span><br><span class="line">                recordTime((finishTime - startTime));</span><br><span class="line"></span><br><span class="line">                notifyFinished();</span><br><span class="line">                recycle();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//如果是在UI进程，则通过 Handler post出去</span></span><br><span class="line">    <span class="keyword">if</span> (mIsInUiThread) &#123;</span><br><span class="line">        sHandler.post(mInternalRunnable);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">     	 <span class="comment">//线程池</span></span><br><span class="line">        sExecutor.execute(mInternalRunnable);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*package*/</span> <span class="keyword">void</span> notifyFinished() &#123;</span><br><span class="line">    <span class="keyword">if</span> (!mSuccessorList.isEmpty()) &#123;</span><br><span class="line">        AlphaUtils.<span class="keyword">sort</span>(mSuccessorList);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//完成任务之后，通知后置任务 “我完成了，你们要准备开始啦”</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">Task</span> <span class="keyword">task</span> : mSuccessorList) &#123;</span><br><span class="line">            <span class="keyword">task</span>.onPredecessorFinished(<span class="keyword">this</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!mTaskFinishListeners.isEmpty()) &#123;</span><br><span class="line">        <span class="keyword">for</span> (OnTaskFinishListener listener : mTaskFinishListeners) &#123;</span><br><span class="line">            listener.onTaskFinish(mName);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        mTaskFinishListeners.clear();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">synchronized</span> <span class="keyword">void</span> onPredecessorFinished(<span class="keyword">Task</span> beforeTask) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (mPredecessorSet.isEmpty()) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    mPredecessorSet.remove(beforeTask);</span><br><span class="line">    <span class="comment">//如果依赖的任务全部已经完成，则启动</span></span><br><span class="line">    <span class="keyword">if</span> (mPredecessorSet.isEmpty()) &#123;</span><br><span class="line">        <span class="keyword">this</span>.blockInvokeThread = beforeTask.blockInvokeThread;</span><br><span class="line">        start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="type">void</span> <span class="title">start</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (mCurrentState != STATE_IDLE) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">RuntimeException</span>(<span class="string">&quot;You try to run task &quot;</span> + mName + <span class="string">&quot; twice, is there a circular dependency?&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    switchState(STATE_WAIT);</span><br><span class="line"></span><br><span class="line">	 <span class="comment">//内部保留一个 runnable对象，存放真正的业务逻辑</span></span><br><span class="line">    <span class="keyword">if</span> (mInternalRunnable == null) &#123;</span><br><span class="line">        mInternalRunnable = <span class="keyword">new</span> <span class="built_in">Runnable</span>() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            <span class="keyword">public</span> <span class="type">void</span> <span class="built_in">run</span>() &#123;</span><br><span class="line">                android.os.<span class="built_in">Process</span>.<span class="built_in">setThreadPriority</span>(mThreadPriority);</span><br><span class="line">                <span class="type">long</span> startTime = System.<span class="built_in">currentTimeMillis</span>();</span><br><span class="line"></span><br><span class="line">                switchState(STATE_RUNNING);</span><br><span class="line">                <span class="built_in">Task</span>.<span class="keyword">this</span>.<span class="built_in">run</span>();</span><br><span class="line">                switchState(STATE_FINISHED);</span><br><span class="line"></span><br><span class="line">                <span class="type">long</span> finishTime = System.<span class="built_in">currentTimeMillis</span>();</span><br><span class="line">                <span class="built_in">recordTime</span>((finishTime - startTime));</span><br><span class="line"></span><br><span class="line">                <span class="built_in">notifyFinished</span>();</span><br><span class="line">                <span class="built_in">recycle</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//如果是在UI进程，则通过 Handler post出去</span></span><br><span class="line">    <span class="keyword">if</span> (mIsInUiThread) &#123;</span><br><span class="line">        sHandler.<span class="built_in">post</span>(mInternalRunnable);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">     	 <span class="comment">//线程池</span></span><br><span class="line">        sExecutor.<span class="built_in">execute</span>(mInternalRunnable);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*package*/</span> <span class="function"><span class="type">void</span> <span class="title">notifyFinished</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!mSuccessorList.<span class="built_in">isEmpty</span>()) &#123;</span><br><span class="line">        AlphaUtils.<span class="built_in">sort</span>(mSuccessorList);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//完成任务之后，通知后置任务 “我完成了，你们要准备开始啦”</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="built_in">Task</span> task : mSuccessorList) &#123;</span><br><span class="line">            task.<span class="built_in">onPredecessorFinished</span>(<span class="keyword">this</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!mTaskFinishListeners.<span class="built_in">isEmpty</span>()) &#123;</span><br><span class="line">        <span class="keyword">for</span> (OnTaskFinishListener listener : mTaskFinishListeners) &#123;</span><br><span class="line">            listener.<span class="built_in">onTaskFinish</span>(mName);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        mTaskFinishListeners.<span class="built_in">clear</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">synchronized</span> <span class="type">void</span> <span class="title">onPredecessorFinished</span><span class="params">(<span class="built_in">Task</span> beforeTask)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (mPredecessorSet.<span class="built_in">isEmpty</span>()) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    mPredecessorSet.<span class="built_in">remove</span>(beforeTask);</span><br><span class="line">    <span class="comment">//如果依赖的任务全部已经完成，则启动</span></span><br><span class="line">    <span class="keyword">if</span> (mPredecessorSet.<span class="built_in">isEmpty</span>()) &#123;</span><br><span class="line">        <span class="keyword">this</span>.blockInvokeThread = beforeTask.blockInvokeThread;</span><br><span class="line">        <span class="built_in">start</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>代码逻辑比较清晰。<strong>任务被执行时判断是否是主线程执行，如果是则通过 handler#post 发送出去排队处理, 否则交给线程池处理。任务处理完成之后通知依赖该任务的任务, 此时依赖该任务的任务的所有依赖都已经完成，则该任务启动执行。</strong></p>
 <h3 id="如何满足同异步初始化依赖并阻塞-Application-的场景"><a href="#如何满足同异步初始化依赖并阻塞-Application-的场景" class="headerlink" title="如何满足同异步初始化依赖并阻塞 Application 的场景"></a>如何满足同异步初始化依赖并阻塞 Application 的场景</h3><p>在探讨 ”如何满足同异步初始化依赖并阻塞 Application 的场景“ 之前，我们来举个例子。<br>假设存在以下依赖图</p>
 <figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">D（异）-&gt; C（异） -&gt;B （同步）-&gt;A（异）</span><br><span class="line">或者</span><br><span class="line">D（异）-&gt; C（异） -&gt;B （同步）-&gt;A（同）</span><br></pre></td></tr></table></figure>
+
 <p>在 Application#onCreate 中某个时刻执行依赖图</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">()</span></span>&#123;</span><br><span class="line">  runTask（）	 </span><br><span class="line">  code	       <span class="comment">//代码段执行时刻 tCode</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span>()</span>&#123;</span><br><span class="line">  runTask（）	 </span><br><span class="line">  code	       <span class="comment">//代码段执行时刻 tCode</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>给定上述任务执行时间关系如下</p>
 <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//txStart 表示任务x的开始时刻</span></span><br><span class="line"><span class="comment">//txEnd 表示任务x的结束时刻</span></span><br><span class="line">taStart &lt; taEnd &lt; tbStart &lt; tbEnd &lt; tcStart &lt; tcEnd &lt; tdStart &lt; tdEnd</span><br></pre></td></tr></table></figure>
+
 <p>在 <code>Alpha</code> 中恒满足： <em>tCode</em> &lt; <em>txStart</em> (x = {a,b,c,d}) 。也就是说, 如果存在代码段 <em>code</em> ,则框架无法满足这种场景。尽管  <code>Alpha</code> 中提供 <em>AlphaManager#waitUntilFinish</em> 用于阻塞执行线程，但是存在很大的缺陷 :</p>
 <ol>
 <li>假如在UI线程等待，则会造成死锁。其原因在于当前执行代码处等待解锁，而只有等到所有在主线程执行的 <em>task</em> 执行完才可能解锁，而 <em>task</em> 被 post 到消息队列里面，只有当解锁之后才能执行到消息队列的 <em>task</em> 。</li>
 <li>异步线程等待场景基本不需要，因为构建依赖图就是为了解决同异步执行问题，等待意味着存在依赖关系，可以通过构建正确的依赖图解决。</li>
 </ol>
-<p>假如存在一种方案不仅能提供同异步执行能力，还能满足： <em>tCode</em> &gt; <em>txEnd</em> (x = {a,b,c,d}),则能够解决上述场景。而且很多应用程序实际上都需要解决这个问题, 经过学习 <code>Alpha</code> 的设计及项目实践, 最终给出了这种方案。 <code>Anchors</code> 框架就此而生, 细节可查看 <a href="http://yummylau.com/2019/03/18/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6%E4%B9%8B%20Anchors/">开源框架 之 Anchors</a></p>
+<p>假如存在一种方案不仅能提供同异步执行能力，还能满足： <em>tCode</em> &gt; <em>txEnd</em> (x = {a,b,c,d}),则能够解决上述场景。而且很多应用程序实际上都需要解决这个问题, 经过学习 <code>Alpha</code> 的设计及项目实践, 最终给出了这种方案。 <code>Anchors</code> 框架就此而生, 细节可查看 <a href="https://yummylau.cn/2019/03/18/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE_%20Anchors/">开源框架 之 Anchors</a></p>
 
       
     </div>
@@ -413,7 +417,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2019/03/15/源码解析_alpha的研究与改进/" title="关于 Android 异步启动框架 alpha 的思考">http://yummylau.com/2019/03/15/源码解析_alpha的研究与改进/</a>
+    <a href="https://yummylau.cn/2019/03/15/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_alpha%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%94%B9%E8%BF%9B/" title="关于 Android 异步启动框架 alpha 的思考">https://yummylau.cn/2019/03/15/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90_alpha%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%94%B9%E8%BF%9B/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -428,7 +432,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/源码解析/" rel="tag"># 源码解析</a>
+            <a href="/tags/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" rel="tag"># 源码解析</a>
           
         </div>
       
@@ -441,7 +445,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/08/java_2019-03-08_类加载流程/" rel="next" title="窥探 Java 类加载">
+              <a href="/2019/03/08/java_2019-03-08_%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B/" rel="next" title="窥探 Java 类加载">
                 <i class="fa fa-chevron-left"></i> 窥探 Java 类加载
               </a>
             
@@ -451,7 +455,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/18/开源项目_ Anchors/" rel="prev" title="开源项目之 Anchor">
+              <a href="/2019/03/18/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE_%20Anchors/" rel="prev" title="开源项目之 Anchor">
                 开源项目之 Anchor <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -522,10 +526,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -600,7 +606,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#alpha-如何解决异步依赖的初始化"><span class="nav-number">1.</span> <span class="nav-text">alpha 如何解决异步依赖的初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何满足同异步初始化依赖并阻塞-Application-的场景"><span class="nav-number">2.</span> <span class="nav-text">如何满足同异步初始化依赖并阻塞 Application 的场景</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#alpha-%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E5%BC%82%E6%AD%A5%E4%BE%9D%E8%B5%96%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-number">1.</span> <span class="nav-text">alpha 如何解决异步依赖的初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%BB%A1%E8%B6%B3%E5%90%8C%E5%BC%82%E6%AD%A5%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BE%9D%E8%B5%96%E5%B9%B6%E9%98%BB%E5%A1%9E-Application-%E7%9A%84%E5%9C%BA%E6%99%AF"><span class="nav-number">2.</span> <span class="nav-text">如何满足同异步初始化依赖并阻塞 Application 的场景</span></a></li></ol></div>
             
 
           </div>
@@ -620,7 +626,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

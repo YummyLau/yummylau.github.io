@@ -4,10 +4,10 @@
 
 
 <html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
 
@@ -18,8 +18,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -38,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -46,9 +46,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="热修复,">
+  <meta name="keywords" content="热修复," />
 
 
 
@@ -77,25 +77,25 @@
 
 
 
-<meta name="description" content="加载 so System.loadLibrary(String soName)， libs 目录下的 so 文件会被复制到应用安装目录并完成加载 System.load(String soPath),用于加载一个完整路径的 so 文件  注册 so 静态注册，使用 Java_{类完整路径}_{方法名} 作为 native 的方法名。当 so 已经被加载之后，native 方法在第一次被执行时候就会">
-<meta name="keywords" content="热修复">
+<meta name="description" content="加载 so System.loadLibrary(String soName)， libs 目录下的 so 文件会被复制到应用安装目录并完成加载 System.load(String soPath),用于加载一个完整路径的 so 文件  注册 so 静态注册，使用 Java_&#123;类完整路径&#125;_&#123;方法名&#125; 作为 native 的方法名。当 so 已经被加载之后，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android 补丁技术学习总结(四) so修复">
-<meta property="og:url" content="http://yummylau.com/2020/05/02/Android_2020-04-26_Android 补丁技术学习总结(四) so修复/index.html">
+<meta property="og:url" content="https://yummylau.cn/2020/05/02/Android_2020-04-26_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E5%9B%9B)%20so%E4%BF%AE%E5%A4%8D/index.html">
 <meta property="og:site_name" content="YummyLau">
-<meta property="og:description" content="加载 so System.loadLibrary(String soName)， libs 目录下的 so 文件会被复制到应用安装目录并完成加载 System.load(String soPath),用于加载一个完整路径的 so 文件  注册 so 静态注册，使用 Java_{类完整路径}_{方法名} 作为 native 的方法名。当 so 已经被加载之后，native 方法在第一次被执行时候就会">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-05-02T11:49:37.418Z">
+<meta property="og:description" content="加载 so System.loadLibrary(String soName)， libs 目录下的 so 文件会被复制到应用安装目录并完成加载 System.load(String soPath),用于加载一个完整路径的 so 文件  注册 so 静态注册，使用 Java_&#123;类完整路径&#125;_&#123;方法名&#125; 作为 native 的方法名。当 so 已经被加载之后，">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-05-02T10:00:04.000Z">
+<meta property="article:modified_time" content="2026-10-22T03:16:07.046Z">
+<meta property="article:author" content="yummyLau">
+<meta property="article:tag" content="热修复">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android 补丁技术学习总结(四) so修复">
-<meta name="twitter:description" content="加载 so System.loadLibrary(String soName)， libs 目录下的 so 文件会被复制到应用安装目录并完成加载 System.load(String soPath),用于加载一个完整路径的 so 文件  注册 so 静态注册，使用 Java_{类完整路径}_{方法名} 作为 native 的方法名。当 so 已经被加载之后，native 方法在第一次被执行时候就会">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yummylau.com/2020/05/02/Android_2020-04-26_Android 补丁技术学习总结(四) so修复/">
+  <link rel="canonical" href="https://yummylau.cn/2020/05/02/Android_2020-04-26_Android 补丁技术学习总结(四) so修复/"/>
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -152,7 +152,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">YummyLau</span>
         <span class="logo-line-after"><i></i></span>
@@ -182,7 +182,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -261,11 +261,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yummylau.com/2020/05/02/Android_2020-04-26_Android 补丁技术学习总结(四) so修复/">
+    <link itemprop="mainEntityOfPage" href="https://yummylau.cn/2020/05/02/Android_2020-04-26_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E5%9B%9B)%20so%E4%BF%AE%E5%A4%8D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yummyLau">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -301,7 +301,7 @@
           </span>
 
           
-            <span class="post-category">
+            <span class="post-category" >
             
               <span class="post-meta-divider">|</span>
             
@@ -313,7 +313,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android进阶/" itemprop="url" rel="index">
+                  <a href="/categories/Android%E8%BF%9B%E9%98%B6/" itemprop="url" rel="index">
                     <span itemprop="name">Android进阶</span>
                   </a>
                 </span>
@@ -331,8 +331,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/05/02/Android_2020-04-26_Android 补丁技术学习总结(四) so修复/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/05/02/Android_2020-04-26_Android 补丁技术学习总结(四) so修复/" itemprop="commentCount"></span>
+                <a href="/2020/05/02/Android_2020-04-26_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E5%9B%9B)%20so%E4%BF%AE%E5%A4%8D/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/05/02/Android_2020-04-26_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E5%9B%9B)%20so%E4%BF%AE%E5%A4%8D/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -365,11 +365,11 @@
 <li><code>System.load(String soPath)</code>,用于加载一个完整路径的 so 文件</li>
 </ul>
 <h4 id="注册-so"><a href="#注册-so" class="headerlink" title="注册 so"></a>注册 so</h4><ul>
-<li><p>静态注册，使用 <code>Java_{类完整路径}_{方法名}</code> 作为 native 的方法名。当 so 已经被加载之后，native 方法在第一次被执行时候就会完成注册。</p>
-  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span>&#123;</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> native String <span class="title">test</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">extern</span> <span class="string">"C"</span> <span class="function">jstring <span class="title">Java_com_effective_android_test</span><span class="params">(JNIEnv *env,jclass clazz)</span></span></span><br></pre></td></tr></table></figure>
-</li>
+<li><p>静态注册，使用 <code>Java_&#123;类完整路径&#125;_&#123;方法名&#125;</code> 作为 native 的方法名。当 so 已经被加载之后，native 方法在第一次被执行时候就会完成注册。</p>
+  <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="type">static</span> native <span class="type">String</span> <span class="title">test</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">extern</span> <span class="string">&quot;C&quot;</span> <span class="function">jstring <span class="title">Java_com_effective_android_test</span><span class="params">(JNIEnv *env,jclass clazz)</span></span></span><br></pre></td></tr></table></figure></li>
 <li><p>动态注册，借助 <code>JNI_OnLoad</code> 方法完成绑定。当 so 被加载时会调用 <em>JNI_OnLoad</em> 方法进行注册。</p>
-  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title">testJni</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test</span><span class="params">(JNIEnv *env,jclass clazz)</span></span>&#123;</span><br><span class="line">	<span class="comment">//native impl</span></span><br><span class="line">&#125;</span><br><span class="line">JNINativeMethod nativeMethods[] = &#123;</span><br><span class="line">	&#123;<span class="string">"test"</span>,<span class="string">"()V"</span>,(<span class="keyword">void</span> *) test&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">JNIEXPORT jint JNICALL <span class="title">JNI_OnLoad</span><span class="params">(JavaVM *vm,<span class="keyword">void</span> *reserved)</span></span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">	jclass clz = env-&gt;FindClass(<span class="string">"com/effective/android/Test"</span>);</span><br><span class="line">	<span class="keyword">if</span>(env-&gt;RegisterNatives(clz, nativeMethods,sizeOf(nativeMethods)/sizeOf(nativeMethods[<span class="number">0</span>])) != JNI_OK)&#123;</span><br><span class="line">		<span class="keyword">return</span> JNI_ERR;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> native <span class="keyword">void</span> testJni();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">void</span> test(JNIEnv *env,j<span class="keyword">class</span> <span class="title class_">clazz</span>)&#123;</span><br><span class="line">	<span class="comment">//native impl</span></span><br><span class="line">&#125;</span><br><span class="line">JNINativeMethod nativeMethods[] = &#123;</span><br><span class="line">	&#123;<span class="string">&quot;test&quot;</span>,<span class="string">&quot;()V&quot;</span>,(<span class="keyword">void</span> *) test&#125;</span><br><span class="line">&#125;</span><br><span class="line">JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm,<span class="keyword">void</span> *reserved)&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">	j<span class="keyword">class</span> <span class="title class_">clz</span> = env-&gt;FindClass(<span class="string">&quot;com/effective/android/Test&quot;</span>);</span><br><span class="line">	<span class="keyword">if</span>(env-&gt;RegisterNatives(clz, nativeMethods,sizeOf(nativeMethods)/sizeOf(nativeMethods[<span class="number">0</span>])) != JNI_OK)&#123;</span><br><span class="line">		<span class="keyword">return</span> JNI_ERR;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
 <h4 id="so-热替换的限制性"><a href="#so-热替换的限制性" class="headerlink" title="so 热替换的限制性"></a>so 热替换的限制性</h4><ol>
@@ -388,10 +388,10 @@
 <h4 id="so-冷启动方案"><a href="#so-冷启动方案" class="headerlink" title="so 冷启动方案"></a>so 冷启动方案</h4><p>假如在在应用加载 so 之前，能够先尝试加载补丁 so，再加载应用 so，就可以实现修复。自定义一个方法，替换掉 <code>System.loadLibrary()</code> 来完成这个逻辑。 但是存在一个缺点就是很难修复已经混淆编译的第三方库。</p>
 <p>这里最终采取的是类似 “类修复” 的注入方案。so 库被加载之后，最终会在 <code>DexPathList.nativeLibararyDirectories/nativeLiraryPathElements</code> 变量所表示的目录下遍历搜索。</p>
 <p><strong>SDK &lt; 23</strong></p>
-<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> final <span class="built_in">File</span>[] nativeLibraryDirectories;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">String</span> findLibrary(<span class="keyword">String</span> libraryName)&#123;</span><br><span class="line">	<span class="keyword">String</span> fileName = System.mapLibraryName(libraryName);</span><br><span class="line">	<span class="built_in">for</span>(<span class="built_in">File</span> directory : nativeLibraryDirectories)&#123;</span><br><span class="line">		<span class="keyword">String</span> path = <span class="keyword">new</span> <span class="built_in">File</span>(directory,fileName).getPath();</span><br><span class="line">		<span class="comment">//如果path文件存在且可读</span></span><br><span class="line">		<span class="built_in">if</span>(IoUtils.canOpenReadOnly(path))&#123;</span><br><span class="line">			<span class="built_in">return</span> path;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> <span class="built_in">File</span>[] nativeLibraryDirectories;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="type">String</span> <span class="title">findLibrary</span><span class="params">(<span class="type">String</span> libraryName)</span></span>&#123;</span><br><span class="line">	<span class="type">String</span> fileName = System.<span class="built_in">mapLibraryName</span>(libraryName);</span><br><span class="line">	<span class="keyword">for</span>(<span class="built_in">File</span> directory : nativeLibraryDirectories)&#123;</span><br><span class="line">		<span class="type">String</span> path = <span class="keyword">new</span> <span class="built_in">File</span>(directory,fileName).<span class="built_in">getPath</span>();</span><br><span class="line">		<span class="comment">//如果path文件存在且可读</span></span><br><span class="line">		<span class="keyword">if</span>(IoUtils.<span class="built_in">canOpenReadOnly</span>(path))&#123;</span><br><span class="line">			<span class="keyword">return</span> path;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>只需要把补丁 so 库的路径插到 <code>nativeLibraryDirectories</code> 最前面。</p>
 <p><strong>SDK &gt;= 23</strong></p>
-<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> File[] nativeLiraryPathElements;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">String</span> findLibrary(<span class="keyword">String</span> libraryName)&#123;</span><br><span class="line">	<span class="keyword">String</span> fileName = System.mapLibraryName(libraryName);</span><br><span class="line">	<span class="keyword">for</span>(Element element : nativeLibraryElements)&#123;</span><br><span class="line">		<span class="keyword">String</span> path = element.findNativeLibrary(fileName);</span><br><span class="line">		<span class="keyword">if</span>(path != <span class="keyword">null</span>)&#123;</span><br><span class="line">			<span class="keyword">return</span> path;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> <span class="built_in">File</span>[] nativeLiraryPathElements;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="type">String</span> <span class="title">findLibrary</span><span class="params">(<span class="type">String</span> libraryName)</span></span>&#123;</span><br><span class="line">	<span class="type">String</span> fileName = System.<span class="built_in">mapLibraryName</span>(libraryName);</span><br><span class="line">	<span class="keyword">for</span>(Element element : nativeLibraryElements)&#123;</span><br><span class="line">		<span class="type">String</span> path = element.<span class="built_in">findNativeLibrary</span>(fileName);</span><br><span class="line">		<span class="keyword">if</span>(path != null)&#123;</span><br><span class="line">			<span class="keyword">return</span> path;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>只需要为补丁 so 构建一个 <em>element</em> 对象并插到 <code>nativeLiraryPathElements</code> 最前面。</p>
 <p>但是 so 库文件存在多种 CPU 架构，补丁和 apk 一样都存在需要选择哪个 abi 的 so 来执行的问题。</p>
 <p><strong>Sophix</strong> 提供了一种思路, 通过从多个 abis 目录中选择一个合适的 <code>primaryCpuAbi</code> 目录插到 <code>nativeLibararyDirectories/nativeLiraryPathElements</code> 数组中。</p>
@@ -399,11 +399,12 @@
 <li>SDK &gt;= 21,直接反射拿到 ApplicationInfo 对象的 <code>primaryCpuAbi</code></li>
 <li>SDK &lt; 21,由于不支持 64 位所以直接把 <code>Build.CPU_ABI, Build.CPU_ABI2</code> 作为 <code>primaryCpuAbi</code></li>
 </ul>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span>&#123;</span><br><span class="line">	<span class="keyword">try</span>&#123;</span><br><span class="line">		Package pm = mApp.getPackageManager();</span><br><span class="line">		<span class="keyword">if</span>(pm != <span class="keyword">null</span>)&#123;</span><br><span class="line">			ApplicationInfo mAppInfo = pm.getApplicationInfo(mApp.getPackageName(),<span class="number">0</span>);</span><br><span class="line">			<span class="keyword">if</span>(mAppInfo != <span class="keyword">null</span>)&#123;</span><br><span class="line">				<span class="keyword">if</span>(Build.VERSION&gt;SDK_INT &gt;= Build.VERSION_CODES&gt;LOLLIPOP)&#123;</span><br><span class="line">					File thirdFiled = ApplicationInfo.<span class="keyword">class</span>.getDeclaredFiled(<span class="string">"primaryCpuAbi"</span>);</span><br><span class="line">					thirdFiled.setAccessable(<span class="keyword">true</span>);</span><br><span class="line">					<span class="built_in">String</span> cupAbi = (<span class="built_in">String</span>) thirdFiled.<span class="keyword">get</span>(mAppInfo);</span><br><span class="line">					primaryCpuAbis = <span class="keyword">new</span> <span class="built_in">String</span>[](cpuAbi);</span><br><span class="line">				&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">					primaryCpuAbis = <span class="keyword">new</span> <span class="built_in">String</span>[](Build.CPU_ABI，Build.CPU_ABI2);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;<span class="keyword">catch</span>(Throwable t)&#123;</span><br><span class="line">		<span class="comment">//...</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span>&#123;</span><br><span class="line">	<span class="keyword">try</span>&#123;</span><br><span class="line">		Package pm = mApp.getPackageManager();</span><br><span class="line">		<span class="keyword">if</span>(pm != <span class="keyword">null</span>)&#123;</span><br><span class="line">			ApplicationInfo mAppInfo = pm.getApplicationInfo(mApp.getPackageName(),<span class="number">0</span>);</span><br><span class="line">			<span class="keyword">if</span>(mAppInfo != <span class="keyword">null</span>)&#123;</span><br><span class="line">				<span class="keyword">if</span>(Build.VERSION&gt;SDK_INT &gt;= Build.VERSION_CODES&gt;LOLLIPOP)&#123;</span><br><span class="line">					File thirdFiled = ApplicationInfo.<span class="keyword">class</span>.getDeclaredFiled(<span class="string">&quot;primaryCpuAbi&quot;</span>);</span><br><span class="line">					thirdFiled.setAccessable(<span class="keyword">true</span>);</span><br><span class="line">					<span class="built_in">String</span> cupAbi = (<span class="built_in">String</span>) thirdFiled.<span class="keyword">get</span>(mAppInfo);</span><br><span class="line">					primaryCpuAbis = <span class="keyword">new</span> <span class="built_in">String</span>[](cpuAbi);</span><br><span class="line">				&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">					primaryCpuAbis = <span class="keyword">new</span> <span class="built_in">String</span>[](Build.CPU_ABI，Build.CPU_ABI2);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;<span class="keyword">catch</span>(Throwable t)&#123;</span><br><span class="line">		<span class="comment">//...</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><strong>参考资料</strong> </p>
 <ul>
-<li><a href="https://www.jianshu.com/p/4c0f72233f65" target="_blank" rel="noopener">从JNI_OnLoad看so的加载</a></li>
-<li><a href="https://www.jianshu.com/p/1d6ec5068d05" target="_blank" rel="noopener">Android JNI 函数注册的两种方式(静态注册/动态注册)</a></li>
+<li><a href="https://www.jianshu.com/p/4c0f72233f65">从JNI_OnLoad看so的加载</a></li>
+<li><a href="https://www.jianshu.com/p/1d6ec5068d05">Android JNI 函数注册的两种方式(静态注册/动态注册)</a></li>
 <li>《深入探索 Android 热修复技术原理》</li>
 </ul>
 
@@ -426,7 +427,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yummylau.com/2020/05/02/Android_2020-04-26_Android 补丁技术学习总结(四) so修复/" title="Android 补丁技术学习总结(四) so修复">http://yummylau.com/2020/05/02/Android_2020-04-26_Android 补丁技术学习总结(四) so修复/</a>
+    <a href="https://yummylau.cn/2020/05/02/Android_2020-04-26_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E5%9B%9B)%20so%E4%BF%AE%E5%A4%8D/" title="Android 补丁技术学习总结(四) so修复">https://yummylau.cn/2020/05/02/Android_2020-04-26_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E5%9B%9B)%20so%E4%BF%AE%E5%A4%8D/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -441,7 +442,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/热修复/" rel="tag"># 热修复</a>
+            <a href="/tags/%E7%83%AD%E4%BF%AE%E5%A4%8D/" rel="tag"># 热修复</a>
           
         </div>
       
@@ -454,7 +455,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/05/02/Android_2020-04-20_Android 补丁技术学习总结(三) 资源修复/" rel="next" title="Android 补丁技术学习总结(三) 资源修复">
+              <a href="/2020/05/02/Android_2020-04-20_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%B8%89)%20%E8%B5%84%E6%BA%90%E4%BF%AE%E5%A4%8D/" rel="next" title="Android 补丁技术学习总结(三) 资源修复">
                 <i class="fa fa-chevron-left"></i> Android 补丁技术学习总结(三) 资源修复
               </a>
             
@@ -464,7 +465,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/05/02/Android_2020-04-26_Android 补丁技术学习总结(五) 技术选型及实践流程/" rel="prev" title="Android 补丁技术学习总结(五) 技术选型及实践流程">
+              <a href="/2020/05/02/Android_2020-04-26_Android%20%E8%A1%A5%E4%B8%81%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%BA%94)%20%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B%E5%8F%8A%E5%AE%9E%E8%B7%B5%E6%B5%81%E7%A8%8B/" rel="prev" title="Android 补丁技术学习总结(五) 技术选型及实践流程">
                 Android 补丁技术学习总结(五) 技术选型及实践流程 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -535,10 +536,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="yummyLau">
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">yummyLau</p>
-              <p class="site-description motion-element" itemprop="description">努力让自己更优秀。</p>
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -613,7 +616,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#加载-so"><span class="nav-number">1.</span> <span class="nav-text">加载 so</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注册-so"><span class="nav-number">2.</span> <span class="nav-text">注册 so</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#so-热替换的限制性"><span class="nav-number">3.</span> <span class="nav-text">so 热替换的限制性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#so-冷启动方案"><span class="nav-number">4.</span> <span class="nav-text">so 冷启动方案</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8A%A0%E8%BD%BD-so"><span class="nav-number">1.</span> <span class="nav-text">加载 so</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C-so"><span class="nav-number">2.</span> <span class="nav-text">注册 so</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#so-%E7%83%AD%E6%9B%BF%E6%8D%A2%E7%9A%84%E9%99%90%E5%88%B6%E6%80%A7"><span class="nav-number">3.</span> <span class="nav-text">so 热替换的限制性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#so-%E5%86%B7%E5%90%AF%E5%8A%A8%E6%96%B9%E6%A1%88"><span class="nav-number">4.</span> <span class="nav-text">so 冷启动方案</span></a></li></ol></div>
             
 
           </div>
@@ -633,7 +636,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
